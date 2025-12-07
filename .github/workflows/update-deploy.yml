@@ -45,8 +45,11 @@ jobs:
   fetch-data:
     name: Fetch OTT Releases
     runs-on: ubuntu-latest
-    # Skip if this is a push event or skip_api is true
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' && github.event.inputs.skip_api != 'true'
+    # Run on schedule, or manual dispatch (unless skip_api is true)
+    # Skip on push events (deploy only)
+    if: |
+      github.event_name == 'schedule' || 
+      (github.event_name == 'workflow_dispatch' && github.event.inputs.skip_api != 'true')
     
     outputs:
       has_changes: ${{ steps.changes.outputs.has_changes }}
