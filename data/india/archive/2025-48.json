@@ -11,72 +11,27 @@
     "name": "India",
     "flag": "🇮🇳"
   },
-  "generated_at": "2025-12-07T20:15:32.512Z",
+  "generated_at": "2025-12-07T20:48:33.578Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
         {
-          "title": "Kevin Hart: Acting My Age",
-          "release_date": "2025-11-24",
+          "title": "Mass Jathara",
+          "release_date": "2025-11-28",
           "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Comedy Special",
-          "language": "English",
+          "industry": "Tollywood/Telugu",
+          "genre": "Action Comedy",
+          "language": "Telugu",
           "actors": [
-            "Kevin Hart"
+            "Ravi Teja",
+            "Sreeleela",
+            "Rajendra Prassad"
           ],
-          "dubbing": "English",
+          "dubbing": "Telugu, Tamil, Kannada, Malayalam",
           "release_type": "Direct-to-OTT",
-          "description": "A stand-up comedy special featuring Kevin Hart exploring themes of aging and life experiences."
-        },
-        {
-          "title": "Jingle Bell Heist",
-          "release_date": "2025-11-26",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Romantic Comedy, Heist",
-          "language": "English",
-          "actors": [
-            "Sophia",
-            "Nick"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "A festive Christmas rom-com-heist hybrid about two strangers planning to rob a department store on Christmas Eve."
-        },
-        {
-          "title": "Stranger Things Season 5 Volume 1",
-          "release_date": "2025-11-27",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Sci-Fi, Thriller",
-          "language": "English",
-          "actors": [
-            "Millie Bobby Brown",
-            "Finn Wolfhard",
-            "David Harbour"
-          ],
-          "dubbing": "English, Hindi, Telugu, Tamil",
-          "release_type": "Direct-to-OTT",
-          "description": "The first part of the final season where Hawkins faces chaos and the ultimate showdown with evil."
-        },
-        {
-          "title": "Sunny Sanskari Ki Tulsi Kumari",
-          "release_date": "2025-11-27",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Romantic Comedy",
-          "language": "Hindi",
-          "actors": [
-            "Sunny",
-            "Ananya",
-            "Vikram Singh"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A light-hearted rom-com about Sunny's romantic struggles after his proposal is rejected."
+          "description": "A Telugu-language action-comedy starring Ravi Teja and Sreeleela, produced by Sithara Entertainments and others."
         },
         {
           "title": "Aaryan",
@@ -86,35 +41,104 @@
           "genre": "Crime Thriller",
           "language": "Tamil",
           "actors": [
-            "Vishnu Vishal"
+            "Vishnu Vishal",
+            "Shraddha Srinath",
+            "Maanasa Choudhary"
           ],
-          "dubbing": "Tamil, Hindi",
+          "dubbing": "Tamil, Telugu, Hindi, Kannada, Malayalam",
           "release_type": "Direct-to-OTT",
-          "description": "A gripping crime thriller following the protagonist's journey through a dark underworld."
+          "description": "A Tamil action thriller about a police officer tackling a serial killer, starring Vishnu Vishal."
         },
         {
-          "title": "The Stringer: The Man Who Took The Photo",
-          "release_date": "2025-11-28",
+          "title": "Sunny Sanskari Ki Tulsi Kumari",
+          "release_date": "2025-11-27",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Romantic Comedy",
+          "language": "Hindi",
+          "actors": [
+            "Varun Dhawan",
+            "Janhvi Kapoor",
+            "Sanya Malhotra",
+            "Rohit Saraf"
+          ],
+          "dubbing": "Hindi",
+          "release_type": "Direct-to-OTT",
+          "description": "A romantic comedy about a tradition-loving Mumbaikar who pretends to be a partner to sabotage a wedding."
+        },
+        {
+          "title": "Jingle Bell Heist",
+          "release_date": "2025-11-26",
           "type": "movie",
           "industry": "Hollywood/English",
-          "genre": "Documentary",
+          "genre": "Romantic Comedy / Heist",
           "language": "English",
-          "actors": [],
+          "actors": [
+            "Sophia (character)",
+            "Nick (character)"
+          ],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "A documentary about a photojournalist capturing critical moments in conflict zones."
+          "description": "A festive Christmas rom-com-heist hybrid about two strangers teaming up to rob a department store."
+        },
+        {
+          "title": "The Stringer: The Man Who Took the Photo",
+          "release_date": "2025-11-28",
+          "type": "movie",
+          "industry": "Malayalam",
+          "genre": "Investigative Documentary",
+          "language": "Malayalam",
+          "actors": [
+            "Sharaf U Dheen",
+            "Vinayakan",
+            "Vinay Forrt",
+            "Anupama Parameswaran"
+          ],
+          "dubbing": "Malayalam",
+          "release_type": "Direct-to-OTT",
+          "description": "A drama-thriller chronicling Tony's journey joining his father's detective agency to impress his love."
+        },
+        {
+          "title": "Stranger Things Season 5 Volume 1",
+          "release_date": "2025-11-27",
+          "type": "series",
+          "industry": "Hollywood/English",
+          "genre": "Sci-Fi Thriller",
+          "language": "English",
+          "actors": [
+            "Millie Bobby Brown",
+            "Finn Wolfhard",
+            "David Harbour"
+          ],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "The first volume of the final season of the popular sci-fi thriller series."
+        },
+        {
+          "title": "Kevin Hart: Acting My Age",
+          "release_date": "2025-11-24",
+          "type": "special",
+          "industry": "Hollywood/English",
+          "genre": "Stand-up Comedy",
+          "language": "English",
+          "actors": [
+            "Kevin Hart"
+          ],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "A worldwide stand-up comedy special by Kevin Hart."
         },
         {
           "title": "Left-Handed Girl",
           "release_date": "2025-11-28",
           "type": "movie",
-          "industry": "Hollywood/English",
+          "industry": "Filipino/English",
           "genre": "Drama",
           "language": "English",
           "actors": [],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "A drama focusing on the life and challenges of a left-handed girl navigating societal norms."
+          "description": "A powerful Filipino drama about a gymnast facing a life-changing decision."
         }
       ]
     },
@@ -127,15 +151,16 @@
           "release_date": "2025-11-27",
           "type": "movie",
           "industry": "Sandalwood/Kannada",
-          "genre": "Action, Drama",
+          "genre": "Action Drama",
           "language": "Hindi",
           "actors": [
             "Rishab Shetty",
-            "Sapthami Gowda"
+            "Sapthami Gowda",
+            "Achyuth Kumar"
           ],
-          "dubbing": "Hindi, Kannada, Telugu, Tamil",
+          "dubbing": "Hindi, Kannada, Tamil, Telugu",
           "release_type": "Post-Theatrical",
-          "description": "A prequel exploring greed and land grab operations targeting marginalized communities on a large scale."
+          "description": "Hindi dubbed version of the Kannada action drama about greed and land grab operations targeting marginalized communities."
         }
       ]
     },
@@ -144,38 +169,40 @@
       "name": "Disney+ Hotstar",
       "releases": [
         {
-          "title": "Bel Air Season 4",
-          "release_date": "2025-11-25",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Drama",
-          "language": "English",
-          "actors": [
-            "Jabari Banks",
-            "Adrian Holmes"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "The fourth season of the drama series reimagining The Fresh Prince of Bel-Air."
-        },
-        {
           "title": "Born Hungry",
           "release_date": "2025-11-28",
-          "type": "movie",
-          "industry": "Hollywood/English",
+          "type": "documentary",
+          "industry": "English",
           "genre": "Documentary",
           "language": "English",
           "actors": [],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "A documentary exploring the global food crisis and hunger issues."
+          "description": "An inspiring documentary about celebrity chef Sash Simpson's journey from abandonment in India to success in Canada."
         }
       ]
+    },
+    {
+      "id": "sonyliv",
+      "name": "SonyLIV",
+      "releases": []
     },
     {
       "id": "zee5",
       "name": "ZEE5",
       "releases": [
+        {
+          "title": "Regai",
+          "release_date": "2025-11-28",
+          "type": "series",
+          "industry": "Kollywood/Tamil",
+          "genre": "Crime Thriller",
+          "language": "Tamil",
+          "actors": [],
+          "dubbing": "Tamil",
+          "release_type": "Direct-to-OTT",
+          "description": "A crime thriller about a police investigation uncovering illegal medical trials and a shadowy criminal network."
+        },
         {
           "title": "Raktabeej 2",
           "release_date": "2025-11-28",
@@ -187,20 +214,6 @@
           "dubbing": "Bengali",
           "release_type": "Direct-to-OTT",
           "description": "A political thriller sequel focusing on terrorist activities threatening India-Bangladesh relations."
-        },
-        {
-          "title": "Regai",
-          "release_date": "2025-11-28",
-          "type": "series",
-          "industry": "Kollywood/Tamil",
-          "genre": "Crime Thriller",
-          "language": "Tamil",
-          "actors": [
-            "Sub-Inspector Vetri"
-          ],
-          "dubbing": "Tamil",
-          "release_type": "Direct-to-OTT",
-          "description": "A criminal series about a police investigation uncovering hidden medical trials and a criminal network."
         }
       ]
     },
@@ -209,33 +222,71 @@
       "name": "JioCinema",
       "releases": [
         {
-          "title": "Bel Air Season 4",
-          "release_date": "2025-11-25",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Drama",
-          "language": "English",
-          "actors": [
-            "Jabari Banks",
-            "Adrian Holmes"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "The fourth season of the drama series reimagining The Fresh Prince of Bel-Air."
-        },
-        {
           "title": "Born Hungry",
           "release_date": "2025-11-28",
-          "type": "movie",
-          "industry": "Hollywood/English",
+          "type": "documentary",
+          "industry": "English",
           "genre": "Documentary",
           "language": "English",
           "actors": [],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "A documentary exploring the global food crisis and hunger issues."
+          "description": "An emotional documentary following chef Sash Simpson's search for his biological family."
         }
       ]
+    },
+    {
+      "id": "aha",
+      "name": "Aha",
+      "releases": []
+    },
+    {
+      "id": "hoichoi",
+      "name": "Hoichoi",
+      "releases": []
+    },
+    {
+      "id": "sunnxt",
+      "name": "SunNXT",
+      "releases": []
+    },
+    {
+      "id": "manoramamax",
+      "name": "ManoramaMAX",
+      "releases": []
+    },
+    {
+      "id": "etv-win",
+      "name": "ETV Win",
+      "releases": [
+        {
+          "title": "Arjun Chakravarthy",
+          "release_date": "2025-11-27",
+          "type": "movie",
+          "industry": "Tollywood/Telugu",
+          "genre": "Biographical Sports",
+          "language": "Telugu",
+          "actors": [
+            "Vijaya Rama Raju",
+            "Sija Rose",
+            "Ajay",
+            "Ajay Ghosh"
+          ],
+          "dubbing": "Telugu",
+          "release_type": "Direct-to-OTT",
+          "description": "A biographical sports film about an unsung champion, directed by Vikrant Rudra."
+        }
+      ]
+    },
+    {
+      "id": "planet-marathi",
+      "name": "Planet Marathi",
+      "releases": []
+    },
+    {
+      "id": "chaupal",
+      "name": "Chaupal",
+      "releases": []
     }
   ]
 }

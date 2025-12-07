@@ -11,93 +11,43 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-07T20:28:31.770Z",
+  "generated_at": "2025-12-07T20:48:04.935Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
         {
-          "title": "Kevin Hart: Acting My Age",
-          "release_date": "2025-11-24",
-          "type": "movie",
-          "genre": "Comedy",
+          "title": "Stranger Things Season 5: Volume 1",
+          "release_date": "2025-11-26",
+          "type": "series",
+          "genre": "Drama, Horror, Science Fiction",
           "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
           "actors": [
-            "Kevin Hart"
+            "Millie Bobby Brown",
+            "Finn Wolfhard",
+            "David Harbour",
+            "Winona Ryder"
           ],
-          "release_type": "Original",
-          "description": "A stand-up comedy special featuring Kevin Hart reflecting on aging and life experiences."
-        },
-        {
-          "title": "Missing: Dead or Alive? (Season 2)",
-          "release_date": "2025-11-24",
-          "type": "series",
-          "genre": "Documentary, Crime",
-          "language": "English",
-          "actors": [],
-          "release_type": "Original",
-          "description": "Follow officers from a South Carolina sheriff's department as they search for individuals who have disappeared under troubling circumstances."
-        },
-        {
-          "title": "Santa Bootcamp",
-          "release_date": "2025-11-24",
-          "type": "movie",
-          "genre": "Family, Holiday",
-          "language": "English",
-          "actors": [],
-          "release_type": "Theatrical-to-Streaming",
-          "description": "A holiday-themed family movie about the adventures of Santa and his helpers."
-        },
-        {
-          "title": "Is It Cake? Holidays (Season 2)",
-          "release_date": "2025-11-25",
-          "type": "series",
-          "genre": "Reality, Competition",
-          "language": "English",
-          "actors": [],
-          "release_type": "Original",
-          "description": "Contestants create hyper-realistic cakes that look like everyday objects in this holiday-themed competition."
+          "description": "The first batch of episodes from the final season of the iconic supernatural series set in 1980s Indiana.",
+          "theatrical_info": ""
         },
         {
           "title": "Jingle Bell Heist",
           "release_date": "2025-11-26",
           "type": "movie",
-          "genre": "Comedy, Crime",
+          "genre": "Christmas, Comedy, Crime",
           "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
           "actors": [
             "Olivia Holt",
             "Connor Swindells"
           ],
-          "release_type": "Original",
-          "description": "Two small-time thieves team up to rob London's most notorious department store on Christmas Eve, risking their relationship and the heist."
-        },
-        {
-          "title": "Stranger Things (Season 5 – Volume 1)",
-          "release_date": "2025-11-26",
-          "type": "series",
-          "genre": "Sci-Fi, Thriller",
-          "language": "English",
-          "actors": [
-            "Millie Bobby Brown",
-            "Finn Wolfhard",
-            "David Harbour"
-          ],
-          "release_type": "Original",
-          "description": "The first volume of the final season of the iconic sci-fi thriller series, continuing the story of the Hawkins gang."
-        },
-        {
-          "title": "Aquaman and the Lost Kingdom",
-          "release_date": "2025-11-27",
-          "type": "movie",
-          "genre": "Action, Adventure, Fantasy",
-          "language": "English",
-          "actors": [
-            "Jason Momoa",
-            "Amber Heard"
-          ],
-          "release_type": "Theatrical-to-Streaming",
-          "description": "The sequel to Aquaman, following the underwater hero's new adventures and challenges."
+          "description": "Two small-time thieves team up to rob London's most notorious department store on Christmas Eve, risking their relationship and the heist.",
+          "theatrical_info": ""
         },
         {
           "title": "Left-Handed Girl",
@@ -105,14 +55,40 @@
           "type": "movie",
           "genre": "Drama",
           "language": "Taiwanese Mandarin",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
           "actors": [
             "Shih-Yuan Ma",
             "Janel Tsai",
             "Nina Ye",
             "Teng-Hui Huang"
           ],
-          "release_type": "Original",
-          "description": "A single mother and her daughters move back to Taipei to open a night market stall, facing challenges and family secrets."
+          "description": "A single mother and her daughters face challenges and secrets after relocating to Taipei to open a night market stall.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Missing: Dead or Alive? Season 2",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Documentary, Crime",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Officers from a South Carolina sheriff's department search for individuals who have disappeared under troubling circumstances.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Is It Cake? Holiday Season 2",
+          "release_date": "2025-11-25",
+          "type": "series",
+          "genre": "Reality, Competition",
+          "language": "English",
+          "content_category": "reality",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Contestants compete to create hyper-realistic cakes that look like everyday objects in this holiday-themed season.",
+          "theatrical_info": ""
         },
         {
           "title": "The Stringer: The Man Who Took The Photo",
@@ -120,31 +96,342 @@
           "type": "documentary",
           "genre": "Documentary",
           "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
           "actors": [],
-          "release_type": "Original",
-          "description": "A documentary exploring the life and work of a notable photojournalist."
+          "description": "A documentary exploring the life and work of a notable photojournalist.",
+          "theatrical_info": ""
         },
         {
-          "title": "Caught Stealing",
-          "release_date": "2025-11-29",
+          "title": "Aquaman and the Lost Kingdom",
+          "release_date": "2025-11-27",
           "type": "movie",
-          "genre": "Thriller",
+          "genre": "Action, Adventure, Fantasy",
           "language": "English",
-          "actors": [],
-          "release_type": "Original",
-          "description": "A suspenseful thriller centered on a high-stakes theft."
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [
+            "Jason Momoa",
+            "Amber Heard",
+            "Patrick Wilson"
+          ],
+          "description": "Aquaman teams up with Orm to prevent Black Manta from using the cursed Black Trident to overheat the world and find the lost seventh kingdom of the seas.",
+          "theatrical_info": "Theatrical release earlier in 2025"
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Mickey7",
+          "release_date": "2025-11-26",
+          "type": "movie",
+          "genre": "Science Fiction, Satire",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [
+            "Bong Joon Ho (director)",
+            "Unknown cast"
+          ],
+          "description": "A satirical sci-fi film by Bong Joon Ho about a unique survival story, following his Oscar-winning Parasite.",
+          "theatrical_info": "Theatrical release earlier in 2025"
         },
         {
-          "title": "The Stone",
-          "release_date": "2025-11-30",
+          "title": "Maxton Hall - The World Between Us",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Romance, Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Ruby (character)",
+            "James (character)"
+          ],
+          "description": "A quick-witted scholarship student witnesses a secret at Maxton Hall, leading to an unexpected romance with a millionaire heir.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Chainsaws Were Singing",
+          "release_date": "2025-11-25",
+          "type": "movie",
+          "genre": "Horror, Musical, Comedy",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT (VOD rental/buy)",
+          "actors": [],
+          "description": "A gory horror musical comedy that won Best Picture (Horror) at Fantastic Fest 2024, now available on Prime Video VOD.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "The Beatles Anthology 2025",
+          "release_date": "2025-11-26",
+          "type": "series",
+          "genre": "Documentary, Music",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Catalog Addition",
+          "actors": [
+            "Paul McCartney",
+            "George Harrison",
+            "Ringo Starr"
+          ],
+          "description": "A fully restored and remastered documentary series on The Beatles, including a new episode with unseen footage.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Chris Hemsworth: A Road Trip to Remember",
+          "release_date": "2025-11-24",
+          "type": "special",
+          "genre": "Documentary",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Chris Hemsworth"
+          ],
+          "description": "A documentary special following Chris Hemsworth on a memorable road trip.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Prep & Landing: The Snowball Protocol",
+          "release_date": "2025-11-28",
+          "type": "movie",
+          "genre": "Animation, Holiday",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "The latest holiday special in the Prep & Landing series, continuing the festive tradition.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Manipulated",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Drama, Thriller",
+          "language": "Korean",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Ji Chang-wook",
+            "Do Kyung-soo",
+            "Lee Kwang-soo"
+          ],
+          "description": "A mild-mannered man wrongfully imprisoned seeks vengeance against the figure who orchestrated his downfall.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": [
+        {
+          "title": "The Ugly Stepsister",
+          "release_date": "2025-11-25",
           "type": "movie",
           "genre": "Drama",
           "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
           "actors": [],
-          "release_type": "Original",
-          "description": "A dramatic story exploring complex human relationships."
+          "description": "A dramatic retelling focusing on the perspective of the classic fairy tale's stepsister.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Disney’s Hulu’s Family Guy’s Hallmark Channel’s Lifetime’s Familiar Holiday Movie",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Adult Animation, Comedy",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Catalog Addition",
+          "actors": [],
+          "description": "A holiday-themed adult animated comedy series featuring familiar characters and themes.",
+          "theatrical_info": ""
         }
       ]
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": [
+        {
+          "title": "Pluribus Episode 5",
+          "release_date": "2025-11-26",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "The fifth episode of the political drama series exploring power and influence.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": [
+        {
+          "title": "The Shuffle",
+          "release_date": "2025-11-24",
+          "type": "documentary",
+          "genre": "Documentary",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "A documentary exploring the novelty rap scene.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "It’s Florida, Man",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Comedy",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "A comedy series set in Florida with quirky characters and storylines.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": [
+        {
+          "title": "Crutch",
+          "release_date": "2025-11-03",
+          "type": "series",
+          "genre": "Drama, Comedy",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Tracy Morgan",
+            "Jermaine Fowler",
+            "Adrianna Mitchell"
+          ],
+          "description": "A Harlem widower's plans are disrupted when his adult children move back home, forcing him to redefine family dynamics.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Manipulated",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Drama, Thriller",
+          "language": "Korean",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Ji Chang-wook",
+            "Do Kyung-soo",
+            "Lee Kwang-soo"
+          ],
+          "description": "A man wrongfully imprisoned seeks vengeance against the figure who orchestrated his downfall.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "releases": [
+        {
+          "title": "All Her Fault",
+          "release_date": "2025-11-06",
+          "type": "series",
+          "genre": "Drama, Mystery",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "A gripping mystery series with strong lead performances.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Bel-Air Season 4",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "The fourth and final season of the dramatic retelling of The Fresh Prince of Bel-Air.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "discovery-plus",
+      "name": "Discovery+",
+      "releases": [
+        {
+          "title": "Halloween Baking Championship Season 4",
+          "release_date": "2025-11-29",
+          "type": "series",
+          "genre": "Reality, Competition",
+          "language": "English",
+          "content_category": "reality",
+          "release_type": "Catalog Addition",
+          "actors": [],
+          "description": "The fourth season of the Halloween-themed baking competition series.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Holiday Baking Championship Seasons 5-8",
+          "release_date": "2025-11-29",
+          "type": "series",
+          "genre": "Reality, Competition",
+          "language": "English",
+          "content_category": "reality",
+          "release_type": "Catalog Addition",
+          "actors": [],
+          "description": "Seasons 5 through 8 of the popular holiday baking competition series.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "releases": []
+    },
+    {
+      "id": "mubi",
+      "name": "Mubi",
+      "releases": []
+    },
+    {
+      "id": "criterion-channel",
+      "name": "Criterion Channel",
+      "releases": []
+    },
+    {
+      "id": "tubi",
+      "name": "Tubi",
+      "releases": []
+    },
+    {
+      "id": "pluto-tv",
+      "name": "Pluto TV",
+      "releases": []
     }
   ]
 }
