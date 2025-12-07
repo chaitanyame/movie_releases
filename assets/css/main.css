@@ -1356,3 +1356,101 @@ body {
 :root[data-theme="light"] .platform-section[aria-label*="Starz"] .platform-title {
     color: #c5a000;
 }
+
+/* ==================== LIGHT THEME COLOR OVERRIDES ==================== */
+/* Distinct colors for light theme - different from dark theme */
+
+/* Light theme header title - warm sunset gradient */
+:root[data-theme="light"] .site-header h1 {
+    background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Release titles - warm burnt orange (distinct from dark theme) */
+:root[data-theme="light"] .release-title {
+    color: #c2410c !important;
+    text-shadow: none !important;
+}
+
+/* Language badge - teal on light */
+:root[data-theme="light"] .release-language {
+    background: linear-gradient(135deg, rgba(20, 184, 166, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%) !important;
+    color: #0d9488 !important;
+    border: 1px solid rgba(20, 184, 166, 0.3) !important;
+}
+
+/* Release date - emerald green */
+:root[data-theme="light"] .release-date {
+    background: rgba(16, 185, 129, 0.12) !important;
+    color: #047857 !important;
+    border: 1px solid rgba(16, 185, 129, 0.25) !important;
+}
+
+/* Release type - indigo */
+:root[data-theme="light"] .release-type {
+    background: rgba(99, 102, 241, 0.1) !important;
+    color: #4338ca !important;
+    border: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Genre badge - rose/pink */
+:root[data-theme="light"] .release-genre {
+    background: rgba(244, 63, 94, 0.1) !important;
+    color: #be123c !important;
+    border: 1px solid rgba(244, 63, 94, 0.2) !important;
+}
+
+/* Industry badge - amber */
+:root[data-theme="light"] .release-industry {
+    background: rgba(245, 158, 11, 0.12) !important;
+    color: #b45309 !important;
+    border: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+
+/* Category badge - sky blue */
+:root[data-theme="light"] .release-category {
+    background: rgba(14, 165, 233, 0.1) !important;
+    color: #0369a1 !important;
+    border: 1px solid rgba(14, 165, 233, 0.2) !important;
+}
+
+/* OTT type badge - purple */
+:root[data-theme="light"] .release-ott-type {
+    background: rgba(168, 85, 247, 0.1) !important;
+    color: #7c3aed !important;
+    border: 1px solid rgba(168, 85, 247, 0.2) !important;
+}
+
+/* Actor tags */
+:root[data-theme="light"] .actor-tag {
+    background: #f1f5f9 !important;
+    color: #475569 !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* Platform title - deep indigo */
+:root[data-theme="light"] .platform-title {
+    color: #312e81 !important;
+    text-shadow: none !important;
+}
+
+/* Description text */
+:root[data-theme="light"] .release-description {
+    color: #64748b !important;
+}
+
+/* Theatrical info */
+:root[data-theme="light"] .release-theatrical {
+    background: rgba(251, 146, 60, 0.1) !important;
+    color: #c2410c !important;
+    border-left: 3px solid #f97316 !important;
+}
+
+/* Dubbing info */
+:root[data-theme="light"] .release-dubbing {
+    background: rgba(34, 211, 238, 0.1) !important;
+    color: #0891b2 !important;
+    border-left: 3px solid #06b6d4 !important;
+}
