@@ -127,6 +127,44 @@ This project uses the Perplexity API with the `sonar` model for fetching release
 4. Push to the branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
+## Development Methodology
+
+This project follows **Test-Driven Development (TDD)** principles with the [Agent Harness Framework](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents).
+
+### TDD Compliance Summary
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| ✅ TDD Compliant | 15 | Test written first → failed → implementation → passed |
+| 📦 Infrastructure | 15 | Setup/config features (no tests needed) |
+| ⚠️ Partial TDD | 5 | Tests exist but written after implementation |
+
+### TDD Enforcement Gates
+
+Every feature with tests must pass through:
+
+1. **Gate 1 (RED)**: Write test, run it, verify it **fails**
+2. **Gate 2 (GREEN)**: Implement code, run test, verify it **passes**
+3. **Gate 3 (REFACTOR)**: Clean up code while keeping tests green
+
+### Features with Full TDD
+
+- HTML Structure, CSS Styling, JavaScript Rendering
+- Date/Week Utilities, API Client, Prompt Template
+- JSON Parser, Caching, Error Handling, Week Transition
+- Archive Generator, Archive Navigation, Archive Loading
+- URL Routing, Back to Current Button
+
+### Features with Partial TDD
+
+These features have passing tests but were implemented before writing tests (during batch implementation session):
+
+- F23: Optimize Assets
+- F26: Lighthouse Audits
+- F27: Accessibility Audit
+- F32: Cross-Browser Testing
+- F33: Mobile Device Testing
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
