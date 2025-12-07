@@ -149,14 +149,28 @@ Return ONLY valid JSON with this structure:
   ]
 }
 
-Platform ID mapping: netflix, prime-video, disney-plus-hotstar, sonyliv, zee5, jiocinema, aha, hoichoi, sunnxt, manoramamax, etv-win, planet-marathi, chaupal`;
+Platform ID mapping: netflix, prime-video, disney-plus-hotstar, sonyliv, zee5, jiocinema, aha, hoichoi, sunnxt, manoramamax, etv-win, planet-marathi, chaupal
+
+IMPORTANT: Include ALL platforms listed above, even if they have no releases (use empty releases array).`;
     }
     
-    return `You are a senior entertainment data analyst for the US streaming market.
+    return `You are a senior entertainment data analyst and OTT tracking specialist for the **United States market**. You have deep knowledge of the US entertainment industry and comprehensive coverage of all major and emerging streaming services.
 
-Task: Generate a comprehensive report of verified OTT releases for the period: **${weekRange}**.
+## Task:
+Generate a comprehensive report of verified OTT releases across all US streaming platforms for the period: **${weekRange}**.
 
-Platforms to cover: ${country.platforms.join(', ')}
+## Platforms (MUST include ALL):
+- **Major/Tier 1:** ${country.platforms.slice(0, 7).join(', ')}
+- **Tier 2/Emerging:** ${country.platforms.slice(7).join(', ')}
+
+## Content Categories to cover:
+- Hollywood mainstream releases
+- Independent and arthouse films
+- International content available in US
+- Documentaries and docuseries
+- Reality, competition, and unscripted content
+- Animation (theatrical and television)
+- Standup comedy and live events
 
 For EACH release, provide:
 - Title
@@ -164,9 +178,11 @@ For EACH release, provide:
 - Type (movie or series)
 - Genre
 - Language
-- Cast (top actors)
-- Release type (Original, Exclusive, Theatrical-to-Streaming)
-- Brief description
+- Content category (mainstream, indie, international, documentary, animation, comedy, reality)
+- Release type (Direct-to-OTT, Post-Theatrical, or Catalog Addition)
+- Cast (top 3-4 actors)
+- Description (1-2 sentences)
+- Theatrical info (if applicable)
 
 Return ONLY valid JSON:
 {
@@ -181,16 +197,23 @@ Return ONLY valid JSON:
           "type": "movie|series",
           "genre": "Genre",
           "language": "English",
+          "content_category": "mainstream|indie|international|documentary|animation|comedy|reality",
+          "release_type": "Direct-to-OTT|Post-Theatrical|Catalog Addition",
           "actors": ["Actor 1", "Actor 2"],
-          "release_type": "Original",
-          "description": "Description."
+          "description": "Description.",
+          "theatrical_info": ""
         }
       ]
     }
   ]
 }
 
-Platform IDs: netflix, prime-video, disney-plus, hulu, apple-tv-plus, max, paramount-plus, peacock, discovery-plus, starz, mubi, criterion-channel, tubi, pluto-tv`;
+Platform IDs (use exactly these): netflix, prime-video, disney-plus, hulu, apple-tv-plus, max, paramount-plus, peacock, discovery-plus, starz, mubi, criterion-channel, tubi, pluto-tv
+
+CRITICAL: 
+- Include ALL 14 platforms listed above, even if they have no releases (use empty releases array)
+- Search for ALL streaming services, not just Netflix
+- Include ALL major releases from Prime Video, Disney+, Max, Hulu, Apple TV+, Paramount+, etc.`;
 }
 
 /**
@@ -198,6 +221,10 @@ Platform IDs: netflix, prime-video, disney-plus, hulu, apple-tv-plus, max, param
  */
 async function callPerplexityAPI(prompt, country) {
     const apiKey = getApiKey();
+    
+    const systemMessage = country.id === 'india'
+        ? 'You are a senior entertainment data analyst and OTT tracking specialist with expertise in Indian regional cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have deep knowledge of all major and regional streaming platforms in India. Your priority is accuracy, comprehensive multi-language coverage, and including ALL platforms even if they have no releases. Always respond with valid JSON only, no markdown formatting or code blocks.'
+        : 'You are a senior entertainment data analyst and OTT tracking specialist for the United States market. You have deep knowledge of Hollywood, streaming platforms, and theatrical release windows. Your priority is accuracy, comprehensive coverage of ALL platforms (major and emerging), and including ALL platforms even if they have no releases. Always respond with valid JSON only, no markdown formatting or code blocks.';
     
     const response = await fetch(PERPLEXITY_API_URL, {
         method: 'POST',
@@ -210,15 +237,18 @@ async function callPerplexityAPI(prompt, country) {
             messages: [
                 {
                     role: 'system',
-                    content: `You are an OTT release tracking specialist for ${country.name}. Return only valid JSON without any markdown formatting or explanations.`
+                    content: systemMessage
                 },
                 {
                     role: 'user',
                     content: prompt
                 }
             ],
-            temperature: 0.2,
-            max_tokens: 4000
+            temperature: 0.1,
+            max_tokens: 8000,
+            web_search_options: {
+                search_context_size: 'high'
+            }
         })
     });
     
