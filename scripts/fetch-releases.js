@@ -42,6 +42,7 @@ const COUNTRIES = {
         name: 'United States',
         flag: '🇺🇸',
         platforms: [
+            // Major/Tier 1
             'Netflix',
             'Prime Video',
             'Disney+',
@@ -49,7 +50,14 @@ const COUNTRIES = {
             'Apple TV+',
             'Max',
             'Paramount+',
-            'Peacock'
+            // Tier 2/Emerging
+            'Peacock',
+            'Discovery+',
+            'Starz',
+            'Mubi',
+            'Criterion Channel',
+            'Tubi',
+            'Pluto TV'
         ]
     },
     india: {
@@ -208,24 +216,58 @@ Platform ID mapping (use lowercase with hyphens):
 netflix, prime-video, disney-plus-hotstar, sonyliv, zee5, jiocinema, aha, hoichoi, sunnxt, manoramamax, etv-win, planet-marathi, chaupal`;
     }
     
-    // Standard prompt for US
-    return `Find all new movie and TV series releases for ${weekRange} on the following streaming platforms in ${country.name}: ${country.platforms.join(', ')}.
+    // Comprehensive prompt for US market
+    return `You are a senior entertainment data analyst and OTT tracking specialist for the **United States market**. You have deep knowledge of the US entertainment industry (Hollywood, streaming platforms, theatrical releases) and comprehensive coverage of all major and emerging streaming services. Your priority is accuracy, comprehensive coverage, and distinguishing between direct-to-OTT originals, theatrical-to-streaming transitions, and catalog additions.
 
-For each release, provide:
+## Task:
+Generate a comprehensive report of verified OTT releases across all US streaming platforms for the period: **${weekRange}**.
+
+## Scope & Constraints:
+
+**Platforms:** Cover all major and emerging platforms:
+- **Major/Tier 1:** ${country.platforms.slice(0, 7).join(', ')}
+- **Tier 2/Emerging:** ${country.platforms.slice(7).join(', ')}
+
+**Content Categories:**
+- Hollywood mainstream releases (wide theatrical appeal)
+- Independent and arthouse films
+- International content with English subtitles/dubbing available in US market
+- Documentaries and docuseries
+- Reality, competition, and unscripted content
+- Animation (theatrical and television)
+- Standup comedy and live events
+
+**Verification:** Do not list "rumored" dates as confirmed. If a date is tentative, mark it as "TBA" or "Rumored." Only include releases with official platform confirmation.
+
+**Release Type Details:** For theatrical-to-streaming releases, explicitly state the original theatrical release date and windowing information.
+
+**Audio/Accessibility:** For international or specialized content, note available audio tracks and subtitle options.
+
+## Output Requirements:
+
+For EACH release, provide:
 - Title
-- Release date
+- Release date (format: YYYY-MM-DD, or "TBA" if unconfirmed)
 - Type (movie or series)
 - Genre
-- Language (primary language of the content)
+- Language (primary language)
+- Content category (mainstream, indie, international, documentary, animation, comedy, reality)
+- Release type (Direct-to-OTT, Post-Theatrical, or Catalog Addition)
 - Actors (top 3-4 main cast members)
-- Brief description (1-2 sentences)
+- Description (1-2 sentences including notable info like award nominations, franchise info)
+- Theatrical info (if applicable: original release date, window duration)
 
-Return the data as valid JSON only, with no additional text. Use this exact structure:
+## Process:
+1. First, scan for "Direct-to-OTT Originals" (content created specifically for streaming)
+2. Second, scan for "Post-Theatrical Digital Premieres" (theatrical releases transitioning to streaming)
+3. Third, scan for notable "Catalog/Archive Additions" (significant library expansions)
+
+Return ONLY valid JSON with this exact structure:
 {
   "platforms": [
     {
-      "id": "netflix",
-      "name": "Netflix",
+      "id": "platform-id",
+      "name": "Platform Name",
       "releases": [
         {
           "title": "Title Name",
@@ -233,18 +275,25 @@ Return the data as valid JSON only, with no additional text. Use this exact stru
           "type": "movie|series",
           "genre": "Genre",
           "language": "English",
+          "content_category": "mainstream|indie|international|documentary|animation|comedy|reality",
+          "release_type": "Direct-to-OTT|Post-Theatrical|Catalog Addition",
           "actors": ["Actor 1", "Actor 2", "Actor 3"],
-          "description": "Brief description of the content."
+          "description": "Brief description including notable info.",
+          "theatrical_info": "Optional: Original release date and window info"
         }
       ]
     }
   ]
 }
 
-Important: 
-- Use lowercase with hyphens for platform IDs (e.g., "netflix", "prime-video", "disney-plus", "hulu", "apple-tv-plus", "max", "paramount-plus", "peacock")
-- Include ALL new releases for the week, not just the most popular ones
-- If a platform has no new releases, include it with an empty releases array`;
+Platform ID mapping (use lowercase with hyphens):
+netflix, prime-video, disney-plus, hulu, apple-tv-plus, max, paramount-plus, peacock, discovery-plus, starz, mubi, criterion-channel, tubi, pluto-tv
+
+Important:
+- Include ALL confirmed new releases, not just blockbusters
+- If a platform has no new releases this period, include it with an empty releases array
+- For multi-platform simultaneous releases, include in each platform's list
+- Flag exclusive/platform-only content in the description`;
 }
 
 /**
@@ -256,10 +305,10 @@ Important:
 async function callPerplexityAPI(prompt, country) {
     const apiKey = getApiKey();
     
-    // Enhanced system message for India
+    // Enhanced system message for both countries
     const systemMessage = country.id === 'india'
         ? 'You are a senior entertainment data analyst and OTT tracking specialist with expertise in Indian regional cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have deep knowledge of all major and regional streaming platforms in India. Your priority is accuracy, comprehensive multi-language coverage, and distinguishing between original and dubbed releases. Always respond with valid JSON only, no markdown formatting or code blocks.'
-        : 'You are a helpful assistant that provides accurate, up-to-date information about streaming platform releases. Always respond with valid JSON only, no markdown formatting or code blocks. Be comprehensive and include all new releases for the specified week.';
+        : 'You are a senior entertainment data analyst and OTT tracking specialist for the United States market. You have deep knowledge of Hollywood, streaming platforms, and theatrical release windows. Your priority is accuracy, comprehensive coverage of all platforms (major and emerging), and distinguishing between direct-to-OTT originals, post-theatrical releases, and catalog additions. Always respond with valid JSON only, no markdown formatting or code blocks.';
     
     const response = await fetch(PERPLEXITY_API_URL, {
         method: 'POST',
