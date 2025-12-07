@@ -4,14 +4,26 @@ This file bridges context between agent sessions. Each agent reads this at the s
 
 ## Current Status
 
-**Project**: Agent Harness Framework (Template Repository)
-**Status**: Ready for use as template
-**Features**: Template - not applicable
-**Last Updated**: 2025-12-06
+**Project**: OTT Weekly Releases - Static SPA
+**Branch**: `001-ott-weekly-releases`
+**Status**: Planning complete, ready for implementation
+**Features**: 0/35 passing
+**Last Updated**: 2025-01-13
 
 ## What's Been Done
 
-This is a **template repository** for building long-lived agents. It includes:
+### Current Project: OTT Weekly Releases
+
+This session transformed the template into a real project:
+
+- ✅ Constitution created with OTT News principles
+- ✅ Feature branch `001-ott-weekly-releases` created
+- ✅ Specification at `specs/001-ott-weekly-releases/spec.md`
+- ✅ Implementation plan at `specs/001-ott-weekly-releases/plan.md`
+- ✅ Task list at `specs/001-ott-weekly-releases/tasks.md` (35 tasks)
+- ✅ Feature list at `memory/feature_list.json` (35 features)
+
+### Template Framework (Inherited)
 
 - ✅ Directory structure for agents, prompts, and memory
 - ✅ Spec Kit prompts (`/speckit.*`) for spec-driven development
@@ -25,6 +37,74 @@ This is a **template repository** for building long-lived agents. It includes:
 - ✅ **Issue tracking system** - adhoc bugs, hotfixes, and requests
 
 ## Session History
+
+### Session 7 - 2025-01-13
+
+**Feature**: OTT Weekly Releases - Planning Phase
+**Branch**: `001-ott-weekly-releases`
+**Status**: ✅ Complete
+
+#### Accomplished
+
+1. **Created Constitution** (`memory/constitution.md`):
+   - Simplicity First: Vanilla HTML/CSS/JS only, no frameworks
+   - Performance: <2s load, <500KB total bundle
+   - Cost Optimization: Single Perplexity API call/day, file-based caching
+   - TDD Mandatory for all features
+   - Content Consistency: Weekly release cycles, archiving strategy
+
+2. **Created Specification** (`specs/001-ott-weekly-releases/spec.md`):
+   - Static SPA displaying streaming platform releases
+   - 570 lines of detailed requirements
+   - JSON data model and schema
+   - Perplexity API integration (sonar model)
+   - Edge cases and error handling
+
+3. **Created Implementation Plan** (`specs/001-ott-weekly-releases/plan.md`):
+   - 7 phases with estimated sessions
+   - Phase 1: Project Structure & Base HTML
+   - Phase 2: Core JavaScript Engine
+   - Phase 3: UI Components & Styling
+   - Phase 4: Data Management
+   - Phase 5: GitHub Actions (Perplexity API)
+   - Phase 6: Deployment (GitHub Pages)
+   - Phase 7: Polish & Documentation
+
+4. **Created Task List** (`specs/001-ott-weekly-releases/tasks.md`):
+   - 35 detailed tasks (T001-T035)
+   - Dependencies mapped
+   - Acceptance criteria defined
+   - Test files specified per task
+
+5. **Generated Feature List** (`memory/feature_list.json`):
+   - Converted all 35 tasks to trackable features
+   - All features start with `passes: false`
+   - Ready for @Coder implementation
+
+#### Files Changed
+- `memory/constitution.md` (updated with OTT News principles)
+- `specs/001-ott-weekly-releases/spec.md` (new)
+- `specs/001-ott-weekly-releases/plan.md` (new)
+- `specs/001-ott-weekly-releases/tasks.md` (new)
+- `memory/feature_list.json` (updated with 35 features)
+- `memory/claude-progress.md` (updated)
+
+#### Technical Stack
+- **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
+- **API**: Perplexity AI (sonar model, web_search_options)
+- **Automation**: GitHub Actions (daily cron 9 AM UTC)
+- **Hosting**: GitHub Pages
+- **Testing**: Playwright E2E
+- **Data**: Static JSON files
+
+#### What's Next
+1. Start implementation with `@Coder`
+2. Begin Phase 1: Project Structure Setup
+3. First task: T001 - Create base HTML structure
+4. First test: `tests/features/html-structure.spec.ts`
+5. Follow TDD: Write failing test FIRST
+
+---
 
 ### Session 6 - 2025-12-06
 
