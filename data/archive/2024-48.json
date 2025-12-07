@@ -1,0 +1,84 @@
+{
+  "week_number": 48,
+  "year": 2024,
+  "week_id": "2024-48",
+  "week_start": "2024-11-25",
+  "week_end": "2024-12-01",
+  "week_range": "November 25 - December 1, 2024",
+  "week_title": "Week 48: November 25 - December 1, 2024",
+  "generated_at": "2024-11-25T09:00:00Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Squid Game Season 2",
+          "release_date": "2024-12-01",
+          "type": "series",
+          "genre": "Thriller",
+          "description": "The highly anticipated return of the global phenomenon."
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Citadel: Honey Bunny",
+          "release_date": "2024-11-29",
+          "type": "series",
+          "genre": "Action",
+          "description": "Indian spin-off of the Citadel spy universe."
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "The Santa Clauses Season 2",
+          "release_date": "2024-11-27",
+          "type": "series",
+          "genre": "Comedy",
+          "description": "Tim Allen returns as Santa Claus."
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": [
+        {
+          "title": "Blitz",
+          "release_date": "2024-11-29",
+          "type": "movie",
+          "genre": "Drama",
+          "description": "A World War II drama by Steve McQueen."
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": []
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": []
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "releases": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "ott-weekly-releases",
+  "version": "1.0.0",
+  "description": "A lightweight static web application that displays weekly OTT streaming platform releases",
+  "author": "OTT News Team",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -c-1",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:headed": "npx playwright test --headed",
+    "test:report": "npx playwright show-report",
+    "fetch-releases": "node scripts/fetch-releases.js",
+    "validate-json": "node -e \"require('./data/current-week.json'); console.log('JSON is valid');\""
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "ott",
+    "streaming",
+    "netflix",
+    "disney",
+    "releases",
+    "static-site"
+  ]
+}

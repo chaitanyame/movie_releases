@@ -1,0 +1,123 @@
+{
+  "week_number": 49,
+  "year": 2024,
+  "week_id": "2024-49",
+  "week_start": "2024-12-02",
+  "week_end": "2024-12-08",
+  "week_range": "December 2-8, 2024",
+  "week_title": "Week 49: December 2-8, 2024",
+  "generated_at": "2024-12-02T09:00:00Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Black Doves",
+          "release_date": "2024-12-05",
+          "type": "series",
+          "genre": "Thriller",
+          "description": "A spy thriller starring Keira Knightley as a professional spy who leads a double life."
+        },
+        {
+          "title": "That Christmas",
+          "release_date": "2024-12-04",
+          "type": "movie",
+          "genre": "Animation",
+          "description": "An animated holiday film from the creators of Love Actually."
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Secret Level",
+          "release_date": "2024-12-03",
+          "type": "series",
+          "genre": "Animation",
+          "description": "Anthology series featuring stories set in beloved video game worlds."
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "Dream Productions",
+          "release_date": "2024-12-06",
+          "type": "series",
+          "genre": "Animation",
+          "description": "A spin-off series set in the world of Inside Out."
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": [
+        {
+          "title": "Laid",
+          "release_date": "2024-12-05",
+          "type": "series",
+          "genre": "Comedy",
+          "description": "A dark comedy about a woman whose ex-partners mysteriously die."
+        }
+      ]
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": [
+        {
+          "title": "Fly Me to the Moon",
+          "release_date": "2024-12-06",
+          "type": "movie",
+          "genre": "Romance",
+          "description": "A romantic comedy set during the 1969 moon landing."
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": [
+        {
+          "title": "Creature Commandos",
+          "release_date": "2024-12-05",
+          "type": "series",
+          "genre": "Animation",
+          "description": "An adult animated series in the DC Universe."
+        }
+      ]
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": [
+        {
+          "title": "Landman",
+          "release_date": "2024-12-08",
+          "type": "series",
+          "genre": "Drama",
+          "description": "A drama series about the oil industry in Texas."
+        }
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "releases": [
+        {
+          "title": "The Day of the Jackal",
+          "release_date": "2024-12-06",
+          "type": "series",
+          "genre": "Thriller",
+          "description": "A modern reimagining of the classic assassin thriller."
+        }
+      ]
+    }
+  ]
+}

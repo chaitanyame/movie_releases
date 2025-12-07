@@ -1,0 +1,131 @@
+/* OTT Weekly Releases - Main Stylesheet */
+
+/* CSS Custom Properties */
+:root {
+    /* Colors */
+    --color-primary: #1a1a2e;
+    --color-secondary: #16213e;
+    --color-accent: #e94560;
+    --color-text: #eaeaea;
+    --color-text-muted: #a0a0a0;
+    --color-background: #0f0f23;
+    --color-surface: #1a1a2e;
+    --color-border: #2a2a4e;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 2rem;
+    
+    /* Layout */
+    --max-width: 1200px;
+    --border-radius: 8px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+    min-height: 100vh;
+}
+
+/* Layout */
+.site-header {
+    background-color: var(--color-primary);
+    padding: var(--spacing-lg);
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.main-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+/* Loading State */
+.loading {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    color: var(--color-text-muted);
+}
+
+/* Error State */
+.error {
+    background-color: rgba(233, 69, 96, 0.1);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    color: var(--color-accent);
+    text-align: center;
+}
+
+/* Archive Sidebar */
+.archive-sidebar {
+    background-color: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--color-primary);
+    padding: var(--spacing-lg);
+    text-align: center;
+    color: var(--color-text-muted);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Responsive Design - Tablet */
+@media (min-width: 768px) {
+    .main-content {
+        padding: var(--spacing-xl);
+    }
+}
+
+/* Responsive Design - Desktop */
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    .site-header {
+        grid-column: 1 / -1;
+    }
+    
+    .archive-sidebar {
+        border-top: none;
+        border-left: 1px solid var(--color-border);
+    }
+    
+    .site-footer {
+        grid-column: 1 / -1;
+    }
+}
