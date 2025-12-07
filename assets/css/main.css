@@ -113,7 +113,7 @@ body {
 /* Header */
 .site-header {
     background: var(--gradient-surface);
-    padding: var(--spacing-xl) var(--spacing-lg);
+    padding: var(--spacing-md) var(--spacing-lg);
     text-align: center;
     border-bottom: 1px solid var(--color-border);
     position: sticky;
@@ -125,14 +125,14 @@ body {
 
 .site-header h1 {
     font-family: var(--font-family-display);
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
     font-weight: 700;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     letter-spacing: -0.02em;
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 0;
 }
 
 .site-header h1::after {
@@ -144,20 +144,20 @@ body {
 .country-toggle {
     display: flex;
     justify-content: center;
-    gap: var(--spacing-sm);
-    margin-top: var(--spacing-md);
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-sm);
 }
 
 .country-btn {
     display: flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
     background: var(--color-secondary);
     border: 2px solid var(--color-border);
     border-radius: 50px;
     color: var(--color-text-secondary);
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-normal);
@@ -221,7 +221,7 @@ body {
 .main-content {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
     min-height: 60vh;
 }
 
@@ -263,20 +263,21 @@ body {
 /* Post Header */
 .post-header {
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
-    padding-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
     border-bottom: 1px solid var(--color-border);
 }
 
 .post-country-badge {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-md);
-    padding: var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-md);
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 50px;
+    font-size: var(--font-size-sm);
 }
 
 .country-flag-large {
@@ -291,10 +292,10 @@ body {
 
 .post-title {
     font-family: var(--font-family-display);
-    font-size: var(--font-size-4xl);
+    font-size: var(--font-size-2xl);
     font-weight: 700;
     color: var(--color-text);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     letter-spacing: -0.02em;
 }
 
@@ -302,16 +303,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
     color: var(--color-text-secondary);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
 }
 
 .post-meta time {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
     background: var(--color-surface);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-border);
@@ -324,8 +325,8 @@ body {
 .total-releases {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-sm);
-    padding: var(--spacing-sm) var(--spacing-lg);
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-md);
     background: rgba(63, 185, 80, 0.15);
     color: var(--color-success);
     border-radius: var(--border-radius);
@@ -339,7 +340,7 @@ body {
 /* Post Content */
 .post-content {
     display: grid;
-    gap: var(--spacing-xl);
+    gap: var(--spacing-md);
 }
 
 /* Platform Section */
@@ -347,7 +348,7 @@ body {
     background: var(--gradient-card);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-lg);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-md);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -379,18 +380,18 @@ body {
 .platform-title {
     display: flex;
     align-items: center;
-    gap: var(--spacing-md);
-    font-size: var(--font-size-xl);
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-base);
     font-weight: 600;
     color: var(--color-text);
-    margin-bottom: var(--spacing-lg);
-    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-xs);
     border-bottom: 1px solid var(--color-border-subtle);
 }
 
 .platform-logo {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     border-radius: var(--border-radius-sm);
     object-fit: cover;
     background: var(--color-surface);
@@ -398,20 +399,20 @@ body {
 
 .platform-count {
     margin-left: auto;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 2px var(--spacing-xs);
     background: var(--color-accent);
     color: var(--color-primary);
-    font-size: var(--font-size-xs);
+    font-size: 0.7rem;
     font-weight: 700;
     border-radius: 50px;
-    min-width: 24px;
+    min-width: 20px;
     text-align: center;
 }
 
 /* Platform Releases */
 .platform-releases {
     display: grid;
-    gap: var(--spacing-md);
+    gap: var(--spacing-sm);
 }
 
 /* Release Item */
@@ -419,7 +420,7 @@ body {
     background: var(--color-secondary);
     border: 1px solid var(--color-border-subtle);
     border-radius: var(--border-radius);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-sm);
     transition: all var(--transition-normal);
     position: relative;
 }
@@ -451,12 +452,12 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-sm);
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
 }
 
 .release-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-sm);
     font-weight: 600;
     color: var(--color-text);
     flex: 1;
@@ -465,10 +466,10 @@ body {
 .release-language {
     display: inline-flex;
     align-items: center;
-    padding: var(--spacing-xs) var(--spacing-sm);
+    padding: 2px var(--spacing-xs);
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
     color: #a78bfa;
-    font-size: var(--font-size-xs);
+    font-size: 0.65rem;
     font-weight: 600;
     border-radius: 50px;
     text-transform: uppercase;
@@ -881,11 +882,11 @@ body {
 /* Responsive Design - Tablet */
 @media (min-width: 768px) {
     .site-header h1 {
-        font-size: var(--font-size-4xl);
+        font-size: var(--font-size-3xl);
     }
     
     .main-content {
-        padding: var(--spacing-3xl) var(--spacing-xl);
+        padding: var(--spacing-xl) var(--spacing-lg);
     }
     
     .post-content {
@@ -893,7 +894,11 @@ body {
     }
     
     .platform-section {
-        padding: var(--spacing-2xl);
+        padding: var(--spacing-lg);
+    }
+    
+    .post-title {
+        font-size: var(--font-size-3xl);
     }
 }
 
