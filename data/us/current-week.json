@@ -1,0 +1,96 @@
+{
+  "week_number": 49,
+  "year": 2025,
+  "week_id": "2025-49",
+  "week_start": "2025-12-01",
+  "week_end": "2025-12-07",
+  "week_range": "December 1-7, 2025",
+  "week_title": "Week 49: December 1-7, 2025",
+  "country": {
+    "id": "us",
+    "name": "United States",
+    "flag": "🇺🇸"
+  },
+  "generated_at": "2025-12-07T10:00:00.000Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Black Doves",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Thriller",
+          "language": "English",
+          "actors": ["Keira Knightley", "Ben Whishaw", "Sarah Lancashire"],
+          "description": "A professional spy posing as a politician's wife must navigate dangerous waters when her secret lover is murdered."
+        },
+        {
+          "title": "Jentry Chau vs the Underworld",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "actors": ["Ali Wong", "Lori Tan Chinn", "Bowen Yang"],
+          "description": "A Chinese-American teen discovers she's destined to fight demons from the underworld."
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Secret Level",
+          "release_date": "2025-12-06",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "actors": ["Keanu Reeves", "Arnold Schwarzenegger", "Kevin Hart"],
+          "description": "An anthology series bringing beloved video games to life with stunning animation."
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "Dream Productions",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "actors": ["Amy Poehler", "Maya Rudolph", "Richard Ayoade"],
+          "description": "A behind-the-scenes look at how Riley's dreams are made in the world of Inside Out."
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": []
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": []
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": []
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "releases": []
+    }
+  ]
+}

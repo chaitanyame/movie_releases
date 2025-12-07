@@ -1,9 +1,15 @@
 /**
  * OTT Weekly Releases - Main Application
- * Vanilla JavaScript ES6+ module
+ * Vanilla JavaScript ES6+ module with multi-country support
  */
 
 'use strict';
+
+// Country configurations
+const COUNTRIES = {
+    us: { id: 'us', name: 'United States', flag: '🇺🇸' },
+    india: { id: 'india', name: 'India', flag: '🇮🇳' }
+};
 
 // DOM Elements
 const loadingIndicator = document.getElementById('loading-indicator');
@@ -13,18 +19,70 @@ const archiveNav = document.getElementById('archive-nav');
 const archiveNavList = archiveNav ? archiveNav.querySelector('nav') : null;
 const backToCurrentButton = document.getElementById('back-to-current');
 const mainContent = document.querySelector('.main-content');
+const countryButtons = document.querySelectorAll('.country-btn');
 
 // State
+let currentCountry = 'us';
 let currentArchiveIndex = null;
 let activeWeekId = null;
 let currentWeekData = null;
+
+/**
+ * Detect user's country based on timezone
+ * @returns {string} Country ID ('us' or 'india')
+ */
+function detectCountry() {
+    try {
+        const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+        // Indian timezones
+        if (timezone.includes('Kolkata') || timezone.includes('Asia/Calcutta')) {
+            return 'india';
+        }
+        // Default to US
+        return 'us';
+    } catch (e) {
+        return 'us';
+    }
+}
+
+/**
+ * Get saved country preference or detect
+ * @returns {string} Country ID
+ */
+function getCountryPreference() {
+    const saved = localStorage.getItem('ott-country');
+    if (saved && COUNTRIES[saved]) {
+        return saved;
+    }
+    return detectCountry();
+}
+
+/**
+ * Save country preference
+ * @param {string} countryId - Country ID to save
+ */
+function saveCountryPreference(countryId) {
+    localStorage.setItem('ott-country', countryId);
+}
+
+/**
+ * Update country button states
+ * @param {string} activeCountry - Active country ID
+ */
+function updateCountryButtons(activeCountry) {
+    countryButtons.forEach(btn => {
+        const isActive = btn.dataset.country === activeCountry;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive.toString());
+    });
+}
 
 /**
  * Show loading indicator
  */
 function showLoading() {
     if (loadingIndicator) {
-        loadingIndicator.style.display = 'block';
+        loadingIndicator.style.display = 'flex';
     }
     if (mainContent) {
         mainContent.setAttribute('aria-busy', 'true');
@@ -77,14 +135,15 @@ function hideBackToCurrent() {
 
 /**
  * Load current week's releases from JSON file
+ * @param {string} countryId - Country ID to load
  * @returns {Promise<Object>} - The week's release data
  */
-async function loadCurrentWeek() {
+async function loadCurrentWeek(countryId) {
     try {
         showLoading();
         hideError();
         
-        const response = await fetch('data/current-week.json');
+        const response = await fetch(`data/${countryId}/current-week.json`);
         
         if (!response.ok) {
             throw new Error(`Failed to load data: ${response.status}`);
@@ -103,6 +162,21 @@ async function loadCurrentWeek() {
 }
 
 /**
+ * Render actors as tags
+ * @param {Array} actors - Array of actor names
+ * @returns {string} - HTML string
+ */
+function renderActors(actors) {
+    if (!actors || actors.length === 0) return '';
+    
+    const actorTags = actors.slice(0, 4).map(actor => 
+        `<span class="actor-tag">${actor}</span>`
+    ).join('');
+    
+    return `<div class="release-actors">${actorTags}</div>`;
+}
+
+/**
  * Render a single release item
  * @param {Object} release - Release data object
  * @returns {string} - HTML string
@@ -110,12 +184,16 @@ async function loadCurrentWeek() {
 function renderRelease(release) {
     return `
         <div class="release-item">
-            <h4 class="release-title">${release.title}</h4>
+            <div class="release-header">
+                <h4 class="release-title">${release.title}</h4>
+                ${release.language ? `<span class="release-language">${release.language}</span>` : ''}
+            </div>
             <div class="release-meta">
                 <span class="release-date">${release.release_date}</span>
                 <span class="release-type">${release.type}</span>
                 ${release.genre ? `<span class="release-genre">${release.genre}</span>` : ''}
             </div>
+            ${renderActors(release.actors)}
             ${release.description ? `<p class="release-description">${release.description}</p>` : ''}
         </div>
     `;
@@ -130,6 +208,7 @@ function renderPlatform(platform) {
     const releasesHtml = platform.releases.map(renderRelease).join('');
     const logoPath = `assets/images/logos/${platform.id}.webp`;
     const logoFallback = `assets/images/logos/${platform.id}.jpg`;
+    const releaseCount = platform.releases.length;
     
     return `
         <section class="platform-section" data-platform="${platform.id}" aria-labelledby="platform-${platform.id}">
@@ -139,6 +218,7 @@ function renderPlatform(platform) {
                     <img src="${logoFallback}" alt="${platform.name} logo" class="platform-logo" loading="lazy" width="24" height="24" onerror="this.style.display='none'">
                 </picture>
                 ${platform.name}
+                <span class="platform-count">${releaseCount}</span>
             </h3>
             <div class="platform-releases">
                 ${releasesHtml || '<p class="no-releases">No releases this week</p>'}
@@ -173,12 +253,21 @@ function formatLastUpdated(isoString) {
 function renderPost(postData) {
     const platformsHtml = postData.platforms.map(renderPlatform).join('');
     const lastUpdated = postData.generated_at ? formatLastUpdated(postData.generated_at) : '';
+    const countryInfo = postData.country || COUNTRIES[currentCountry];
+    
+    // Calculate total releases
+    const totalReleases = postData.platforms.reduce((sum, p) => sum + (p.releases?.length || 0), 0);
     
     return `
         <header class="post-header">
+            <div class="post-country-badge">
+                <span class="country-flag-large">${countryInfo.flag}</span>
+                <span class="country-name-label">${countryInfo.name}</span>
+            </div>
             <h2 class="post-title">${postData.week_title}</h2>
             <p class="post-meta">
                 <time datetime="${postData.week_start}">${postData.week_range}</time>
+                <span class="total-releases">${totalReleases} new releases</span>
             </p>
         </header>
         <div class="post-content">
@@ -193,19 +282,28 @@ function renderPost(postData) {
  */
 async function init() {
     try {
+        // Get country preference (auto-detect or saved)
+        currentCountry = getCountryPreference();
+        updateCountryButtons(currentCountry);
+        
         // Load current week data
-        const data = await loadCurrentWeek();
+        const data = await loadCurrentWeek(currentCountry);
         
         if (currentWeekPost && data) {
             renderCurrentWeek();
         }
         
         // Load archive navigation
-        await loadArchiveIndex();
+        await loadArchiveIndex(currentCountry);
 
         // Apply initial route from hash after nav is ready
         await applyRouteFromHash();
         window.addEventListener('hashchange', handleHashChange);
+
+        // Set up country toggle handlers
+        countryButtons.forEach(btn => {
+            btn.addEventListener('click', handleCountryChange);
+        });
 
         if (backToCurrentButton) {
             backToCurrentButton.addEventListener('click', () => {
@@ -221,12 +319,42 @@ async function init() {
 }
 
 /**
+ * Handle country change
+ * @param {Event} event - Click event
+ */
+async function handleCountryChange(event) {
+    const newCountry = event.currentTarget.dataset.country;
+    
+    if (newCountry === currentCountry) return;
+    
+    currentCountry = newCountry;
+    saveCountryPreference(newCountry);
+    updateCountryButtons(newCountry);
+    
+    // Clear hash to go to current week
+    window.location.hash = '';
+    
+    try {
+        // Load new country data
+        await loadCurrentWeek(currentCountry);
+        renderCurrentWeek();
+        
+        // Load archive for new country
+        await loadArchiveIndex(currentCountry);
+        
+    } catch (error) {
+        console.error('Error switching country:', error);
+    }
+}
+
+/**
  * Load archive index and render navigation
+ * @param {string} countryId - Country ID
  * @returns {Promise<void>}
  */
-async function loadArchiveIndex() {
+async function loadArchiveIndex(countryId) {
     try {
-        const response = await fetch('data/archive-index.json');
+        const response = await fetch(`data/${countryId}/archive-index.json`);
         
         if (!response.ok) {
             console.warn('Archive index not found');
@@ -301,7 +429,7 @@ async function loadArchivedWeek(weekId) {
         showLoading();
         hideError();
         
-        const response = await fetch(`data/archive/${weekId}.json`);
+        const response = await fetch(`data/${currentCountry}/archive/${weekId}.json`);
         
         if (!response.ok) {
             throw new Error(`Archive not found: ${weekId}`);

@@ -140,6 +140,55 @@ body {
     -webkit-text-fill-color: initial;
 }
 
+/* Country Toggle */
+.country-toggle {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+
+.country-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-secondary);
+    border: 2px solid var(--color-border);
+    border-radius: 50px;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.country-btn:hover {
+    background: var(--color-surface-hover);
+    border-color: var(--color-accent);
+    color: var(--color-text);
+}
+
+.country-btn.active {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: white;
+    box-shadow: var(--shadow-md), var(--shadow-glow);
+}
+
+.country-btn:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}
+
+.country-flag {
+    font-size: 1.25em;
+}
+
+.country-name {
+    font-weight: 600;
+}
+
 /* Back to Current Button */
 .back-to-current {
     display: none;
@@ -219,6 +268,27 @@ body {
     border-bottom: 1px solid var(--color-border);
 }
 
+.post-country-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+}
+
+.country-flag-large {
+    font-size: 1.5em;
+}
+
+.country-name-label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+}
+
 .post-title {
     font-family: var(--font-family-display);
     font-size: var(--font-size-4xl);
@@ -229,6 +299,10 @@ body {
 }
 
 .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
     color: var(--color-text-secondary);
     font-size: var(--font-size-lg);
 }
@@ -245,6 +319,21 @@ body {
 
 .post-meta time::before {
     content: '📅';
+}
+
+.total-releases {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(63, 185, 80, 0.15);
+    color: var(--color-success);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+}
+
+.total-releases::before {
+    content: '🎬';
 }
 
 /* Post Content */
@@ -307,6 +396,18 @@ body {
     background: var(--color-surface);
 }
 
+.platform-count {
+    margin-left: auto;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-accent);
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    border-radius: 50px;
+    min-width: 24px;
+    text-align: center;
+}
+
 /* Platform Releases */
 .platform-releases {
     display: grid;
@@ -346,11 +447,33 @@ body {
     opacity: 1;
 }
 
+.release-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
 .release-title {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--color-text);
-    margin-bottom: var(--spacing-sm);
+    flex: 1;
+}
+
+.release-language {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    color: #a78bfa;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 .release-meta {
@@ -358,6 +481,31 @@ body {
     flex-wrap: wrap;
     gap: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
+}
+
+/* Release Actors */
+.release-actors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+}
+
+.actor-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px var(--spacing-sm);
+    background: var(--color-surface-hover);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-xs);
+    border-radius: 50px;
+    border: 1px solid var(--color-border);
+}
+
+.actor-tag::before {
+    content: '👤';
+    margin-right: 4px;
+    font-size: 0.8em;
 }
 
 .release-date,

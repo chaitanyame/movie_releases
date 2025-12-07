@@ -1,0 +1,87 @@
+{
+  "week_number": 49,
+  "year": 2025,
+  "week_id": "2025-49",
+  "week_start": "2025-12-01",
+  "week_end": "2025-12-07",
+  "week_range": "December 1-7, 2025",
+  "week_title": "Week 49: December 1-7, 2025",
+  "country": {
+    "id": "india",
+    "name": "India",
+    "flag": "🇮🇳"
+  },
+  "generated_at": "2025-12-07T10:00:00.000Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Black Doves",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Thriller",
+          "language": "English",
+          "actors": ["Keira Knightley", "Ben Whishaw", "Sarah Lancashire"],
+          "description": "A professional spy posing as a politician's wife must navigate dangerous waters when her secret lover is murdered."
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Citadel: Honey Bunny",
+          "release_date": "2025-12-06",
+          "type": "series",
+          "genre": "Action",
+          "language": "Hindi",
+          "actors": ["Varun Dhawan", "Samantha Ruth Prabhu", "Kay Kay Menon"],
+          "description": "The Indian chapter of the Citadel universe follows two agents on a high-stakes mission."
+        }
+      ]
+    },
+    {
+      "id": "disney-plus-hotstar",
+      "name": "Disney+ Hotstar",
+      "releases": [
+        {
+          "title": "Maamla Legal Hai Season 2",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "actors": ["Ravi Kishan", "Naila Grewal", "Nidhi Bisht"],
+          "description": "The hilarious legal comedy returns with more courtroom chaos."
+        }
+      ]
+    },
+    {
+      "id": "jio-cinema",
+      "name": "Jio Cinema",
+      "releases": []
+    },
+    {
+      "id": "zee5",
+      "name": "ZEE5",
+      "releases": []
+    },
+    {
+      "id": "sonyliv",
+      "name": "SonyLIV",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": []
+    },
+    {
+      "id": "aha",
+      "name": "Aha",
+      "releases": []
+    }
+  ]
+}
