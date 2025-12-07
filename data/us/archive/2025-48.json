@@ -11,7 +11,7 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-07T20:15:12.868Z",
+  "generated_at": "2025-12-07T20:28:31.770Z",
   "platforms": [
     {
       "id": "netflix",
@@ -47,7 +47,7 @@
           "language": "English",
           "actors": [],
           "release_type": "Theatrical-to-Streaming",
-          "description": "A holiday-themed family movie about the adventures and training of Santa Claus candidates."
+          "description": "A holiday-themed family movie about the adventures of Santa and his helpers."
         },
         {
           "title": "Is It Cake? Holidays (Season 2)",
@@ -57,7 +57,7 @@
           "language": "English",
           "actors": [],
           "release_type": "Original",
-          "description": "Contestants create hyper-realistic cakes disguised as everyday objects in this holiday-themed baking competition."
+          "description": "Contestants create hyper-realistic cakes that look like everyday objects in this holiday-themed competition."
         },
         {
           "title": "Jingle Bell Heist",
@@ -70,7 +70,7 @@
             "Connor Swindells"
           ],
           "release_type": "Original",
-          "description": "Two small-time thieves team up to rob London's most notorious department store on Christmas Eve, navigating secrets and a growing attraction."
+          "description": "Two small-time thieves team up to rob London's most notorious department store on Christmas Eve, risking their relationship and the heist."
         },
         {
           "title": "Stranger Things (Season 5 – Volume 1)",
@@ -78,9 +78,13 @@
           "type": "series",
           "genre": "Sci-Fi, Thriller",
           "language": "English",
-          "actors": [],
+          "actors": [
+            "Millie Bobby Brown",
+            "Finn Wolfhard",
+            "David Harbour"
+          ],
           "release_type": "Original",
-          "description": "The highly anticipated fifth and final season of the supernatural thriller series, released in three installments over the holiday period."
+          "description": "The first volume of the final season of the iconic sci-fi thriller series, continuing the story of the Hawkins gang."
         },
         {
           "title": "Aquaman and the Lost Kingdom",
@@ -89,10 +93,11 @@
           "genre": "Action, Adventure, Fantasy",
           "language": "English",
           "actors": [
-            "Jason Momoa"
+            "Jason Momoa",
+            "Amber Heard"
           ],
           "release_type": "Theatrical-to-Streaming",
-          "description": "The sequel to Aquaman (2018), following the underwater superhero's new adventures and challenges."
+          "description": "The sequel to Aquaman, following the underwater hero's new adventures and challenges."
         },
         {
           "title": "Left-Handed Girl",
@@ -117,7 +122,7 @@
           "language": "English",
           "actors": [],
           "release_type": "Original",
-          "description": "A documentary exploring the life and work of a photojournalist known as The Stringer."
+          "description": "A documentary exploring the life and work of a notable photojournalist."
         },
         {
           "title": "Caught Stealing",
@@ -127,7 +132,7 @@
           "language": "English",
           "actors": [],
           "release_type": "Original",
-          "description": "A thriller centered on a high-stakes theft and its consequences."
+          "description": "A suspenseful thriller centered on a high-stakes theft."
         },
         {
           "title": "The Stone",
@@ -137,7 +142,7 @@
           "language": "English",
           "actors": [],
           "release_type": "Original",
-          "description": "A dramatic story released on Netflix at the end of November."
+          "description": "A dramatic story exploring complex human relationships."
         }
       ]
     }
