@@ -1,1 +1,28 @@
-{"weekId":"2024-49","weekTitle":"Week 49: December 2-8, 2024","dateRange":{"start":"2024-12-02","end":"2024-12-08"},"posts":[{"id":2,"title":"Test2"}]}
+{
+  "week_number": 49,
+  "year": 2024,
+  "week_id": "2024-49",
+  "weekId": "2024-49",
+  "week_start": "2024-12-02",
+  "week_end": "2024-12-08",
+  "week_range": "December 2-8, 2024",
+  "week_title": "Week 49: December 2-8, 2024",
+  "weekTitle": "Week 49: December 2-8, 2024",
+  "dateRange": {"start": "2024-12-02", "end": "2024-12-08"},
+  "generated_at": "2024-12-02T09:00:00Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Black Doves",
+          "release_date": "2024-12-05",
+          "type": "series",
+          "genre": "Thriller",
+          "description": "A spy thriller starring Keira Knightley."
+        }
+      ]
+    }
+  ]
+}

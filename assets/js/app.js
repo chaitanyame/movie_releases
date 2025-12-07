@@ -10,6 +10,11 @@ const loadingIndicator = document.getElementById('loading-indicator');
 const errorMessage = document.getElementById('error-message');
 const currentWeekPost = document.getElementById('current-week-post');
 const archiveNav = document.getElementById('archive-nav');
+const archiveNavList = archiveNav ? archiveNav.querySelector('nav') : null;
+
+// State
+let currentArchiveIndex = null;
+let activeWeekId = null;
 
 /**
  * Show loading indicator
@@ -138,15 +143,136 @@ function renderPost(postData) {
  */
 async function init() {
     try {
+        // Load current week data
         const data = await loadCurrentWeek();
         
         if (currentWeekPost && data) {
             currentWeekPost.innerHTML = renderPost(data);
+            activeWeekId = data.week_id || 'current';
         }
+        
+        // Load archive navigation
+        await loadArchiveIndex();
+        
     } catch (error) {
         // Error already handled in loadCurrentWeek
         console.error('Initialization failed:', error);
     }
+}
+
+/**
+ * Load archive index and render navigation
+ * @returns {Promise<void>}
+ */
+async function loadArchiveIndex() {
+    try {
+        const response = await fetch('data/archive-index.json');
+        
+        if (!response.ok) {
+            console.warn('Archive index not found');
+            return;
+        }
+        
+        currentArchiveIndex = await response.json();
+        renderArchiveNav(currentArchiveIndex);
+        
+    } catch (error) {
+        console.warn('Error loading archive index:', error);
+    }
+}
+
+/**
+ * Render archive navigation list
+ * @param {Object} archiveIndex - Archive index data
+ */
+function renderArchiveNav(archiveIndex) {
+    if (!archiveNavList || !archiveIndex.archives) {
+        return;
+    }
+    
+    if (archiveIndex.archives.length === 0) {
+        archiveNavList.innerHTML = '<p class="no-archives">No archived weeks yet</p>';
+        return;
+    }
+    
+    const itemsHtml = archiveIndex.archives.map(archive => {
+        const isActive = archive.weekId === activeWeekId;
+        return `
+            <button 
+                class="archive-item${isActive ? ' active' : ''}" 
+                data-week-id="${archive.weekId}"
+                aria-label="View ${archive.weekTitle}"
+            >
+                ${archive.weekTitle}
+            </button>
+        `;
+    }).join('');
+    
+    archiveNavList.innerHTML = itemsHtml;
+    
+    // Add click handlers
+    archiveNavList.querySelectorAll('.archive-item').forEach(item => {
+        item.addEventListener('click', handleArchiveClick);
+    });
+}
+
+/**
+ * Handle click on archive item
+ * @param {Event} event - Click event
+ */
+function handleArchiveClick(event) {
+    const weekId = event.currentTarget.getAttribute('data-week-id');
+    if (weekId) {
+        loadArchivedWeek(weekId);
+    }
+}
+
+/**
+ * Load and display an archived week
+ * @param {string} weekId - Week ID in YYYY-WW format
+ */
+async function loadArchivedWeek(weekId) {
+    try {
+        showLoading();
+        hideError();
+        
+        const response = await fetch(`data/archive/${weekId}.json`);
+        
+        if (!response.ok) {
+            throw new Error(`Archive not found: ${weekId}`);
+        }
+        
+        const data = await response.json();
+        
+        if (currentWeekPost) {
+            currentWeekPost.innerHTML = renderPost(data);
+        }
+        
+        activeWeekId = weekId;
+        updateActiveArchiveItem(weekId);
+        
+    } catch (error) {
+        console.error('Error loading archived week:', error);
+        showError(`Unable to load archive for ${weekId}`);
+    } finally {
+        hideLoading();
+    }
+}
+
+/**
+ * Update the active state in archive navigation
+ * @param {string} weekId - Active week ID
+ */
+function updateActiveArchiveItem(weekId) {
+    if (!archiveNavList) return;
+    
+    archiveNavList.querySelectorAll('.archive-item').forEach(item => {
+        if (item.getAttribute('data-week-id') === weekId) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
 }
 
 // Start the application when DOM is ready

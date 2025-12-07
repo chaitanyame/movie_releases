@@ -1,1 +1,28 @@
-{"weekId":"2024-48","weekTitle":"Week 48: November 25 - December 1, 2024","dateRange":{"start":"2024-11-25","end":"2024-12-01"},"posts":[{"id":1,"title":"Test"}]}
+{
+  "week_number": 48,
+  "year": 2024,
+  "week_id": "2024-48",
+  "weekId": "2024-48",
+  "week_start": "2024-11-25",
+  "week_end": "2024-12-01",
+  "week_range": "November 25 - December 1, 2024",
+  "week_title": "Week 48: November 25 - December 1, 2024",
+  "weekTitle": "Week 48: November 25 - December 1, 2024",
+  "dateRange": {"start": "2024-11-25", "end": "2024-12-01"},
+  "generated_at": "2024-11-25T09:00:00Z",
+  "platforms": [
+    {
+      "id": "disney",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "Moana 2",
+          "release_date": "2024-11-27",
+          "type": "movie",
+          "genre": "Animation",
+          "description": "The sequel to the beloved animated adventure."
+        }
+      ]
+    }
+  ]
+}
