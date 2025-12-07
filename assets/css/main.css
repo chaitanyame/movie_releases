@@ -718,6 +718,134 @@ body {
     content: '❤️';
 }
 
+/* Mobile Optimizations */
+@media (max-width: 767px) {
+    .site-header {
+        padding: var(--spacing-md);
+        position: relative;
+    }
+    
+    .site-header h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .country-toggle {
+        margin-top: var(--spacing-sm);
+        gap: var(--spacing-xs);
+    }
+    
+    .country-btn {
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: var(--font-size-xs);
+    }
+    
+    .country-flag {
+        font-size: 1.1em;
+    }
+    
+    .back-to-current {
+        margin-top: var(--spacing-sm);
+        font-size: var(--font-size-xs);
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    .main-content {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .post-header {
+        margin-bottom: var(--spacing-xl);
+        padding-bottom: var(--spacing-lg);
+    }
+    
+    .post-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .post-meta {
+        font-size: var(--font-size-sm);
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    .post-country-badge {
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+    
+    .country-flag-large {
+        font-size: 1.25em;
+    }
+    
+    .post-content {
+        gap: var(--spacing-md);
+    }
+    
+    .platform-section {
+        padding: var(--spacing-md);
+    }
+    
+    .platform-title {
+        font-size: var(--font-size-base);
+        gap: var(--spacing-sm);
+    }
+    
+    .platform-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .release-item {
+        padding: var(--spacing-md);
+    }
+    
+    .release-title {
+        font-size: var(--font-size-base);
+    }
+    
+    .release-meta {
+        font-size: var(--font-size-xs);
+    }
+    
+    .release-actors {
+        gap: 4px;
+    }
+    
+    .actor-tag {
+        font-size: 0.7rem;
+        padding: 2px 6px;
+    }
+    
+    .release-description {
+        font-size: var(--font-size-xs);
+    }
+    
+    .archive-sidebar {
+        padding: var(--spacing-md);
+    }
+    
+    .archive-sidebar h2 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .archive-item {
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: var(--font-size-xs);
+    }
+    
+    /* Touch-friendly sizing */
+    .country-btn,
+    .archive-item,
+    .back-to-current {
+        min-height: 44px; /* iOS recommended touch target */
+    }
+    
+    /* Prevent text size adjustment on orientation change */
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    }
+}
+
 /* Responsive Design - Tablet */
 @media (min-width: 768px) {
     .site-header h1 {

@@ -1,0 +1,21 @@
+{
+  "name": "OTT Release Tracker",
+  "short_name": "OTT Tracker",
+  "description": "Track weekly OTT releases across streaming platforms in the US and India",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["entertainment", "lifestyle"],
+  "lang": "en-US",
+  "dir": "ltr"
+}
