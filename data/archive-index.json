@@ -1,0 +1,26 @@
+{
+  "archives": [
+    {
+      "weekId": "2024-49",
+      "weekTitle": "Week 49: December 2-8, 2024",
+      "dateRange": {
+        "start": "2024-12-02",
+        "end": "2024-12-08"
+      },
+      "fileName": "2024-49.json",
+      "postCount": 1
+    },
+    {
+      "weekId": "2024-48",
+      "weekTitle": "Week 48: November 25 - December 1, 2024",
+      "dateRange": {
+        "start": "2024-11-25",
+        "end": "2024-12-01"
+      },
+      "fileName": "2024-48.json",
+      "postCount": 1
+    }
+  ],
+  "lastUpdated": "2025-12-07T04:22:41.828Z",
+  "totalArchives": 2
+}

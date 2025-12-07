@@ -368,10 +368,10 @@
       "name": "Create Archive Index Generator",
       "description": "Create a script that generates an index of all archived weeks for the navigation menu.",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/archive-list.spec.ts",
-      "test_fails_before": false,
-      "test_passes_after": false,
+      "test_fails_before": true,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/archive-list.spec.ts",
         "Run test and verify it FAILS before implementation",
