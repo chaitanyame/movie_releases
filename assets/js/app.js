@@ -143,7 +143,11 @@ async function loadCurrentWeek(countryId) {
         showLoading();
         hideError();
         
-        const response = await fetch(`data/${countryId}/current-week.json`);
+        // Use absolute path from repository root for GitHub Pages
+        const basePath = window.location.hostname.includes('github.io') 
+            ? '/ott_news/data' 
+            : 'data';
+        const response = await fetch(`${basePath}/${countryId}/current-week.json`);
         
         if (!response.ok) {
             throw new Error(`Failed to load data: ${response.status}`);
@@ -357,7 +361,10 @@ async function handleCountryChange(event) {
  */
 async function loadArchiveIndex(countryId) {
     try {
-        const response = await fetch(`data/${countryId}/archive-index.json`);
+        const basePath = window.location.hostname.includes('github.io') 
+            ? '/ott_news/data' 
+            : 'data';
+        const response = await fetch(`${basePath}/${countryId}/archive-index.json`);
         
         if (!response.ok) {
             console.warn('Archive index not found');
@@ -432,7 +439,10 @@ async function loadArchivedWeek(weekId) {
         showLoading();
         hideError();
         
-        const response = await fetch(`data/${currentCountry}/archive/${weekId}.json`);
+        const basePath = window.location.hostname.includes('github.io') 
+            ? '/ott_news/data' 
+            : 'data';
+        const response = await fetch(`${basePath}/${currentCountry}/archive/${weekId}.json`);
         
         if (!response.ok) {
             throw new Error(`Archive not found: ${weekId}`);
