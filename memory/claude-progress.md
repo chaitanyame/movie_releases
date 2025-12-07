@@ -7,7 +7,7 @@ This file bridges context between agent sessions. Each agent reads this at the s
 **Project**: OTT Weekly Releases - Static SPA
 **Branch**: `001-ott-weekly-releases`
 **Status**: Phase 3 complete, starting Phase 4 (Data Management)
-**Features**: 17/35 passing (49%)
+**Features**: 20/35 passing (57%)
 **Last Updated**: 2025-12-07
 
 ## What's Been Done
@@ -37,6 +37,18 @@ This session transformed the template into a real project:
 - ✅ **Issue tracking system** - adhoc bugs, hotfixes, and requests
 
 ## Session History
+
+### Session 12b - 2025-12-07
+
+**Feature**: F021 Hash-Based URL Routing
+**Branch**: `001-ott-weekly-releases`
+**Status**: ✅ Complete
+
+- Added hash-based routing in `assets/js/app.js` to handle `#archive/{weekId}` and `#current`
+- Applies initial route after archive nav loads and listens to `hashchange`
+- Archive clicks now update the URL hash; current week renders from cached data when returning to `#current`
+- Added Playwright coverage `tests/features/url-routing.spec.ts` (4 tests)
+- Verified with `npx playwright test tests/features/url-routing.spec.ts --project=chromium`
 
 ### Session 10 - 2025-12-07
 

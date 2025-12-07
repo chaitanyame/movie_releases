@@ -430,10 +430,10 @@
       "name": "Implement Hash-Based URL Routing",
       "description": "Add URL hash-based routing so users can bookmark and share links to specific weeks.",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/url-routing.spec.ts",
-      "test_fails_before": false,
-      "test_passes_after": false,
+      "test_fails_before": true,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/url-routing.spec.ts",
         "Run test and verify it FAILS before implementation",

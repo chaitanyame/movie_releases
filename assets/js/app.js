@@ -15,6 +15,7 @@ const archiveNavList = archiveNav ? archiveNav.querySelector('nav') : null;
 // State
 let currentArchiveIndex = null;
 let activeWeekId = null;
+let currentWeekData = null;
 
 /**
  * Show loading indicator
@@ -70,6 +71,7 @@ async function loadCurrentWeek() {
         }
         
         const data = await response.json();
+        currentWeekData = data;
         return data;
     } catch (error) {
         console.error('Error loading current week:', error);
@@ -147,12 +149,15 @@ async function init() {
         const data = await loadCurrentWeek();
         
         if (currentWeekPost && data) {
-            currentWeekPost.innerHTML = renderPost(data);
-            activeWeekId = data.week_id || 'current';
+            renderCurrentWeek();
         }
         
         // Load archive navigation
         await loadArchiveIndex();
+
+        // Apply initial route from hash after nav is ready
+        await applyRouteFromHash();
+        window.addEventListener('hashchange', handleHashChange);
         
     } catch (error) {
         // Error already handled in loadCurrentWeek
@@ -223,7 +228,12 @@ function renderArchiveNav(archiveIndex) {
 function handleArchiveClick(event) {
     const weekId = event.currentTarget.getAttribute('data-week-id');
     if (weekId) {
-        loadArchivedWeek(weekId);
+        const targetHash = `#archive/${weekId}`;
+        if (window.location.hash === targetHash) {
+            applyRouteFromHash();
+        } else {
+            window.location.hash = targetHash;
+        }
     }
 }
 
@@ -273,6 +283,54 @@ function updateActiveArchiveItem(weekId) {
             item.classList.remove('active');
         }
     });
+}
+
+/**
+ * Render the current week post using cached data
+ */
+function renderCurrentWeek() {
+    if (!currentWeekData || !currentWeekPost) return;
+    currentWeekPost.innerHTML = renderPost(currentWeekData);
+    activeWeekId = currentWeekData.week_id || 'current';
+    updateActiveArchiveItem(activeWeekId);
+}
+
+/**
+ * Parse the current URL hash and return a routing object
+ * @returns {{type: 'current'|'archive', weekId?: string}}
+ */
+function getRouteFromHash() {
+    const hash = window.location.hash.replace(/^#/, '');
+    if (!hash || hash === 'current') {
+        return { type: 'current' };
+    }
+    if (hash.startsWith('archive/')) {
+        const parts = hash.split('/');
+        const weekId = parts[1];
+        if (weekId) {
+            return { type: 'archive', weekId };
+        }
+    }
+    return { type: 'current' };
+}
+
+/**
+ * Apply routing based on the current hash
+ */
+async function applyRouteFromHash() {
+    const route = getRouteFromHash();
+    if (route.type === 'archive' && route.weekId) {
+        await loadArchivedWeek(route.weekId);
+    } else {
+        renderCurrentWeek();
+    }
+}
+
+/**
+ * Handle hashchange events
+ */
+function handleHashChange() {
+    applyRouteFromHash();
 }
 
 // Start the application when DOM is ready
