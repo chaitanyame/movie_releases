@@ -988,3 +988,369 @@ body {
 .platform-section:nth-child(6) { animation-delay: 0.35s; }
 .platform-section:nth-child(7) { animation-delay: 0.4s; }
 .platform-section:nth-child(8) { animation-delay: 0.45s; }
+
+/* ==========================================================================
+   Theme System - Dark and Light Mode Support
+   ========================================================================== */
+
+/* Dark Theme (Explicit) */
+:root[data-theme="dark"] {
+    --color-primary: #0d1117;
+    --color-secondary: #161b22;
+    --color-surface: #21262d;
+    --color-surface-hover: #30363d;
+    --color-accent: #58a6ff;
+    --color-accent-glow: rgba(88, 166, 255, 0.3);
+    --color-highlight: #f78166;
+    --color-success: #3fb950;
+    --color-text: #f0f6fc;
+    --color-text-secondary: #8b949e;
+    --color-text-muted: #6e7681;
+    --color-border: #30363d;
+    --color-border-subtle: #21262d;
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-accent: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-surface: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+    --gradient-card: linear-gradient(145deg, #21262d 0%, #161b22 100%);
+}
+
+/* Light Theme - Modern Premium Design */
+:root[data-theme="light"] {
+    --color-primary: #f8fafc;
+    --color-secondary: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-hover: #f1f5f9;
+    --color-accent: #6366f1;
+    --color-accent-glow: rgba(99, 102, 241, 0.2);
+    --color-highlight: #ec4899;
+    --color-success: #10b981;
+    --color-text: #1e293b;
+    --color-text-secondary: #64748b;
+    --color-text-muted: #94a3b8;
+    --color-border: #e2e8f0;
+    --color-border-subtle: #f1f5f9;
+    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient-accent: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+    --gradient-surface: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+    --shadow-glow: 0 0 40px var(--color-accent-glow);
+}
+
+/* ==========================================================================
+   Light Theme Component Enhancements
+   Modern, premium styling for light mode
+   ========================================================================== */
+
+/* Light Theme - Header */
+:root[data-theme="light"] .site-header {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+:root[data-theme="light"] .site-title {
+    color: #1e293b;
+}
+
+:root[data-theme="light"] .header-subtitle {
+    color: #64748b;
+}
+
+/* Light Theme - Theme Toggle Button */
+:root[data-theme="light"] .theme-toggle {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    border: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+:root[data-theme="light"] .theme-toggle:hover {
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    border-color: #cbd5e1;
+    color: #334155;
+    transform: scale(1.05);
+}
+
+/* Light Theme - Country Selector */
+:root[data-theme="light"] .country-selector {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+:root[data-theme="light"] .country-btn {
+    background: #f8fafc;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+:root[data-theme="light"] .country-btn:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    color: #334155;
+}
+
+:root[data-theme="light"] .country-btn.active {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: #ffffff;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Light Theme - Platform Sections */
+:root[data-theme="light"] .platform-section {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+:root[data-theme="light"] .platform-section:hover {
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.08), 0 8px 24px rgba(0, 0, 0, 0.04);
+    border-color: rgba(99, 102, 241, 0.2);
+}
+
+:root[data-theme="light"] .platform-name {
+    color: #1e293b;
+}
+
+:root[data-theme="light"] .platform-toggle {
+    color: #64748b;
+}
+
+:root[data-theme="light"] .platform-toggle:hover {
+    color: #6366f1;
+}
+
+/* Light Theme - Release Items */
+:root[data-theme="light"] .release-item {
+    background: #f8fafc;
+    border: 1px solid #f1f5f9;
+}
+
+:root[data-theme="light"] .release-item:hover {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+}
+
+:root[data-theme="light"] .release-title {
+    color: #1e293b;
+}
+
+:root[data-theme="light"] .release-title a {
+    color: #1e293b;
+}
+
+:root[data-theme="light"] .release-title a:hover {
+    color: #6366f1;
+}
+
+:root[data-theme="light"] .release-description {
+    color: #64748b;
+}
+
+:root[data-theme="light"] .release-meta {
+    color: #94a3b8;
+}
+
+/* Light Theme - Status Badges */
+:root[data-theme="light"] .status-badge {
+    font-weight: 500;
+}
+
+:root[data-theme="light"] .status-badge.new {
+    background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+    color: #166534;
+    border: 1px solid #86efac;
+}
+
+:root[data-theme="light"] .status-badge.soon {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    color: #92400e;
+    border: 1px solid #fcd34d;
+}
+
+:root[data-theme="light"] .status-badge.released {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    color: #1e40af;
+    border: 1px solid #93c5fd;
+}
+
+/* Light Theme - Tags */
+:root[data-theme="light"] .release-tags .tag {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #e2e8f0;
+}
+
+/* Light Theme - Loading States */
+:root[data-theme="light"] .loading {
+    color: #64748b;
+}
+
+:root[data-theme="light"] .loading::after {
+    border-color: #e2e8f0;
+    border-top-color: #6366f1;
+}
+
+/* Light Theme - Empty States */
+:root[data-theme="light"] .no-releases {
+    color: #94a3b8;
+    background: #f8fafc;
+    border: 1px dashed #e2e8f0;
+}
+
+/* Light Theme - Scrollbar */
+:root[data-theme="light"] ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+:root[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Light Theme - Selection */
+:root[data-theme="light"] ::selection {
+    background: rgba(99, 102, 241, 0.2);
+    color: #1e293b;
+}
+
+/* Light Theme - Body Background */
+:root[data-theme="light"] body {
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+/* ==========================================================================
+   Platform Brand Colors - Visual Identification
+   ========================================================================== */
+
+/* Netflix */
+.platform-section[aria-label*="Netflix"] {
+    border-left: 4px solid #e50914;
+}
+.platform-section[aria-label*="Netflix"] .platform-title {
+    color: #e50914;
+}
+.platform-section[aria-label*="Netflix"] .release-item {
+    border-left-color: #e50914;
+}
+
+/* Prime Video */
+.platform-section[aria-label*="Prime Video"] {
+    border-left: 4px solid #00a8e1;
+}
+.platform-section[aria-label*="Prime Video"] .platform-title {
+    color: #00a8e1;
+}
+.platform-section[aria-label*="Prime Video"] .release-item {
+    border-left-color: #00a8e1;
+}
+
+/* Disney+ */
+.platform-section[aria-label*="Disney"] {
+    border-left: 4px solid #1a6dff;
+}
+.platform-section[aria-label*="Disney"] .platform-title {
+    color: #1a6dff;
+}
+.platform-section[aria-label*="Disney"] .release-item {
+    border-left-color: #1a6dff;
+}
+
+/* Hulu */
+.platform-section[aria-label*="Hulu"] {
+    border-left: 4px solid #1ce783;
+}
+.platform-section[aria-label*="Hulu"] .platform-title {
+    color: #1ce783;
+}
+.platform-section[aria-label*="Hulu"] .release-item {
+    border-left-color: #1ce783;
+}
+
+/* Apple TV+ */
+.platform-section[aria-label*="Apple"] {
+    border-left: 4px solid #a3aaae;
+}
+.platform-section[aria-label*="Apple"] .platform-title {
+    color: var(--color-text);
+}
+.platform-section[aria-label*="Apple"] .release-item {
+    border-left-color: #a3aaae;
+}
+
+/* Max (HBO) */
+.platform-section[aria-label*="Max"] {
+    border-left: 4px solid #002be7;
+}
+.platform-section[aria-label*="Max"] .platform-title {
+    color: #5c6cfa;
+}
+.platform-section[aria-label*="Max"] .release-item {
+    border-left-color: #002be7;
+}
+
+/* Paramount+ */
+.platform-section[aria-label*="Paramount"] {
+    border-left: 4px solid #0064ff;
+}
+.platform-section[aria-label*="Paramount"] .platform-title {
+    color: #0064ff;
+}
+.platform-section[aria-label*="Paramount"] .release-item {
+    border-left-color: #0064ff;
+}
+
+/* Peacock */
+.platform-section[aria-label*="Peacock"] {
+    border-left: 4px solid #f4b400;
+}
+.platform-section[aria-label*="Peacock"] .platform-title {
+    color: #f4b400;
+}
+.platform-section[aria-label*="Peacock"] .release-item {
+    border-left-color: #f4b400;
+}
+
+/* Starz */
+.platform-section[aria-label*="Starz"] {
+    border-left: 4px solid #ffd700;
+}
+.platform-section[aria-label*="Starz"] .platform-title {
+    color: #ffd700;
+}
+.platform-section[aria-label*="Starz"] .release-item {
+    border-left-color: #ffd700;
+}
+
+/* Light Theme - Adjust brand colors for readability */
+:root[data-theme="light"] .platform-section[aria-label*="Netflix"] .platform-title {
+    color: #b81d24;
+}
+:root[data-theme="light"] .platform-section[aria-label*="Prime Video"] .platform-title {
+    color: #007eb9;
+}
+:root[data-theme="light"] .platform-section[aria-label*="Disney"] .platform-title {
+    color: #113ccf;
+}
+:root[data-theme="light"] .platform-section[aria-label*="Hulu"] .platform-title {
+    color: #1db954;
+}
+:root[data-theme="light"] .platform-section[aria-label*="Peacock"] .platform-title {
+    color: #e09900;
+}
+:root[data-theme="light"] .platform-section[aria-label*="Starz"] .platform-title {
+    color: #c5a000;
+}
