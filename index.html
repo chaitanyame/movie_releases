@@ -40,6 +40,25 @@
             const theme = getSaved() || 'dark';
             document.documentElement.setAttribute('data-theme', theme);
             document.documentElement.style.colorScheme = theme;
+            
+            // Expose toggle function globally
+            window.toggleTheme = function() {
+                const root = document.documentElement;
+                const current = root.getAttribute('data-theme');
+                const newTheme = current === 'light' ? 'dark' : 'light';
+                root.setAttribute('data-theme', newTheme);
+                root.style.colorScheme = newTheme;
+                try { localStorage.setItem(STORAGE_KEY, newTheme); } catch (_) {}
+                // Update icon
+                const icon = document.querySelector('.theme-icon');
+                if (icon) icon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+            };
+            
+            // Set initial icon after DOM ready
+            document.addEventListener('DOMContentLoaded', function() {
+                const icon = document.querySelector('.theme-icon');
+                if (icon) icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+            });
         })();
     </script>
     
@@ -64,7 +83,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme">
+    <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle theme" onclick="window.toggleTheme && window.toggleTheme()">
         <span class="theme-icon">🌙</span>
     </button>
     <a href="#current-week-post" class="skip-link">Skip to main content</a>
