@@ -215,17 +215,13 @@ function renderRelease(release) {
  */
 function renderPlatform(platform) {
     const releasesHtml = platform.releases.map(renderRelease).join('');
-    const logoPath = `assets/images/logos/${platform.id}.webp`;
-    const logoFallback = `assets/images/logos/${platform.id}.jpg`;
+    const logoPath = `assets/images/logos/${platform.id}.svg`;
     const releaseCount = platform.releases.length;
     
     return `
         <section class="platform-section" data-platform="${platform.id}" aria-labelledby="platform-${platform.id}">
             <h3 class="platform-title" id="platform-${platform.id}">
-                <picture>
-                    <source srcset="${logoPath}" type="image/webp">
-                    <img src="${logoFallback}" alt="${platform.name} logo" class="platform-logo" loading="lazy" width="24" height="24" onerror="this.style.display='none'">
-                </picture>
+                <img src="${logoPath}" alt="${platform.name} logo" class="platform-logo" loading="lazy" width="36" height="36" onerror="this.style.display='none'">
                 ${platform.name}
                 <span class="platform-count">${releaseCount}</span>
             </h3>
