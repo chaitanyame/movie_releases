@@ -11,60 +11,22 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-07T06:52:51.317Z",
+  "generated_at": "2025-12-07T07:06:33.901Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
-      "releases": [
-        {
-          "title": "My Secret Santa",
-          "release_date": "2025-12-03",
-          "type": "movie",
-          "genre": "Romantic Comedy",
-          "language": "English",
-          "actors": [
-            "Unknown"
-          ],
-          "description": "A vivacious single mom disguises herself as a man to get a seasonal Santa job at a ski resort, but complications develop as she grows close to the hotel manager."
-        }
-      ]
+      "releases": []
     },
     {
       "id": "prime-video",
       "name": "Prime Video",
-      "releases": [
-        {
-          "title": "Oh. What. Fun.",
-          "release_date": "2025-12-01",
-          "type": "movie",
-          "genre": "Holiday Drama",
-          "language": "English",
-          "actors": [
-            "Michelle Pfeiffer",
-            "Felicity Jones",
-            "Chloë Grace Moretz"
-          ],
-          "description": "Claire, an overworked mom, embarks on an impromptu adventure during Christmas, discovering magic in a holiday gone off-script."
-        }
-      ]
+      "releases": []
     },
     {
       "id": "disney-plus",
       "name": "Disney+",
-      "releases": [
-        {
-          "title": "Diary of a Wimpy Kid: The Last Straw",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "genre": "Animated Family Comedy",
-          "language": "English",
-          "actors": [
-            "Unknown"
-          ],
-          "description": "The fourth animated adaptation of Jeff Kinney's beloved book series, continuing the comedic adventures of Greg Heffley."
-        }
-      ]
+      "releases": []
     },
     {
       "id": "hulu",
@@ -89,60 +51,98 @@
           "title": "Guns Up",
           "release_date": "2025-12-01",
           "type": "movie",
-          "genre": "Action Comedy",
+          "genre": "Action, Comedy",
           "language": "English",
           "actors": [
             "Kevin James",
             "Christina Ricci",
             "Unknown"
           ],
-          "description": "An ex-cop turned mob henchman tries to leave the mob but his final job goes awry, forcing him to save his family in one hectic night."
+          "description": "An ex-cop turned mob henchman's final job goes off the rails, forcing him to save his family before he gets snuffed out."
         },
         {
           "title": "5-Star",
           "release_date": "2025-12-02",
           "type": "series",
-          "genre": "Docuseries",
+          "genre": "Documentary",
           "language": "English",
-          "actors": [
-            "Unknown"
-          ],
-          "description": "A new docuseries premiering exploring intense real-life stories."
+          "actors": [],
+          "description": "A docuseries exploring in-depth stories, premiering December 2."
         },
         {
           "title": "Transformers: EarthSpark Specials",
           "release_date": "2025-12-05",
           "type": "series",
-          "genre": "Animated Family",
+          "genre": "Animation, Family",
           "language": "English",
-          "actors": [
-            "Unknown"
-          ],
-          "description": "Special episodes from the animated series Transformers: EarthSpark."
+          "actors": [],
+          "description": "Special episodes of the animated series Transformers: EarthSpark."
         },
         {
           "title": "Predators",
           "release_date": "2025-12-08",
           "type": "documentary",
-          "genre": "Documentary",
+          "genre": "Documentary, Crime",
           "language": "English",
-          "actors": [
-            "Unknown"
-          ],
-          "description": "A documentary examining the legacy of the TV series To Catch a Predator."
+          "actors": [],
+          "description": "A documentary examining the controversial 'To Catch a Predator' crime series legacy."
         },
         {
           "title": "Little Disasters",
           "release_date": "2025-12-11",
           "type": "series",
-          "genre": "Limited Drama",
+          "genre": "Psychological Thriller, Drama",
           "language": "English",
           "actors": [
             "Diane Kruger",
+            "Jo Joyner",
+            "Unknown"
+          ],
+          "description": "A limited series about two friends whose relationship is tested after a fateful emergency room visit."
+        },
+        {
+          "title": "Mission: Impossible — The Final Reckoning",
+          "release_date": "2025-12-04",
+          "type": "movie",
+          "genre": "Action, Thriller",
+          "language": "English",
+          "actors": [
+            "Tom Cruise",
             "Unknown",
             "Unknown"
           ],
-          "description": "A limited series starring Diane Kruger involving a mother who puts her doctor friend in a difficult position after a head injury to her baby daughter."
+          "description": "The latest installment of the Mission: Impossible franchise with high-stakes spy action."
+        },
+        {
+          "title": "Roofman",
+          "release_date": "2025-12-09",
+          "type": "movie",
+          "genre": "Action, Drama",
+          "language": "English",
+          "actors": [
+            "Channing Tatum",
+            "Unknown",
+            "Unknown"
+          ],
+          "description": "An action film starring Channing Tatum streaming from December 9."
+        },
+        {
+          "title": "Tales of the Teenage Mutant Ninja Turtles Season 2",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "genre": "Animation, Action, Family",
+          "language": "English",
+          "actors": [],
+          "description": "The second season of the animated series about the Teenage Mutant Ninja Turtles."
+        },
+        {
+          "title": "DORA Season 4",
+          "release_date": "2025-12-19",
+          "type": "series",
+          "genre": "Animation, Family",
+          "language": "English",
+          "actors": [],
+          "description": "The fourth season continuation of the animated Dora series."
         }
       ]
     },
