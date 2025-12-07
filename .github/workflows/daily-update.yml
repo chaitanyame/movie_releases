@@ -29,6 +29,7 @@ jobs:
     
     permissions:
       contents: write  # Required for pushing data updates
+      issues: write    # Required for creating failure issues
     
     steps:
       - name: Checkout repository
@@ -76,3 +77,45 @@ jobs:
           else
             echo "ℹ️ No changes to data files (cache still valid or no new releases)"
           fi
+
+      - name: Create issue on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = `🚨 Daily Update Workflow Failed - ${new Date().toISOString().split('T')[0]}`;
+            const body = `## Workflow Failure Report
+            
+            **Workflow:** Daily OTT Releases Update
+            **Run:** [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            **Triggered by:** ${{ github.event_name }}
+            **Date:** ${new Date().toISOString()}
+            
+            ### Next Steps
+            1. Check the [workflow logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            2. Verify PERPLEXITY_API_KEY secret is valid
+            3. Re-run the workflow manually if needed
+            
+            ---
+            *This issue was automatically created by the daily-update workflow.*`;
+            
+            // Check for existing open issue with same label
+            const existingIssues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'automation-failure',
+              state: 'open'
+            });
+            
+            if (existingIssues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['automation-failure']
+              });
+              console.log('Created new issue for workflow failure');
+            } else {
+              console.log('Open automation-failure issue already exists, skipping creation');
+            }

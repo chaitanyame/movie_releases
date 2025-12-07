@@ -12,6 +12,7 @@ const currentWeekPost = document.getElementById('current-week-post');
 const archiveNav = document.getElementById('archive-nav');
 const archiveNavList = archiveNav ? archiveNav.querySelector('nav') : null;
 const backToCurrentButton = document.getElementById('back-to-current');
+const mainContent = document.querySelector('.main-content');
 
 // State
 let currentArchiveIndex = null;
@@ -25,6 +26,9 @@ function showLoading() {
     if (loadingIndicator) {
         loadingIndicator.style.display = 'block';
     }
+    if (mainContent) {
+        mainContent.setAttribute('aria-busy', 'true');
+    }
 }
 
 /**
@@ -33,6 +37,9 @@ function showLoading() {
 function hideLoading() {
     if (loadingIndicator) {
         loadingIndicator.style.display = 'none';
+    }
+    if (mainContent) {
+        mainContent.setAttribute('aria-busy', 'false');
     }
 }
 
@@ -121,15 +128,41 @@ function renderRelease(release) {
  */
 function renderPlatform(platform) {
     const releasesHtml = platform.releases.map(renderRelease).join('');
+    const logoPath = `assets/images/logos/${platform.id}.webp`;
+    const logoFallback = `assets/images/logos/${platform.id}.jpg`;
     
     return `
-        <section class="platform-section" data-platform="${platform.id}">
-            <h3 class="platform-title">${platform.name}</h3>
+        <section class="platform-section" data-platform="${platform.id}" aria-labelledby="platform-${platform.id}">
+            <h3 class="platform-title" id="platform-${platform.id}">
+                <picture>
+                    <source srcset="${logoPath}" type="image/webp">
+                    <img src="${logoFallback}" alt="${platform.name} logo" class="platform-logo" loading="lazy" width="24" height="24" onerror="this.style.display='none'">
+                </picture>
+                ${platform.name}
+            </h3>
             <div class="platform-releases">
                 ${releasesHtml || '<p class="no-releases">No releases this week</p>'}
             </div>
         </section>
     `;
+}
+
+/**
+ * Format a timestamp for display using user's locale
+ * @param {string} isoString - ISO date string
+ * @returns {string} - Formatted date string
+ */
+function formatLastUpdated(isoString) {
+    if (!isoString) return '';
+    try {
+        const date = new Date(isoString);
+        return new Intl.DateTimeFormat(undefined, {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+        }).format(date);
+    } catch {
+        return isoString;
+    }
 }
 
 /**
@@ -139,6 +172,7 @@ function renderPlatform(platform) {
  */
 function renderPost(postData) {
     const platformsHtml = postData.platforms.map(renderPlatform).join('');
+    const lastUpdated = postData.generated_at ? formatLastUpdated(postData.generated_at) : '';
     
     return `
         <header class="post-header">
@@ -150,6 +184,7 @@ function renderPost(postData) {
         <div class="post-content">
             ${platformsHtml}
         </div>
+        ${lastUpdated ? `<footer class="post-footer"><p class="last-updated">Last updated: <time datetime="${postData.generated_at}">${lastUpdated}</time></p></footer>` : ''}
     `;
 }
 

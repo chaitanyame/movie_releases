@@ -1,253 +1,137 @@
-# Agent Harness Framework
+# OTT Weekly Releases
 
-A template repository for building **long-lived autonomous agents** within VS Code GitHub Copilot, based on [Anthropic's "Effective Harnesses for Long-Running Agents"](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents).
+A lightweight static web application that displays weekly OTT streaming platform releases in a blog post format with automated daily updates via Perplexity API and GitHub Actions.
 
-## The Problem
+🔗 **[Live Demo](https://chaitanyame.github.io/ott_news/)**
 
-AI agents face a fundamental challenge: **each new context window starts with no memory**. Without proper scaffolding:
-- Agents try to do too much at once
-- They declare victory prematurely  
-- Work gets left in broken states
-- Time is wasted re-discovering context
+## Features
 
-## The Solution
+- 📺 Weekly releases from 8 major streaming platforms:
+  - Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, Peacock
+- 🔄 Automated daily updates via GitHub Actions (9 AM UTC)
+- 📦 Zero dependencies - vanilla HTML, CSS, JavaScript
+- ⚡ Fast loading with inlined critical CSS
+- 📱 Responsive design for mobile, tablet, and desktop
+- ♿ Accessible with ARIA attributes and skip navigation
+- 🗂️ Archive navigation with hash-based routing
+- 🔗 Shareable URLs for specific weeks
 
-This framework provides file-based artifacts that bridge context between sessions:
+## Getting Started
 
-| Artifact | Purpose |
-|----------|---------|
-| `memory/feature_list.json` | Source of truth - all features with pass/fail tracking |
-| `memory/claude-progress.md` | Session notes - what happened, what's next |
-| `init.sh` / `init.ps1` | Environment setup script |
-| Git history | Incremental progress with rollback capability |
+### Prerequisites
 
-## Quick Start
+- Node.js 18+
+- A Perplexity API key
 
-### 1. Use as Template
+### Local Development
 
-Click "Use this template" on GitHub, or clone directly:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chaitanyame/ott_news.git
+   cd ott_news
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file with your API key:
+   ```bash
+   cp .env.example .env
+   # Edit .env and add your PERPLEXITY_API_KEY
+   ```
+
+4. Start a local server:
+   ```bash
+   npx http-server . -p 3000
+   ```
+
+5. Open http://localhost:3000 in your browser.
+
+### Running Tests
 
 ```bash
-git clone https://github.com/anthropics/agent-harness-framework.git my-project
-cd my-project
+# Run all Playwright tests
+npx playwright test
+
+# Run tests for a specific browser
+npx playwright test --project=chromium
+
+# Run tests with UI mode
+npx playwright test --ui
 ```
 
-### 2. Initialize Your Project
+## Configuration
 
-In VS Code with GitHub Copilot, invoke the Initializer agent:
+### Environment Variables
 
-```
-@Initializer Set up a [describe your project]
-```
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `PERPLEXITY_API_KEY` | API key for Perplexity AI | Yes |
 
-The Initializer will:
-- Create `memory/feature_list.json` with all features
-- Set up project structure
-- Create `init.sh` for environment setup
-- Make the initial git commit
+### GitHub Secrets
 
-### 3. Implement Features
+For automated updates, add the following secret to your repository:
 
-Use the Coder agent for subsequent sessions:
+1. Go to **Settings** → **Secrets and variables** → **Actions**
+2. Click **New repository secret**
+3. Name: `PERPLEXITY_API_KEY`
+4. Value: Your Perplexity API key
 
-```
-@Coder Continue implementing features
-```
+## Deployment
 
-The Coder will:
-- Read progress notes to get context
-- Pick one feature to implement
-- Test and verify
-- Commit and update progress
+### GitHub Pages
 
-## Two-Agent Pattern
+1. Go to **Settings** → **Pages**
+2. Source: Deploy from a branch
+3. Branch: `main` (or your default branch)
+4. Folder: `/ (root)`
+5. Click **Save**
 
-### Initializer (Session 1)
+The site will be available at `https://{username}.github.io/ott_news/`
 
-Sets up the foundation for all future work:
-- Creates comprehensive feature list
-- Establishes project structure
-- Documents everything for future agents
-
-### Coder (Sessions 2+)
-
-Makes incremental progress:
-- Reads previous session notes
-- Implements ONE feature at a time
-- Tests before marking complete
-- Leaves clean state for next session
-
-## Directory Structure
+## Project Structure
 
 ```
-├── .github/
-│   ├── agents/           # Agent definitions
-│   │   ├── initializer.agent.md
-│   │   ├── coder.agent.md
-│   │   ├── planner.agent.md
-│   │   ├── researcher.agent.md
-│   │   ├── reviewer.agent.md
-│   │   └── orchestrator.agent.md
-│   ├── prompts/          # Reusable prompt commands
-│   ├── instructions/     # Context-specific instructions
-│   └── copilot-instructions.md
-├── .vscode/
-│   ├── mcp.json          # MCP server configuration
-│   └── settings.json     # VS Code settings
-├── memory/
-│   ├── constitution.md   # Project principles
-│   ├── feature_list.json # Source of truth
-│   ├── issues.json       # Adhoc issues and bugs
-│   ├── claude-progress.md # Session notes
-│   ├── state/            # Agent checkpoints
-│   ├── context/          # Persisted knowledge
-│   └── sessions/         # Session logs
-├── templates/            # Templates for new agents/prompts
-├── AGENTS.md             # Cross-agent instructions
-├── init.sh               # Setup script (Unix)
-├── init.ps1              # Setup script (Windows)
-└── README.md
+ott_news/
+├── index.html              # Main HTML file
+├── assets/
+│   ├── css/main.css       # Styles with CSS variables
+│   ├── js/app.js          # Main application logic
+│   └── images/logos/      # Platform logos
+├── data/
+│   ├── current-week.json  # Current week's releases
+│   ├── archive/           # Archived weekly data
+│   └── archive-index.json # Archive navigation index
+├── scripts/
+│   ├── fetch-releases.js  # API data fetcher
+│   └── utils/             # Utility modules
+├── tests/
+│   ├── features/          # E2E Playwright tests
+│   └── build/             # Unit tests
+└── .github/
+    └── workflows/
+        └── daily-update.yml # Automated update workflow
 ```
 
-## Critical Rules
+## API Usage
 
-### Feature List is Sacred
-
-`memory/feature_list.json` is the single source of truth:
-- ✅ Change `"passes": false` → `"passes": true` when verified
-- ❌ NEVER remove features
-- ❌ NEVER edit descriptions  
-- ❌ NEVER modify steps
-- ❌ NEVER reorder features
-
-### One Feature at a Time
-
-Each session should focus on ONE feature:
-1. Pick highest priority with `passes: false`
-2. Implement completely
-3. Test and verify
-4. Commit and document
-
-### Leave Clean State
-
-Before ending any session:
-- All work committed
-- Progress notes updated
-- No broken features
-- Ready for next agent
-
-## Available Agents
-
-| Agent | Purpose | Use When |
-|-------|---------|----------|
-| `@Initializer` | First session setup | Starting new project |
-| `@Coder` | Feature implementation | Continuing development |
-| `@Planner` | Task breakdown | Complex planning needed |
-| `@Researcher` | Context gathering | Need to understand codebase |
-| `@Reviewer` | Quality assurance | Review completed work |
-| `@Orchestrator` | Multi-agent coordination | Complex multi-step workflows |
-
-## Workflows
-
-### Spec-Driven Development (Recommended)
-
-Use this workflow for new projects or features:
-
-```
-/speckit.constitution  →  Define project principles
-       ↓
-/speckit.specify      →  Create feature specifications
-       ↓
-/speckit.plan         →  Create implementation plan
-       ↓
-/speckit.tasks        →  Generate detailed task list
-       ↓
-/harness.generate     →  Convert to feature_list.json
-       ↓
-@Coder                →  Implement incrementally
-```
-
-### Quick Start Workflow
-
-Use this for simpler projects:
-
-```
-@Initializer          →  Set up everything at once
-       ↓
-@Coder                →  Implement features
-```
-
-## Prompt Commands
-
-### Spec Kit Commands
-
-| Command | Purpose |
-|---------|---------|
-| `/speckit.constitution` | Create project principles and standards |
-| `/speckit.specify` | Create detailed feature specification |
-| `/speckit.plan` | Create implementation plan from specs |
-| `/speckit.tasks` | Generate actionable task list |
-| `/speckit.implement` | Implement a specific task |
-
-### Harness Commands
-
-| Command | Purpose |
-|---------|---------|
-| `/harness.generate` | Convert tasks.md to feature_list.json |
-| `/harness.status` | View progress dashboard |
-| `/harness.verify` | Verify passing features |
-| `/harness.checkpoint` | Save session state |
-| `/harness.resume` | Resume from checkpoint |
-| `/harness.issue` | Add adhoc bug, hotfix, or request |
-| `/harness.issues` | View issue tracking dashboard |
-
-## Customization
-
-### Adding New Agents
-
-Create a file in `.github/agents/`:
-
-```markdown
----
-name: MyAgent
-description: What this agent does
-tools:
-  - editFiles
-  - search
----
-
-# My Agent
-
-Instructions for the agent...
-```
-
-### Adding New Prompts
-
-Create a file in `.github/prompts/`:
-
-```markdown
----
-agent: agent
-description: What this prompt does
----
-
-# My Prompt
-
-Prompt content...
-```
-
-## Based On
-
-This framework implements patterns from:
-- [Anthropic: Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
-- [Anthropic Quickstart: Autonomous Coding](https://github.com/anthropics/claude-quickstarts/tree/main/autonomous-coding)
+This project uses the Perplexity API with the `sonar` model for fetching release data. The API is called once daily by the GitHub Actions workflow, keeping costs minimal.
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and request features.
-
-Please note that this project is released with a [Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit your changes: `git commit -m 'Add amazing feature'`
+4. Push to the branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Built with [Anthropic's Agent Harness Framework](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents)
+- Data powered by [Perplexity AI](https://www.perplexity.ai/)
