@@ -7,7 +7,7 @@ This file bridges context between agent sessions. Each agent reads this at the s
 **Project**: OTT Weekly Releases - Static SPA
 **Branch**: `001-ott-weekly-releases`
 **Status**: Phase 3 complete, starting Phase 4 (Data Management)
-**Features**: 20/35 passing (57%)
+**Features**: 21/35 passing (60%)
 **Last Updated**: 2025-12-07
 
 ## What's Been Done
@@ -49,6 +49,18 @@ This session transformed the template into a real project:
 - Archive clicks now update the URL hash; current week renders from cached data when returning to `#current`
 - Added Playwright coverage `tests/features/url-routing.spec.ts` (4 tests)
 - Verified with `npx playwright test tests/features/url-routing.spec.ts --project=chromium`
+
+### Session 12c - 2025-12-07
+
+**Feature**: F022 Back to Current Week Button
+**Branch**: `001-ott-weekly-releases`
+**Status**: ✅ Complete
+
+- Added back-to-current button in `index.html` and styled in `assets/css/main.css`
+- Button shows only on archive views, hides on current; smooth-scroll to top on click
+- Hash routing reused: button sets `#current` to re-render the current week
+- Added Playwright coverage `tests/features/back-to-current.spec.ts` (4 tests)
+- Verified with `npx playwright test tests/features/back-to-current.spec.ts --project=chromium`
 
 ### Session 10 - 2025-12-07
 

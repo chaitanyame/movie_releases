@@ -11,6 +11,7 @@ const errorMessage = document.getElementById('error-message');
 const currentWeekPost = document.getElementById('current-week-post');
 const archiveNav = document.getElementById('archive-nav');
 const archiveNavList = archiveNav ? archiveNav.querySelector('nav') : null;
+const backToCurrentButton = document.getElementById('back-to-current');
 
 // State
 let currentArchiveIndex = null;
@@ -52,6 +53,18 @@ function showError(message) {
 function hideError() {
     if (errorMessage) {
         errorMessage.style.display = 'none';
+    }
+}
+
+function showBackToCurrent() {
+    if (backToCurrentButton) {
+        backToCurrentButton.style.display = 'inline-flex';
+    }
+}
+
+function hideBackToCurrent() {
+    if (backToCurrentButton) {
+        backToCurrentButton.style.display = 'none';
     }
 }
 
@@ -158,6 +171,13 @@ async function init() {
         // Apply initial route from hash after nav is ready
         await applyRouteFromHash();
         window.addEventListener('hashchange', handleHashChange);
+
+        if (backToCurrentButton) {
+            backToCurrentButton.addEventListener('click', () => {
+                window.location.hash = '#current';
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
         
     } catch (error) {
         // Error already handled in loadCurrentWeek
@@ -260,6 +280,7 @@ async function loadArchivedWeek(weekId) {
         
         activeWeekId = weekId;
         updateActiveArchiveItem(weekId);
+        showBackToCurrent();
         
     } catch (error) {
         console.error('Error loading archived week:', error);
@@ -293,6 +314,7 @@ function renderCurrentWeek() {
     currentWeekPost.innerHTML = renderPost(currentWeekData);
     activeWeekId = currentWeekData.week_id || 'current';
     updateActiveArchiveItem(activeWeekId);
+    hideBackToCurrent();
 }
 
 /**

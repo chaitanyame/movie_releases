@@ -92,6 +92,23 @@ body {
     border-top: 1px solid var(--color-border);
 }
 
+.back-to-current {
+    display: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.back-to-current:hover,
+.back-to-current:focus {
+    background-color: var(--color-primary);
+    outline: none;
+}
 .archive-sidebar h2 {
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-md);
