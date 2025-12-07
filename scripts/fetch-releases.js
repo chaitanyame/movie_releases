@@ -200,10 +200,11 @@ function parseResponse(apiResponse) {
 /**
  * Generate the complete week data object
  * @param {Object} releaseData - Parsed release data from API
+ * @param {Date} [date] - Optional date (defaults to now)
  * @returns {Object} Complete week data object
  */
-function generateWeekData(releaseData) {
-    const now = new Date();
+function generateWeekData(releaseData, date) {
+    const now = date || new Date();
     const { start, end } = getWeekDateRange(now);
     const weekNumber = getISOWeekNumber(now);
     const year = now.getFullYear();
@@ -278,6 +279,7 @@ module.exports = {
     getWeekDateRange,
     formatDateRange,
     buildPrompt,
+    callPerplexityAPI,
     parseResponse,
     generateWeekData
 };
