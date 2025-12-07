@@ -6,8 +6,8 @@ This file bridges context between agent sessions. Each agent reads this at the s
 
 **Project**: OTT Weekly Releases - Static SPA
 **Branch**: `001-ott-weekly-releases`
-**Status**: Phase 1 complete, ready for Phase 2
-**Features**: 6/35 passing
+**Status**: Phase 2 complete, ready for Phase 3
+**Features**: 10/35 passing
 **Last Updated**: 2025-12-07
 
 ## What's Been Done
@@ -98,10 +98,67 @@ This session transformed the template into a real project:
 - **Data**: Static JSON files
 
 #### What's Next
-1. Continue with Phase 2: Core JavaScript Engine
-2. F007: Date/Week Utility Functions (tests/build/date-utils.spec.ts)
-3. F008: Perplexity API Client Script (tests/build/api-integration.spec.ts)
-4. Follow TDD: Write failing test FIRST
+1. Continue with Phase 3: UI Components & Styling
+2. Or continue Phase 2: F011 Caching Mechanism, F012 Error Handling
+3. Follow TDD: Write failing test FIRST
+
+---
+
+### Session 9 - 2025-12-07
+
+**Feature**: OTT Weekly Releases - Phase 2 Implementation
+**Branch**: `001-ott-weekly-releases`
+**Status**: ✅ Complete
+
+#### Accomplished
+
+1. **F007: Date/Week Utility Functions** (17 tests)
+   - Created `scripts/utils/date-utils.js` module
+   - Implemented `getISOWeekNumber(date)` - ISO week calculation
+   - Implemented `getWeekDateRange(date)` - Monday-Sunday range
+   - Implemented `formatDateRange(start, end)` - Human-readable format
+   - Implemented `formatDate(date)` - YYYY-MM-DD format
+   - Implemented `isNewWeek(date)` - Monday detection
+   - All dates use UTC to avoid timezone issues
+
+2. **F008: Perplexity API Client** (15 tests)
+   - `callPerplexityAPI(prompt)` - POST to Perplexity API
+   - Uses `sonar` model as specified
+   - Includes `web_search_options.search_context_size: 'low'`
+   - Error handling for missing API key and API failures
+   - Uses environment variable `PERPLEXITY_API_KEY`
+
+3. **F009: API Prompt Template**
+   - `buildPrompt(weekRange)` - Generates prompt for all 8 platforms
+   - Requests JSON-only response format
+   - Includes required fields: title, release_date, type, genre, description
+
+4. **F010: JSON Response Parser**
+   - `parseResponse(apiResponse)` - Extracts JSON from API response
+   - Handles raw JSON and markdown code blocks
+   - Error handling for missing/invalid content
+
+5. **Testing Infrastructure**
+   - Added Jest for unit tests (tests/build/)
+   - Kept Playwright for E2E tests (tests/features/)
+   - New npm scripts: `test:unit`, `test:e2e`, `test:all`
+
+#### Test Results
+```
+32 unit tests + 31 E2E tests = 63 tests total
+- date-utils.spec.ts: 17 tests ✓
+- api-integration.spec.ts: 15 tests ✓
+- html-structure.spec.ts: 12 tests ✓
+- responsive-design.spec.ts: 9 tests ✓
+- content-rendering.spec.ts: 10 tests ✓
+```
+
+#### Files Created/Modified
+- `scripts/utils/date-utils.js` - Date utility functions (new)
+- `scripts/fetch-releases.js` - Added callPerplexityAPI export (modified)
+- `tests/build/date-utils.spec.ts` - Date utility tests (new)
+- `tests/build/api-integration.spec.ts` - API integration tests (new)
+- `package.json` - Added Jest dependency and scripts (modified)
 
 ---
 
