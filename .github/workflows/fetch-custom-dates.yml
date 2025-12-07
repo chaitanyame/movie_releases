@@ -1,0 +1,115 @@
+# Manual workflow to fetch OTT releases for custom date ranges
+# Allows generating data for past weeks or future weeks
+
+name: Fetch Custom Date Range
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Start date (YYYY-MM-DD format, e.g., 2025-11-25)'
+        required: true
+        type: string
+      end_date:
+        description: 'End date (YYYY-MM-DD format, e.g., 2025-12-01)'
+        required: true
+        type: string
+      country:
+        description: 'Country to fetch (us, india, or both)'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - us
+          - india
+          - both
+      save_as_current:
+        description: 'Also save as current-week.json (overwrite current week data)'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-custom-dates:
+    name: Fetch Releases for ${{ inputs.start_date }} to ${{ inputs.end_date }}
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate dates
+        run: |
+          # Validate date format
+          if ! [[ "${{ inputs.start_date }}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "❌ Invalid start_date format. Use YYYY-MM-DD"
+            exit 1
+          fi
+          if ! [[ "${{ inputs.end_date }}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "❌ Invalid end_date format. Use YYYY-MM-DD"
+            exit 1
+          fi
+          
+          # Check start_date is before or equal to end_date
+          start_ts=$(date -d "${{ inputs.start_date }}" +%s)
+          end_ts=$(date -d "${{ inputs.end_date }}" +%s)
+          
+          if [ "$start_ts" -gt "$end_ts" ]; then
+            echo "❌ start_date must be before or equal to end_date"
+            exit 1
+          fi
+          
+          echo "✅ Dates validated: ${{ inputs.start_date }} to ${{ inputs.end_date }}"
+      
+      - name: Fetch OTT releases for custom dates
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          START_DATE: ${{ inputs.start_date }}
+          END_DATE: ${{ inputs.end_date }}
+          COUNTRY: ${{ inputs.country }}
+          SAVE_AS_CURRENT: ${{ inputs.save_as_current }}
+        run: node scripts/fetch-releases-custom.js
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Add all data files
+          git add data/
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📅 Add OTT releases for ${{ inputs.start_date }} to ${{ inputs.end_date }} (${{ inputs.country }})"
+            git push
+            echo "✅ Changes committed and pushed"
+          fi
+      
+      - name: Summary
+        run: |
+          echo "## 📅 Custom Date Range Fetch Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Parameter | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|-----------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Start Date | ${{ inputs.start_date }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| End Date | ${{ inputs.end_date }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Country | ${{ inputs.country }} |" >> $GITHUB_STEP_SUMMARY
+          echo "| Save as Current | ${{ inputs.save_as_current }} |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Data files have been generated and committed to the repository." >> $GITHUB_STEP_SUMMARY
