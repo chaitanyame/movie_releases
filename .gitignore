@@ -56,6 +56,9 @@ memory/state/*.json
 !memory/sessions/README.md
 !memory/state/README.md
 
+# Specification and planning files (development-only)
+specs/
+
 # Build artifacts
 dist/
 build/
