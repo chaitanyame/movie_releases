@@ -1,0 +1,22 @@
+{
+  "servers": {
+    "fetch": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "description": "Fetch content from URLs"
+    },
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@anthropic/mcp-server-fs", "${workspaceFolder}"],
+      "description": "File system operations"
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "puppeteer-mcp-server"],
+      "description": "Browser automation for testing"
+    }
+  }
+}

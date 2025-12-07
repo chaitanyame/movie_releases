@@ -1,0 +1,31 @@
+{
+  "_comment": "This is a template. Replace with your project's features using /harness.generate",
+  "_meta": {
+    "description": "Feature list tracking - source of truth for all work",
+    "version": "1.0.0",
+    "created": null,
+    "last_updated": null
+  },
+  "_rules": {
+    "allowed": "ONLY change 'passes' field from false to true when verified",
+    "forbidden": [
+      "Never remove features",
+      "Never edit descriptions",
+      "Never modify steps",
+      "Never reorder features"
+    ]
+  },
+  "_example": {
+    "id": 1,
+    "name": "Example Feature",
+    "description": "What this feature does",
+    "priority": "high",
+    "passes": false,
+    "steps": [
+      "Step 1 - Implementation action",
+      "Step 2 - Another action",
+      "Step 3 - Verify feature works"
+    ]
+  },
+  "features": []
+}

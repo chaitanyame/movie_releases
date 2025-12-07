@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Test outputs
+playwright-report/
+test-results/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local custom templates (user-specific)
+templates/custom/*
+!templates/custom/README.md
+
+# IDE
+.idea/
+*.swp
+*.swo

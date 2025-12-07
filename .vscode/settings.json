@@ -1,0 +1,11 @@
+{
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.promptFiles": true,
+  "chat.useAgentsMdFile": true,
+  "chat.useNestedAgentsMdFiles": true,
+  "github.copilot.chat.agent.runTasks": true,
+  "editor.formatOnSave": true,
+  "search.exclude": {
+    "memory/sessions/**": true
+  }
+}

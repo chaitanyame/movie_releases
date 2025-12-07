@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "description": "Issue tracking for Agent Harness Framework",
+    "version": "1.0.0",
+    "created": "2024-12-06T00:00:00Z",
+    "last_updated": "2024-12-06T00:00:00Z",
+    "total_issues": 0,
+    "open_issues": 0
+  },
+  "_instructions": {
+    "usage": "This file tracks adhoc issues, bugs, and requests discovered during or after feature implementation",
+    "rules": [
+      "Issues can be added at any time using /harness.issue",
+      "Update status field as issue progresses: open → in-progress → closed",
+      "Bugs MUST have regression tests before closing (TDD enforced)",
+      "Default: fix on same branch unless user requests separate branch",
+      "NEVER delete issues - mark as closed instead"
+    ],
+    "tdd_enforcement": {
+      "applies_to": ["bug"],
+      "optional_for": ["hotfix", "enhancement", "adhoc"],
+      "BLOCKING": "⚠️ Bugs MUST have regression_test_file and test_passes_after: true before closing",
+      "workflow": [
+        "1. Create regression test: tests/issues/I{id}-{description}.spec.ts",
+        "2. Run test - verify it FAILS (reproduces the bug)",
+        "3. Fix the bug",
+        "4. Run test - verify it PASSES",
+        "5. Set status: closed"
+      ]
+    },
+    "categories": {
+      "bug": "Defect in existing functionality - requires regression test",
+      "hotfix": "Urgent fix needed - TDD optional based on urgency",
+      "enhancement": "Improvement to existing feature - TDD recommended",
+      "adhoc": "One-off request or task - no TDD required"
+    },
+    "status_lifecycle": {
+      "open": "Issue identified, not yet started",
+      "in-progress": "Currently being worked on",
+      "closed": "Resolved and verified"
+    },
+    "priority_levels": {
+      "critical": "Blocking - must fix immediately, may interrupt current work",
+      "high": "Important - fix after current feature",
+      "medium": "Normal - address when convenient",
+      "low": "Minor - fix if time permits"
+    },
+    "branch_policy": {
+      "default": "same-branch",
+      "prompt_user": "When running /harness.issue, ask: 'Fix on current branch or create separate branch?'",
+      "separate_branch_pattern": "hotfix/I{id}-{description}",
+      "when_to_suggest_separate": [
+        "Critical bugs affecting production",
+        "Changes that may destabilize current work",
+        "User explicitly requests isolation"
+      ]
+    }
+  },
+  "issues": []
+}
