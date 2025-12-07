@@ -6,25 +6,25 @@
   "week_end": "2025-12-07",
   "week_range": "December 1-7, 2025",
   "week_title": "Week 49: December 1-7, 2025",
-  "generated_at": "2025-12-07T06:21:32.566Z",
+  "generated_at": "2025-12-07T06:32:02.812Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
         {
-          "title": "Shadowed Horizons",
+          "title": "Echoes of Tomorrow",
           "release_date": "2025-12-03",
           "type": "movie",
           "genre": "Sci-Fi Thriller",
-          "description": "A lone astronaut navigates a mysterious planet where reality bends and secrets from her past resurface."
+          "description": "A scientist discovers a way to send messages back in time, but her invention sparks unforeseen consequences."
         },
         {
-          "title": "Bakers & Breakups",
+          "title": "Holiday Heist",
           "release_date": "2025-12-05",
           "type": "series",
-          "genre": "Romantic Comedy",
-          "description": "A charming bakery owner finds new love and unexpected friendships in a quirky small town."
+          "genre": "Comedy",
+          "description": "A dysfunctional family bands together to stop a holiday heist threatening their town."
         }
       ]
     },
@@ -33,18 +33,18 @@
       "name": "Prime Video",
       "releases": [
         {
-          "title": "Legacy Code",
+          "title": "Silent Wings",
           "release_date": "2025-12-01",
-          "type": "series",
+          "type": "movie",
           "genre": "Drama",
-          "description": "Tech geniuses struggle with ethical dilemmas as they develop ground-breaking AI software."
+          "description": "A war veteran reconnects with a lost companion, uncovering secrets that change their lives forever."
         },
         {
-          "title": "Winter's Reckoning",
+          "title": "The Forgotten City",
           "release_date": "2025-12-07",
-          "type": "movie",
-          "genre": "Action",
-          "description": "An ex-soldier takes on a dangerous mission to rescue his family trapped in a remote, snowy region."
+          "type": "series",
+          "genre": "Fantasy",
+          "description": "Explorers uncover an ancient city where time flows differently, confronting their deepest fears."
         }
       ]
     },
@@ -53,11 +53,11 @@
       "name": "Disney+",
       "releases": [
         {
-          "title": "Tales of the Enchanted Forest",
+          "title": "Frostfall Adventures",
           "release_date": "2025-12-04",
           "type": "series",
-          "genre": "Fantasy Adventure",
-          "description": "Young heroes embark on a magical journey to save their enchanted land from a dark curse."
+          "genre": "Animation, Family",
+          "description": "A group of young heroes embark on a magical journey to save their winter kingdom from eternal frost."
         }
       ]
     },
@@ -66,18 +66,18 @@
       "name": "Hulu",
       "releases": [
         {
-          "title": "Hidden in Plain Sight",
+          "title": "Darkroom",
           "release_date": "2025-12-02",
-          "type": "series",
-          "genre": "Crime Drama",
-          "description": "A detective investigates an elusive criminal mastermind manipulating events from the shadows."
+          "type": "movie",
+          "genre": "Horror",
+          "description": "A photographer discovers sinister secrets hidden in her old darkroom, leading to a terrifying ordeal."
         },
         {
-          "title": "Last Dance",
+          "title": "City Lights",
           "release_date": "2025-12-06",
-          "type": "movie",
-          "genre": "Romance Drama",
-          "description": "Two former dance partners reunite for one last performance that reignites old feelings."
+          "type": "series",
+          "genre": "Drama, Crime",
+          "description": "Detectives in a bustling metropolis unravel a conspiracy that shakes the very foundation of the city."
         }
       ]
     },
@@ -86,11 +86,18 @@
       "name": "Apple TV+",
       "releases": [
         {
-          "title": "Quantum Paradox",
-          "release_date": "2025-12-03",
-          "type": "series",
+          "title": "Quantum Rift",
+          "release_date": "2025-12-01",
+          "type": "movie",
           "genre": "Science Fiction",
-          "description": "Scientists unravel the implications of time travel causing paradoxes and alternate realities."
+          "description": "Scientists race against time to close a dangerous dimensional rift threatening to consume their reality."
+        },
+        {
+          "title": "The Last Melody",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Musical Drama",
+          "description": "A young musician struggles to reclaim her voice and family legacy in a city fueled by music and dreams."
         }
       ]
     },
@@ -99,18 +106,18 @@
       "name": "Max",
       "releases": [
         {
-          "title": "City Under Siege",
-          "release_date": "2025-12-01",
-          "type": "series",
-          "genre": "Crime Thriller",
-          "description": "A relentless cop fights corruption while confronting his own troubled past in a city on edge."
+          "title": "Crimson Tide",
+          "release_date": "2025-12-03",
+          "type": "movie",
+          "genre": "Action, Thriller",
+          "description": "An ex-special ops soldier fights to stop a global cyber-attack initiated by a mysterious group."
         },
         {
-          "title": "Chasing Shadows",
+          "title": "Legacy of Ash",
           "release_date": "2025-12-07",
-          "type": "movie",
-          "genre": "Mystery",
-          "description": "A journalist uncovers a conspiracy that challenges everything she thought she knew."
+          "type": "series",
+          "genre": "Fantasy, Adventure",
+          "description": "A warrior princess embarks on an epic quest to reclaim her kingdom from dark forces."
         }
       ]
     },
@@ -119,11 +126,18 @@
       "name": "Paramount+",
       "releases": [
         {
-          "title": "The Last Frontier",
-          "release_date": "2025-12-05",
+          "title": "Neon Streets",
+          "release_date": "2025-12-02",
           "type": "movie",
-          "genre": "Adventure",
-          "description": "Explorers brave the Arctic wilderness to uncover a legendary lost city."
+          "genre": "Crime Drama",
+          "description": "A detective dives deep into the underworld of a neon-lit city to solve a string of cold-blooded murders."
+        },
+        {
+          "title": "Galactic Explorers",
+          "release_date": "2025-12-06",
+          "type": "series",
+          "genre": "Sci-Fi, Adventure",
+          "description": "A crew of space explorers venture into unknown galaxies facing both wonders and dangers beyond imagination."
         }
       ]
     },
@@ -132,11 +146,18 @@
       "name": "Peacock",
       "releases": [
         {
-          "title": "Comedy Nights",
-          "release_date": "2025-12-06",
+          "title": "The Final Play",
+          "release_date": "2025-12-01",
+          "type": "movie",
+          "genre": "Sports Drama",
+          "description": "A former pro athlete coaches a struggling high school team to victory against all odds."
+        },
+        {
+          "title": "Midnight Murmurs",
+          "release_date": "2025-12-04",
           "type": "series",
-          "genre": "Comedy",
-          "description": "A fresh sketch comedy show featuring rising stars and hilarious new characters."
+          "genre": "Mystery, Thriller",
+          "description": "A journalist uncovers dark secrets in a small town where whispers in the night reveal chilling truths."
         }
       ]
     }
