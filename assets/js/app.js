@@ -192,7 +192,10 @@ function renderRelease(release) {
                 <span class="release-date">${release.release_date}</span>
                 <span class="release-type">${release.type}</span>
                 ${release.genre ? `<span class="release-genre">${release.genre}</span>` : ''}
+                ${release.industry ? `<span class="release-industry">${release.industry}</span>` : ''}
+                ${release.release_type ? `<span class="release-ott-type">${release.release_type}</span>` : ''}
             </div>
+            ${release.dubbing ? `<div class="release-dubbing"><span class="dubbing-label">🌐 Available in:</span> ${release.dubbing}</div>` : ''}
             ${renderActors(release.actors)}
             ${release.description ? `<p class="release-description">${release.description}</p>` : ''}
         </div>

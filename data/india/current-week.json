@@ -124,10 +124,20 @@
           "title": "With Love, Meghan: Holiday Celebration",
           "release_date": "2025-12-03",
           "type": "series",
+<<<<<<< HEAD
           "genre": "Holiday Special",
           "language": "English",
           "actors": [],
           "description": "A holiday celebration series featuring Meghan."
+=======
+          "industry": "Bollywood/Hindi",
+          "genre": "Action",
+          "language": "Hindi",
+          "actors": ["Varun Dhawan", "Samantha Ruth Prabhu", "Kay Kay Menon"],
+          "dubbing": "Hindi, Tamil, Telugu",
+          "release_type": "Direct-to-OTT",
+          "description": "The Indian chapter of the Citadel universe follows two agents on a high-stakes mission."
+>>>>>>> cc5bb97 (feat: enhance India prompt with comprehensive regional coverage)
         }
       ]
     },
@@ -138,6 +148,7 @@
         {
           "title": "Dies Irae",
           "release_date": "2025-12-05",
+<<<<<<< HEAD
           "type": "movie",
           "genre": "Horror Thriller",
           "language": "Malayalam",
@@ -154,6 +165,15 @@
           "language": "Bengali",
           "actors": [],
           "description": "A family develops a new appreciation for each other and the true meaning of Christmas."
+=======
+          "type": "series",
+          "industry": "Bollywood/Hindi",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "actors": ["Ravi Kishan", "Naila Grewal", "Nidhi Bisht"],
+          "release_type": "Direct-to-OTT",
+          "description": "The hilarious legal comedy returns with more courtroom chaos."
+>>>>>>> cc5bb97 (feat: enhance India prompt with comprehensive regional coverage)
         }
       ]
     },

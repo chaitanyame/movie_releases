@@ -57,14 +57,21 @@ const COUNTRIES = {
         name: 'India',
         flag: '🇮🇳',
         platforms: [
+            // Major platforms
             'Netflix',
             'Prime Video',
             'Disney+ Hotstar',
-            'Jio Cinema',
-            'ZEE5',
             'SonyLIV',
-            'Apple TV+',
-            'Aha'
+            'ZEE5',
+            'JioCinema',
+            // Regional/Niche platforms
+            'Aha',
+            'Hoichoi',
+            'SunNXT',
+            'ManoramaMAX',
+            'ETV Win',
+            'Planet Marathi',
+            'Chaupal'
         ]
     }
 };
@@ -142,6 +149,66 @@ function formatDateRange(start, end) {
  * @returns {string} The formatted prompt
  */
 function buildPrompt(weekRange, country) {
+    // Enhanced prompt for India with regional coverage
+    if (country.id === 'india') {
+        return `You are a senior entertainment data analyst and OTT tracking specialist for the Indian market. You have deep knowledge of regional industries (Tollywood, Bollywood, Kollywood, Mollywood, Sandalwood) and niche regional streaming platforms.
+
+Task: Generate a comprehensive report of verified OTT releases across all Indian languages for ${weekRange}.
+
+Scope & Coverage:
+1. Languages - Search explicitly for content in:
+   - Major: Hindi, Telugu, Tamil, Malayalam, Kannada
+   - Regional: Bengali, Marathi, Punjabi, Gujarati, Bhojpuri
+
+2. Platforms to cover: ${country.platforms.join(', ')}
+
+3. For EACH release, provide:
+   - Title (original name)
+   - Release date (format: YYYY-MM-DD, or mark as "TBA" if unconfirmed)
+   - Type (movie or series)
+   - Industry/Language (e.g., "Tollywood/Telugu", "Bollywood/Hindi", "Kollywood/Tamil")
+   - Genre
+   - Cast (top 3-4 actors)
+   - Dubbing details (if multi-language audio available, list all: e.g., "Hindi, Telugu, Tamil, Malayalam")
+   - Release type (Direct-to-OTT or Post-Theatrical)
+   - Brief description (1-2 sentences)
+
+Requirements:
+- Scan for BOTH "Direct-to-OTT" and "Post-Theatrical" digital premieres
+- Do NOT list rumored dates as confirmed - mark as "TBA" if uncertain
+- For South Indian/Pan-Indian films, explicitly state if dubbed versions available
+- Include ALL new releases, not just blockbusters
+- If a major language has no releases, note: "No confirmed [Language] releases this period"
+
+Return ONLY valid JSON with this exact structure:
+{
+  "platforms": [
+    {
+      "id": "platform-id",
+      "name": "Platform Name",
+      "releases": [
+        {
+          "title": "Title Name",
+          "release_date": "YYYY-MM-DD",
+          "type": "movie|series",
+          "industry": "Bollywood/Hindi",
+          "genre": "Genre",
+          "language": "Hindi",
+          "actors": ["Actor 1", "Actor 2", "Actor 3"],
+          "dubbing": "Hindi, Telugu, Tamil",
+          "release_type": "Direct-to-OTT",
+          "description": "Brief description."
+        }
+      ]
+    }
+  ]
+}
+
+Platform ID mapping (use lowercase with hyphens):
+netflix, prime-video, disney-plus-hotstar, sonyliv, zee5, jiocinema, aha, hoichoi, sunnxt, manoramamax, etv-win, planet-marathi, chaupal`;
+    }
+    
+    // Standard prompt for US
     return `Find all new movie and TV series releases for ${weekRange} on the following streaming platforms in ${country.name}: ${country.platforms.join(', ')}.
 
 For each release, provide:
@@ -175,7 +242,7 @@ Return the data as valid JSON only, with no additional text. Use this exact stru
 }
 
 Important: 
-- Use lowercase with hyphens for platform IDs (e.g., "netflix", "prime-video", "disney-plus-hotstar", "jio-cinema", "zee5", "sonyliv", "apple-tv-plus", "aha")
+- Use lowercase with hyphens for platform IDs (e.g., "netflix", "prime-video", "disney-plus", "hulu", "apple-tv-plus", "max", "paramount-plus", "peacock")
 - Include ALL new releases for the week, not just the most popular ones
 - If a platform has no new releases, include it with an empty releases array`;
 }
@@ -183,10 +250,16 @@ Important:
 /**
  * Call the Perplexity API
  * @param {string} prompt - The prompt to send
+ * @param {Object} country - Country configuration
  * @returns {Promise<Object>} The API response
  */
-async function callPerplexityAPI(prompt) {
+async function callPerplexityAPI(prompt, country) {
     const apiKey = getApiKey();
+    
+    // Enhanced system message for India
+    const systemMessage = country.id === 'india'
+        ? 'You are a senior entertainment data analyst and OTT tracking specialist with expertise in Indian regional cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have deep knowledge of all major and regional streaming platforms in India. Your priority is accuracy, comprehensive multi-language coverage, and distinguishing between original and dubbed releases. Always respond with valid JSON only, no markdown formatting or code blocks.'
+        : 'You are a helpful assistant that provides accurate, up-to-date information about streaming platform releases. Always respond with valid JSON only, no markdown formatting or code blocks. Be comprehensive and include all new releases for the specified week.';
     
     const response = await fetch(PERPLEXITY_API_URL, {
         method: 'POST',
@@ -199,7 +272,7 @@ async function callPerplexityAPI(prompt) {
             messages: [
                 {
                     role: 'system',
-                    content: 'You are a helpful assistant that provides accurate, up-to-date information about streaming platform releases. Always respond with valid JSON only, no markdown formatting or code blocks. Be comprehensive and include all new releases for the specified week.'
+                    content: systemMessage
                 },
                 {
                     role: 'user',
@@ -351,7 +424,7 @@ async function fetchCountryReleases(country, weekRange) {
     console.log(`\n${country.flag} Fetching releases for ${country.name}...`);
     
     const prompt = buildPrompt(weekRange, country);
-    const apiResponse = await callPerplexityAPI(prompt);
+    const apiResponse = await callPerplexityAPI(prompt, country);
     const releaseData = parseResponse(apiResponse);
     const weekData = generateWeekData(releaseData, country);
     

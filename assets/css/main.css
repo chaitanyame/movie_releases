@@ -548,6 +548,41 @@ body {
     content: '🏷️ ';
 }
 
+.release-industry {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+}
+
+.release-industry::before {
+    content: '🎭 ';
+}
+
+.release-ott-type {
+    background: rgba(139, 92, 246, 0.15);
+    color: #a78bfa;
+}
+
+.release-ott-type::before {
+    content: '📺 ';
+}
+
+/* Release Dubbing */
+.release-dubbing {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: var(--border-radius-sm);
+    font-size: var(--font-size-xs);
+    color: #60a5fa;
+}
+
+.dubbing-label {
+    font-weight: 600;
+}
+
 .release-description {
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
