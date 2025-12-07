@@ -7,6 +7,8 @@
  * Usage:
  *   PERPLEXITY_API_KEY=your_key node scripts/fetch-releases.js
  * 
+ * Or create a .env file with PERPLEXITY_API_KEY=your_key
+ * 
  * @module scripts/fetch-releases
  */
 
@@ -14,6 +16,18 @@
 
 const fs = require('fs');
 const path = require('path');
+
+// Load .env file if it exists (for local development)
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+    const envContent = fs.readFileSync(envPath, 'utf8');
+    envContent.split('\n').forEach(line => {
+        const match = line.match(/^\s*([^#=]+)\s*=\s*(.+)\s*$/);
+        if (match && !process.env[match[1]]) {
+            process.env[match[1].trim()] = match[2].trim();
+        }
+    });
+}
 
 // Configuration
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';

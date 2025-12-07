@@ -130,14 +130,19 @@ function isNewWeek(date) {
 
 /**
  * Get week identifier in YYYY-WW format.
+ * Uses ISO week-year (the year that contains Thursday of the week).
  * 
  * @param {Date} date - The date to get week ID for
  * @returns {string} Week ID (e.g., "2024-49")
  */
 function getWeekId(date) {
   const weekNum = getISOWeekNumber(date);
+  // Get the ISO week-year: the year that contains Thursday of this week
   const { start } = getWeekDateRange(date);
-  const year = start.getUTCFullYear();
+  // Thursday is start + 3 days
+  const thursday = new Date(start);
+  thursday.setUTCDate(start.getUTCDate() + 3);
+  const year = thursday.getUTCFullYear();
   return `${year}-${String(weekNum).padStart(2, '0')}`;
 }
 
