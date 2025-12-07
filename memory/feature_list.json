@@ -1,13 +1,13 @@
 {
-  "_comment": "This is a template. Replace with your project's features using /harness.generate",
-  "_meta": {
-    "description": "Feature list tracking - source of truth for all work",
-    "version": "1.0.0",
-    "created": null,
-    "last_updated": null
-  },
+  "branch": "001-ott-weekly-releases",
+  "specification": "specs/001-ott-weekly-releases/spec.md",
+  "name": "OTT Weekly Releases",
+  "description": "A lightweight static web application that displays weekly OTT streaming platform releases in a blog post format with automated daily updates via Perplexity API and GitHub Actions.",
+  "version": "1.0.0",
+  "created": "2024-12-07",
+  "last_updated": "2024-12-07",
   "_rules": {
-    "allowed": "ONLY change 'passes' field from false to true when verified",
+    "allowed": "ONLY change 'passes', 'test_fails_before', 'test_passes_after' fields when verified",
     "forbidden": [
       "Never remove features",
       "Never edit descriptions",
@@ -15,17 +15,700 @@
       "Never reorder features"
     ]
   },
-  "_example": {
-    "id": 1,
-    "name": "Example Feature",
-    "description": "What this feature does",
-    "priority": "high",
-    "passes": false,
-    "steps": [
-      "Step 1 - Implementation action",
-      "Step 2 - Another action",
-      "Step 3 - Verify feature works"
-    ]
-  },
-  "features": []
+  "features": [
+    {
+      "id": 1,
+      "name": "Setup Project Directory Structure",
+      "description": "Create the complete project directory structure with all necessary folders and placeholder files.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create index.html at project root",
+        "Create assets/css/main.css",
+        "Create assets/js/app.js",
+        "Create assets/images/logos/ directory with .gitkeep",
+        "Create data/current-week.json placeholder",
+        "Create data/archive/ directory with .gitkeep",
+        "Create scripts/fetch-releases.js placeholder",
+        "Create tests/features/, tests/build/, tests/integration/ directories",
+        "Create package.json with project metadata",
+        "Create playwright.config.ts placeholder",
+        "Verify all directories exist with tree or ls -R"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Setup Playwright Testing Infrastructure",
+      "description": "Initialize Playwright testing framework with proper configuration for the project.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add @playwright/test as devDependency in package.json",
+        "Configure playwright.config.ts with Chromium, Firefox, WebKit projects",
+        "Set baseURL for local development (http://localhost:3000 or file://)",
+        "Enable screenshots on failure",
+        "Configure HTML reporter",
+        "Run npm install to install dependencies",
+        "Run npx playwright install to install browsers",
+        "Verify npx playwright test --list shows configured projects"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Create HTML Skeleton with Semantic Structure",
+      "description": "Create the main index.html file with semantic HTML5 structure, meta tags for SEO, and accessibility features.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/features/html-structure.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/html-structure.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Create index.html with DOCTYPE and lang='en' attribute",
+        "Add meta tags: charset, viewport, description",
+        "Add Open Graph meta tags for social sharing",
+        "Use semantic HTML5 tags: header, main, article, section, aside, footer",
+        "Add content containers: #current-week-post, #archive-nav, #loading-indicator",
+        "Link to CSS and JS files correctly",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Create CSS Styling System with Variables",
+      "description": "Create a comprehensive CSS styling system with CSS custom properties, mobile-first responsive design, and BEM naming.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/features/responsive-design.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/responsive-design.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Define CSS variables for colors, spacing, typography, shadows",
+        "Implement mobile-first base styles (320px viewport)",
+        "Add media queries for tablet (768px), desktop (1024px), large (1920px)",
+        "Use CSS Grid for main page layout",
+        "Use Flexbox for component layouts",
+        "Apply BEM naming convention consistently",
+        "Add smooth transitions for hover/focus states",
+        "Run test and verify it PASSES at all breakpoints"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Create Mock JSON Data Files",
+      "description": "Create sample JSON data files following the exact schema from the specification for development and testing.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create data/current-week.json with week metadata",
+        "Add all 8 platforms (Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, Peacock)",
+        "Include 2-3 sample releases per platform",
+        "Add realistic release data (title, date, genre, type, description)",
+        "Create data/archive/2024-49.json with sample archived week",
+        "Validate JSON files with node -e \"require('./data/current-week.json')\"",
+        "Verify schema matches specification exactly"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Create JavaScript Module for Content Rendering",
+      "description": "Create the main JavaScript application module that fetches JSON data and renders it using template literals.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/features/content-rendering.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/content-rendering.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Create ES6 module structure in assets/js/app.js",
+        "Implement loadCurrentWeek() function using fetch()",
+        "Implement renderPost(postData) function with template literals",
+        "Implement renderPlatform(platform) function",
+        "Implement renderRelease(release) function",
+        "Add loading state handling (show spinner while fetching)",
+        "Add error handling (show error message on failure)",
+        "Verify no console errors during execution",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Create Date/Week Utility Functions",
+      "description": "Create utility functions for calculating ISO week numbers, date ranges, and formatting dates.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/date-utils.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/date-utils.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Create scripts/utils/date-utils.js module",
+        "Implement getISOWeekNumber(date) function",
+        "Implement getWeekDateRange(date) returning {start, end} for Monday-Sunday",
+        "Implement formatDateRange(start, end) returning 'Dec 2-8, 2024' format",
+        "Implement isNewWeek() to detect Monday transition",
+        "Ensure all dates use UTC to avoid timezone issues",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Create Perplexity API Client Script",
+      "description": "Create a Node.js script that calls the Perplexity API to fetch OTT release data using the sonar model.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/api-integration.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/api-integration.spec.ts with mock API",
+        "Run test and verify it FAILS before implementation",
+        "Create scripts/fetch-releases.js with Node.js fetch()",
+        "Read API key from PERPLEXITY_API_KEY environment variable",
+        "Call https://api.perplexity.ai/chat/completions endpoint",
+        "Use 'sonar' model as specified",
+        "Include web_search_options with search_context_size: 'low'",
+        "Return structured response",
+        "Run test and verify it PASSES with mocked API"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Design and Implement API Prompt Template",
+      "description": "Design the prompt template for Perplexity API to fetch structured OTT release data in JSON format.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/api-integration.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create system prompt instructing model to return valid JSON only",
+        "Create user prompt requesting data for all 8 platforms",
+        "Include required fields: title, releaseDate (YYYY-MM-DD), genre array, type, description",
+        "Add dynamic date range calculation for current week",
+        "Use web_search_options.search_context_size: 'low' for efficiency",
+        "Test with actual API and verify response format",
+        "Document prompt in code comments"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Implement JSON Response Parser and Validator",
+      "description": "Create functions to parse Perplexity API response and validate it against the expected JSON schema.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/api-integration.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/json-validation.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Implement parseApiResponse(response) to extract JSON from API response",
+        "Implement validateSchema(data) to validate against expected schema",
+        "Implement transformToAppFormat(data) to add metadata (week number, dates, timestamp, IDs)",
+        "Handle partial/incomplete responses gracefully",
+        "Reject clearly invalid data",
+        "Log validation errors with context",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Implement Caching Mechanism",
+      "description": "Implement a file-based caching mechanism to store API responses with 24-hour TTL.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/build/caching.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/caching.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Create data/.cache/ directory",
+        "Implement loadCache() to retrieve cached data",
+        "Implement saveCache(data) to store data with timestamp",
+        "Implement isCacheValid() to check 24-hour TTL",
+        "Implement fallback to cache when API fails",
+        "Log cache hit/miss for debugging",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Implement Error Handling and Retry Logic",
+      "description": "Implement robust error handling for API failures including rate limits, server errors, and timeouts with retry logic.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/error-handling.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/error-handling.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Handle HTTP 429 (rate limit) with retry after delay",
+        "Handle HTTP 500 (server error) with single retry",
+        "Handle network timeout with single retry",
+        "Implement maximum 2 retry attempts",
+        "Fall back to cached data if all retries fail",
+        "Never overwrite good data with failed request data",
+        "Log all errors with context for debugging",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Create GitHub Actions Daily Update Workflow",
+      "description": "Create a GitHub Actions workflow that runs daily at 9 AM UTC to fetch fresh OTT release data.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create .github/workflows/daily-update.yml",
+        "Add cron trigger: '0 9 * * *' (9 AM UTC daily)",
+        "Add workflow_dispatch for manual triggering",
+        "Configure Node.js 18+ setup",
+        "Access PERPLEXITY_API_KEY from secrets",
+        "Run scripts/fetch-releases.js",
+        "Validate YAML syntax with yaml linter",
+        "Test workflow with manual dispatch"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Implement Week Transition Logic",
+      "description": "Implement logic to detect when a new week starts and archive the previous week's data.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/build/week-transition.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/build/week-transition.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Detect Monday (start of new ISO week)",
+        "Archive data/current-week.json to data/archive/YYYY-WW.json",
+        "Create new empty data/current-week.json for new week",
+        "Preserve archive files (never overwrite)",
+        "Handle year boundary (week 52 to week 1)",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Configure GitHub Secrets and Environment",
+      "description": "Document and configure the required GitHub repository secrets and environment variables.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Document PERPLEXITY_API_KEY in README",
+        "Add step-by-step instructions for adding GitHub secret",
+        "Verify workflow references ${{ secrets.PERPLEXITY_API_KEY }}",
+        "Create .env.example with required variables",
+        "Ensure .env is in .gitignore",
+        "Verify local development uses .env file"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Implement Git Commit and Push Logic",
+      "description": "Add logic to the GitHub Actions workflow to commit and push changes only when data files have been updated.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Configure git user in workflow (GitHub Actions bot)",
+        "Check if data files have changed before committing",
+        "Create descriptive commit message: 'chore: update weekly releases [YYYY-MM-DD]'",
+        "Push only if there are new commits",
+        "Ensure workflow does not fail if there are no changes",
+        "Test with manual workflow dispatch"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Add Workflow Failure Notifications",
+      "description": "Add automated GitHub Issue creation when the daily update workflow fails repeatedly.",
+      "priority": "low",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add on-failure step to workflow",
+        "Create GitHub Issue with error context and logs",
+        "Label issue as 'automation-failure'",
+        "Check if similar issue already exists before creating",
+        "Include link to failed workflow run",
+        "Test by intentionally failing workflow"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Create Archive Index Generator",
+      "description": "Create a script that generates an index of all archived weeks for the navigation menu.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/archive-list.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/archive-list.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Create scripts/generate-archive-index.js",
+        "Scan data/archive/ directory for JSON files",
+        "Extract week metadata from each file",
+        "Sort by date (newest first)",
+        "Generate data/archive-index.json with list of weeks",
+        "Run as part of build/update process",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Implement Archive Navigation UI",
+      "description": "Create the UI component for navigating between archived weeks.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/archive-navigation.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/archive-navigation.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Add archive navigation section to HTML (sidebar or dropdown)",
+        "Implement loadArchiveIndex() to fetch archive-index.json",
+        "Render archive list: 'Week of Dec 2-8, 2024'",
+        "Add click handlers to load archived week",
+        "Highlight current/active selection",
+        "Ensure mobile-responsive design",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Implement Archive Post Loading",
+      "description": "Add functionality to load and display archived week posts when selected from navigation.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/archive-loading.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/archive-loading.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Implement loadArchivedWeek(year, weekNumber) function",
+        "Fetch data from data/archive/YYYY-WW.json",
+        "Reuse renderPost() for consistent display",
+        "Show loading indicator while fetching",
+        "Handle 404 (missing archive) gracefully with error message",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Implement Hash-Based URL Routing",
+      "description": "Add URL hash-based routing so users can bookmark and share links to specific weeks.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/url-routing.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/url-routing.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Implement URL format: #archive/2024-49 for archived weeks",
+        "Implement URL format: #current or no hash for current week",
+        "Update URL when navigating between weeks",
+        "Load correct week based on URL on page load",
+        "Support browser back/forward buttons (hashchange event)",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Add 'Back to Current Week' Button",
+      "description": "Add a prominent button to return to the current week when viewing an archived week.",
+      "priority": "low",
+      "passes": true,
+      "test_file": "tests/features/back-to-current.spec.ts",
+      "test_fails_before": true,
+      "test_passes_after": true,
+      "steps": [
+        "Add button element to HTML template",
+        "Show button only when viewing archived week",
+        "Style with clear label: '← Back to Current Week'",
+        "Click handler loads current week and updates URL",
+        "Add smooth scroll to top on click",
+        "Ensure keyboard accessible with focus states"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Optimize and Compress Assets",
+      "description": "Optimize all assets (images, CSS, JS) to meet page size target of <500KB.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/page-load.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/page-load.spec.ts",
+        "Run test and verify it FAILS before implementation",
+        "Add platform logo images (WebP with JPG fallback)",
+        "Compress logos to <100KB total",
+        "Remove unused CSS rules",
+        "Ensure images use appropriate dimensions",
+        "Verify total page size <500KB",
+        "Run test and verify it PASSES after implementation"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Implement Lazy Loading for Images",
+      "description": "Implement native lazy loading for all images to improve initial page load time.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add loading='lazy' attribute to all img tags",
+        "Exclude hero/above-fold images from lazy loading",
+        "Update JS template literals to include lazy loading",
+        "Verify images load only when scrolled into viewport",
+        "Test with Chrome DevTools Network tab"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Inline Critical CSS",
+      "description": "Inline critical above-the-fold CSS to eliminate render-blocking requests.",
+      "priority": "low",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Identify critical CSS (header, hero, initial content)",
+        "Inline critical CSS in <head> using <style> tag",
+        "Keep full stylesheet linked for remaining styles",
+        "Verify no flash of unstyled content (FOUC)",
+        "Test First Contentful Paint <1 second with Lighthouse"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Run and Pass Lighthouse Audits",
+      "description": "Run Lighthouse audits and fix all issues to achieve scores >90 in all categories.",
+      "priority": "high",
+      "passes": true,
+      "test_file": "tests/performance/lighthouse.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/performance/lighthouse.spec.ts",
+        "Run Lighthouse audit in Chrome DevTools",
+        "Fix issues to achieve Performance score >90",
+        "Fix issues to achieve Accessibility score >90",
+        "Fix issues to achieve Best Practices score >90",
+        "Fix issues to achieve SEO score >90",
+        "Document all fixes made",
+        "Run test and verify all scores >90"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Accessibility Audit and Fixes",
+      "description": "Perform comprehensive accessibility audit and fix all WCAG 2.1 Level AA violations.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/features/accessibility.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/features/accessibility.spec.ts",
+        "Run test and verify it FAILS before fixes",
+        "Ensure all interactive elements keyboard accessible",
+        "Add proper focus indicators (visible focus states)",
+        "Verify color contrast ratio ≥4.5:1 for normal text",
+        "Implement proper heading hierarchy (h1 → h2 → h3)",
+        "Add ARIA labels on non-text elements",
+        "Add skip-to-content link at top of page",
+        "Test with screen reader (VoiceOver or NVDA)",
+        "Run test and verify it PASSES after fixes"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Add Loading States and Indicators",
+      "description": "Add visual feedback during data loading and error states.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create loading spinner CSS animation",
+        "Show spinner while fetching data",
+        "Create error message template with retry button",
+        "Display error message on fetch failure",
+        "Add ARIA attributes for loading states (aria-busy)",
+        "Test with slow network simulation in DevTools"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Add 'Last Updated' Timestamp Display",
+      "description": "Display the last updated timestamp in the post footer, formatted for user's locale.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add timestamp container to post footer template",
+        "Use Intl.DateTimeFormat for locale-aware formatting",
+        "Display format: 'Last updated: Dec 7, 2024 at 9:15 AM'",
+        "Update timestamp when data refreshes",
+        "Ensure timestamp is accessible (not just visual)"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Add SEO Meta Tags and Open Graph",
+      "description": "Add comprehensive SEO and social sharing meta tags to improve discoverability.",
+      "priority": "low",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add meta description with relevant keywords",
+        "Add Open Graph tags: og:title, og:description, og:image, og:url",
+        "Add Twitter Card tags: twitter:card, twitter:title, twitter:description",
+        "Add canonical URL",
+        "Create social sharing image (1200x630)",
+        "Test with Facebook Sharing Debugger",
+        "Test with Twitter Card Validator"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Run Full E2E Test Suite",
+      "description": "Execute all Playwright tests and fix any failures to achieve 100% pass rate.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Run npx playwright test to execute all tests",
+        "Fix any failing tests",
+        "Ensure no flaky tests (run 3 times)",
+        "Verify test execution time <5 minutes",
+        "Generate test report with npx playwright show-report",
+        "Verify 100% pass rate"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Cross-Browser Testing",
+      "description": "Test the application across all major browsers and fix any compatibility issues.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/browsers/cross-browser.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/browsers/cross-browser.spec.ts",
+        "Test in Chrome (latest) - verify all features work",
+        "Test in Firefox (latest) - verify all features work",
+        "Test in Safari (WebKit) - verify all features work",
+        "Test in Edge (latest) - verify all features work",
+        "Fix any browser-specific bugs",
+        "Run tests on all browser projects"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Mobile Device Testing",
+      "description": "Test the application on mobile devices and viewports to ensure responsive design works.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": "tests/mobile/mobile-devices.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Create test file tests/mobile/mobile-devices.spec.ts",
+        "Test iOS Safari (simulated) - verify layout and interactions",
+        "Test Chrome Android (simulated) - verify layout and interactions",
+        "Verify touch interactions work properly",
+        "Ensure no horizontal scrolling on mobile",
+        "Verify text is readable without zooming",
+        "Fix any mobile-specific issues"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Setup GitHub Pages Deployment",
+      "description": "Configure GitHub Pages for automatic deployment of the static site.",
+      "priority": "high",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Go to repository Settings > Pages",
+        "Enable GitHub Pages",
+        "Set source: Deploy from branch",
+        "Set branch to 001-ott-weekly-releases (or main after merge)",
+        "Set root directory to / (root of repo)",
+        "Wait for initial deployment",
+        "Verify site accessible at https://{username}.github.io/{repo}/",
+        "Configure custom domain (optional)"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Update Documentation (README)",
+      "description": "Update README with complete project documentation including setup, configuration, and deployment.",
+      "priority": "medium",
+      "passes": true,
+      "test_file": null,
+      "test_fails_before": false,
+      "test_passes_after": true,
+      "steps": [
+        "Add project overview and description",
+        "Add live demo link to GitHub Pages site",
+        "Add setup instructions for local development",
+        "Document environment variables (PERPLEXITY_API_KEY)",
+        "Add GitHub Secrets configuration guide",
+        "Add deployment instructions",
+        "Add contributing guidelines",
+        "Add license information",
+        "Review rendered README on GitHub"
+      ]
+    }
+  ]
 }

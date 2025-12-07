@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, and Peacock. Updated daily.">
+    <meta name="keywords" content="OTT, streaming, Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, Peacock, weekly releases">
+    <meta name="author" content="OTT Weekly Releases">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chaitanyame.github.io/ott_news/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chaitanyame.github.io/ott_news/">
+    <meta property="og:title" content="OTT Weekly Releases">
+    <meta property="og:description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, and more. Updated daily.">
+    <meta property="og:image" content="https://chaitanyame.github.io/ott_news/assets/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://chaitanyame.github.io/ott_news/">
+    <meta name="twitter:title" content="OTT Weekly Releases">
+    <meta name="twitter:description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, and more. Updated daily.">
+    <meta name="twitter:image" content="https://chaitanyame.github.io/ott_news/assets/images/og-image.png">
+    
+    <title>OTT Weekly Releases</title>
+    
+    <!-- Critical CSS inlined for faster first paint -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        :root{--color-primary:#0d1117;--color-text:#f0f6fc;--color-accent:#58a6ff;--spacing-lg:1.5rem;--font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--font-family);color:var(--color-text);background:var(--color-primary);min-height:100vh;-webkit-font-smoothing:antialiased}
+        .site-header{background:linear-gradient(180deg,#161b22 0%,#0d1117 100%);padding:var(--spacing-lg);text-align:center;border-bottom:1px solid #30363d}
+        .site-header h1{font-size:2rem;font-weight:700;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .loading{display:flex;flex-direction:column;align-items:center;padding:3rem;color:#8b949e}
+        .loading-spinner{width:48px;height:48px;border:3px solid #30363d;border-top-color:var(--color-accent);border-radius:50%;animation:spin .8s linear infinite}
+        @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <a href="#current-week-post" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <h1>OTT Weekly Releases</h1>
+        <button id="back-to-current" class="back-to-current" aria-label="Back to current week" style="display: none;">
+            <- Back to Current Week
+        </button>
+    </header>
+    
+    <main class="main-content" aria-busy="false">
+        <div id="loading-indicator" class="loading" style="display: none;" role="status" aria-live="polite">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p>Loading releases...</p>
+        </div>
+        <div id="error-message" class="error" style="display: none;" role="alert"></div>
+        <article id="current-week-post"></article>
+    </main>
+    
+    <aside id="archive-nav" class="archive-sidebar">
+        <h2>Archive</h2>
+        <nav></nav>
+    </aside>
+    
+    <footer class="site-footer">
+        <p>&copy; 2024 OTT Weekly Releases</p>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

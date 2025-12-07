@@ -20,3 +20,11 @@ templates/custom/*
 .idea/
 *.swp
 *.swo
+
+# Environment files (contains secrets)
+.env
+.env.local
+.env.*.local
+
+# Cache files
+data/.cache/
