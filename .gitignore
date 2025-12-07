@@ -59,6 +59,9 @@ memory/state/*.json
 # Specification and planning files (development-only)
 specs/
 
+# Memory folder (agent-specific, not needed in repo)
+memory/
+
 # Build artifacts
 dist/
 build/
