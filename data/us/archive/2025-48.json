@@ -1,0 +1,145 @@
+{
+  "week_number": 48,
+  "year": 2025,
+  "week_id": "2025-48",
+  "week_start": "2025-11-24",
+  "week_end": "2025-11-30",
+  "week_range": "November 24-30, 2025",
+  "week_title": "Week 48: November 24-30, 2025",
+  "country": {
+    "id": "us",
+    "name": "United States",
+    "flag": "🇺🇸"
+  },
+  "generated_at": "2025-12-07T20:15:12.868Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Kevin Hart: Acting My Age",
+          "release_date": "2025-11-24",
+          "type": "movie",
+          "genre": "Comedy",
+          "language": "English",
+          "actors": [
+            "Kevin Hart"
+          ],
+          "release_type": "Original",
+          "description": "A stand-up comedy special featuring Kevin Hart reflecting on aging and life experiences."
+        },
+        {
+          "title": "Missing: Dead or Alive? (Season 2)",
+          "release_date": "2025-11-24",
+          "type": "series",
+          "genre": "Documentary, Crime",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "Follow officers from a South Carolina sheriff's department as they search for individuals who have disappeared under troubling circumstances."
+        },
+        {
+          "title": "Santa Bootcamp",
+          "release_date": "2025-11-24",
+          "type": "movie",
+          "genre": "Family, Holiday",
+          "language": "English",
+          "actors": [],
+          "release_type": "Theatrical-to-Streaming",
+          "description": "A holiday-themed family movie about the adventures and training of Santa Claus candidates."
+        },
+        {
+          "title": "Is It Cake? Holidays (Season 2)",
+          "release_date": "2025-11-25",
+          "type": "series",
+          "genre": "Reality, Competition",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "Contestants create hyper-realistic cakes disguised as everyday objects in this holiday-themed baking competition."
+        },
+        {
+          "title": "Jingle Bell Heist",
+          "release_date": "2025-11-26",
+          "type": "movie",
+          "genre": "Comedy, Crime",
+          "language": "English",
+          "actors": [
+            "Olivia Holt",
+            "Connor Swindells"
+          ],
+          "release_type": "Original",
+          "description": "Two small-time thieves team up to rob London's most notorious department store on Christmas Eve, navigating secrets and a growing attraction."
+        },
+        {
+          "title": "Stranger Things (Season 5 – Volume 1)",
+          "release_date": "2025-11-26",
+          "type": "series",
+          "genre": "Sci-Fi, Thriller",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "The highly anticipated fifth and final season of the supernatural thriller series, released in three installments over the holiday period."
+        },
+        {
+          "title": "Aquaman and the Lost Kingdom",
+          "release_date": "2025-11-27",
+          "type": "movie",
+          "genre": "Action, Adventure, Fantasy",
+          "language": "English",
+          "actors": [
+            "Jason Momoa"
+          ],
+          "release_type": "Theatrical-to-Streaming",
+          "description": "The sequel to Aquaman (2018), following the underwater superhero's new adventures and challenges."
+        },
+        {
+          "title": "Left-Handed Girl",
+          "release_date": "2025-11-28",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "Taiwanese Mandarin",
+          "actors": [
+            "Shih-Yuan Ma",
+            "Janel Tsai",
+            "Nina Ye",
+            "Teng-Hui Huang"
+          ],
+          "release_type": "Original",
+          "description": "A single mother and her daughters move back to Taipei to open a night market stall, facing challenges and family secrets."
+        },
+        {
+          "title": "The Stringer: The Man Who Took The Photo",
+          "release_date": "2025-11-28",
+          "type": "documentary",
+          "genre": "Documentary",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "A documentary exploring the life and work of a photojournalist known as The Stringer."
+        },
+        {
+          "title": "Caught Stealing",
+          "release_date": "2025-11-29",
+          "type": "movie",
+          "genre": "Thriller",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "A thriller centered on a high-stakes theft and its consequences."
+        },
+        {
+          "title": "The Stone",
+          "release_date": "2025-11-30",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "actors": [],
+          "release_type": "Original",
+          "description": "A dramatic story released on Netflix at the end of November."
+        }
+      ]
+    }
+  ]
+}
