@@ -11,22 +11,62 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-07T07:06:33.901Z",
+  "generated_at": "2025-12-07T07:12:00.902Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
-      "releases": []
+      "releases": [
+        {
+          "title": "My Secret Santa",
+          "release_date": "2025-12-03",
+          "type": "movie",
+          "genre": "Romantic Comedy",
+          "language": "English",
+          "actors": [
+            "Kate Winslet",
+            "Toni Collette",
+            "Helen Mirren"
+          ],
+          "description": "A vivacious single mom disguises herself as a man to get a seasonal Santa job at a luxury ski resort, developing complications as she falls for the hotel manager."
+        }
+      ]
     },
     {
       "id": "prime-video",
       "name": "Prime Video",
-      "releases": []
+      "releases": [
+        {
+          "title": "Oh. What. Fun.",
+          "release_date": "2025-12-03",
+          "type": "movie",
+          "genre": "Holiday Drama",
+          "language": "English",
+          "actors": [
+            "Michelle Pfeiffer",
+            "Felicity Jones",
+            "Chloë Grace Moretz"
+          ],
+          "description": "Claire Clauster, an overworked mom, sets off on an impromptu holiday adventure after her family leaves her home alone."
+        }
+      ]
     },
     {
       "id": "disney-plus",
       "name": "Disney+",
-      "releases": []
+      "releases": [
+        {
+          "title": "Diary of a Wimpy Kid: The Last Straw",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "genre": "Animation/Family",
+          "language": "English",
+          "actors": [
+            "Voice cast varies"
+          ],
+          "description": "The fourth animated adaptation of Jeff Kinney's humorous book series about Greg Heffley's misadventures."
+        }
+      ]
     },
     {
       "id": "hulu",
@@ -51,98 +91,51 @@
           "title": "Guns Up",
           "release_date": "2025-12-01",
           "type": "movie",
-          "genre": "Action, Comedy",
+          "genre": "Action Comedy",
           "language": "English",
           "actors": [
             "Kevin James",
-            "Christina Ricci",
-            "Unknown"
+            "Christina Ricci"
           ],
-          "description": "An ex-cop turned mob henchman's final job goes off the rails, forcing him to save his family before he gets snuffed out."
+          "description": "An ex-cop turned mob henchman tries to leave the family business but faces a final job gone awry while racing against time to protect his family."
         },
         {
           "title": "5-Star",
           "release_date": "2025-12-02",
           "type": "series",
-          "genre": "Documentary",
+          "genre": "Docuseries",
           "language": "English",
           "actors": [],
-          "description": "A docuseries exploring in-depth stories, premiering December 2."
+          "description": "A new documentary series examining compelling subject matter."
         },
         {
           "title": "Transformers: EarthSpark Specials",
           "release_date": "2025-12-05",
           "type": "series",
-          "genre": "Animation, Family",
+          "genre": "Animation/Family",
           "language": "English",
           "actors": [],
-          "description": "Special episodes of the animated series Transformers: EarthSpark."
+          "description": "Special episodes in the 'Transformers: EarthSpark' animated series."
         },
         {
           "title": "Predators",
           "release_date": "2025-12-08",
           "type": "documentary",
-          "genre": "Documentary, Crime",
+          "genre": "Documentary",
           "language": "English",
           "actors": [],
-          "description": "A documentary examining the controversial 'To Catch a Predator' crime series legacy."
+          "description": "A documentary about the controversial crime series 'To Catch a Predator' and its impact."
         },
         {
           "title": "Little Disasters",
           "release_date": "2025-12-11",
           "type": "series",
-          "genre": "Psychological Thriller, Drama",
+          "genre": "Limited Drama",
           "language": "English",
           "actors": [
-            "Diane Kruger",
-            "Jo Joyner",
-            "Unknown"
+            "Diane Kruger"
           ],
-          "description": "A limited series about two friends whose relationship is tested after a fateful emergency room visit."
-        },
-        {
-          "title": "Mission: Impossible — The Final Reckoning",
-          "release_date": "2025-12-04",
-          "type": "movie",
-          "genre": "Action, Thriller",
-          "language": "English",
-          "actors": [
-            "Tom Cruise",
-            "Unknown",
-            "Unknown"
-          ],
-          "description": "The latest installment of the Mission: Impossible franchise with high-stakes spy action."
-        },
-        {
-          "title": "Roofman",
-          "release_date": "2025-12-09",
-          "type": "movie",
-          "genre": "Action, Drama",
-          "language": "English",
-          "actors": [
-            "Channing Tatum",
-            "Unknown",
-            "Unknown"
-          ],
-          "description": "An action film starring Channing Tatum streaming from December 9."
-        },
-        {
-          "title": "Tales of the Teenage Mutant Ninja Turtles Season 2",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "genre": "Animation, Action, Family",
-          "language": "English",
-          "actors": [],
-          "description": "The second season of the animated series about the Teenage Mutant Ninja Turtles."
-        },
-        {
-          "title": "DORA Season 4",
-          "release_date": "2025-12-19",
-          "type": "series",
-          "genre": "Animation, Family",
-          "language": "English",
-          "actors": [],
-          "description": "The fourth season continuation of the animated Dora series."
+          "description": "A limited series about a mother who puts her doctor friend in an awkward position after bringing her injured baby to the emergency room."
         }
       ]
     },
