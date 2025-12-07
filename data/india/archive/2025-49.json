@@ -11,46 +11,8 @@
     "name": "India",
     "flag": "🇮🇳"
   },
-  "generated_at": "2025-12-07T07:12:26.777Z",
+  "generated_at": "2025-12-07T07:24:47.804Z",
   "platforms": [
-    {
-      "id": "prime-video",
-      "name": "Prime Video",
-      "releases": [
-        {
-          "title": "Thamma",
-          "release_date": "2025-12-02",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Supernatural Romance-Comedy",
-          "language": "Hindi",
-          "actors": [
-            "Ayushmann Khurrana",
-            "Rashmika Mandanna",
-            "Nawazuddin Siddiqui"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A Hindi supernatural adventure starring a journalist and a woman from the mythic Betaal tribe, exploring forbidden relationships and ancient powers threatening humanity."
-        },
-        {
-          "title": "Surely Tomorrow",
-          "release_date": "2025-12-06",
-          "type": "series",
-          "industry": "International/Korean",
-          "genre": "Romance, Comedy",
-          "language": "Korean",
-          "actors": [
-            "Park Seo-joon",
-            "Won Ji-an",
-            "Lee El"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A Korean romantic drama series testing fate and love."
-        }
-      ]
-    },
     {
       "id": "netflix",
       "name": "Netflix",
@@ -64,12 +26,11 @@
           "language": "Telugu",
           "actors": [
             "Rashmika Mandanna",
-            "Dheekshith Shetty",
-            "Rahul Ravindran"
+            "Dheekshith Shetty"
           ],
           "dubbing": "Telugu, Hindi, Tamil, Malayalam",
           "release_type": "Post-Theatrical",
-          "description": "A Telugu romantic drama exploring love and compatibility during college days."
+          "description": "A romantic drama centered on a young woman's exploration of love and compatibility during college days."
         },
         {
           "title": "Stephen",
@@ -79,96 +40,109 @@
           "genre": "Psychological Thriller",
           "language": "Tamil",
           "actors": [
-            "Gomathi Shankar",
-            "Mithun Balaji"
+            "Gomathi Shankar"
           ],
           "dubbing": "Tamil",
           "release_type": "Direct-to-OTT",
-          "description": "A Tamil psychological thriller about a confessed killer evaluated by a psychiatrist."
+          "description": "A psychological thriller focusing on a confessed killer being evaluated by a psychiatrist."
         },
         {
-          "title": "Single Papa",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Comedy, Drama",
-          "language": "Hindi",
-          "actors": [
-            "Kunal Kemmu",
-            "Prajakta Koli",
-            "Manoj Pahwa",
-            "Ayesha Raza"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A light-hearted series about a freshly divorced manchild who adopts a baby, navigating modern parenthood."
-        },
-        {
-          "title": "With Love, Meghan - Holiday Celebration",
-          "release_date": "2025-12-03",
-          "type": "series",
-          "industry": "International/English",
-          "genre": "Reality TV, Docu-series",
+          "title": "Troll 2",
+          "release_date": "2025-12-01",
+          "type": "movie",
+          "industry": "Hollywood/English",
+          "genre": "Monster Horror",
           "language": "English",
-          "actors": [
-            "Meghan Markle",
-            "Prince Harry"
-          ],
+          "actors": [],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "Meghan Markle shares holiday traditions, crafts, and family recipes in a festive special."
+          "description": "A thrilling sequel to the Norwegian monster horror, blending ancient legends with suspense."
+        },
+        {
+          "title": "The Price of Confession",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "industry": "Hollywood/English",
+          "genre": "Thriller, Mystery",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "A gripping thriller and mystery series with intense plot twists."
         }
       ]
     },
     {
-      "id": "jiocinema",
-      "name": "JioCinema",
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Thamma",
+          "release_date": "2025-12-02",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Supernatural Romance-Comedy",
+          "language": "Hindi",
+          "actors": [
+            "Ayushmann Khurrana"
+          ],
+          "dubbing": "Hindi",
+          "release_type": "Direct-to-OTT (Early Access Rental), Full OTT from 2025-12-16",
+          "description": "A supernatural romantic comedy available for rent initially, then to all subscribers."
+        },
+        {
+          "title": "Surely Tomorrow",
+          "release_date": "2025-12-06",
+          "type": "series",
+          "industry": "Korean/Drama",
+          "genre": "Romance, Comedy",
+          "language": "Korean",
+          "actors": [
+            "Park Seo-joon",
+            "Won Ji-an",
+            "Lee El"
+          ],
+          "dubbing": "Korean",
+          "release_type": "Direct-to-OTT",
+          "description": "A Korean romantic drama exploring fate and love with celebrated cast."
+        }
+      ]
+    },
+    {
+      "id": "disney-plus-hotstar",
+      "name": "Disney+ Hotstar",
       "releases": [
         {
           "title": "Dies Irae",
           "release_date": "2025-12-05",
           "type": "movie",
           "industry": "Mollywood/Malayalam",
-          "genre": "Horror, Psychological Thriller",
+          "genre": "Horror Thriller",
           "language": "Malayalam",
           "actors": [
-            "Pranav Mohanlal",
-            "Rahulashivan"
+            "Pranav Mohanlal"
           ],
           "dubbing": "Malayalam",
           "release_type": "Post-Theatrical",
-          "description": "A dark, suspenseful Malayalam horror thriller about a man suspecting supernatural presence in his home."
-        },
+          "description": "A dark, atmospheric horror thriller about a chaotic life encountering supernatural presence."
+        }
+      ]
+    },
+    {
+      "id": "sonyliv",
+      "name": "SonyLIV",
+      "releases": [
         {
-          "title": "Mrs. Deshpande",
-          "release_date": "2025-12-19",
-          "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Thriller, Crime, Psychological",
-          "language": "Hindi",
-          "actors": [
-            "Madhuri Dixit",
-            "Priyanshu Chatterjee",
-            "Siddharth Chandekar",
-            "Diksha Juneja"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A psychological thriller featuring a notorious serial killer who helps police catch a copycat murderer."
-        },
-        {
-          "title": "Griffin in Summer",
-          "release_date": "2025-12-02",
+          "title": "Kuttram Purindhavan",
+          "release_date": "2025-12-05",
           "type": "movie",
-          "industry": "International/English",
-          "genre": "Coming-of-age, Drama",
-          "language": "English",
-          "actors": [
-            "TBA"
-          ],
-          "dubbing": "English",
+          "industry": "Kollywood/Tamil",
+          "genre": "Crime Thriller",
+          "language": "Tamil",
+          "actors": [],
+          "dubbing": "Tamil",
           "release_type": "Direct-to-OTT",
-          "description": "A coming-of-age dramedy about a teenage playwright infatuated with a handyman hired for the summer."
+          "description": "A gritty crime story revolving around the disappearance of a young girl in a small town."
         }
       ]
     },
@@ -188,7 +162,7 @@
           ],
           "dubbing": "Telugu",
           "release_type": "Post-Theatrical",
-          "description": "A heartwarming rural narrative about pre-wedding festivities."
+          "description": "A heartwarming rural narrative acclaimed by audiences, streaming after theatrical release."
         },
         {
           "title": "Gharwali Pedwali",
@@ -197,81 +171,45 @@
           "industry": "Bollywood/Hindi",
           "genre": "Supernatural Comedy",
           "language": "Hindi",
-          "actors": [
-            "TBA"
-          ],
+          "actors": [],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "A supernatural comedy series focusing on quirky family dynamics."
-        },
-        {
-          "title": "Saali Mohabbat",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Thriller Drama",
-          "language": "Hindi",
-          "actors": [
-            "TBA"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A thriller drama exploring complex relationship dynamics."
+          "description": "A supernatural comedy series streaming exclusively on ZEE5."
         }
       ]
     },
     {
-      "id": "sonyliv",
-      "name": "SonyLIV",
+      "id": "jiocinema",
+      "name": "JioCinema",
       "releases": [
         {
-          "title": "Kuttram Purindhavan",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "industry": "Kollywood/Tamil",
-          "genre": "Crime Thriller",
-          "language": "Tamil",
-          "actors": [
-            "Selvamani Muniyappan"
-          ],
-          "dubbing": "Tamil",
-          "release_type": "Post-Theatrical",
-          "description": "A compelling crime story about a young girl's disappearance and the search for truth."
-        },
-        {
-          "title": "Real Kashmir Football Club",
-          "release_date": "2025-12-09",
+          "title": "Mrs Deshpande",
+          "release_date": "2025-12-19",
           "type": "series",
           "industry": "Bollywood/Hindi",
-          "genre": "Sports Drama",
+          "genre": "Psychological Thriller",
           "language": "Hindi",
           "actors": [
-            "Manav Kaul",
-            "Mohammed Zeeshan Ayyub"
+            "Madhuri Dixit",
+            "Priyanshu Chatterjee",
+            "Siddharth Chandekar",
+            "Diksha Juneja"
           ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "Series based on the formation of the first professional football club in Kashmir."
-        }
-      ]
-    },
-    {
-      "id": "sunnxt",
-      "name": "SunNXT",
-      "releases": [
+          "description": "A psychological thriller about a serial killer helping police catch a copycat murderer."
+        },
         {
-          "title": "Asayana Pre Pras",
-          "release_date": "2025-12-05",
+          "title": "The Bad Guys 2",
+          "release_date": "2025-12-01",
           "type": "movie",
-          "industry": "Sandalwood/Kannada",
-          "genre": "Emotional Drama",
-          "language": "Kannada",
-          "actors": [
-            "TBA"
-          ],
-          "dubbing": "Kannada",
+          "industry": "Hollywood/English",
+          "genre": "Animation",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "An emotionally rich Kannada film with a straightforward narrative."
+          "description": "An animated adventure, sequel to a popular franchise, suitable for family viewing."
         }
       ]
     },
@@ -286,44 +224,109 @@
           "industry": "Kollywood/Tamil",
           "genre": "Action",
           "language": "Tamil",
-          "actors": [
-            "TBA"
-          ],
+          "actors": [],
           "dubbing": "Tamil",
           "release_type": "Direct-to-OTT",
-          "description": "An action-packed Tamil film about police and crime."
+          "description": "An action-packed Tamil film about police and crime, streaming directly on Aha."
+        }
+      ]
+    },
+    {
+      "id": "sunnxt",
+      "name": "SunNXT",
+      "releases": [
+        {
+          "title": "Pasayana Pre Pras",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "industry": "Sandalwood/Kannada",
+          "genre": "Drama",
+          "language": "Kannada",
+          "actors": [],
+          "dubbing": "Kannada",
+          "release_type": "Direct-to-OTT",
+          "description": "An emotional and straightforward Kannada drama available on SunNXT."
+        }
+      ]
+    },
+    {
+      "id": "manoramamax",
+      "name": "ManoramaMAX",
+      "releases": [
+        {
+          "title": "Dies Irae",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "industry": "Mollywood/Malayalam",
+          "genre": "Horror Thriller",
+          "language": "Malayalam",
+          "actors": [
+            "Pranav Mohanlal"
+          ],
+          "dubbing": "Malayalam",
+          "release_type": "Post-Theatrical",
+          "description": "A chilling horror thriller depicting supernatural chaos in a man's life."
+        }
+      ]
+    },
+    {
+      "id": "etv-win",
+      "name": "ETV Win",
+      "releases": []
+    },
+    {
+      "id": "planet-marathi",
+      "name": "Planet Marathi",
+      "releases": [
+        {
+          "title": "No confirmed Marathi releases this period",
+          "release_date": "TBA",
+          "type": "",
+          "industry": "Marathi",
+          "genre": "",
+          "language": "Marathi",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "",
+          "description": "No confirmed Marathi releases between December 1-7, 2025."
+        }
+      ]
+    },
+    {
+      "id": "chaupal",
+      "name": "Chaupal",
+      "releases": [
+        {
+          "title": "No confirmed Bhojpuri releases this period",
+          "release_date": "TBA",
+          "type": "",
+          "industry": "Bhojpuri",
+          "genre": "",
+          "language": "Bhojpuri",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "",
+          "description": "No confirmed Bhojpuri releases between December 1-7, 2025."
         }
       ]
     },
     {
       "id": "hoichoi",
       "name": "Hoichoi",
-      "releases": [],
-      "note": "No confirmed Bengali releases this period"
-    },
-    {
-      "id": "manoramamax",
-      "name": "ManoramaMAX",
-      "releases": [],
-      "note": "No confirmed Malayalam OTT releases on this platform this period"
-    },
-    {
-      "id": "etv-win",
-      "name": "ETV Win",
-      "releases": [],
-      "note": "No confirmed OTT releases this period"
-    },
-    {
-      "id": "planet-marathi",
-      "name": "Planet Marathi",
-      "releases": [],
-      "note": "No confirmed Marathi releases this period"
-    },
-    {
-      "id": "chaupal",
-      "name": "Chaupal",
-      "releases": [],
-      "note": "No confirmed Punjabi releases this period"
+      "releases": [
+        {
+          "title": "No confirmed Bengali releases this period",
+          "release_date": "TBA",
+          "type": "",
+          "industry": "Bengali",
+          "genre": "",
+          "language": "Bengali",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "",
+          "description": "No confirmed Bengali releases between December 1-7, 2025."
+        }
+      ]
     }
   ]
 }

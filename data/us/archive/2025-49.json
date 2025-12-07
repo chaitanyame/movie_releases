@@ -11,7 +11,7 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-07T07:12:00.902Z",
+  "generated_at": "2025-12-07T07:24:23.307Z",
   "platforms": [
     {
       "id": "netflix",
@@ -23,12 +23,77 @@
           "type": "movie",
           "genre": "Romantic Comedy",
           "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
           "actors": [
-            "Kate Winslet",
-            "Toni Collette",
-            "Helen Mirren"
+            "Alexandra Breckenridge",
+            "Ryan Eggold"
           ],
-          "description": "A vivacious single mom disguises herself as a man to get a seasonal Santa job at a luxury ski resort, developing complications as she falls for the hotel manager."
+          "description": "A single mom disguises herself as a male Santa at a luxury ski resort and falls for the hotel manager; a holiday-themed romantic comedy exclusive to Netflix.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Abandons",
+          "release_date": "2025-12-04",
+          "type": "series",
+          "genre": "Western Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Lena Headey",
+            "Gillian Anderson"
+          ],
+          "description": "A highly anticipated Western series headlined by Lena Headey and Gillian Anderson, exploring frontier themes with modern sensibilities; Netflix Original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Jay Kelly",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "An indie drama film premiering on Netflix this week, details on plot and cast are limited publicly.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Love and Wine",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "genre": "Romance/Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "A romantic drama with vineyard and wine themes, exclusive to Netflix this week.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Owning Manhattan",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 2 of this city-focused drama series, continuing storylines around real estate and power dynamics; Netflix Original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "All The Empty Rooms",
+          "release_date": "2025-12-01",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Netflix Original drama exploring themes of loss and reconciliation.",
+          "theatrical_info": ""
         }
       ]
     },
@@ -38,16 +103,75 @@
       "releases": [
         {
           "title": "Oh. What. Fun.",
-          "release_date": "2025-12-03",
+          "release_date": "2025-12-01",
           "type": "movie",
-          "genre": "Holiday Drama",
+          "genre": "Drama / Holiday",
           "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
           "actors": [
             "Michelle Pfeiffer",
             "Felicity Jones",
-            "Chloë Grace Moretz"
+            "Chloë Grace Moretz",
+            "Denis Leary"
           ],
-          "description": "Claire Clauster, an overworked mom, sets off on an impromptu holiday adventure after her family leaves her home alone."
+          "description": "Christmas drama about an overworked mom who embarks on an impromptu adventure during the holidays; Prime Video Original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Merv",
+          "release_date": "2025-12-10",
+          "type": "movie",
+          "genre": "Comedy / Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Zooey Deschanel",
+            "Charlie Cox"
+          ],
+          "description": "A couple co-parents their dog, leading to unexpected romantic sparks; Prime Video Original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Fallout Season 2",
+          "release_date": "2025-12-17",
+          "type": "series",
+          "genre": "Action / Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Ella Purnell",
+            "Walton Goggins",
+            "Kyle MacLachlan"
+          ],
+          "description": "The show moves the story to New Vegas as Lucy and The Ghoul search for her father; post-apocalyptic drama exclusive to Prime Video.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "A Minecraft Movie",
+          "release_date": "2025-12-22",
+          "type": "movie",
+          "genre": "Animation / Family",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [],
+          "description": "Family animation previously available on HBO Max now arriving on Prime Video for streaming in the US.",
+          "theatrical_info": "Originally released theatrically in 2025, windowing approx. 4 months before streaming"
+        },
+        {
+          "title": "Sinners",
+          "release_date": "2025-12-26",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Post-Theatrical",
+          "actors": [],
+          "description": "Indie drama that saw a successful theatrical run now premiering on Prime Video streaming.",
+          "theatrical_info": "Theatrical release in 2025, streaming about 1 month after theatrical run"
         }
       ]
     },
@@ -59,89 +183,164 @@
           "title": "Diary of a Wimpy Kid: The Last Straw",
           "release_date": "2025-12-05",
           "type": "movie",
-          "genre": "Animation/Family",
+          "genre": "Animation / Family",
           "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "The fourth animated adaptation of Jeff Kinney’s popular series, available exclusively on Disney+.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The First Snow of Fraggle Rock",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Family / Musical",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
           "actors": [
-            "Voice cast varies"
+            "Lele Pons (guest)"
           ],
-          "description": "The fourth animated adaptation of Jeff Kinney's humorous book series about Greg Heffley's misadventures."
+          "description": "Holiday musical adventure featuring Fraggle Rock puppets learning the magic of an imperfect snowflake; Disney+ Original.",
+          "theatrical_info": ""
         }
       ]
     },
     {
       "id": "hulu",
       "name": "Hulu",
-      "releases": []
+      "releases": [
+        {
+          "title": "Strange Harvest",
+          "release_date": "2025-12-23",
+          "type": "movie",
+          "genre": "Horror / Mockumentary",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Post-Theatrical",
+          "actors": [],
+          "description": "Mockumentary horror about detectives tracking a serial killer, praised as one of 2025’s surprise hits; Hulu streaming debut.",
+          "theatrical_info": "Theatrical during 2025, streaming about 1-2 months post theatrical"
+        },
+        {
+          "title": "The Life of Chuck",
+          "release_date": "2025-12-26",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [
+            "Tom Hiddleston"
+          ],
+          "description": "Stephen King adaptation featuring Tom Hiddleston; limited theatrical release followed by Hulu streaming.",
+          "theatrical_info": "Limited theatrical release in 2025"
+        },
+        {
+          "title": "Sinners",
+          "release_date": "2025-12-26",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Post-Theatrical",
+          "actors": [],
+          "description": "Drama film with positive critical reception, appearing on Hulu following theatrical run.",
+          "theatrical_info": "2025 theatrical release, streaming approx 1 month later"
+        }
+      ]
     },
     {
       "id": "apple-tv-plus",
       "name": "Apple TV+",
-      "releases": []
-    },
-    {
-      "id": "max",
-      "name": "Max",
-      "releases": []
-    },
-    {
-      "id": "paramount-plus",
-      "name": "Paramount+",
       "releases": [
         {
-          "title": "Guns Up",
-          "release_date": "2025-12-01",
+          "title": "F1",
+          "release_date": "2025-12-12",
           "type": "movie",
-          "genre": "Action Comedy",
+          "genre": "Sports / Documentary",
           "language": "English",
-          "actors": [
-            "Kevin James",
-            "Christina Ricci"
-          ],
-          "description": "An ex-cop turned mob henchman tries to leave the family business but faces a final job gone awry while racing against time to protect his family."
-        },
-        {
-          "title": "5-Star",
-          "release_date": "2025-12-02",
-          "type": "series",
-          "genre": "Docuseries",
-          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
           "actors": [],
-          "description": "A new documentary series examining compelling subject matter."
+          "description": "Documentary blockbuster produced by Apple Studios about Formula 1 racing, available for streaming on Apple TV+.",
+          "theatrical_info": ""
         },
         {
-          "title": "Transformers: EarthSpark Specials",
+          "title": "The First Snow of Fraggle Rock",
           "release_date": "2025-12-05",
           "type": "series",
-          "genre": "Animation/Family",
+          "genre": "Family / Musical",
           "language": "English",
-          "actors": [],
-          "description": "Special episodes in the 'Transformers: EarthSpark' animated series."
-        },
-        {
-          "title": "Predators",
-          "release_date": "2025-12-08",
-          "type": "documentary",
-          "genre": "Documentary",
-          "language": "English",
-          "actors": [],
-          "description": "A documentary about the controversial crime series 'To Catch a Predator' and its impact."
-        },
-        {
-          "title": "Little Disasters",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "genre": "Limited Drama",
-          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
           "actors": [
-            "Diane Kruger"
+            "Lele Pons (guest)"
           ],
-          "description": "A limited series about a mother who puts her doctor friend in an awkward position after bringing her injured baby to the emergency room."
+          "description": "Holiday musical adventure featuring Fraggle Rock puppets, also streaming on Apple TV+ (same as Disney+).",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "releases": [
+        {
+          "title": "Spartacus: House of Ashur",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Historical Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Nick E. Tarabay"
+          ],
+          "description": "Spartacus spinoff series exploring Ashur’s survival and rise, returning with a bloody gladiatorial story exclusive to Starz.",
+          "theatrical_info": ""
         }
       ]
     },
     {
       "id": "peacock",
       "name": "Peacock",
+      "releases": []
+    },
+    {
+      "id": "discovery-plus",
+      "name": "Discovery+",
+      "releases": []
+    },
+    {
+      "id": "mubi",
+      "name": "Mubi",
+      "releases": []
+    },
+    {
+      "id": "criterion-channel",
+      "name": "Criterion Channel",
+      "releases": []
+    },
+    {
+      "id": "tubi",
+      "name": "Tubi",
+      "releases": []
+    },
+    {
+      "id": "pluto-tv",
+      "name": "Pluto TV",
+      "releases": []
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": []
+    },
+    {
+      "id": "max",
+      "name": "Max",
       "releases": []
     }
   ]
