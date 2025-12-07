@@ -6,8 +6,8 @@ This file bridges context between agent sessions. Each agent reads this at the s
 
 **Project**: OTT Weekly Releases - Static SPA
 **Branch**: `001-ott-weekly-releases`
-**Status**: Phase 3 complete (F013-F016), continuing Phase 2 completion
-**Features**: 16/35 passing
+**Status**: Phase 3 complete, starting Phase 4 (Data Management)
+**Features**: 17/35 passing (49%)
 **Last Updated**: 2025-12-07
 
 ## What's Been Done
@@ -117,11 +117,20 @@ This session transformed the template into a real project:
 - `tests/build/week-transition.spec.ts` (new)
 - `memory/feature_list.json` (updated)
 
+7. **F018: Archive Index Generator** (8 test cases)
+   - Created `scripts/generate-archive-index.js`
+   - Scans `data/archive/` for YYYY-WW.json files
+   - Extracts metadata: weekId, weekTitle, dateRange, fileName, postCount
+   - Sorts by date descending (newest first)
+   - Generates `data/archive-index.json`
+   - Handles invalid JSON files gracefully
+   - Manual testing verified all functionality
+
 #### What's Next
-1. **F017**: Add Workflow Failure Notifications (low priority)
-2. **F018**: Archive Index Generator
-3. Continue with remaining Phase 3/4 features
-4. UI Components: Loading states, error states, archive navigation
+1. **F019**: Archive Navigation UI (requires F018 complete ✓)
+2. **F020**: Archive Post Loading
+3. Continue with remaining UI and data management features
+4. F017 (Workflow Failure Notifications) - low priority, defer
 
 ---
 
