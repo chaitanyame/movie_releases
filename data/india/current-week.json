@@ -11,12 +11,72 @@
     "name": "India",
     "flag": "🇮🇳"
   },
-  "generated_at": "2025-12-08T09:04:54.828Z",
+  "generated_at": "2025-12-09T09:03:38.315Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
+        {
+          "title": "The Accident Season 2",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "industry": "International",
+          "genre": "Drama, Thriller",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "Second season of the psychological thriller series exploring dark family secrets and unexpected twists."
+        },
+        {
+          "title": "Man vs Baby",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "industry": "International",
+          "genre": "Comedy, Drama",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "A lighthearted comedy series exploring the chaos of unexpected parenthood and personal growth."
+        },
+        {
+          "title": "Badly in Love",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "International",
+          "genre": "Romance, Comedy",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "A romantic comedy exploring modern relationships and the complexities of love."
+        },
+        {
+          "title": "Kaantha",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Tollywood/Telugu",
+          "genre": "Action, Thriller",
+          "language": "Telugu",
+          "actors": [],
+          "dubbing": "Telugu",
+          "release_type": "Post-Theatrical",
+          "description": "A Telugu action thriller arriving on Netflix following theatrical run."
+        },
+        {
+          "title": "Record of Ragnarok Season 3",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "industry": "International",
+          "genre": "Action, Fantasy, Anime",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "Third season of the anime series featuring mythological battles and supernatural combat."
+        },
         {
           "title": "Single Papa",
           "release_date": "2025-12-12",
@@ -25,173 +85,135 @@
           "genre": "Comedy, Drama",
           "language": "Hindi",
           "actors": [
-            "Kunal Khemu",
+            "Kunal Kemmu",
             "Prajakta Koli",
             "Manoj Pahwa",
             "Ayesha Raza"
           ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "A freshly divorced manchild adopts a baby, exploring his transition to single fatherhood in a desi family backdrop."
-        },
-        {
-          "title": "Man vs Baby",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Comedy",
-          "language": "English",
-          "actors": [
-            "Rowan Atkinson"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Rowan Atkinson's anarchic return in a hilarious parenting adventure."
+          "description": "A warm, chaotic comedy-drama about an irresponsible young man who adopts a baby and discovers fatherhood in a desi family backdrop."
         },
         {
           "title": "Wake Up Dead Man: A Knives Out Mystery",
           "release_date": "2025-12-12",
           "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Mystery",
+          "industry": "International",
+          "genre": "Mystery, Crime, Comedy",
           "language": "English",
           "actors": [],
           "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "A new installment in the Knives Out mystery franchise."
+          "description": "The third installment in the Knives Out mystery franchise featuring detective Benoit Blanc investigating a new case."
         },
         {
-          "title": "Stephen",
-          "release_date": "2025-12-05",
+          "title": "The Fakenapping",
+          "release_date": "2025-12-13",
           "type": "movie",
-          "industry": "Kollywood/Tamil",
-          "genre": "Thriller",
-          "language": "Tamil",
+          "industry": "International",
+          "genre": "Comedy, Crime",
+          "language": "English",
           "actors": [],
-          "dubbing": "Tamil",
+          "dubbing": "English",
           "release_type": "Direct-to-OTT",
-          "description": "An engaging Tamil thriller noted for its gripping performances."
+          "description": "A comedic thriller centered around a staged kidnapping that spirals out of control."
         },
         {
-          "title": "The Girlfriend",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "industry": "Tollywood/Telugu",
-          "genre": "Drama",
-          "language": "Telugu",
-          "actors": [
-            "Rashmika Mandanna"
-          ],
-          "dubbing": "Telugu",
-          "release_type": "Post-Theatrical",
-          "description": "Popular Telugu film starring Rashmika Mandanna, available after theatrical run."
-        },
-        {
-          "title": "No confirmed Marathi releases this period",
-          "release_date": "TBA",
-          "type": "N/A",
-          "industry": "Marathi",
-          "genre": "N/A",
-          "language": "Marathi",
+          "title": "Had I Not Seen the Sun Part 2",
+          "release_date": "2025-12-13",
+          "type": "series",
+          "industry": "International",
+          "genre": "Drama, Romance",
+          "language": "English",
           "actors": [],
-          "dubbing": "",
-          "release_type": "",
-          "description": "No confirmed Marathi releases on Netflix for December 8-14, 2025."
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "Second part of the intimate romantic drama exploring love and relationships."
+        },
+        {
+          "title": "City of Shadows",
+          "release_date": "2025-12-13",
+          "type": "series",
+          "industry": "International",
+          "genre": "Thriller, Drama",
+          "language": "English",
+          "actors": [],
+          "dubbing": "English",
+          "release_type": "Direct-to-OTT",
+          "description": "A dark thriller exploring crime and mystery in an urban setting."
         }
       ]
     },
     {
       "id": "prime-video",
-      "name": "Prime Video",
+      "name": "Amazon Prime Video",
       "releases": [
         {
-          "title": "Thamma",
-          "release_date": "2025-12-16",
+          "title": "F1",
+          "release_date": "2025-12-12",
           "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Supernatural Romance-Comedy",
-          "language": "Hindi",
+          "industry": "International",
+          "genre": "Sports, Drama",
+          "language": "English",
           "actors": [],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A supernatural romance-comedy film available on Prime Video from mid-December."
+          "dubbing": "English",
+          "release_type": "Post-Theatrical",
+          "description": "A sports drama film about Formula 1 racing arriving on Prime Video following theatrical release."
         }
       ]
     },
     {
       "id": "disney-plus-hotstar",
-      "name": "Disney+ Hotstar",
+      "name": "Disney+ Hotstar / JioHotstar",
       "releases": [
-        {
-          "title": "Percy Jackson and the Olympians Season 2",
-          "release_date": "2025-12-10",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Adventure, Fantasy",
-          "language": "English",
-          "actors": [
-            "Walker Scobell",
-            "Leah Sava Jeffries",
-            "Aryan Simhadri"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Fantasy series continuing the adventures from Greek mythology."
-        },
         {
           "title": "Superman",
           "release_date": "2025-12-11",
           "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Action",
+          "industry": "International",
+          "genre": "Action, Superhero",
           "language": "English",
-          "actors": [],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "New superhero action film featuring the iconic character Superman."
+          "actors": [
+            "David Corenswet",
+            "Rachel Brosnahan",
+            "Nicholas Hoult"
+          ],
+          "dubbing": "English, Hindi",
+          "release_type": "Post-Theatrical",
+          "description": "The latest superhero film reimagining the iconic DC character with a fresh narrative and stunning action sequences."
         },
         {
-          "title": "Mrs Deshpande",
-          "release_date": "2025-12-19",
+          "title": "Percy Jackson and the Olympians Season 2",
+          "release_date": "2025-12-10",
           "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Psychological Thriller",
-          "language": "Hindi",
+          "industry": "International",
+          "genre": "Adventure, Fantasy, Drama",
+          "language": "English",
           "actors": [
-            "Madhuri Dixit",
-            "Priyanshu Chatterjee",
-            "Siddharth Chandekar",
-            "Diksha Juneja"
+            "Walker Scobell",
+            "Leah Sava Jeffries",
+            "Aryan Simhadri",
+            "Charlie Bushnell"
           ],
-          "dubbing": "Hindi",
+          "dubbing": "English, Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "A chilling thriller about a notorious serial killer who helps police catch a copycat murderer."
+          "description": "Second season of the popular Percy Jackson adaptation, continuing the mythological adventures and expanding the universe."
         },
         {
           "title": "The Great Shamsuddin Family",
           "release_date": "2025-12-12",
           "type": "series",
           "industry": "Bollywood/Hindi",
-          "genre": "Family Drama",
+          "genre": "Comedy, Drama",
           "language": "Hindi",
-          "actors": [],
+          "actors": [
+            "Farida Jalal",
+            "Sheeba Chaddha",
+            "Kritika Kamra"
+          ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "A touching family drama revolving around relationships and bonds."
-        },
-        {
-          "title": "Taylor Swift: The End of an Era",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Documentary, Music",
-          "language": "English",
-          "actors": [
-            "Taylor Swift"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Music documentary capturing the final show of Taylor Swift's Eras Tour."
+          "description": "A quirky comedy-drama directed by Anusha Rizvi, following the eccentric Shamsuddin clan through a chaotic 12-hour period filled with mishaps and family warmth."
         }
       ]
     },
@@ -208,23 +230,13 @@
           "language": "Hindi",
           "actors": [
             "Manav Kaul",
-            "Mohd. Zeeshan Ayyub"
+            "Mohammed Zeeshan Ayyub",
+            "Mark Bennington",
+            "Abhishant Rana"
           ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "Inspirational true story of a football club rising to India's top-tier league."
-        },
-        {
-          "title": "Kuttram Purindhavan",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "industry": "Kollywood/Tamil",
-          "genre": "Thriller",
-          "language": "Tamil",
-          "actors": [],
-          "dubbing": "Tamil",
-          "release_type": "Direct-to-OTT",
-          "description": "A gripping Tamil thriller exploring intense themes."
+          "description": "Based on true events, this series chronicles the formation of Jammu & Kashmir's first professional football club by a Kashmiri Hindu Pandit and Muslim, transcending political divisions through shared resilience."
         }
       ]
     },
@@ -235,174 +247,56 @@
         {
           "title": "Saali Mohabbat",
           "release_date": "2025-12-12",
-          "type": "movie",
+          "type": "series",
           "industry": "Bollywood/Hindi",
-          "genre": "Thriller Drama",
-          "language": "Hindi",
-          "actors": [
-            "Radhika Apte",
-            "Divyenndu Sharma"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "A suspense thriller set in two parallel timeframes involving murder and secrets."
-        },
-        {
-          "title": "Kesariya@100",
-          "release_date": "2025-12-12",
-          "type": "documentary",
-          "industry": "Bollywood/Hindi",
-          "genre": "Historical Documentary",
+          "genre": "Thriller, Drama",
           "language": "Hindi",
           "actors": [],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "Historical documentary exploring significant events."
+          "description": "A Hindi thriller-drama series exploring complex relationships and dark secrets within a family dynamic."
         }
       ]
     },
     {
       "id": "jiocinema",
       "name": "JioCinema",
-      "releases": [
-        {
-          "title": "Percy Jackson and the Olympians Season 2",
-          "release_date": "2025-12-10",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Adventure, Fantasy",
-          "language": "English",
-          "actors": [
-            "Walker Scobell",
-            "Leah Sava Jeffries",
-            "Aryan Simhadri"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Continuation of the fantasy series based on Greek mythology."
-        },
-        {
-          "title": "Superman",
-          "release_date": "2025-12-11",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Action",
-          "language": "English",
-          "actors": [],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "The iconic superhero film available digitally."
-        },
-        {
-          "title": "The Great Shamsuddin Family",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Family Drama",
-          "language": "Hindi",
-          "actors": [],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Family drama centered on relationships and family dynamics."
-        },
-        {
-          "title": "Taylor Swift: The Eras Tour – The Final Show",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Documentary, Music",
-          "language": "English",
-          "actors": [
-            "Taylor Swift"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Final show of the popular music tour documented beautifully."
-        },
-        {
-          "title": "Mrs Deshpande",
-          "release_date": "2025-12-19",
-          "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Psychological Thriller",
-          "language": "Hindi",
-          "actors": [
-            "Madhuri Dixit",
-            "Priyanshu Chatterjee",
-            "Siddharth Chandekar",
-            "Diksha Juneja"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Gripping story of a serial killer aiding police against a copycat murderer."
-        }
-      ]
+      "releases": []
     },
     {
       "id": "aha",
-      "name": "Aha",
-      "releases": [
-        {
-          "title": "3 Roses Season 2",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "industry": "Tollywood/Telugu",
-          "genre": "Drama",
-          "language": "Telugu",
-          "actors": [],
-          "dubbing": "Telugu",
-          "release_type": "Direct-to-OTT",
-          "description": "Second season of the popular Telugu drama series."
-        }
-      ]
+      "name": "AHA",
+      "releases": []
     },
     {
       "id": "hoichoi",
       "name": "Hoichoi",
-      "releases": [],
-      "note": "No confirmed Bengali releases this period."
+      "releases": []
     },
     {
       "id": "sunnxt",
       "name": "SunNXT",
-      "releases": [
-        {
-          "title": "Asayana Pre Pras",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "industry": "Sandalwood/Kannada",
-          "genre": "Drama",
-          "language": "Kannada",
-          "actors": [],
-          "dubbing": "Kannada",
-          "release_type": "Direct-to-OTT",
-          "description": "An emotionally rich Kannada film with a straight-forward narrative."
-        }
-      ]
+      "releases": []
     },
     {
       "id": "manoramamax",
       "name": "ManoramaMAX",
-      "releases": [],
-      "note": "No confirmed Malayalam releases this period."
+      "releases": []
     },
     {
       "id": "etv-win",
       "name": "ETV Win",
-      "releases": [],
-      "note": "No confirmed Telugu releases this period beyond listed titles."
+      "releases": []
     },
     {
       "id": "planet-marathi",
       "name": "Planet Marathi",
-      "releases": [],
-      "note": "No confirmed Marathi releases this period."
+      "releases": []
     },
     {
       "id": "chaupal",
       "name": "Chaupal",
-      "releases": [],
-      "note": "No confirmed Bhojpuri releases this period."
+      "releases": []
     }
   ]
 }
