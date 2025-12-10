@@ -11,7 +11,7 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-09T09:03:18.550Z",
+  "generated_at": "2025-12-10T09:03:39.393Z",
   "platforms": [
     {
       "id": "netflix",
@@ -21,7 +21,7 @@
           "title": "Wake Up Dead Man: A Knives Out Mystery",
           "release_date": "2025-12-12",
           "type": "movie",
-          "genre": "Mystery/Crime",
+          "genre": "Mystery",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Post-Theatrical",
@@ -31,97 +31,85 @@
             "Glenn Close",
             "Jeremy Renner"
           ],
-          "description": "The third film in the Knives Out franchise featuring detective Benoit Blanc investigating a locked-room death. Received positive reviews and award season buzz.",
-          "theatrical_info": "Original theatrical release November 2025, approx. 4-week window before streaming."
-        },
-        {
-          "title": "Man vs Baby",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "genre": "Comedy",
-          "language": "English",
-          "content_category": "comedy",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Rowan Atkinson"
-          ],
-          "description": "Return of Rowan Atkinson in a heartfelt and comedic series focused on chaotic house-sitting and parenting mishaps. Netflix original series.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Simon Cowell: The Next Act",
-          "release_date": "2025-12-10",
-          "type": "documentary",
-          "genre": "Documentary",
-          "language": "English",
-          "content_category": "documentary",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Simon Cowell"
-          ],
-          "description": "Documentary chronicling music mogul Simon Cowell's career and ongoing impact on the entertainment industry. Netflix exclusive.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Single Papa",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "genre": "Drama/Comedy",
-          "language": "English",
-          "content_category": "indie",
-          "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "A touching story about parenting adventures with comedic undertones, featured as a Netflix original release.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Kaantha",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "genre": "Drama",
-          "language": "English",
-          "content_category": "international",
-          "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "International film available with English subtitles, exploring complex family and social dynamics.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Tomb Raider: The Legend of Lara Croft – Season 2",
-          "release_date": "2025-12-09",
-          "type": "series",
-          "genre": "Animation/Adventure",
-          "language": "English",
-          "content_category": "animation",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Hayley Atwell"
-          ],
-          "description": "Second season of the animated Tomb Raider series following Lara Croft's global quest to protect ancient relics. Netflix original.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Record of Ragnarok – Season 3",
-          "release_date": "2025-12-09",
-          "type": "series",
-          "genre": "Animation/Fantasy",
-          "language": "Japanese",
-          "content_category": "international",
-          "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "Japanese anime series continuing the epic battles between gods and humanity, available with English subtitles.",
-          "theatrical_info": ""
+          "description": "The third film in the Knives Out franchise featuring detective Benoit Blanc investigating a priest's death in a locked room; received positive reviews.",
+          "theatrical_info": "Theatrical release shortly before streaming in December 2025 with a brief theatrical window."
         },
         {
           "title": "Elmo and Mark Rober's Merry Giftmas",
           "release_date": "2025-12-08",
-          "type": "special",
-          "genre": "Family/Children",
+          "type": "movie",
+          "genre": "Family, Holiday",
           "language": "English",
           "content_category": "animation",
           "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "Holiday special featuring Elmo and friends working with NASA engineer Mark Rober on Christmas-themed STEM projects. Netflix family special.",
+          "actors": [
+            "Elmo (voice)",
+            "Mark Rober (Himself)",
+            "Cookie Monster (voice)"
+          ],
+          "description": "Elmo and friends collaborate with former NASA engineer Mark Rober to create special presents for a Christmas celebration.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Abandons",
+          "release_date": "2025-12-04",
+          "type": "series",
+          "genre": "Western Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Lena Headey",
+            "Gillian Anderson"
+          ],
+          "description": "Series set in Washington Territory in 1854 focusing on two very different matriarch families, exclusive Netflix original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Jay Kelly",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "George Clooney",
+            "Adam Sandler"
+          ],
+          "description": "Drama featuring two very different characters entangled in unexpected situations.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Tomb Raider: The Legend of Lara Croft Season 2",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "genre": "Action, Adventure",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Camilla Luddington (voice)",
+            "Other voice actors unconfirmed"
+          ],
+          "description": "Lara Croft races to recover ancient African relics before a techno-visionary unleashes worldwide destruction.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The West Wing (Seasons 1-7)",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "genre": "Political Drama",
+          "language": "English",
+          "content_category": "catalog addition",
+          "release_type": "Catalog Addition",
+          "actors": [
+            "Martin Sheen",
+            "Allison Janney",
+            "Rob Lowe",
+            "Richard Schiff"
+          ],
+          "description": "Entire seven-season run of acclaimed political drama added to Netflix's library; previously HBO Max exclusive.",
           "theatrical_info": ""
         }
       ]
@@ -131,10 +119,42 @@
       "name": "Prime Video",
       "releases": [
         {
+          "title": "Oh. What. Fun.",
+          "release_date": "2025-12-03",
+          "type": "movie",
+          "genre": "Drama, Holiday",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Michelle Pfeiffer",
+            "Felicity Jones",
+            "Chloë Grace Moretz",
+            "Denis Leary"
+          ],
+          "description": "Holiday drama featuring Michelle Pfeiffer as an overworked mom embarking on a solo adventure to find unexpected Christmas magic.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Merv",
+          "release_date": "2025-12-10",
+          "type": "movie",
+          "genre": "Romantic Comedy",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Zooey Deschanel",
+            "Charlie Cox"
+          ],
+          "description": "Comedy-drama about a dog named Merv losing his spark, and the awkward co-parenting between Anna and Russ to bring him back.",
+          "theatrical_info": ""
+        },
+        {
           "title": "Fallout Season 2",
           "release_date": "2025-12-17",
           "type": "series",
-          "genre": "Post-apocalyptic/Drama",
+          "genre": "Action, Adventure",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
@@ -143,7 +163,7 @@
             "Walton Goggins",
             "Kyle MacLachlan"
           ],
-          "description": "The second season of the video game adaptation series set in a post-apocalyptic Mojave, continuing the story of Lucy and The Ghoul's journey to New Vegas.",
+          "description": "Second season of video game adaptation moving the story quickly to New Vegas as Lucy and The Ghoul search for her father.",
           "theatrical_info": ""
         }
       ]
@@ -153,83 +173,105 @@
       "name": "Disney+",
       "releases": [
         {
-          "title": "Percy Jackson and the Olympians – Season 2",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "genre": "Fantasy/Adventure",
-          "language": "English",
-          "content_category": "mainstream",
-          "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "Second season continuing Percy Jackson’s quest for the Golden Fleece based on the second book, ‘Sea of Monsters’. Disney+ original series.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Taylor Swift: The End of an Era",
-          "release_date": "2025-12-12",
-          "type": "docuseries",
-          "genre": "Music Documentary",
-          "language": "English",
-          "content_category": "documentary",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Taylor Swift"
-          ],
-          "description": "Behind-the-scenes documentary series chronicling Taylor Swift’s highly successful Eras Tour, exclusive to Disney+.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Taylor Swift: The Eras Tour – The Final Show",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "genre": "Concert Film",
-          "language": "English",
-          "content_category": "documentary",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Taylor Swift"
-          ],
-          "description": "Concert film capturing the final night of Taylor Swift’s record-breaking Eras Tour, available exclusively on Disney+.",
-          "theatrical_info": ""
-        }
-      ]
-    },
-    {
-      "id": "apple-tv-plus",
-      "name": "Apple TV+",
-      "releases": [
-        {
-          "title": "F1",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "genre": "Sports Drama",
-          "language": "English",
-          "content_category": "mainstream",
-          "release_type": "Post-Theatrical",
-          "actors": [
-            "Brad Pitt"
-          ],
-          "description": "A high-stakes racing saga featuring Brad Pitt, a major box office success now arriving on Apple TV+ after theatrical release.",
-          "theatrical_info": "Theatrical release early November 2025, approx. 5-week window."
-        }
-      ]
-    },
-    {
-      "id": "starz",
-      "name": "Starz",
-      "releases": [
-        {
-          "title": "Spartacus: House of Ashur Season 1",
+          "title": "Percy Jackson and the Olympians Season 2",
           "release_date": "2025-12-10",
           "type": "series",
-          "genre": "Historical Drama",
+          "genre": "Adventure, Fantasy",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
           "actors": [
-            "Nick E. Tarabay"
+            "Walker Scobell",
+            "Leah Sava Jeffries",
+            "Aryan Simhadri",
+            "Charlie Bushnell"
           ],
-          "description": "Spinoff of the Spartacus franchise imagining Ashur surviving and opening his own gladiator school.",
+          "description": "Percy Jackson sails to the Sea of Monsters to rescue Grover and save Camp Half-Blood in this fantasy adventure series.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Star Wars: Young Jedi Adventures Season 3",
+          "release_date": "2025-12-08",
+          "type": "series",
+          "genre": "Animation, Children",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Kai (voice)",
+            "Lys (voice)",
+            "Nubs (voice)"
+          ],
+          "description": "Animated series following Jedi Younglings on adventures; season 3 continues with new episodes.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Diary of a Wimpy Kid: The Last Straw",
+          "release_date": "2025-12-05",
+          "type": "movie",
+          "genre": "Animation, Family, Comedy",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Zachary Gordon (voice)",
+            "Other voice actors unconfirmed"
+          ],
+          "description": "The fourth animated adaptation of Jeff Kinney’s popular book series about Greg Heffley and his misadventures.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": [
+        {
+          "title": "All's Fair Season 7",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "genre": "Legal Dramedy",
+          "language": "English",
+          "content_category": "indie",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Unconfirmed"
+          ],
+          "description": "New season of legal dramedy focusing on contemporary issues and courtroom drama.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": [
+        {
+          "title": "Sarah Squirm: Live + In the Flesh",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Standup Comedy",
+          "language": "English",
+          "content_category": "comedy",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Sarah Sherman"
+          ],
+          "description": "First-ever stand-up comedy special from Saturday Night Live's Sarah Sherman.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Spinal Tap II: The End Continues",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Comedy, Music",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Backing U.S. Cast"
+          ],
+          "description": "Legacy sequel to the cult classic rock mockumentary, continuing the misadventures of the band Spinal Tap.",
           "theatrical_info": ""
         }
       ]
@@ -240,16 +282,16 @@
       "releases": [
         {
           "title": "Little Disasters",
-          "release_date": "2025-12-12",
+          "release_date": "2025-12-11",
           "type": "limited series",
           "genre": "Drama",
           "language": "English",
-          "content_category": "mainstream",
+          "content_category": "indie",
           "release_type": "Direct-to-OTT",
           "actors": [
-            "Diane Kruger"
+            "Unconfirmed"
           ],
-          "description": "Limited series about a mother’s struggle and the medical challenges following a child’s head injury.",
+          "description": "Limited series focusing on complex relationships and dramatic personal stories.",
           "theatrical_info": ""
         }
       ]
@@ -259,15 +301,32 @@
       "name": "Peacock",
       "releases": [
         {
-          "title": "The Copenhagen Test Season 1",
-          "release_date": "2025-12-31",
+          "title": "Bel-Air Series Finale",
+          "release_date": "2025-12-08",
           "type": "series",
           "genre": "Drama",
           "language": "English",
-          "content_category": "indie",
+          "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
-          "actors": [],
-          "description": "New drama series debuting at the end of December on Peacock, focused on complex character relationships.",
+          "actors": [
+            "Will Smith",
+            "Other main cast"
+          ],
+          "description": "Three-part series finale of the dramatic reimagining of 'The Fresh Prince of Bel-Air'.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Copenhagen Test Season 1",
+          "release_date": "2025-12-27",
+          "type": "series",
+          "genre": "Documentary, Investigation",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Unconfirmed"
+          ],
+          "description": "Investigative docuseries exploring environmental and ethical issues.",
           "theatrical_info": ""
         }
       ]
@@ -276,6 +335,26 @@
       "id": "discovery-plus",
       "name": "Discovery+",
       "releases": []
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "releases": [
+        {
+          "title": "Spartacus: House of Ashur",
+          "release_date": "2025-12-05",
+          "type": "series",
+          "genre": "Historical Drama, Action",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Nick E. Tarabay"
+          ],
+          "description": "Spartacus spinoff speculating an alternate history if Ashur survives and opens his own gladiator ludus.",
+          "theatrical_info": ""
+        }
+      ]
     },
     {
       "id": "mubi",
@@ -295,6 +374,11 @@
     {
       "id": "pluto-tv",
       "name": "Pluto TV",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
       "releases": []
     }
   ]
