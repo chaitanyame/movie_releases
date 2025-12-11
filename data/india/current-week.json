@@ -11,60 +11,12 @@
     "name": "India",
     "flag": "🇮🇳"
   },
-  "generated_at": "2025-12-10T09:04:05.514Z",
+  "generated_at": "2025-12-11T09:04:04.341Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
-        {
-          "title": "Man vs Baby",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "industry": "British",
-          "genre": "Comedy",
-          "language": "English",
-          "actors": [
-            "Rowan Atkinson",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Rowan Atkinson returns as Trevor Bingley. When a baby is left behind at school, Trevor must handle the infant while managing a luxury penthouse during Christmas, leading to comedic chaos."
-        },
-        {
-          "title": "The Accident Season 2",
-          "release_date": "2025-12-11",
-          "type": "series",
-          "industry": "International",
-          "genre": "Drama",
-          "language": "Not specified",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Not specified",
-          "release_type": "Direct-to-OTT",
-          "description": "Season 2 of The Accident series."
-        },
-        {
-          "title": "Kaantha",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Mollywood/Malayalam",
-          "genre": "Thriller, Mystery",
-          "language": "Malayalam",
-          "actors": [
-            "Dulquer Salmaan",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Malayalam",
-          "release_type": "Post-Theatrical",
-          "description": "Dulquer Salmaan plays a superstar caught in an ego clash and murder mystery on a film set."
-        },
         {
           "title": "Single Papa",
           "release_date": "2025-12-12",
@@ -73,164 +25,21 @@
           "genre": "Comedy, Drama",
           "language": "Hindi",
           "actors": [
-            "Kunal Kemmu",
+            "Kunal Khemu",
             "Prajakta Koli",
-            "Manoj Pahwa"
+            "Manoj Pahwa",
+            "Ayesha Raza"
           ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "Gaurav Gehlot, a carefree manchild, shocks his family by adopting a baby after his divorce. The series explores his journey through single fatherhood and family chaos."
-        },
-        {
-          "title": "Badly in Love",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "International",
-          "genre": "Romance",
-          "language": "Not specified",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Not specified",
-          "release_type": "Direct-to-OTT",
-          "description": "Romantic drama film."
-        },
-        {
-          "title": "Record of Ragnarok Season 3",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "industry": "Anime/Japanese",
-          "genre": "Action, Supernatural",
-          "language": "Japanese",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Japanese, English, Hindi, Telugu, Tamil, Malayalam",
-          "release_type": "Direct-to-OTT",
-          "description": "Season 3 of the action-packed anime series Record of Ragnarok."
-        },
-        {
-          "title": "Wake Up Dead Man: A Knives Out Mystery",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Mystery, Thriller",
-          "language": "English",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "English",
-          "release_type": "Direct-to-OTT",
-          "description": "Latest installment in the Knives Out mystery franchise."
-        },
-        {
-          "title": "The Fakenapping",
-          "release_date": "2025-12-13",
-          "type": "movie",
-          "industry": "International",
-          "genre": "Comedy, Drama",
-          "language": "Not specified",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Not specified",
-          "release_type": "Direct-to-OTT",
-          "description": "Comedic drama about a fake kidnapping."
-        },
-        {
-          "title": "Had I Not Seen the Sun Part 2",
-          "release_date": "2025-12-13",
-          "type": "series",
-          "industry": "International",
-          "genre": "Drama",
-          "language": "Not specified",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Not specified",
-          "release_type": "Direct-to-OTT",
-          "description": "Part 2 of the drama series Had I Not Seen the Sun."
-        },
-        {
-          "title": "City of Shadows",
-          "release_date": "2025-12-13",
-          "type": "series",
-          "industry": "International",
-          "genre": "Thriller, Drama",
-          "language": "Not specified",
-          "actors": [
-            "Not specified",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Not specified",
-          "release_type": "Direct-to-OTT",
-          "description": "Thriller drama series set in an urban noir setting."
+          "description": "A freshly divorced manchild adopts a baby, exploring his transition to single fatherhood amidst desi family chaos."
         }
       ]
     },
     {
-      "id": "disney-plus-hotstar",
-      "name": "Disney+ Hotstar (JioHotstar)",
+      "id": "jiocinema",
+      "name": "JioCinema",
       "releases": [
-        {
-          "title": "Superman",
-          "release_date": "2025-12-11",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Superhero, Action",
-          "language": "English",
-          "actors": [
-            "David Corenswet",
-            "Rachel Brosnahan",
-            "Not specified"
-          ],
-          "dubbing": "English, Hindi, Telugu, Tamil, Malayalam",
-          "release_type": "Post-Theatrical",
-          "description": "James Gunn's Superman reboot follows Clark Kent balancing his life at the Daily Planet with saving Metropolis from threats."
-        },
-        {
-          "title": "Percy Jackson and the Olympians Season 2",
-          "release_date": "2025-12-10",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Fantasy, Adventure",
-          "language": "English",
-          "actors": [
-            "Walker Scobell",
-            "Leah Sava Jeffries",
-            "Aryan Simhadri"
-          ],
-          "dubbing": "English, Hindi, Telugu, Tamil, Malayalam",
-          "release_type": "Direct-to-OTT",
-          "description": "Season 2 of the fantasy-adventure series based on Rick Riordan's novels, following young demigods on mythological quests."
-        },
-        {
-          "title": "The Great Shamshudin Family",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Comedy, Drama",
-          "language": "Hindi",
-          "actors": [
-            "Farida Jalal",
-            "Sheeba Chaddha",
-            "Kritika Kamra"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Directed by Anusha Rizvi, this quirky comedy-drama follows Bani Ahmed as she races to file a critical application while navigating the chaotic Shamshudin family over 12 frantic hours."
-        },
         {
           "title": "Mrs Deshpande",
           "release_date": "2025-12-19",
@@ -241,119 +50,97 @@
           "actors": [
             "Madhuri Dixit Nene",
             "Priyanshu Chatterjee",
-            "Siddharth Chandekar"
+            "Siddharth Chandekar",
+            "Diksha Juneja"
           ],
           "dubbing": "Hindi",
           "release_type": "Direct-to-OTT",
-          "description": "Indian adaptation of French thriller La Mante. A serial killer agrees to help police catch a murderer replicating her style of crimes in this dark, psychological thriller."
+          "description": "An Indian adaptation of the French thriller 'La Mante', focusing on a serial killer helping police catch a copycat murderer."
         }
       ]
     },
     {
-      "id": "zee5",
-      "name": "ZEE5",
+      "id": "disney-plus-hotstar",
+      "name": "Disney+ Hotstar",
       "releases": [
         {
-          "title": "Saali Mohabbat",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Thriller, Crime",
-          "language": "Hindi",
-          "actors": [
-            "Radhika Apte",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Radhika Apte stars as a housewife who becomes a prime suspect in a double murder. Secrets, betrayal, and hidden truths shape this intense thriller."
-        }
-      ]
-    },
-    {
-      "id": "sonyliv",
-      "name": "SonyLIV",
-      "releases": [
-        {
-          "title": "Real Kashmir Football Club",
-          "release_date": "2025-12-09",
+          "title": "Percy Jackson And The Olympians, Season 2",
+          "release_date": "2025-12-10",
           "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Sports, Drama",
-          "language": "Hindi",
+          "industry": "Hollywood/English",
+          "genre": "Action, Adventure, Fantasy",
+          "language": "English",
           "actors": [
-            "Manav Kaul",
-            "Mohammed Zeeshan Ayyub",
-            "Abhishant Rana"
+            "Walker Scobell",
+            "Leah Sava Jeffries",
+            "Aryan Simhadri",
+            "Charlie Bushnell"
           ],
-          "dubbing": "Hindi",
+          "dubbing": "English, Hindi, Telugu, Tamil",
           "release_type": "Direct-to-OTT",
-          "description": "Based on true events, this series follows two men—a Kashmiri Hindu Pandit and a Kashmiri Muslim—who founded Jammu & Kashmir's first professional football club, uniting a conflict-hit community through sports."
+          "description": "Continuation of the fantasy-adventure series based on Percy Jackson novels, featuring modern demigods' quests."
         }
       ]
     },
     {
       "id": "prime-video",
       "name": "Prime Video",
-      "releases": [
-        {
-          "title": "F1",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Sports, Drama",
-          "language": "English",
-          "actors": [
-            "Brad Pitt",
-            "Not specified",
-            "Not specified"
-          ],
-          "dubbing": "English, Hindi, Telugu, Tamil, Malayalam",
-          "release_type": "Post-Theatrical",
-          "description": "Brad Pitt plays a veteran Formula One driver who returns to guide a rookie while navigating high-pressure racing politics and personal challenges."
-        }
-      ]
+      "releases": [],
+      "note": "No confirmed Prime Video releases for Indian languages from December 8-14, 2025"
     },
     {
-      "id": "jiocinema",
-      "name": "JioCinema",
-      "releases": []
+      "id": "sonyliv",
+      "name": "SonyLIV",
+      "releases": [],
+      "note": "No confirmed SonyLIV releases for Indian languages from December 8-14, 2025"
+    },
+    {
+      "id": "zee5",
+      "name": "ZEE5",
+      "releases": [],
+      "note": "No confirmed ZEE5 releases for Indian languages from December 8-14, 2025"
     },
     {
       "id": "aha",
       "name": "Aha",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed Aha releases for Indian languages from December 8-14, 2025"
     },
     {
       "id": "hoichoi",
       "name": "Hoichoi",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed Hoichoi Bengali releases from December 8-14, 2025"
     },
     {
       "id": "sunnxt",
       "name": "SunNXT",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed SunNXT releases for South Indian languages (Tamil, Telugu, Malayalam, Kannada) from December 8-14, 2025"
     },
     {
       "id": "manoramamax",
       "name": "ManoramaMAX",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed ManoramaMAX Malayalam releases from December 8-14, 2025"
     },
     {
       "id": "etv-win",
       "name": "ETV Win",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed ETV Win Telugu or regional releases from December 8-14, 2025"
     },
     {
       "id": "planet-marathi",
       "name": "Planet Marathi",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed Planet Marathi releases for Marathi language from December 8-14, 2025"
     },
     {
       "id": "chaupal",
       "name": "Chaupal",
-      "releases": []
+      "releases": [],
+      "note": "No confirmed Chaupal releases for Bhojpuri language from December 8-14, 2025"
     }
   ]
 }
