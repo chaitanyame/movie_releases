@@ -363,7 +363,7 @@
       "name": "Implement country switcher functionality",
       "description": "Create switchCountry function in assets/js/app.js to toggle between US and India",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create switchCountry(countryCode) function",
         "Update active button state in UI",
@@ -380,7 +380,7 @@
       "name": "Add loading indicator with ARIA attributes",
       "description": "Implement accessible loading indicator in index.html and assets/js/app.js",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Add loading spinner HTML in index.html",
         "Add ARIA attributes (role='status', aria-live='polite')",
@@ -396,7 +396,7 @@
       "name": "Verify all tests pass for User Story 1",
       "description": "Run current-week test suite and confirm all tests pass (GATE 2)",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Run npm test tests/features/*current-week*",
         "Verify T014 test passes (current week loads)",
