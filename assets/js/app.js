@@ -622,7 +622,7 @@ async function init() {
         const data = await loadCurrentWeek(currentCountry);
         
         if (currentWeekPost && data) {
-            renderCurrentWeek();
+            await renderCurrentWeek();
         }
         
         // Load archive navigation
@@ -669,7 +669,7 @@ async function handleCountryChange(event) {
     try {
         // Load new country data
         await loadCurrentWeek(currentCountry);
-        renderCurrentWeek();
+        await renderCurrentWeek();
         
         // Load archive for new country
         await loadArchiveIndex(currentCountry);
@@ -810,9 +810,9 @@ function updateActiveArchiveItem(weekId) {
 /**
  * Render the current week post using cached data
  */
-function renderCurrentWeek() {
+async function renderCurrentWeek() {
     if (!currentWeekData || !currentWeekPost) return;
-    currentWeekPost.innerHTML = renderPost(currentWeekData);
+    await renderMovieReleases(currentWeekData);
     activeWeekId = currentWeekData.week_id || 'current';
     updateActiveArchiveItem(activeWeekId);
     hideBackToCurrent();
@@ -845,15 +845,15 @@ async function applyRouteFromHash() {
     if (route.type === 'archive' && route.weekId) {
         await loadArchivedWeek(route.weekId);
     } else {
-        renderCurrentWeek();
+        await renderCurrentWeek();
     }
 }
 
 /**
  * Handle hashchange events
  */
-function handleHashChange() {
-    applyRouteFromHash();
+async function handleHashChange() {
+    await applyRouteFromHash();
 }
 
 // Start the application when DOM is ready

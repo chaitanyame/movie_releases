@@ -1,0 +1,310 @@
+{
+  "week_number": 50,
+  "year": 2025,
+  "week_id": "2025-50",
+  "week_start": "2025-12-08",
+  "week_end": "2025-12-14",
+  "week_range": "December 8-14, 2025",
+  "week_title": "Week 50: December 8-14, 2025",
+  "country": {
+    "id": "us",
+    "name": "United States",
+    "flag": "🇺🇸"
+  },
+  "generated_at": "2025-12-12T09:03:38.000Z",
+  "platforms": [
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Elmo and Mark Rober’s Merry Giftmas",
+          "release_date": "2025-12-08",
+          "type": "movie",
+          "genre": "Family",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Elmo",
+            "Mark Rober"
+          ],
+          "description": "Sesame Street special where Elmo and friends visit CrunchLabs with YouTuber Mark Rober for a Merry Giftmas present exchange, featuring fun hijinks and a gingerbread rocket.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Badly in Love",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "genre": "Romance",
+          "language": "Japanese",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Japanese series available with English subtitles/dubbing.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Record of Ragnarok",
+          "release_date": "2025-12-10",
+          "type": "series",
+          "genre": "Anime",
+          "language": "Japanese",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 3 continues the gods vs. humanity battles in Ragnarok; English subtitles/dubbing available. Netflix anime original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Tomb Raider: The Legend of Lara Croft",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Hayley Atwell",
+            "Richard Armitage",
+            "Allen Maldonado"
+          ],
+          "description": "Season 2 animated series with Lara Croft racing across Africa to stop a techno-visionary from using ancient relics; Netflix exclusive.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Wake Up Dead Man: A Knives Out Mystery",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Mystery",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [
+            "Daniel Craig",
+            "Josh O'Connor",
+            "Glenn Close",
+            "Jeremy Renner"
+          ],
+          "description": "Third Knives Out film with Benoit Blanc investigating a priest's death in a locked room; franchise entry post-brief theatrical run.",
+          "theatrical_info": "Brief theatrical release prior to streaming window"
+        },
+        {
+          "title": "The West Wing",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Catalog Addition",
+          "actors": [
+            "Martin Sheen",
+            "Rob Lowe",
+            "Allison Janney"
+          ],
+          "description": "Seasons 1-7 of the Emmy-winning political drama added to Netflix library.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Amazing Digital Circus",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 1 episodes 5-7 of the popular animated series.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": [
+        {
+          "title": "Merv",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Romantic Comedy",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Charlie Cox",
+            "Zooey Deschanel"
+          ],
+          "description": "Romantic comedy about a couple facing what happens to their dog after a breakup; Prime Video original.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "disney-plus",
+      "name": "Disney+",
+      "releases": [
+        {
+          "title": "Percy Jackson and the Olympians",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "genre": "Fantasy",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 2 of the Disney+ adaptation of Rick Riordan's mythological adventure series.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "hulu",
+      "name": "Hulu",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
+      "releases": [
+        {
+          "title": "F1",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Action Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
+          "actors": [
+            "Brad Pitt"
+          ],
+          "description": "Major box office hit racing drama produced by Jerry Bruckheimer; now streaming after theatrical run.",
+          "theatrical_info": "Major 2025 theatrical release with extended exclusivity window"
+        }
+      ]
+    },
+    {
+      "id": "max",
+      "name": "Max",
+      "releases": [
+        {
+          "title": "Spinal Tap II: The End Continues",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Comedy",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Legacy sequel to the beloved mockumentary comedy.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "It: Welcome to Derry",
+          "release_date": "2025-12-14",
+          "type": "series",
+          "genre": "Horror",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season finale of the Stephen King prequel series.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "paramount-plus",
+      "name": "Paramount+",
+      "releases": [
+        {
+          "title": "Little Disasters",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Diane Kruger"
+          ],
+          "description": "Limited series about a mother bringing her injured baby to the ER, putting her doctor friend in a dilemma; Paramount+ original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Predators",
+          "release_date": "2025-12-08",
+          "type": "movie",
+          "genre": "Documentary",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Documentary investigating the legacy of To Catch a Predator and culture of punishment entertainment.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "peacock",
+      "name": "Peacock",
+      "releases": [
+        {
+          "title": "Bel-Air",
+          "release_date": "2025-12-08",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Three-part series finale drops all at once.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "discovery-plus",
+      "name": "Discovery+",
+      "releases": []
+    },
+    {
+      "id": "starz",
+      "name": "Starz",
+      "releases": [
+        {
+          "title": "Spartacus: House of Ashur",
+          "release_date": "2025-12-10",
+          "type": "series",
+          "genre": "Drama",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 1 of the Starz historical drama spin-off.",
+          "theatrical_info": ""
+        }
+      ]
+    },
+    {
+      "id": "mubi",
+      "name": "Mubi",
+      "releases": []
+    },
+    {
+      "id": "criterion-channel",
+      "name": "Criterion Channel",
+      "releases": []
+    },
+    {
+      "id": "tubi",
+      "name": "Tubi",
+      "releases": []
+    },
+    {
+      "id": "pluto-tv",
+      "name": "Pluto TV",
+      "releases": []
+    }
+  ]
+}

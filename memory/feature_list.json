@@ -209,7 +209,7 @@
       "passes": true,
       "test_file": "tests/features/current-week-load.spec.ts",
       "test_fails_before": true,
-      "test_passes_after": false,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/current-week-load.spec.ts",
         "Write test that navigates to homepage",
@@ -228,7 +228,7 @@
       "passes": true,
       "test_file": "tests/features/us-current-week-display.spec.ts",
       "test_fails_before": true,
-      "test_passes_after": false,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/us-current-week-display.spec.ts",
         "Write test that selects US country",
@@ -247,7 +247,7 @@
       "passes": true,
       "test_file": "tests/features/india-current-week-display.spec.ts",
       "test_fails_before": true,
-      "test_passes_after": false,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/india-current-week-display.spec.ts",
         "Write test that selects India country",
