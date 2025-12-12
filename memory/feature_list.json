@@ -190,7 +190,7 @@
       "name": "Add CSS styles for week navigation",
       "description": "Style week navigation controls and visual indicators in assets/css/main.css",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Style week navigation buttons",
         "Add active state for current selection",
