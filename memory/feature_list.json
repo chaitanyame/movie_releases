@@ -113,7 +113,7 @@
       "name": "Create movie release schema",
       "description": "Define JSON Schema for movie release entity in specs/001-movie-releases/contracts/movie-release-schema.json",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Define schema with required fields (title, release_date, genre)",
         "Add optional fields (rating, runtime, cast, director, language, theater_distribution_info, description, industry_region, poster_url)",
