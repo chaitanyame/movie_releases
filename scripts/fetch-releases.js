@@ -35,7 +35,79 @@ if (fs.existsSync(envPath)) {
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
 const MODEL = 'sonar';
 
-// Country configurations
+// ============================================================================
+// MOVIE RELEASES CONFIGURATION - Theatrical Distribution Categories
+// ============================================================================
+
+/**
+ * US Distribution Categories
+ * Wide Release: 1000+ theaters nationwide
+ * Limited Release: <1000 theaters, major cities
+ */
+const US_CATEGORIES = [
+  {
+    category_id: 'wide-release',
+    category_name: 'Wide Release',
+    description: '1000+ theaters nationwide'
+  },
+  {
+    category_id: 'limited-release',
+    category_name: 'Limited Release',
+    description: 'Select cities, <1000 theaters'
+  }
+];
+
+/**
+ * India Distribution Categories
+ * Organized by film industry/language
+ */
+const INDIA_CATEGORIES = [
+  {
+    category_id: 'bollywood-hindi',
+    category_name: 'Bollywood (Hindi)',
+    description: 'Hindi-language films from Mumbai'
+  },
+  {
+    category_id: 'regional-telugu',
+    category_name: 'Regional (Telugu)',
+    description: 'Tollywood - Telugu cinema'
+  },
+  {
+    category_id: 'regional-tamil',
+    category_name: 'Regional (Tamil)',
+    description: 'Kollywood - Tamil cinema'
+  },
+  {
+    category_id: 'regional-other',
+    category_name: 'Regional (Other)',
+    description: 'Malayalam, Kannada, Bengali, Marathi, etc.'
+  }
+];
+
+/**
+ * Country Configuration with Theatrical Distribution
+ */
+const COUNTRY_CONFIG = {
+  us: {
+    id: 'us',
+    name: 'United States',
+    flag: '🇺🇸',
+    categories: US_CATEGORIES,
+    timezone: 'America/New_York',
+    rating_system: 'MPAA' // G, PG, PG-13, R, NC-17
+  },
+  india: {
+    id: 'india',
+    name: 'India',
+    flag: '🇮🇳',
+    categories: INDIA_CATEGORIES,
+    timezone: 'Asia/Kolkata',
+    rating_system: 'CBFC' // U, U/A, A, S
+  }
+};
+
+// Legacy COUNTRIES object for backward compatibility (OTT platforms)
+// TODO: Remove after full migration to theatrical releases
 const COUNTRIES = {
     us: {
         id: 'us',

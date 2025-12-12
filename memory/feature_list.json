@@ -144,7 +144,7 @@
       "name": "Create country configuration object",
       "description": "Define US and India category configurations in scripts/fetch-releases.js",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create US_CATEGORIES constant with wide-release, limited-release, independent, blockbuster",
         "Create INDIA_CATEGORIES constant with bollywood-hindi, tollywood-telugu, kollywood-tamil, mollywood-malayalam, sandalwood-kannada, regional",
