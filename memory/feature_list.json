@@ -263,7 +263,7 @@
       "name": "Implement Perplexity API prompt for current week",
       "description": "Create updatePromptForMovies function in scripts/fetch-releases.js for theatrical releases",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create updatePromptForMovies() function",
         "Build prompt with current week date range",
