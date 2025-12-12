@@ -295,7 +295,7 @@
       "name": "Implement country detection logic",
       "description": "Add detectUserCountry function in assets/js/app.js to auto-detect user region",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create detectUserCountry() function",
         "Use timezone detection to identify country",
@@ -311,7 +311,7 @@
       "name": "Implement data loading for current week",
       "description": "Create loadWeekData function in assets/js/app.js to fetch and display current week data",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create loadWeekData(country, weekType) function",
         "Fetch data from data/{country}/{weekType}.json",
@@ -328,7 +328,7 @@
       "name": "Implement movie release rendering",
       "description": "Create renderMovieReleases function in assets/js/app.js to display movie cards",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create renderMovieReleases(releases) function",
         "Create movie card HTML template",
@@ -346,7 +346,7 @@
       "name": "Implement category grouping display",
       "description": "Create renderCategories function in assets/js/app.js to organize movies by category",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create renderCategories(data) function",
         "Group movies by distribution_categories",
