@@ -385,6 +385,95 @@ Return ONLY valid JSON with this exact structure:
 If a category has no releases, return empty movies array. Do not omit categories.`;
 }
 
+/**
+ * Fetch week data for theatrical movie releases
+ * Feature 18: Fetch current week theatrical releases from Perplexity API
+ * 
+ * @param {string} country - Country ID ('us' or 'india')
+ * @param {string} weekType - Week type ('current-week', 'last-week', 'next-week')
+ * @returns {Promise<object>} - Parsed and validated week data
+ */
+async function fetchWeekData(country, weekType = 'current-week') {
+    const {getCurrentWeekInfo, getPreviousWeekInfo, getNextWeekInfo} = require('./utils/date-utils');
+    const {validateWeekData} = require('./utils/validate-json');
+    const fs = require('fs').promises;
+    const path = require('path');
+    
+    // Get week info based on weekType
+    let weekInfo;
+    if (weekType === 'current-week') {
+        weekInfo = getCurrentWeekInfo();
+    } else if (weekType === 'last-week') {
+        weekInfo = getPreviousWeekInfo();
+    } else if (weekType === 'next-week') {
+        weekInfo = getNextWeekInfo();
+    } else {
+        throw new Error(`Invalid weekType: ${weekType}. Must be 'current-week', 'last-week', or 'next-week'`);
+    }
+    
+    // Get country config
+    const countryConfig = COUNTRY_CONFIG[country];
+    if (!countryConfig) {
+        throw new Error(`Invalid country: ${country}. Must be 'us' or 'india'`);
+    }
+    
+    // Format week range for prompt
+    const weekRange = `${weekInfo.week_start_str} - ${weekInfo.week_end_str}`;
+    
+    console.log(`Fetching ${weekType} theatrical releases for ${countryConfig.name}...`);
+    console.log(`Week: ${weekInfo.week_number} (${weekRange})`);
+    
+    try {
+        // 1. Build prompt using updatePromptForMovies
+        const prompt = updatePromptForMovies(weekRange, countryConfig);
+        
+        // 2. Call Perplexity API
+        console.log('Calling Perplexity API...');
+        const apiResponse = await callPerplexityAPI(prompt, countryConfig);
+        
+        // 3. Parse response
+        console.log('Parsing API response...');
+        const parsedData = parseResponse(apiResponse);
+        
+        // 4. Ensure data structure matches schema
+        const weekData = {
+            week_number: weekInfo.week_number,
+            week_start: weekInfo.week_start,
+            week_end: weekInfo.week_end,
+            country: country,
+            categories: parsedData.categories || []
+        };
+        
+        // 5. Validate against week-data-schema.json
+        console.log('Validating data against schema...');
+        const schemaPath = path.join(__dirname, '..', 'specs', '001-movie-releases', 'contracts', 'week-data-schema.json');
+        const validation = await validateWeekData(weekData, schemaPath);
+        
+        if (!validation.valid) {
+            console.error('Validation errors:', validation.errors);
+            throw new Error(`Week data validation failed: ${validation.errors.join(', ')}`);
+        }
+        
+        console.log('✅ Data validated successfully');
+        
+        // 6. Save to data/{country}/{weekType}.json
+        const dataDir = path.join(__dirname, '..', 'data', country);
+        await fs.mkdir(dataDir, {recursive: true});
+        
+        const dataFilePath = path.join(dataDir, `${weekType}.json`);
+        await fs.writeFile(dataFilePath, JSON.stringify(weekData, null, 2), 'utf8');
+        
+        console.log(`✅ Data saved to ${dataFilePath}`);
+        
+        // 7. Return parsed and validated data
+        return weekData;
+        
+    } catch (error) {
+        console.error(`Error fetching ${weekType} data for ${country}:`, error.message);
+        throw error;
+    }
+}
+
 // ============================================================================
 // Prompt Generation - OTT Releases (Legacy/Original Function)
 // ============================================================================
@@ -779,6 +868,7 @@ module.exports = {
     getWeekDateRange,
     formatDateRange,
     updatePromptForMovies, // Feature 17: Theatrical releases prompt
+    fetchWeekData, // Feature 18: Fetch week data for theatrical releases
     buildPrompt,
     callPerplexityAPI,
     parseResponse,

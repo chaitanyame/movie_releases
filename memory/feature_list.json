@@ -279,7 +279,7 @@
       "name": "Implement fetchWeekData function for current week",
       "description": "Create fetchWeekData function in scripts/fetch-releases.js to retrieve current week movies",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create fetchWeekData(country, weekType) function",
         "Call Perplexity API with theatrical release prompt",
