@@ -82,7 +82,7 @@
       "name": "Update date-utils.js with three-week functions",
       "description": "Add getPreviousWeekInfo, getCurrentWeekInfo, getNextWeekInfo helper functions to scripts/utils/date-utils.js",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Add getPreviousWeekInfo(date) function returning week metadata",
         "Add getCurrentWeekInfo(date) function returning week metadata",
