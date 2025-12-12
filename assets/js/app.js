@@ -244,8 +244,9 @@ function renderCategory(category) {
     moviesContainer.className = 'movies-grid';
     
     if (category.movies && category.movies.length > 0) {
+        const isUpcoming = currentWeekType === 'next-week';
         category.movies.forEach(movie => {
-            const movieCard = renderMovieCard(movie);
+            const movieCard = renderMovieCard(movie, isUpcoming);
             moviesContainer.appendChild(movieCard);
         });
     } else {
@@ -260,15 +261,37 @@ function renderCategory(category) {
 }
 
 /**
+ * Render upcoming badge for next week movies
+ * Feature 44: Visual indicator for upcoming releases
+ * 
+ * @returns {HTMLElement} - Badge element
+ */
+function renderUpcomingBadge() {
+    const badge = document.createElement('span');
+    badge.className = 'upcoming-badge';
+    badge.textContent = '🎬 Upcoming';
+    badge.setAttribute('aria-label', 'Upcoming release');
+    return badge;
+}
+
+/**
  * Render a single movie card
  * Feature 21: Display individual movie information
+ * Feature 44: Add upcoming badge for next week
  * 
  * @param {Object} movie - Movie object with title, release_date, genre, cast, etc.
+ * @param {boolean} isUpcoming - Whether to show upcoming badge
  * @returns {HTMLElement} - Movie card element
  */
-function renderMovieCard(movie) {
+function renderMovieCard(movie, isUpcoming = false) {
     const card = document.createElement('article');
     card.className = 'movie-card';
+    
+    // Add upcoming badge if this is next week
+    if (isUpcoming) {
+        const badge = renderUpcomingBadge();
+        card.appendChild(badge);
+    }
     
     // Movie title
     const title = document.createElement('h4');
