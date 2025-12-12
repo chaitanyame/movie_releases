@@ -11,12 +11,67 @@
     "name": "United States",
     "flag": "🇺🇸"
   },
-  "generated_at": "2025-12-10T09:03:39.393Z",
+  "generated_at": "2025-12-12T09:03:38.000Z",
   "platforms": [
     {
       "id": "netflix",
       "name": "Netflix",
       "releases": [
+        {
+          "title": "Elmo and Mark Rober’s Merry Giftmas",
+          "release_date": "2025-12-08",
+          "type": "movie",
+          "genre": "Family",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Elmo",
+            "Mark Rober"
+          ],
+          "description": "Sesame Street special where Elmo and friends visit CrunchLabs with YouTuber Mark Rober for a Merry Giftmas present exchange, featuring fun hijinks and a gingerbread rocket.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Badly in Love",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "genre": "Romance",
+          "language": "Japanese",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Japanese series available with English subtitles/dubbing.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Record of Ragnarok",
+          "release_date": "2025-12-10",
+          "type": "series",
+          "genre": "Anime",
+          "language": "Japanese",
+          "content_category": "international",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 3 continues the gods vs. humanity battles in Ragnarok; English subtitles/dubbing available. Netflix anime original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Tomb Raider: The Legend of Lara Croft",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [
+            "Hayley Atwell",
+            "Richard Armitage",
+            "Allen Maldonado"
+          ],
+          "description": "Season 2 animated series with Lara Croft racing across Africa to stop a techno-visionary from using ancient relics; Netflix exclusive.",
+          "theatrical_info": ""
+        },
         {
           "title": "Wake Up Dead Man: A Knives Out Mystery",
           "release_date": "2025-12-12",
@@ -31,85 +86,35 @@
             "Glenn Close",
             "Jeremy Renner"
           ],
-          "description": "The third film in the Knives Out franchise featuring detective Benoit Blanc investigating a priest's death in a locked room; received positive reviews.",
-          "theatrical_info": "Theatrical release shortly before streaming in December 2025 with a brief theatrical window."
+          "description": "Third Knives Out film with Benoit Blanc investigating a priest's death in a locked room; franchise entry post-brief theatrical run.",
+          "theatrical_info": "Brief theatrical release prior to streaming window"
         },
         {
-          "title": "Elmo and Mark Rober's Merry Giftmas",
-          "release_date": "2025-12-08",
-          "type": "movie",
-          "genre": "Family, Holiday",
-          "language": "English",
-          "content_category": "animation",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Elmo (voice)",
-            "Mark Rober (Himself)",
-            "Cookie Monster (voice)"
-          ],
-          "description": "Elmo and friends collaborate with former NASA engineer Mark Rober to create special presents for a Christmas celebration.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "The Abandons",
-          "release_date": "2025-12-04",
-          "type": "series",
-          "genre": "Western Drama",
-          "language": "English",
-          "content_category": "indie",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Lena Headey",
-            "Gillian Anderson"
-          ],
-          "description": "Series set in Washington Territory in 1854 focusing on two very different matriarch families, exclusive Netflix original.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Jay Kelly",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "genre": "Drama",
-          "language": "English",
-          "content_category": "indie",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "George Clooney",
-            "Adam Sandler"
-          ],
-          "description": "Drama featuring two very different characters entangled in unexpected situations.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Tomb Raider: The Legend of Lara Croft Season 2",
+          "title": "The West Wing",
           "release_date": "2025-12-09",
           "type": "series",
-          "genre": "Action, Adventure",
+          "genre": "Drama",
           "language": "English",
-          "content_category": "animation",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Camilla Luddington (voice)",
-            "Other voice actors unconfirmed"
-          ],
-          "description": "Lara Croft races to recover ancient African relics before a techno-visionary unleashes worldwide destruction.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "The West Wing (Seasons 1-7)",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "genre": "Political Drama",
-          "language": "English",
-          "content_category": "catalog addition",
+          "content_category": "mainstream",
           "release_type": "Catalog Addition",
           "actors": [
             "Martin Sheen",
-            "Allison Janney",
             "Rob Lowe",
-            "Richard Schiff"
+            "Allison Janney"
           ],
-          "description": "Entire seven-season run of acclaimed political drama added to Netflix's library; previously HBO Max exclusive.",
+          "description": "Seasons 1-7 of the Emmy-winning political drama added to Netflix library.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "The Amazing Digital Circus",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "genre": "Animation",
+          "language": "English",
+          "content_category": "animation",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season 1 episodes 5-7 of the popular animated series.",
           "theatrical_info": ""
         }
       ]
@@ -119,51 +124,18 @@
       "name": "Prime Video",
       "releases": [
         {
-          "title": "Oh. What. Fun.",
-          "release_date": "2025-12-03",
-          "type": "movie",
-          "genre": "Drama, Holiday",
-          "language": "English",
-          "content_category": "mainstream",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Michelle Pfeiffer",
-            "Felicity Jones",
-            "Chloë Grace Moretz",
-            "Denis Leary"
-          ],
-          "description": "Holiday drama featuring Michelle Pfeiffer as an overworked mom embarking on a solo adventure to find unexpected Christmas magic.",
-          "theatrical_info": ""
-        },
-        {
           "title": "Merv",
-          "release_date": "2025-12-10",
+          "release_date": "2025-12-12",
           "type": "movie",
           "genre": "Romantic Comedy",
           "language": "English",
-          "content_category": "indie",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Zooey Deschanel",
-            "Charlie Cox"
-          ],
-          "description": "Comedy-drama about a dog named Merv losing his spark, and the awkward co-parenting between Anna and Russ to bring him back.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Fallout Season 2",
-          "release_date": "2025-12-17",
-          "type": "series",
-          "genre": "Action, Adventure",
-          "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
           "actors": [
-            "Ella Purnell",
-            "Walton Goggins",
-            "Kyle MacLachlan"
+            "Charlie Cox",
+            "Zooey Deschanel"
           ],
-          "description": "Second season of video game adaptation moving the story quickly to New Vegas as Lucy and The Ghoul search for her father.",
+          "description": "Romantic comedy about a couple facing what happens to their dog after a breakup; Prime Video original.",
           "theatrical_info": ""
         }
       ]
@@ -173,51 +145,15 @@
       "name": "Disney+",
       "releases": [
         {
-          "title": "Percy Jackson and the Olympians Season 2",
-          "release_date": "2025-12-10",
+          "title": "Percy Jackson and the Olympians",
+          "release_date": "2025-12-11",
           "type": "series",
-          "genre": "Adventure, Fantasy",
+          "genre": "Fantasy",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
-          "actors": [
-            "Walker Scobell",
-            "Leah Sava Jeffries",
-            "Aryan Simhadri",
-            "Charlie Bushnell"
-          ],
-          "description": "Percy Jackson sails to the Sea of Monsters to rescue Grover and save Camp Half-Blood in this fantasy adventure series.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Star Wars: Young Jedi Adventures Season 3",
-          "release_date": "2025-12-08",
-          "type": "series",
-          "genre": "Animation, Children",
-          "language": "English",
-          "content_category": "animation",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Kai (voice)",
-            "Lys (voice)",
-            "Nubs (voice)"
-          ],
-          "description": "Animated series following Jedi Younglings on adventures; season 3 continues with new episodes.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "Diary of a Wimpy Kid: The Last Straw",
-          "release_date": "2025-12-05",
-          "type": "movie",
-          "genre": "Animation, Family, Comedy",
-          "language": "English",
-          "content_category": "animation",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Zachary Gordon (voice)",
-            "Other voice actors unconfirmed"
-          ],
-          "description": "The fourth animated adaptation of Jeff Kinney’s popular book series about Greg Heffley and his misadventures.",
+          "actors": [],
+          "description": "Season 2 of the Disney+ adaptation of Rick Riordan's mythological adventure series.",
           "theatrical_info": ""
         }
       ]
@@ -225,20 +161,25 @@
     {
       "id": "hulu",
       "name": "Hulu",
+      "releases": []
+    },
+    {
+      "id": "apple-tv-plus",
+      "name": "Apple TV+",
       "releases": [
         {
-          "title": "All's Fair Season 7",
-          "release_date": "2025-12-09",
-          "type": "series",
-          "genre": "Legal Dramedy",
+          "title": "F1",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "genre": "Action Drama",
           "language": "English",
-          "content_category": "indie",
-          "release_type": "Direct-to-OTT",
+          "content_category": "mainstream",
+          "release_type": "Post-Theatrical",
           "actors": [
-            "Unconfirmed"
+            "Brad Pitt"
           ],
-          "description": "New season of legal dramedy focusing on contemporary issues and courtroom drama.",
-          "theatrical_info": ""
+          "description": "Major box office hit racing drama produced by Jerry Bruckheimer; now streaming after theatrical run.",
+          "theatrical_info": "Major 2025 theatrical release with extended exclusivity window"
         }
       ]
     },
@@ -247,31 +188,27 @@
       "name": "Max",
       "releases": [
         {
-          "title": "Sarah Squirm: Live + In the Flesh",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "genre": "Standup Comedy",
-          "language": "English",
-          "content_category": "comedy",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Sarah Sherman"
-          ],
-          "description": "First-ever stand-up comedy special from Saturday Night Live's Sarah Sherman.",
-          "theatrical_info": ""
-        },
-        {
           "title": "Spinal Tap II: The End Continues",
           "release_date": "2025-12-12",
           "type": "movie",
-          "genre": "Comedy, Music",
+          "genre": "Comedy",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
-          "actors": [
-            "Backing U.S. Cast"
-          ],
-          "description": "Legacy sequel to the cult classic rock mockumentary, continuing the misadventures of the band Spinal Tap.",
+          "actors": [],
+          "description": "Legacy sequel to the beloved mockumentary comedy.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "It: Welcome to Derry",
+          "release_date": "2025-12-14",
+          "type": "series",
+          "genre": "Horror",
+          "language": "English",
+          "content_category": "mainstream",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Season finale of the Stephen King prequel series.",
           "theatrical_info": ""
         }
       ]
@@ -282,16 +219,28 @@
       "releases": [
         {
           "title": "Little Disasters",
-          "release_date": "2025-12-11",
-          "type": "limited series",
+          "release_date": "2025-12-12",
+          "type": "series",
           "genre": "Drama",
           "language": "English",
-          "content_category": "indie",
+          "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
           "actors": [
-            "Unconfirmed"
+            "Diane Kruger"
           ],
-          "description": "Limited series focusing on complex relationships and dramatic personal stories.",
+          "description": "Limited series about a mother bringing her injured baby to the ER, putting her doctor friend in a dilemma; Paramount+ original.",
+          "theatrical_info": ""
+        },
+        {
+          "title": "Predators",
+          "release_date": "2025-12-08",
+          "type": "movie",
+          "genre": "Documentary",
+          "language": "English",
+          "content_category": "documentary",
+          "release_type": "Direct-to-OTT",
+          "actors": [],
+          "description": "Documentary investigating the legacy of To Catch a Predator and culture of punishment entertainment.",
           "theatrical_info": ""
         }
       ]
@@ -301,32 +250,15 @@
       "name": "Peacock",
       "releases": [
         {
-          "title": "Bel-Air Series Finale",
+          "title": "Bel-Air",
           "release_date": "2025-12-08",
           "type": "series",
           "genre": "Drama",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
-          "actors": [
-            "Will Smith",
-            "Other main cast"
-          ],
-          "description": "Three-part series finale of the dramatic reimagining of 'The Fresh Prince of Bel-Air'.",
-          "theatrical_info": ""
-        },
-        {
-          "title": "The Copenhagen Test Season 1",
-          "release_date": "2025-12-27",
-          "type": "series",
-          "genre": "Documentary, Investigation",
-          "language": "English",
-          "content_category": "documentary",
-          "release_type": "Direct-to-OTT",
-          "actors": [
-            "Unconfirmed"
-          ],
-          "description": "Investigative docuseries exploring environmental and ethical issues.",
+          "actors": [],
+          "description": "Three-part series finale drops all at once.",
           "theatrical_info": ""
         }
       ]
@@ -342,16 +274,14 @@
       "releases": [
         {
           "title": "Spartacus: House of Ashur",
-          "release_date": "2025-12-05",
+          "release_date": "2025-12-10",
           "type": "series",
-          "genre": "Historical Drama, Action",
+          "genre": "Drama",
           "language": "English",
           "content_category": "mainstream",
           "release_type": "Direct-to-OTT",
-          "actors": [
-            "Nick E. Tarabay"
-          ],
-          "description": "Spartacus spinoff speculating an alternate history if Ashur survives and opens his own gladiator ludus.",
+          "actors": [],
+          "description": "Season 1 of the Starz historical drama spin-off.",
           "theatrical_info": ""
         }
       ]
@@ -374,11 +304,6 @@
     {
       "id": "pluto-tv",
       "name": "Pluto TV",
-      "releases": []
-    },
-    {
-      "id": "apple-tv-plus",
-      "name": "Apple TV+",
       "releases": []
     }
   ]
