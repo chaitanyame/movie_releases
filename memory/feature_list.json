@@ -97,7 +97,7 @@
       "name": "Create JSON schema for week data validation",
       "description": "Define JSON Schema for validating week data structure in specs/001-movie-releases/contracts/week-data-schema.json",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create contracts/ directory in specs/001-movie-releases/",
         "Define schema with required fields (week_number, year, week_id, week_type, country, generated_at, distribution_categories)",
