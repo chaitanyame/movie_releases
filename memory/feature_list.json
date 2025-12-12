@@ -159,7 +159,7 @@
       "name": "Add JSON validation utility function",
       "description": "Create validation utility in scripts/utils/validate-json.js to check data against schemas",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create validate-json.js file",
         "Implement validateWeekData(data, schema) function",
