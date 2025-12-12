@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, and Peacock. Updated daily.">
-    <meta name="keywords" content="OTT, streaming, Netflix, Prime Video, Disney+, Hulu, Apple TV+, Max, Paramount+, Peacock, weekly releases">
-    <meta name="author" content="OTT Weekly Releases">
+    <meta name="description" content="Weekly theatrical movie releases - US and India. Last week, current week, and next week releases. Updated daily.">
+    <meta name="keywords" content="movie releases, theatrical releases, cinema, box office, new movies, US releases, India releases, Bollywood, Hollywood">
+    <meta name="author" content="Movie Theatrical Releases">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://chaitanyame.github.io/ott_news/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chaitanyame.github.io/ott_news/">
-    <meta property="og:title" content="OTT Weekly Releases">
-    <meta property="og:description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, and more. Updated daily.">
+    <meta property="og:title" content="Movie Theatrical Releases">
+    <meta property="og:description" content="Weekly theatrical movie releases - US and India. Last week, current week, and next week. Updated daily.">
     <meta property="og:image" content="https://chaitanyame.github.io/ott_news/assets/images/og-image.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://chaitanyame.github.io/ott_news/">
-    <meta name="twitter:title" content="OTT Weekly Releases">
-    <meta name="twitter:description" content="Weekly OTT streaming platform releases - Netflix, Prime Video, Disney+, and more. Updated daily.">
+    <meta name="twitter:title" content="Movie Theatrical Releases">
+    <meta name="twitter:description" content="Weekly theatrical movie releases - US and India. Last week, current week, and next week. Updated daily.">
     <meta name="twitter:image" content="https://chaitanyame.github.io/ott_news/assets/images/og-image.png">
     
     <!-- Favicon -->
@@ -31,7 +31,7 @@
     <link rel="manifest" href="site.webmanifest">
     <meta name="theme-color" content="#0d1117">
     
-    <title>OTT Weekly Releases</title>
+    <title>Movie Theatrical Releases</title>
     
     <script>
         (function() {
@@ -88,7 +88,25 @@
     </button>
     <a href="#current-week-post" class="skip-link">Skip to main content</a>
     <header class="site-header">
-        <h1>OTT Weekly Releases</h1>
+        <h1>Movie Theatrical Releases</h1>
+        
+        <!-- Week Navigation -->
+        <nav class="week-navigation" aria-label="Week navigation">
+            <button class="week-btn" data-week="last" aria-pressed="false">
+                <span class="week-label">Last Week</span>
+                <span class="week-meta" id="last-week-meta"></span>
+            </button>
+            <button class="week-btn active" data-week="current" aria-pressed="true" aria-current="true">
+                <span class="week-label">Current Week</span>
+                <span class="week-meta" id="current-week-meta"></span>
+            </button>
+            <button class="week-btn" data-week="next" aria-pressed="false">
+                <span class="week-label">Next Week</span>
+                <span class="week-meta" id="next-week-meta"></span>
+            </button>
+        </nav>
+        
+        <!-- Country Switcher -->
         <nav class="country-toggle" aria-label="Select region">
             <button class="country-btn active" data-country="us" aria-pressed="true">
                 <span class="country-flag">🇺🇸</span>
@@ -99,6 +117,12 @@
                 <span class="country-name">India</span>
             </button>
         </nav>
+        
+        <!-- Week Title Display -->
+        <div class="week-title-display" role="status" aria-live="polite">
+            <h2 id="active-week-title">Week 50: December 8-14, 2025</h2>
+        </div>
+        
         <button id="back-to-current" class="back-to-current" aria-label="Back to current week" style="display: none;">
             ← Back to Current Week
         </button>
@@ -119,7 +143,7 @@
     </aside>
     
     <footer class="site-footer">
-        <p>&copy; 2024 OTT Weekly Releases</p>
+        <p>&copy; 2024 Movie Theatrical Releases</p>
     </footer>
     
     <script src="assets/js/app.js"></script>

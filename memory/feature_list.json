@@ -174,7 +174,7 @@
       "name": "Create base HTML structure for three-week navigation",
       "description": "Update index.html with navigation controls for last/current/next week",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Add week navigation section to HTML",
         "Add 'Last Week', 'Current Week', 'Next Week' buttons",
