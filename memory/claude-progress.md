@@ -7,15 +7,15 @@
 ## Current Status
 
 **Feature List Generated**: 72 features converted from tasks.md  
-**Features Complete**: 0/72 (0%)  
-**MVP Features**: 0/25 complete (Features 1-25 = User Story 1)
+**Features Complete**: 10/72 (14%)  
+**MVP Features**: 5/25 complete (Features 1-25 = User Story 1)
 
 ### Phase Progress
 
 | Phase | Features | Status | Complete |
 |-------|----------|--------|----------|
-| **Setup** | 1-5 | Not Started | 0/5 |
-| **Foundational** | 6-13 | Not Started | 0/8 |
+| **Setup** | 1-5 | ✅ Complete | 5/5 |
+| **Foundational** | 6-13 | 🔄 In Progress | 5/8 |
 | **US1: Current Week (MVP)** | 14-25 | Not Started | 0/12 |
 | **US2: Last Week Nav** | 26-36 | Not Started | 0/11 |
 | **US3: Next Week Preview** | 37-47 | Not Started | 0/11 |
@@ -23,11 +23,32 @@
 | **US5: Shareable URLs** | 58-67 | Not Started | 0/10 |
 | **Polish** | 68-72 | Not Started | 0/5 |
 
+## Latest Session Summary (Dec 12, 2025)
+
+### Completed Features (1-10)
+
+**Setup Phase (Features 1-5)** - ✅ Complete
+- Feature 1: Project structure (contracts/ directory created)
+- Feature 2: Dependencies validated (Node 24.3.0, Playwright 1.57.0, npm 11.4.2)
+- Feature 3: Placeholder JSON files created (4 files with theatrical structure)
+- Feature 4: Environment variables configured (.env.example updated)
+- Feature 5: Test infrastructure verified (npm install + test execution)
+
+**Foundational Phase (Features 6-10)** - 🔄 62.5% Complete
+- Feature 6: ✅ Three-week date utilities (getPreviousWeekInfo, getCurrentWeekInfo, getNextWeekInfo)
+- Feature 7: ✅ JSON schema for week data validation (week-data-schema.json)
+- Feature 8: ✅ JSON schema for movie releases (movie-release-schema.json)
+- Feature 9: ✅ Three-week sliding window logic (week-transition.js complete rewrite)
+- Feature 10: ✅ Country configuration (US_CATEGORIES, INDIA_CATEGORIES, COUNTRY_CONFIG in fetch-releases.js)
+- Feature 11: ⏳ NEXT - JSON validation utility function
+- Feature 12: ⏳ Pending - Base HTML structure for three-week navigation
+- Feature 13: ⏳ Pending - CSS styles for week navigation
+
 ## Next Session: Start Here
 
-### Recommended Starting Point
+### Immediate Next Steps
 
-**Begin with MVP (User Story 1)**: Features 1-25
+**Continue Foundational Phase**: Features 11-13 (3 remaining)
 
 1. **Setup Phase (Features 1-5)** - ~1 hour
    - Validate environment (Node 18+, Playwright)
