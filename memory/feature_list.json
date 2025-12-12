@@ -10,7 +10,7 @@
       "name": "Create project structure per implementation plan",
       "description": "Initialize directory structure and ensure all paths exist according to plan.md specifications",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create specs/001-movie-releases/ directory structure",
         "Verify data/us/ and data/india/ directories exist",
@@ -24,7 +24,7 @@
       "name": "Validate existing dependencies",
       "description": "Verify Node.js 18+ and Playwright 1.48+ are installed and functional",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Check Node.js version >= 18",
         "Check Playwright version >= 1.48",
@@ -38,7 +38,7 @@
       "name": "Create placeholder JSON data files for testing",
       "description": "Generate minimal valid JSON files in data/us/ and data/india/ for testing infrastructure",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create data/us/current-week.json with minimal valid structure",
         "Create data/us/last-week.json with minimal valid structure",
@@ -54,7 +54,7 @@
       "name": "Set up environment variables",
       "description": "Configure .env file with PERPLEXITY_API_KEY for API integration",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create .env.example template if not exists",
         "Add PERPLEXITY_API_KEY entry to .env.example",
@@ -68,7 +68,7 @@
       "name": "Verify existing test infrastructure runs successfully",
       "description": "Ensure Playwright test suite executes without errors as baseline",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Run npm test command",
         "Verify all existing tests execute (pass or fail)",
