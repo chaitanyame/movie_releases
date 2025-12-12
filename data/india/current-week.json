@@ -22,7 +22,7 @@
       ]
     },
     {
-      "id": "regional-telugu",
+      "id": "tollywood-telugu",
       "name": "Tollywood (Telugu)",
       "movies": [
         {
@@ -39,13 +39,13 @@
       ]
     },
     {
-      "id": "regional-tamil",
+      "id": "kollywood-tamil",
       "name": "Kollywood (Tamil)",
       "movies": []
     },
     {
-      "id": "regional-other",
-      "name": "Other Regional",
+      "id": "mollywood-malayalam",
+      "name": "Mollywood (Malayalam)",
       "movies": []
     }
   ]

@@ -229,13 +229,13 @@ function updateWeekTitle(data) {
 function renderCategory(category) {
     const section = document.createElement('section');
     section.className = 'movie-category';
-    section.setAttribute('data-category', category.category_id);
+    section.setAttribute('data-category', category.id);
     
     // Category header
     const header = document.createElement('h3');
     header.className = 'category-header';
     const movieCount = category.movies ? category.movies.length : 0;
-    header.textContent = `${category.category_name} (${movieCount} ${movieCount === 1 ? 'movie' : 'movies'})`;
+    header.textContent = `${category.name} (${movieCount} ${movieCount === 1 ? 'movie' : 'movies'})`;
     section.appendChild(header);
     
     // Movies container
@@ -278,13 +278,8 @@ function renderMovieCard(movie) {
     // Release date
     const releaseDate = document.createElement('div');
     releaseDate.className = 'release-date';
-    const dateObj = new Date(movie.release_date);
-    const formattedDate = dateObj.toLocaleDateString('en-US', { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric' 
-    });
-    releaseDate.textContent = `Release: ${formattedDate}`;
+    // Show raw YYYY-MM-DD format per test requirements
+    releaseDate.textContent = movie.release_date;
     card.appendChild(releaseDate);
     
     // Genre
@@ -401,6 +396,11 @@ function updateCountryButtons(activeCountry) {
         const isActive = btn.dataset.country === activeCountry;
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', isActive.toString());
+        if (isActive) {
+            btn.setAttribute('aria-current', 'true');
+        } else {
+            btn.removeAttribute('aria-current');
+        }
     });
 }
 
