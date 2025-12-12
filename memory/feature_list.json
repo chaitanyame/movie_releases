@@ -1,0 +1,1211 @@
+{
+  "branch": "001-movie-releases",
+  "specification": "specs/001-movie-releases/spec.md",
+  "name": "Movie Theatrical Releases Tracker",
+  "description": "Transform OTT Weekly Releases to Movie Theatrical Releases with three-week navigation (last/current/next) for US and India markets using zero-dependency static architecture",
+  "version": "1.0.0",
+  "features": [
+    {
+      "id": 1,
+      "name": "Create project structure per implementation plan",
+      "description": "Initialize directory structure and ensure all paths exist according to plan.md specifications",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create specs/001-movie-releases/ directory structure",
+        "Verify data/us/ and data/india/ directories exist",
+        "Verify scripts/utils/ directory exists",
+        "Verify tests/ subdirectories exist",
+        "Run verification check that all required directories present"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Validate existing dependencies",
+      "description": "Verify Node.js 18+ and Playwright 1.48+ are installed and functional",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Check Node.js version >= 18",
+        "Check Playwright version >= 1.48",
+        "Verify npm is available",
+        "Test npx command works",
+        "Document versions in environment report"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Create placeholder JSON data files for testing",
+      "description": "Generate minimal valid JSON files in data/us/ and data/india/ for testing infrastructure",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create data/us/current-week.json with minimal valid structure",
+        "Create data/us/last-week.json with minimal valid structure",
+        "Create data/us/next-week.json with minimal valid structure",
+        "Create data/india/current-week.json with minimal valid structure",
+        "Create data/india/last-week.json with minimal valid structure",
+        "Create data/india/next-week.json with minimal valid structure",
+        "Verify all JSON files parse without errors"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Set up environment variables",
+      "description": "Configure .env file with PERPLEXITY_API_KEY for API integration",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create .env.example template if not exists",
+        "Add PERPLEXITY_API_KEY entry to .env.example",
+        "Create .env from .env.example (if not exists)",
+        "Verify .env is in .gitignore",
+        "Document environment setup in README or quickstart"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Verify existing test infrastructure runs successfully",
+      "description": "Ensure Playwright test suite executes without errors as baseline",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Run npm test command",
+        "Verify all existing tests execute (pass or fail)",
+        "Identify any broken tests to fix",
+        "Document baseline test count and status",
+        "Confirm test infrastructure is ready for new tests"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Update date-utils.js with three-week functions",
+      "description": "Add getPreviousWeekInfo, getCurrentWeekInfo, getNextWeekInfo helper functions to scripts/utils/date-utils.js",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Add getPreviousWeekInfo(date) function returning week metadata",
+        "Add getCurrentWeekInfo(date) function returning week metadata",
+        "Add getNextWeekInfo(date) function returning week metadata",
+        "Ensure functions return week_id, week_start, week_end, week_range",
+        "Add unit tests in tests/build/date-utils.spec.ts",
+        "Verify all three functions work correctly across year boundaries"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Create JSON schema for week data validation",
+      "description": "Define JSON Schema for validating week data structure in specs/001-movie-releases/contracts/week-data-schema.json",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create contracts/ directory in specs/001-movie-releases/",
+        "Define schema with required fields (week_number, year, week_id, week_type, country, generated_at, distribution_categories)",
+        "Add validation rules for week_id format (YYYY-WW)",
+        "Add enum validation for week_type (last-week, current-week, next-week)",
+        "Add country object schema with id, name, flag",
+        "Reference DistributionCategory and MovieRelease definitions",
+        "Verify schema is valid JSON Schema draft-07"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Create movie release schema",
+      "description": "Define JSON Schema for movie release entity in specs/001-movie-releases/contracts/movie-release-schema.json",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Define schema with required fields (title, release_date, genre)",
+        "Add optional fields (rating, runtime, cast, director, language, theater_distribution_info, description, industry_region, poster_url)",
+        "Add format validation for release_date (ISO date or 'TBA')",
+        "Add format validation for poster_url (URI)",
+        "Handle language as string OR array of strings",
+        "Verify schema is valid JSON Schema draft-07"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Update week-transition.js for three-week sliding window",
+      "description": "Modify scripts/utils/week-transition.js to handle three concurrent week files (last/current/next)",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Update shouldArchive() to detect when next-week becomes current-week",
+        "Implement three-week rotation logic (next → current → last → archive)",
+        "Update archiveWeek() to move files to correct locations",
+        "Add transitionWeeks() function to slide window forward",
+        "Handle year boundary transitions correctly",
+        "Add tests in tests/build/week-transition.spec.ts",
+        "Verify week transitions work correctly on Monday 00:00 UTC"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Create country configuration object",
+      "description": "Define US and India category configurations in scripts/fetch-releases.js",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create US_CATEGORIES constant with wide-release, limited-release, independent, blockbuster",
+        "Create INDIA_CATEGORIES constant with bollywood-hindi, tollywood-telugu, kollywood-tamil, mollywood-malayalam, sandalwood-kannada, regional",
+        "Add category_name mappings for display",
+        "Create COUNTRY_CONFIG object with us and india keys",
+        "Include flag emoji and country name in config",
+        "Verify configuration is accessible to API prompt functions"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Add JSON validation utility function",
+      "description": "Create validation utility in scripts/utils/validate-json.js to check data against schemas",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create validate-json.js file",
+        "Implement validateWeekData(data, schema) function",
+        "Implement validateMovieRelease(data, schema) function",
+        "Return validation results with specific error messages",
+        "Add tests in tests/build/validation.spec.ts",
+        "Verify validation catches missing required fields"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Create base HTML structure for three-week navigation",
+      "description": "Update index.html with navigation controls for last/current/next week",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Add week navigation section to HTML",
+        "Add 'Last Week', 'Current Week', 'Next Week' buttons",
+        "Add country switcher buttons (US/India)",
+        "Add week title display area",
+        "Add loading indicator container",
+        "Add proper ARIA labels for accessibility",
+        "Ensure semantic HTML structure"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Add CSS styles for week navigation",
+      "description": "Style week navigation controls and visual indicators in assets/css/main.css",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Style week navigation buttons",
+        "Add active state for current selection",
+        "Style country switcher buttons",
+        "Add visual indicators for past/current/future",
+        "Style loading indicator",
+        "Add responsive styles for mobile",
+        "Verify contrast ratios meet WCAG AA standards"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Create test: Current week data loads successfully",
+      "description": "Write Playwright test in tests/features/current-week-load.spec.ts verifying current week data loads",
+      "priority": "high",
+      "passes": false,
+      "test_file": "tests/features/current-week-load.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/current-week-load.spec.ts",
+        "Write test that navigates to homepage",
+        "Assert current week data loads within 2 seconds",
+        "Verify week title displays correctly",
+        "Verify no error messages shown",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Create test: US current week displays with distribution categories",
+      "description": "Write Playwright test in tests/features/us-current-week-display.spec.ts verifying US category organization",
+      "priority": "high",
+      "passes": false,
+      "test_file": "tests/features/us-current-week-display.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/us-current-week-display.spec.ts",
+        "Write test that selects US country",
+        "Assert distribution categories display (Wide Release, Limited Release, etc.)",
+        "Verify movie cards render with title, date, genre",
+        "Verify categories are properly grouped",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Create test: India current week displays with language categories",
+      "description": "Write Playwright test in tests/features/india-current-week-display.spec.ts verifying India category organization",
+      "priority": "high",
+      "passes": false,
+      "test_file": "tests/features/india-current-week-display.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/india-current-week-display.spec.ts",
+        "Write test that selects India country",
+        "Assert language categories display (Bollywood, Tollywood, etc.)",
+        "Verify movie cards render with regional info",
+        "Verify multi-language movies show all languages",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Implement Perplexity API prompt for current week",
+      "description": "Create updatePromptForMovies function in scripts/fetch-releases.js for theatrical releases",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create updatePromptForMovies() function",
+        "Build prompt with current week date range",
+        "Include country-specific category instructions",
+        "Request JSON format with required fields",
+        "Add validation requirements to prompt",
+        "Test prompt returns valid data structure",
+        "Verify data quality meets requirements"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Implement fetchWeekData function for current week",
+      "description": "Create fetchWeekData function in scripts/fetch-releases.js to retrieve current week movies",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create fetchWeekData(country, weekType) function",
+        "Call Perplexity API with theatrical release prompt",
+        "Parse API response to JSON",
+        "Validate response against week-data-schema.json",
+        "Handle API errors gracefully",
+        "Save data to data/{country}/current-week.json",
+        "Return parsed and validated data"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Implement country detection logic",
+      "description": "Add detectUserCountry function in assets/js/app.js to auto-detect user region",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create detectUserCountry() function",
+        "Use timezone detection to identify country",
+        "Map timezones to 'us' or 'india'",
+        "Default to 'us' if detection fails",
+        "Check localStorage for saved preference",
+        "Return detected or saved country code",
+        "Test detection works for various timezones"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Implement data loading for current week",
+      "description": "Create loadWeekData function in assets/js/app.js to fetch and display current week data",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create loadWeekData(country, weekType) function",
+        "Fetch data from data/{country}/{weekType}.json",
+        "Show loading indicator during fetch",
+        "Handle fetch errors with user-friendly messages",
+        "Cache data in memory to avoid refetching",
+        "Parse JSON response",
+        "Call renderMovieReleases with data",
+        "Hide loading indicator when complete"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Implement movie release rendering",
+      "description": "Create renderMovieReleases function in assets/js/app.js to display movie cards",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create renderMovieReleases(releases) function",
+        "Create movie card HTML template",
+        "Render title, release_date, genre prominently",
+        "Display cast (top 3-4 actors)",
+        "Show runtime and rating if available",
+        "Display poster image or placeholder",
+        "Add theater distribution info",
+        "Ensure responsive card layout",
+        "Return rendered HTML elements"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Implement category grouping display",
+      "description": "Create renderCategories function in assets/js/app.js to organize movies by category",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create renderCategories(data) function",
+        "Group movies by distribution_categories",
+        "Render category headers with category_name",
+        "Call renderMovieReleases for each category",
+        "Handle empty categories gracefully",
+        "Add collapse/expand functionality (optional)",
+        "Update DOM with categorized content",
+        "Verify categories display in order"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Implement country switcher functionality",
+      "description": "Create switchCountry function in assets/js/app.js to toggle between US and India",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Create switchCountry(countryCode) function",
+        "Update active button state in UI",
+        "Save country preference to localStorage",
+        "Clear current display",
+        "Call loadWeekData with new country",
+        "Update page title/heading with country name",
+        "Trigger category re-render",
+        "Verify switch works without page reload"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Add loading indicator with ARIA attributes",
+      "description": "Implement accessible loading indicator in index.html and assets/js/app.js",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Add loading spinner HTML in index.html",
+        "Add ARIA attributes (role='status', aria-live='polite')",
+        "Create showLoading() function in app.js",
+        "Create hideLoading() function in app.js",
+        "Style loading indicator in CSS",
+        "Test with screen reader",
+        "Verify indicator shows/hides correctly"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Verify all tests pass for User Story 1",
+      "description": "Run current-week test suite and confirm all tests pass (GATE 2)",
+      "priority": "high",
+      "passes": false,
+      "steps": [
+        "Run npm test tests/features/*current-week*",
+        "Verify T014 test passes (current week loads)",
+        "Verify T015 test passes (US display)",
+        "Verify T016 test passes (India display)",
+        "Update feature_list.json for features 14-16: test_passes_after: true",
+        "Mark User Story 1 features as passes: true",
+        "Document MVP completion milestone"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Create test: Last week navigation works",
+      "description": "Write Playwright test in tests/features/last-week-navigation.spec.ts verifying last week navigation",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/last-week-navigation.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/last-week-navigation.spec.ts",
+        "Write test that clicks 'Last Week' button",
+        "Assert URL hash changes to #last-week/{country}",
+        "Verify last week data loads",
+        "Verify week title shows previous week dates",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Create test: Last week data renders correctly",
+      "description": "Write Playwright test in tests/features/last-week-display.spec.ts verifying last week display",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/last-week-display.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/last-week-display.spec.ts",
+        "Write test that navigates to last week view",
+        "Assert movies from previous week display",
+        "Verify categories still organized correctly",
+        "Verify no 'Upcoming' badges show",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Create test: Back to Current Week button works",
+      "description": "Write Playwright test in tests/features/back-to-current.spec.ts verifying return navigation",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/back-to-current.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/back-to-current.spec.ts",
+        "Write test that navigates to last week",
+        "Click 'Back to Current Week' button",
+        "Assert returns to current week view",
+        "Verify URL hash updates correctly",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Implement Perplexity API prompt for last week",
+      "description": "Update API prompt logic in scripts/fetch-releases.js for previous week theatrical releases",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update updatePromptForMovies to accept weekType parameter",
+        "Calculate last week date range using getPreviousWeekInfo",
+        "Build prompt with last week context",
+        "Maintain same category structure as current week",
+        "Test prompt returns last week movies",
+        "Verify data quality and completeness",
+        "Save to data/{country}/last-week.json"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Implement fetchLastWeekData function",
+      "description": "Create fetchLastWeekData in scripts/fetch-releases.js to retrieve previous week movies",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Create fetchLastWeekData(country) function",
+        "Call fetchWeekData with weekType='last-week'",
+        "Validate response data",
+        "Save to data/{country}/last-week.json",
+        "Handle errors appropriately",
+        "Return parsed data",
+        "Test function with both US and India"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Add Last Week navigation button",
+      "description": "Update index.html with Last Week navigation button",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Add 'Last Week' button to navigation section",
+        "Add appropriate ID and class attributes",
+        "Add ARIA label for accessibility",
+        "Position button in navigation flow",
+        "Add click event listener in app.js",
+        "Style button to match design",
+        "Test button is keyboard accessible"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Implement last week navigation handler",
+      "description": "Create navigateToLastWeek function in assets/js/app.js to handle last week navigation",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Create navigateToLastWeek() function",
+        "Get current country from state",
+        "Call loadWeekData(country, 'last-week')",
+        "Update week navigation button states",
+        "Update URL hash to #last-week/{country}",
+        "Show/hide 'Back to Current' button",
+        "Update week title display",
+        "Verify navigation works smoothly"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Implement week title display with date range",
+      "description": "Create displayWeekTitle function in assets/js/app.js to show human-readable week info",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Create displayWeekTitle(weekData) function",
+        "Format week_range as 'December 8-14, 2025'",
+        "Create title format 'Week 50: December 8-14, 2025'",
+        "Add week_type indicator (Last Week, Current Week, Next Week)",
+        "Update page heading/title element",
+        "Handle different week types appropriately",
+        "Test display for all three week types"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Add Back to Current Week button",
+      "description": "Update index.html with Back to Current Week button",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Add 'Back to Current Week' button to HTML",
+        "Initially hide button (CSS display: none)",
+        "Add appropriate ID and ARIA label",
+        "Add click event listener in app.js",
+        "Show button only when viewing last/next week",
+        "Style button distinctly",
+        "Test button navigation works"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Update CSS for week navigation states",
+      "description": "Add CSS styles for active week selection in assets/css/main.css",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Add active state styling for week buttons",
+        "Add disabled state styling if needed",
+        "Style 'Back to Current Week' button",
+        "Add visual indicator for current vs historical view",
+        "Ensure hover states work correctly",
+        "Test responsive styles on mobile",
+        "Verify WCAG AA contrast compliance"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Verify all tests pass for User Story 2",
+      "description": "Run last-week test suite and confirm all tests pass (GATE 2)",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Run npm test tests/features/*last-week*",
+        "Verify T026 test passes (last week navigation)",
+        "Verify T027 test passes (last week display)",
+        "Verify T028 test passes (back button)",
+        "Update feature_list.json for features 26-28: test_passes_after: true",
+        "Mark User Story 2 features as passes: true",
+        "Document User Story 2 completion"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Create test: Next week navigation works",
+      "description": "Write Playwright test in tests/features/next-week-navigation.spec.ts verifying next week navigation",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/next-week-navigation.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/next-week-navigation.spec.ts",
+        "Write test that clicks 'Next Week' button",
+        "Assert URL hash changes to #next-week/{country}",
+        "Verify next week data loads",
+        "Verify week title shows next week dates",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Create test: Upcoming releases display with indicators",
+      "description": "Write Playwright test in tests/features/next-week-display.spec.ts verifying upcoming badges",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/next-week-display.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/next-week-display.spec.ts",
+        "Write test that navigates to next week view",
+        "Assert 'Upcoming' badges visible on movie cards",
+        "Verify badge styling is distinct",
+        "Verify movies display correctly",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Create test: Tentative dates show TBA or Subject to Change",
+      "description": "Write Playwright test in tests/features/tentative-dates.spec.ts verifying tentative date handling",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/tentative-dates.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/tentative-dates.spec.ts",
+        "Write test that checks for 'TBA' dates",
+        "Verify 'Subject to Change' notice appears when appropriate",
+        "Assert tentative styling applied",
+        "Test with mock data containing TBA dates",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Implement Perplexity API prompt for next week",
+      "description": "Update API prompt logic in scripts/fetch-releases.js for upcoming week releases",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Update updatePromptForMovies to handle next week",
+        "Calculate next week date range using getNextWeekInfo",
+        "Build prompt with upcoming/scheduled context",
+        "Request tentative date notation in response",
+        "Test prompt returns next week movies",
+        "Verify data includes release uncertainty notes",
+        "Save to data/{country}/next-week.json"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Implement fetchNextWeekData function",
+      "description": "Create fetchNextWeekData in scripts/fetch-releases.js to retrieve upcoming movies",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create fetchNextWeekData(country) function",
+        "Call fetchWeekData with weekType='next-week'",
+        "Validate response data",
+        "Handle movies with TBA dates",
+        "Save to data/{country}/next-week.json",
+        "Return parsed data",
+        "Test function with both US and India"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Add Next Week navigation button",
+      "description": "Update index.html with Next Week navigation button",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Add 'Next Week' button to navigation section",
+        "Add appropriate ID and class attributes",
+        "Add ARIA label for accessibility",
+        "Position button in navigation flow",
+        "Add click event listener in app.js",
+        "Style button to match design",
+        "Test button is keyboard accessible"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Implement next week navigation handler",
+      "description": "Create navigateToNextWeek function in assets/js/app.js to handle next week navigation",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create navigateToNextWeek() function",
+        "Get current country from state",
+        "Call loadWeekData(country, 'next-week')",
+        "Update week navigation button states",
+        "Update URL hash to #next-week/{country}",
+        "Show/hide 'Back to Current' button",
+        "Update week title display",
+        "Verify navigation works smoothly"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Add Upcoming badge component",
+      "description": "Create renderUpcomingBadge function in assets/js/app.js for visual indicators",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create renderUpcomingBadge() function",
+        "Return HTML element with 'Upcoming' or 'Scheduled' text",
+        "Add appropriate CSS classes",
+        "Make badge visually distinct (color, icon)",
+        "Integrate badge into movie card rendering",
+        "Only show badge for next-week views",
+        "Test badge displays correctly"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Handle tentative dates display",
+      "description": "Create formatTentativeDate function in assets/js/app.js for uncertain release dates",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create formatTentativeDate(date) function",
+        "Check if date is 'TBA' or similar",
+        "Format as 'TBA' or 'Date - Subject to Change'",
+        "Add styling class for tentative dates",
+        "Add tooltip or note about uncertainty",
+        "Integrate into movie card rendering",
+        "Test with various date formats"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Add CSS for upcoming badges and tentative styling",
+      "description": "Style upcoming indicators in assets/css/main.css",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Add CSS for .upcoming-badge class",
+        "Style badge with distinct color (e.g., orange/yellow)",
+        "Add tentative date styling (italics, lighter color)",
+        "Add icon or emoji for upcoming indicator",
+        "Ensure badge responsive on mobile",
+        "Test contrast meets accessibility standards",
+        "Verify badge doesn't break layout"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Verify all tests pass for User Story 3",
+      "description": "Run next-week test suite and confirm all tests pass (GATE 2)",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Run npm test tests/features/*next-week*",
+        "Verify T037 test passes (next week navigation)",
+        "Verify T038 test passes (upcoming indicators)",
+        "Verify T039 test passes (tentative dates)",
+        "Update feature_list.json for features 37-39: test_passes_after: true",
+        "Mark User Story 3 features as passes: true",
+        "Document User Story 3 completion"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Create test: US categories display correctly",
+      "description": "Write Playwright test in tests/features/us-categories.spec.ts verifying US distribution categories",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/us-categories.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/us-categories.spec.ts",
+        "Write test that selects US country",
+        "Assert categories include Wide Release, Limited Release, Independent, Blockbuster",
+        "Verify each category displays movies",
+        "Verify category headers are visible",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Create test: India categories display correctly",
+      "description": "Write Playwright test in tests/features/india-categories.spec.ts verifying India language categories",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/india-categories.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/india-categories.spec.ts",
+        "Write test that selects India country",
+        "Assert categories include Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood, Regional",
+        "Verify each category displays movies",
+        "Verify category names use proper industry terms",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Create test: Multi-language movies show all languages",
+      "description": "Write Playwright test in tests/features/multi-language-display.spec.ts verifying language display",
+      "priority": "medium",
+      "passes": false,
+      "test_file": "tests/features/multi-language-display.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/multi-language-display.spec.ts",
+        "Write test with mock multi-language movie data",
+        "Assert all languages display (e.g., 'Hindi, Telugu, Tamil')",
+        "Verify language formatting is clear",
+        "Test with single and multiple languages",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Define US category configuration",
+      "description": "Create US_CATEGORIES constant in scripts/fetch-releases.js",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Define US_CATEGORIES array with objects",
+        "Add wide-release category (category_id, category_name)",
+        "Add limited-release category",
+        "Add independent category",
+        "Add blockbuster category",
+        "Include descriptive category_name for display",
+        "Verify configuration matches spec requirements"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Define India category configuration",
+      "description": "Create INDIA_CATEGORIES constant in scripts/fetch-releases.js",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Define INDIA_CATEGORIES array with objects",
+        "Add bollywood-hindi category (category_id, category_name)",
+        "Add tollywood-telugu category",
+        "Add kollywood-tamil category",
+        "Add mollywood-malayalam category",
+        "Add sandalwood-kannada category",
+        "Add regional category for other languages",
+        "Verify configuration matches spec requirements"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Implement category filtering in API prompt logic",
+      "description": "Update API prompt in scripts/fetch-releases.js to include category instructions",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update updatePromptForMovies to accept country parameter",
+        "Include US category definitions in US prompts",
+        "Include India category definitions in India prompts",
+        "Request API to organize movies by categories",
+        "Verify prompt includes all category names",
+        "Test prompt returns categorized data",
+        "Validate categories match configuration"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Update renderCategories for country-specific display",
+      "description": "Enhance renderCategories function in assets/js/app.js to handle country differences",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update renderCategories(data, country) function signature",
+        "Access COUNTRY_CONFIG for category definitions",
+        "Render category headers using category_name",
+        "Handle missing categories gracefully",
+        "Add country-specific styling if needed",
+        "Test with both US and India data",
+        "Verify category order matches configuration"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Add multi-language display support",
+      "description": "Create renderLanguageInfo function in assets/js/app.js for language formatting",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Create renderLanguageInfo(language) function",
+        "Handle language as string or array",
+        "Format array as comma-separated list",
+        "Add language icon or label",
+        "Integrate into movie card rendering",
+        "Test with single language",
+        "Test with multiple languages",
+        "Verify display is clear and readable"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Add CSS for category-specific styling",
+      "description": "Style country categories in assets/css/main.css",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Add category header styling",
+        "Style US categories distinctly if needed",
+        "Style India categories distinctly if needed",
+        "Add language badge/icon styling",
+        "Ensure category sections are visually separated",
+        "Test responsive layout for categories",
+        "Verify accessibility of category headers"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Verify all tests pass for User Story 4",
+      "description": "Run categories test suite and confirm all tests pass (GATE 2)",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Run npm test tests/features/*categories*",
+        "Verify T048 test passes (US categories)",
+        "Verify T049 test passes (India categories)",
+        "Verify T050 test passes (multi-language)",
+        "Update feature_list.json for features 48-50: test_passes_after: true",
+        "Mark User Story 4 features as passes: true",
+        "Document User Story 4 completion"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Create test: Hash URL navigation works",
+      "description": "Write Playwright test in tests/features/url-routing.spec.ts verifying hash routing",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/url-routing.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/url-routing.spec.ts",
+        "Write test that navigates to URL with hash",
+        "Test #current/us loads current week US data",
+        "Test #last-week/india loads last week India data",
+        "Test #next-week/us loads next week US data",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Create test: Browser back/forward buttons work",
+      "description": "Write Playwright test in tests/features/browser-navigation.spec.ts verifying history API",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/browser-navigation.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/browser-navigation.spec.ts",
+        "Write test that navigates between weeks",
+        "Click browser back button",
+        "Assert previous view loads correctly",
+        "Click browser forward button",
+        "Assert forward navigation works",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Create test: Shared URLs load correct state",
+      "description": "Write Playwright test in tests/features/shareable-urls.spec.ts verifying URL sharing",
+      "priority": "low",
+      "passes": false,
+      "test_file": "tests/features/shareable-urls.spec.ts",
+      "test_fails_before": false,
+      "test_passes_after": false,
+      "steps": [
+        "Create test file tests/features/shareable-urls.spec.ts",
+        "Write test that captures current URL",
+        "Open URL in new browser context",
+        "Assert same state loads (week, country)",
+        "Test with various hash combinations",
+        "Run test and confirm it FAILS (GATE 1)",
+        "Update feature_list.json with test_fails_before: true"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Implement hash router initialization",
+      "description": "Create initHashRouter function in assets/js/app.js to setup routing",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create initHashRouter() function",
+        "Add hashchange event listener to window",
+        "Call parseHashParams on initialization",
+        "Load appropriate week/country from hash",
+        "Handle empty hash (default to current/us)",
+        "Store routing state in app state",
+        "Test router initialization on page load"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Implement hash change listener",
+      "description": "Create onHashChange function in assets/js/app.js to handle hash updates",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create onHashChange() function",
+        "Parse new hash parameters",
+        "Extract weekType and country from hash",
+        "Call loadWeekData with parsed params",
+        "Update UI state accordingly",
+        "Handle invalid hashes gracefully",
+        "Test listener responds to hash changes"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Implement URL state update on navigation",
+      "description": "Create updateUrlHash function in assets/js/app.js to sync URL with state",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create updateUrlHash(weekType, country) function",
+        "Build hash string format #weekType/country",
+        "Update window.location.hash without page reload",
+        "Prevent infinite loop with onHashChange",
+        "Add history entry for browser back/forward",
+        "Test URL updates on navigation",
+        "Verify URL format is correct"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Parse hash parameters on page load",
+      "description": "Create parseHashParams function in assets/js/app.js to extract route info",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create parseHashParams() function",
+        "Get hash from window.location.hash",
+        "Split hash by '/' delimiter",
+        "Extract weekType (last-week, current, next-week)",
+        "Extract country (us, india)",
+        "Return parsed object with weekType and country",
+        "Handle malformed hashes",
+        "Test with various hash formats"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Handle invalid hash gracefully with redirect",
+      "description": "Create handleInvalidHash function in assets/js/app.js for error handling",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Create handleInvalidHash() function",
+        "Detect invalid weekType values",
+        "Detect invalid country values",
+        "Show user-friendly error message",
+        "Redirect to default #current/us",
+        "Log error for debugging",
+        "Test with various invalid hashes"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Add URL examples to UI",
+      "description": "Update index.html with copy URL button for sharing",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Add 'Share' or 'Copy Link' button to UI",
+        "Add click handler to copy current URL",
+        "Use Clipboard API or fallback method",
+        "Show confirmation message on copy",
+        "Add ARIA label for accessibility",
+        "Style button appropriately",
+        "Test copy functionality works"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Verify all tests pass for User Story 5",
+      "description": "Run URL routing test suite and confirm all tests pass (GATE 2)",
+      "priority": "low",
+      "passes": false,
+      "steps": [
+        "Run npm test tests/features/*url*",
+        "Verify T058 test passes (hash routing)",
+        "Verify T059 test passes (browser navigation)",
+        "Verify T060 test passes (shareable URLs)",
+        "Update feature_list.json for features 58-60: test_passes_after: true",
+        "Mark User Story 5 features as passes: true",
+        "Document User Story 5 completion"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Update GitHub Actions workflow for three-week updates",
+      "description": "Modify .github/workflows/update-deploy.yml to fetch all three weeks",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update workflow name from OTT to Movies",
+        "Add step to fetch last-week data for US",
+        "Add step to fetch current-week data for US",
+        "Add step to fetch next-week data for US",
+        "Add step to fetch last-week data for India",
+        "Add step to fetch current-week data for India",
+        "Add step to fetch next-week data for India",
+        "Ensure atomic updates (all or nothing)",
+        "Add error handling and notifications",
+        "Test workflow runs successfully"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Create integration tests for three-week data flow",
+      "description": "Write end-to-end integration test in tests/integration/three-week-flow.spec.ts",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Create test file tests/integration/three-week-flow.spec.ts",
+        "Test full flow: load current → navigate last → navigate next → back to current",
+        "Verify data consistency across navigation",
+        "Test country switching during week navigation",
+        "Verify localStorage persistence works",
+        "Test error recovery with missing data",
+        "Verify week transitions maintain state",
+        "Run test and confirm passes"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Run performance audit",
+      "description": "Execute Lighthouse audit in tests/performance/lighthouse.spec.ts and verify score ≥ 90",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update or create tests/performance/lighthouse.spec.ts",
+        "Configure Lighthouse audit for all metrics",
+        "Run audit on homepage",
+        "Verify Performance score ≥ 90",
+        "Verify FCP < 1.0s",
+        "Verify LCP < 2.5s",
+        "Verify TBT < 200ms",
+        "Document results and optimize if needed"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Run accessibility audit",
+      "description": "Execute WCAG 2.1 AA audit in tests/features/accessibility.spec.ts",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Update or create tests/features/accessibility.spec.ts",
+        "Run axe-core accessibility scan",
+        "Verify no WCAG AA violations",
+        "Test keyboard navigation works",
+        "Test screen reader compatibility",
+        "Verify ARIA labels present and correct",
+        "Verify color contrast meets standards",
+        "Document accessibility score ≥ 90"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Verify progressive enhancement",
+      "description": "Manual test that core content works without JavaScript",
+      "priority": "medium",
+      "passes": false,
+      "steps": [
+        "Disable JavaScript in browser",
+        "Load homepage",
+        "Verify current week data displays (static HTML)",
+        "Verify content is readable and structured",
+        "Verify semantic HTML provides fallback",
+        "Re-enable JavaScript and confirm enhancements work",
+        "Document progressive enhancement validation"
+      ]
+    }
+  ]
+}
