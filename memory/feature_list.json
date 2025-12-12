@@ -225,9 +225,9 @@
       "name": "Create test: US current week displays with distribution categories",
       "description": "Write Playwright test in tests/features/us-current-week-display.spec.ts verifying US category organization",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/us-current-week-display.spec.ts",
-      "test_fails_before": false,
+      "test_fails_before": true,
       "test_passes_after": false,
       "steps": [
         "Create test file tests/features/us-current-week-display.spec.ts",
@@ -244,9 +244,9 @@
       "name": "Create test: India current week displays with language categories",
       "description": "Write Playwright test in tests/features/india-current-week-display.spec.ts verifying India category organization",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/india-current-week-display.spec.ts",
-      "test_fails_before": false,
+      "test_fails_before": true,
       "test_passes_after": false,
       "steps": [
         "Create test file tests/features/india-current-week-display.spec.ts",
