@@ -1,23 +1,28 @@
 {
-  "week_number": 51,
-  "year": 2025,
-  "week_id": "2025-51",
-  "week_start": "2025-12-15",
-  "week_end": "2025-12-21",
-  "week_range": "December 15-21, 2025",
-  "week_title": "Week 51: December 15-21, 2025",
-  "week_type": "next-week",
-  "country": {
-    "id": "india",
-    "name": "India",
-    "flag": "🇮🇳"
-  },
-  "generated_at": "2025-12-12T00:00:00.000Z",
-  "distribution_categories": [
+  "week_number": "2025-51",
+  "week_start": "2025-12-16",
+  "week_end": "2025-12-22",
+  "country": "india",
+  "categories": [
     {
-      "category_id": "bollywood-hindi",
-      "category_name": "Bollywood / Hindi",
-      "releases": []
+      "id": "bollywood",
+      "name": "Bollywood (Hindi)",
+      "movies": []
+    },
+    {
+      "id": "tollywood-telugu",
+      "name": "Tollywood (Telugu)",
+      "movies": []
+    },
+    {
+      "id": "kollywood-tamil",
+      "name": "Kollywood (Tamil)",
+      "movies": []
+    },
+    {
+      "id": "mollywood-malayalam",
+      "name": "Mollywood (Malayalam)",
+      "movies": []
     }
   ]
 }

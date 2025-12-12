@@ -29,6 +29,7 @@ let currentCountry = 'us';
 let currentArchiveIndex = null;
 let activeWeekId = null;
 let currentWeekData = null;
+let currentWeekType = 'current-week'; // Track active week (last-week, current-week, next-week)
 let weekDataCache = {}; // Cache for week data to avoid refetching
 
 // ============================================================================
@@ -623,6 +624,8 @@ async function init() {
         
         if (currentWeekPost && data) {
             await renderCurrentWeek();
+            updateWeekButtons('current'); // Set initial week button state
+            updateActiveWeekTitle(data); // Set initial week title
         }
         
         // Load archive navigation
@@ -635,6 +638,11 @@ async function init() {
         // Set up country toggle handlers
         countryButtons.forEach(btn => {
             btn.addEventListener('click', handleCountryChange);
+        });
+
+        // Set up week navigation handlers
+        weekButtons.forEach(btn => {
+            btn.addEventListener('click', handleWeekChange);
         });
 
         if (backToCurrentButton) {
@@ -677,6 +685,76 @@ async function handleCountryChange(event) {
     } catch (error) {
         console.error('Error switching country:', error);
     }
+}
+
+/**
+ * Handle week navigation change
+ * Feature 26-36: Week navigation between last/current/next
+ * @param {Event} event - Click event
+ */
+async function handleWeekChange(event) {
+    const weekId = event.currentTarget.dataset.week; // 'last', 'current', 'next'
+    const newWeekType = `${weekId}-week`; // 'last-week', 'current-week', 'next-week'
+    
+    if (newWeekType === currentWeekType) return;
+    
+    currentWeekType = newWeekType;
+    updateWeekButtons(weekId);
+    
+    try {
+        // Load week data
+        const data = await loadWeekData(currentCountry, newWeekType);
+        
+        if (data) {
+            currentWeekData = data;
+            await renderCurrentWeek();
+            updateActiveWeekTitle(data);
+        }
+        
+    } catch (error) {
+        console.error('Error switching week:', error);
+    }
+}
+
+/**
+ * Update active week button state
+ * @param {string} weekId - Active week ID ('last', 'current', 'next')
+ */
+function updateWeekButtons(weekId) {
+    weekButtons.forEach(btn => {
+        const btnWeekId = btn.dataset.week;
+        const isActive = btnWeekId === weekId;
+        
+        if (isActive) {
+            btn.classList.add('active');
+            btn.setAttribute('aria-current', 'true');
+            btn.setAttribute('aria-pressed', 'true');
+        } else {
+            btn.classList.remove('active');
+            btn.removeAttribute('aria-current');
+            btn.setAttribute('aria-pressed', 'false');
+        }
+    });
+}
+
+/**
+ * Update active week title display
+ * @param {Object} data - Week data
+ */
+function updateActiveWeekTitle(data) {
+    if (!activeWeekTitle || !data) return;
+    
+    const startDate = new Date(data.week_start);
+    const endDate = new Date(data.week_end);
+    
+    // Format: "Week XX: Month DD-DD, YYYY"
+    const weekNum = data.week_number.split('-')[1]; // Get week number from "YYYY-WW"
+    const month = startDate.toLocaleDateString('en-US', { month: 'long' });
+    const startDay = startDate.getDate();
+    const endDay = endDate.getDate();
+    const year = endDate.getFullYear();
+    
+    activeWeekTitle.textContent = `Week ${weekNum}: ${month} ${startDay}-${endDay}, ${year}`;
 }
 
 /**
