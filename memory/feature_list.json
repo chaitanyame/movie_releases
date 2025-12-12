@@ -206,9 +206,9 @@
       "name": "Create test: Current week data loads successfully",
       "description": "Write Playwright test in tests/features/current-week-load.spec.ts verifying current week data loads",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/current-week-load.spec.ts",
-      "test_fails_before": false,
+      "test_fails_before": true,
       "test_passes_after": false,
       "steps": [
         "Create test file tests/features/current-week-load.spec.ts",
