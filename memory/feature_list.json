@@ -128,7 +128,7 @@
       "name": "Update week-transition.js for three-week sliding window",
       "description": "Modify scripts/utils/week-transition.js to handle three concurrent week files (last/current/next)",
       "priority": "high",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Update shouldArchive() to detect when next-week becomes current-week",
         "Implement three-week rotation logic (next → current → last → archive)",
