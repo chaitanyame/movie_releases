@@ -813,35 +813,78 @@ async function fetchCountryReleases(country, weekRange) {
 }
 
 /**
+ * Parse command line arguments
+ */
+function parseArgs() {
+    const args = process.argv.slice(2);
+    const options = {
+        country: null,
+        week: 'current-week'
+    };
+    
+    for (let i = 0; i < args.length; i++) {
+        if (args[i] === '--country' && args[i + 1]) {
+            options.country = args[i + 1];
+            i++;
+        } else if (args[i] === '--week' && args[i + 1]) {
+            options.week = args[i + 1];
+            i++;
+        }
+    }
+    
+    return options;
+}
+
+/**
  * Main function
  */
 async function main() {
     try {
-        console.log('🎬 OTT Weekly Releases Fetcher');
-        console.log('================================\n');
+        console.log('🎬 Theatrical Movie Releases Fetcher');
+        console.log('====================================\n');
         
-        const now = new Date();
-        const { start, end } = getWeekDateRange(now);
-        const weekRange = formatDateRange(start, end);
+        // Parse command line arguments
+        const options = parseArgs();
         
-        console.log(`📅 Week: ${weekRange}`);
+        // Determine which countries to fetch
+        const countriesToFetch = options.country 
+            ? { [options.country]: COUNTRY_CONFIG[options.country] }
+            : COUNTRY_CONFIG;
+        
+        if (!countriesToFetch || Object.keys(countriesToFetch).length === 0) {
+            throw new Error(`Invalid country: ${options.country}. Must be 'us' or 'india'`);
+        }
+        
+        console.log(`📅 Week Type: ${options.week}`);
+        console.log(`🌍 Countries: ${Object.keys(countriesToFetch).join(', ')}\n`);
         
         // Fetch releases for each country
-        for (const [countryId, country] of Object.entries(COUNTRIES)) {
+        for (const [countryId, countryConfig] of Object.entries(countriesToFetch)) {
             try {
-                const weekData = await fetchCountryReleases(country, weekRange);
+                console.log(`\n${countryConfig.flag} Fetching ${options.week} for ${countryConfig.name}...`);
                 
-                // Save current week
-                saveToFile(weekData, `data/${countryId}/current-week.json`);
+                const weekData = await fetchWeekData(countryId, options.week);
                 
-                // Archive with week ID
-                saveToFile(weekData, `data/${countryId}/archive/${weekData.week_id}.json`);
+                // Save to appropriate file
+                const outputFile = `data/${countryId}/${options.week}.json`;
+                saveToFile(weekData, outputFile);
+                console.log(`✅ Saved to ${outputFile}`);
                 
-                // Update archive index
-                updateArchiveIndex(weekData, countryId);
+                // If current week, also archive it
+                if (options.week === 'current-week' && weekData.week_number) {
+                    const archiveFile = `data/${countryId}/archive/${weekData.week_number}.json`;
+                    saveToFile(weekData, archiveFile);
+                    console.log(`📦 Archived to ${archiveFile}`);
+                    
+                    // Update archive index
+                    updateArchiveIndex(weekData, countryId);
+                }
                 
             } catch (error) {
-                console.error(`❌ Error fetching ${country.name}:`, error.message);
+                console.error(`❌ Error fetching ${countryConfig.name}:`, error.message);
+                if (error.stack) {
+                    console.error(error.stack);
+                }
             }
             
             // Add a small delay between API calls to be respectful
