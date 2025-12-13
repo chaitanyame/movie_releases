@@ -421,7 +421,7 @@ function updateCountryButtons(activeCountry) {
         btn.classList.toggle('active', isActive);
         btn.setAttribute('aria-pressed', isActive.toString());
         if (isActive) {
-            btn.setAttribute('aria-current', 'true');
+            btn.setAttribute('aria-current', 'page');
         } else {
             btn.removeAttribute('aria-current');
         }
@@ -633,6 +633,134 @@ function renderPost(postData) {
     `;
 }
 
+// ============================================================================
+// Feature 61-65: Hash Router (URL Routing)
+// ============================================================================
+
+/**
+ * Parse hash parameters from URL
+ * Feature 64: Extract route info from window.location.hash
+ * Format: #weekType/country (e.g., #current/us, #last-week/india)
+ * @returns {Object} Parsed parameters { weekType, country, wasValid }
+ */
+function parseHashParams() {
+    const hash = window.location.hash.slice(1); // Remove '#'
+    
+    if (!hash) {
+        return { weekType: 'current', country: currentCountry, wasValid: true };
+    }
+    
+    const parts = hash.split('/');
+    const weekType = parts[0] || 'current';
+    const country = parts[1] || currentCountry;
+    
+    // Validate week type
+    const validWeekTypes = ['current', 'last-week', 'next-week'];
+    const weekTypeValid = validWeekTypes.includes(weekType);
+    
+    // Validate country
+    const countryValid = COUNTRIES[country] !== undefined;
+    
+    const wasValid = weekTypeValid && countryValid;
+    
+    return { 
+        weekType: weekTypeValid ? weekType : 'current',
+        country: countryValid ? country : currentCountry,
+        wasValid
+    };
+}
+
+/**
+ * Update URL hash without triggering hashchange event
+ * Feature 63: Sync URL with state
+ * @param {string} weekType - Week type (current, last-week, next-week)
+ * @param {string} country - Country ID
+ */
+function updateUrlHash(weekType, country) {
+    const newHash = `#${weekType}/${country}`;
+    
+    // Only update if different to prevent infinite loop
+    if (window.location.hash !== newHash) {
+        window.location.hash = newHash;
+    }
+}
+
+/**
+ * Handle invalid hash by redirecting to default
+ * Feature 65: Error handling for invalid hashes
+ * @param {string} reason - Reason for invalid hash
+ */
+function handleInvalidHash(reason) {
+    console.warn(`Invalid hash: ${reason}. Redirecting to default.`);
+    updateUrlHash('current', currentCountry);
+}
+
+/**
+ * Apply route from current hash
+ * Feature 61: Initialize router and load from hash
+ */
+async function applyRouteFromHash() {
+    const { weekType, country, wasValid } = parseHashParams();
+    
+    // If hash was invalid, redirect to default
+    if (!wasValid) {
+        handleInvalidHash('Invalid week type or country');
+        return;
+    }
+    
+    let needsDataReload = false;
+    
+    // Update country if different
+    if (country !== currentCountry) {
+        currentCountry = country;
+        saveCountryPreference(country);
+        updateCountryButtons(country);
+        needsDataReload = true;
+    }
+    
+    // Map weekType to currentWeekType format
+    const weekTypeMap = {
+        'current': 'current-week',
+        'last-week': 'last-week',
+        'next-week': 'next-week'
+    };
+    
+    const mappedWeekType = weekTypeMap[weekType] || 'current-week';
+    
+    // Check if week type changed
+    if (mappedWeekType !== currentWeekType) {
+        currentWeekType = mappedWeekType;
+        needsDataReload = true;
+    }
+    
+    // Load data if country or week changed
+    if (needsDataReload) {
+        await loadWeekData(country, mappedWeekType);
+        
+        // Update UI
+        const weekButtonId = {
+            'current-week': 'current',
+            'last-week': 'last',
+            'next-week': 'next'
+        }[mappedWeekType];
+        
+        updateWeekButtons(weekButtonId);
+        
+        if (currentWeekData) {
+            await renderCurrentWeek();
+            updateActiveWeekTitle(currentWeekData);
+        }
+    }
+}
+
+/**
+ * Handle hash change events
+ * Feature 62: Hash change listener
+ */
+async function handleHashChange() {
+    await applyRouteFromHash();
+}
+
 /**
  * Initialize the application
  */
@@ -641,6 +769,11 @@ async function init() {
         // Get country preference (auto-detect or saved)
         currentCountry = getCountryPreference();
         updateCountryButtons(currentCountry);
+        
+        // Set default hash if none provided
+        if (!window.location.hash) {
+            updateUrlHash('current', currentCountry);
+        }
         
         // Load current week data
         const data = await loadCurrentWeek(currentCountry);
@@ -694,8 +827,14 @@ async function handleCountryChange(event) {
     saveCountryPreference(newCountry);
     updateCountryButtons(newCountry);
     
-    // Clear hash to go to current week
-    window.location.hash = '';
+    // Update hash with new country (keep current week type)
+    const weekType = {
+        'current-week': 'current',
+        'last-week': 'last-week',
+        'next-week': 'next-week'
+    }[currentWeekType] || 'current';
+    
+    updateUrlHash(weekType, newCountry);
     
     try {
         // Load new country data
@@ -723,6 +862,10 @@ async function handleWeekChange(event) {
     
     currentWeekType = newWeekType;
     updateWeekButtons(weekId);
+    
+    // Update URL hash with new week type
+    const weekTypeForHash = weekId === 'current' ? 'current' : newWeekType;
+    updateUrlHash(weekTypeForHash, currentCountry);
     
     try {
         // Load week data
