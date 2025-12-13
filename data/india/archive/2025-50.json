@@ -11,75 +11,8 @@
     "name": "India",
     "flag": "🇮🇳"
   },
-  "generated_at": "2025-12-12T09:03:51.440Z",
+  "generated_at": "2025-12-13T00:32:15.895Z",
   "platforms": [
-    {
-      "id": "netflix",
-      "name": "Netflix",
-      "releases": [
-        {
-          "title": "Kaantha",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Mollywood/Malayalam",
-          "genre": "Drama",
-          "language": "Malayalam",
-          "actors": [
-            "Dulquer Salmaan",
-            "Bhagyashri Borse",
-            "Rana Daggubati"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "Kaantha is a drama directed by Selvamani Selvaraj, featuring Dulquer Salmaan in the lead.[1][4]"
-        },
-        {
-          "title": "Single Papa",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Romantic Comedy",
-          "language": "Hindi",
-          "actors": [
-            "Kunal Kemmu",
-            "Prajakta Koli",
-            "Manoj Pahwa",
-            "Neha Dhupia"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "Single Papa is a funny and touching parenting adventure starring Kunal Kemmu.[1][4]"
-        },
-        {
-          "title": "Wake Up Dead Man: A Knives Out Mystery",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Mystery Thriller",
-          "language": "English",
-          "actors": [
-            "Daniel Craig"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Post-Theatrical",
-          "description": "The latest installment in the Knives Out mystery series.[1][3]"
-        },
-        {
-          "title": "Man vs Baby",
-          "release_date": "2025-11-11",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Comedy",
-          "language": "English",
-          "actors": [
-            "Rowan Atkinson"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Rowan Atkinson's anarchic return in a comedy series.[1]"
-        }
-      ]
-    },
     {
       "id": "sonyliv",
       "name": "SonyLIV",
@@ -95,44 +28,16 @@
             "Manav Kaul",
             "Mohd. Zeeshan Ayyub"
           ],
-          "dubbing": "TBA",
+          "dubbing": "",
           "release_type": "Direct-to-OTT",
-          "description": "An inspirational true-story sports series about turning a game into a movement in Kashmir.[1][3][4]"
+          "description": "Inspirational true-story sports series about a Kashmiri Hindu Pandit and Muslim forming Real Kashmir Football Club."
         }
       ]
     },
     {
-      "id": "zee5",
-      "name": "ZEE5",
-      "releases": [
-        {
-          "title": "Saali Mohabbat",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Suspense Thriller",
-          "language": "Hindi",
-          "actors": [
-            "Radhika Apte",
-            "Divyenndu Sharma"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A gripping suspense thriller directed by Tisca Chopra, produced by Manish Malhotra.[1][3][4]"
-        },
-        {
-          "title": "Kesariya@100",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Historical Documentary",
-          "language": "Hindi",
-          "actors": [],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A historical documentary.[1]"
-        }
-      ]
+      "id": "jiocinema",
+      "name": "JioCinema",
+      "releases": []
     },
     {
       "id": "disney-plus-hotstar",
@@ -143,12 +48,14 @@
           "release_date": "2025-12-10",
           "type": "series",
           "industry": "Hollywood/English",
-          "genre": "Fantasy",
+          "genre": "Adventure Drama",
           "language": "English",
-          "actors": [],
-          "dubbing": "Hindi, Tamil, Telugu",
+          "actors": [
+            "Walker Scobell"
+          ],
+          "dubbing": "",
           "release_type": "Direct-to-OTT",
-          "description": "Second season for fantasy aficionados.[1][3]"
+          "description": "Second season based on The Sea of Monsters from Rick Riordan's book series."
         },
         {
           "title": "Superman",
@@ -157,10 +64,14 @@
           "industry": "Hollywood/English",
           "genre": "Action",
           "language": "English",
-          "actors": [],
-          "dubbing": "Hindi, Tamil, Telugu, Malayalam",
+          "actors": [
+            "David Corenswet",
+            "Rachel Brosnahan",
+            "Nicholas Hoult"
+          ],
+          "dubbing": "",
           "release_type": "Post-Theatrical",
-          "description": "Superman 2025 streaming premiere.[1][3]"
+          "description": "James Gunn's superhero film where Superman faces Lex Luthor after intervening in an international conflict."
         },
         {
           "title": "The Great Shamsuddin Family",
@@ -174,9 +85,9 @@
             "Sheeba Chaddha",
             "Shreya Dhanwanthary"
           ],
-          "dubbing": "TBA",
+          "dubbing": "",
           "release_type": "Direct-to-OTT",
-          "description": "A family drama about a writer tackling a deadline amid family chaos.[1][3][4]"
+          "description": "A writer tackles her deadline amid family chaos in this comedy drama."
         },
         {
           "title": "Taylor Swift: The Eras Tour – The Final Show",
@@ -188,16 +99,109 @@
           "actors": [
             "Taylor Swift"
           ],
-          "dubbing": "Hindi",
+          "dubbing": "",
           "release_type": "Direct-to-OTT",
-          "description": "Docuseries from Taylor Swift's record-breaking Eras Tour.[4]"
+          "description": "Docuseries featuring glimpses from Taylor Swift's record-breaking Eras Tour final show."
         }
       ]
     },
     {
-      "id": "jiocinema",
-      "name": "JioCinema",
-      "releases": []
+      "id": "zee5",
+      "name": "ZEE5",
+      "releases": [
+        {
+          "title": "Kesariya@100",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Historical Documentary",
+          "language": "Hindi",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Historical documentary celebrating Kesariya at 100."
+        },
+        {
+          "title": "Saali Mohabbat",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Thriller Drama",
+          "language": "Hindi",
+          "actors": [
+            "Radhika Apte",
+            "Divyendu Sharma"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Suspense thriller directed by Tisca Chopra under Manish Malhotra's production."
+        }
+      ]
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Man vs Baby",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "industry": "Hollywood/English",
+          "genre": "Comedy",
+          "language": "English",
+          "actors": [
+            "Rowan Atkinson"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Rowan Atkinson's anarchic return in a parenting comedy adventure."
+        },
+        {
+          "title": "Kaantha",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Mollywood/Malayalam",
+          "genre": "Drama",
+          "language": "Malayalam",
+          "actors": [
+            "Dulquer Salmaan",
+            "Bhagyashri Borse",
+            "Rana Daggubati"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Selvamani Selvaraj's directorial featuring Dulquer Salmaan in a dramatic narrative."
+        },
+        {
+          "title": "Single Papa",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Romantic Comedy",
+          "language": "Hindi",
+          "actors": [
+            "Kunal Kemmu",
+            "Prajakta Koli",
+            "Manoj Pahwa",
+            "Neha Dhupia"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "An irresponsible young man shocks his family by adopting a baby in this funny and touching story."
+        },
+        {
+          "title": "Wake Up Dead Man: A Knives Out Mystery",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Hollywood/English",
+          "genre": "Mystery",
+          "language": "English",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Latest installment in the Knives Out mystery series."
+        }
+      ]
     },
     {
       "id": "aha",
@@ -211,11 +215,16 @@
           "genre": "Comedy Drama",
           "language": "Telugu",
           "actors": [],
-          "dubbing": "TBA",
+          "dubbing": "",
           "release_type": "Direct-to-OTT",
-          "description": "Telugu comedy-drama where three characters relocate to Mumbai, start an ad business, but face a gangster threat.[1]"
+          "description": "Three friends relocate to Mumbai, start an ad business, but face a gangster's pursuit threatening their lives."
         }
       ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": []
     },
     {
       "id": "hoichoi",
@@ -245,11 +254,6 @@
     {
       "id": "chaupal",
       "name": "Chaupal",
-      "releases": []
-    },
-    {
-      "id": "prime-video",
-      "name": "Prime Video",
       "releases": []
     }
   ]

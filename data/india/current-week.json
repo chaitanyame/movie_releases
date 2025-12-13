@@ -1,52 +1,260 @@
 {
-  "week_number": "2025-50",
-  "week_start": "2025-12-09",
-  "week_end": "2025-12-15",
-  "country": "india",
-  "categories": [
+  "week_number": 50,
+  "year": 2025,
+  "week_id": "2025-50",
+  "week_start": "2025-12-08",
+  "week_end": "2025-12-14",
+  "week_range": "December 8-14, 2025",
+  "week_title": "Week 50: December 8-14, 2025",
+  "country": {
+    "id": "india",
+    "name": "India",
+    "flag": "🇮🇳"
+  },
+  "generated_at": "2025-12-13T00:32:15.895Z",
+  "platforms": [
     {
-      "id": "bollywood",
-      "name": "Bollywood (Hindi)",
-      "movies": [
+      "id": "sonyliv",
+      "name": "SonyLIV",
+      "releases": [
         {
-          "title": "Pushpa 2: The Rule",
-          "release_date": "2025-12-13",
-          "genre": "Action, Drama",
+          "title": "Real Kashmir Football Club",
+          "release_date": "2025-12-09",
+          "type": "series",
+          "industry": "Bollywood/Hindi",
+          "genre": "Sports Drama",
           "language": "Hindi",
-          "additional_languages": ["Telugu", "Tamil", "Kannada", "Malayalam"],
-          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
-          "director": "Sukumar",
-          "production": "Mythri Movie Makers",
-          "description": "The continuation of Pushpa's story as he rises to power in the red sandalwood smuggling syndicate."
+          "actors": [
+            "Manav Kaul",
+            "Mohd. Zeeshan Ayyub"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Inspirational true-story sports series about a Kashmiri Hindu Pandit and Muslim forming Real Kashmir Football Club."
         }
       ]
     },
     {
-      "id": "tollywood-telugu",
-      "name": "Tollywood (Telugu)",
-      "movies": [
+      "id": "jiocinema",
+      "name": "JioCinema",
+      "releases": []
+    },
+    {
+      "id": "disney-plus-hotstar",
+      "name": "Disney+ Hotstar",
+      "releases": [
         {
-          "title": "Game Changer",
-          "release_date": "2025-12-13",
-          "genre": "Action, Political Thriller",
-          "language": "Telugu",
-          "additional_languages": ["Hindi", "Tamil"],
-          "cast": ["Ram Charan", "Kiara Advani", "SJ Suryah"],
-          "director": "Shankar",
-          "production": "Sri Venkateswara Creations",
-          "description": "An honest IAS officer takes on a corrupt political system."
+          "title": "Percy Jackson and the Olympians Season 2",
+          "release_date": "2025-12-10",
+          "type": "series",
+          "industry": "Hollywood/English",
+          "genre": "Adventure Drama",
+          "language": "English",
+          "actors": [
+            "Walker Scobell"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Second season based on The Sea of Monsters from Rick Riordan's book series."
+        },
+        {
+          "title": "Superman",
+          "release_date": "2025-12-11",
+          "type": "movie",
+          "industry": "Hollywood/English",
+          "genre": "Action",
+          "language": "English",
+          "actors": [
+            "David Corenswet",
+            "Rachel Brosnahan",
+            "Nicholas Hoult"
+          ],
+          "dubbing": "",
+          "release_type": "Post-Theatrical",
+          "description": "James Gunn's superhero film where Superman faces Lex Luthor after intervening in an international conflict."
+        },
+        {
+          "title": "The Great Shamsuddin Family",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Comedy Drama",
+          "language": "Hindi",
+          "actors": [
+            "Kritika Kamra",
+            "Sheeba Chaddha",
+            "Shreya Dhanwanthary"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "A writer tackles her deadline amid family chaos in this comedy drama."
+        },
+        {
+          "title": "Taylor Swift: The Eras Tour – The Final Show",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Hollywood/English",
+          "genre": "Concert Documentary",
+          "language": "English",
+          "actors": [
+            "Taylor Swift"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Docuseries featuring glimpses from Taylor Swift's record-breaking Eras Tour final show."
         }
       ]
     },
     {
-      "id": "kollywood-tamil",
-      "name": "Kollywood (Tamil)",
-      "movies": []
+      "id": "zee5",
+      "name": "ZEE5",
+      "releases": [
+        {
+          "title": "Kesariya@100",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Historical Documentary",
+          "language": "Hindi",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Historical documentary celebrating Kesariya at 100."
+        },
+        {
+          "title": "Saali Mohabbat",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Thriller Drama",
+          "language": "Hindi",
+          "actors": [
+            "Radhika Apte",
+            "Divyendu Sharma"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Suspense thriller directed by Tisca Chopra under Manish Malhotra's production."
+        }
+      ]
     },
     {
-      "id": "mollywood-malayalam",
-      "name": "Mollywood (Malayalam)",
-      "movies": []
+      "id": "netflix",
+      "name": "Netflix",
+      "releases": [
+        {
+          "title": "Man vs Baby",
+          "release_date": "2025-12-11",
+          "type": "series",
+          "industry": "Hollywood/English",
+          "genre": "Comedy",
+          "language": "English",
+          "actors": [
+            "Rowan Atkinson"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Rowan Atkinson's anarchic return in a parenting comedy adventure."
+        },
+        {
+          "title": "Kaantha",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Mollywood/Malayalam",
+          "genre": "Drama",
+          "language": "Malayalam",
+          "actors": [
+            "Dulquer Salmaan",
+            "Bhagyashri Borse",
+            "Rana Daggubati"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Selvamani Selvaraj's directorial featuring Dulquer Salmaan in a dramatic narrative."
+        },
+        {
+          "title": "Single Papa",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Bollywood/Hindi",
+          "genre": "Romantic Comedy",
+          "language": "Hindi",
+          "actors": [
+            "Kunal Kemmu",
+            "Prajakta Koli",
+            "Manoj Pahwa",
+            "Neha Dhupia"
+          ],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "An irresponsible young man shocks his family by adopting a baby in this funny and touching story."
+        },
+        {
+          "title": "Wake Up Dead Man: A Knives Out Mystery",
+          "release_date": "2025-12-12",
+          "type": "movie",
+          "industry": "Hollywood/English",
+          "genre": "Mystery",
+          "language": "English",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Latest installment in the Knives Out mystery series."
+        }
+      ]
+    },
+    {
+      "id": "aha",
+      "name": "Aha",
+      "releases": [
+        {
+          "title": "3 Roses Season 2",
+          "release_date": "2025-12-12",
+          "type": "series",
+          "industry": "Tollywood/Telugu",
+          "genre": "Comedy Drama",
+          "language": "Telugu",
+          "actors": [],
+          "dubbing": "",
+          "release_type": "Direct-to-OTT",
+          "description": "Three friends relocate to Mumbai, start an ad business, but face a gangster's pursuit threatening their lives."
+        }
+      ]
+    },
+    {
+      "id": "prime-video",
+      "name": "Prime Video",
+      "releases": []
+    },
+    {
+      "id": "hoichoi",
+      "name": "Hoichoi",
+      "releases": []
+    },
+    {
+      "id": "sunnxt",
+      "name": "SunNXT",
+      "releases": []
+    },
+    {
+      "id": "manoramamax",
+      "name": "ManoramaMAX",
+      "releases": []
+    },
+    {
+      "id": "etv-win",
+      "name": "ETV Win",
+      "releases": []
+    },
+    {
+      "id": "planet-marathi",
+      "name": "Planet Marathi",
+      "releases": []
+    },
+    {
+      "id": "chaupal",
+      "name": "Chaupal",
+      "releases": []
     }
   ]
 }
