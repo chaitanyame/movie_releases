@@ -43,6 +43,15 @@ function showError(message) {
 }
 
 /**
+ * Hide error message
+ */
+function hideError() {
+    if (errorMessage) {
+        errorMessage.style.display = 'none';
+    }
+}
+
+/**
  * Get icon for category
  */
 function getCategoryIcon(categoryName) {
@@ -183,25 +192,34 @@ function parseMarkdown(markdown) {
  * Load and display releases for current country
  */
 async function loadReleases() {
+    console.log('loadReleases called, country:', currentCountry);
     showLoading();
     hideError();
     
     try {
         const filename = currentCountry === 'us' ? 'RELEASES-US.md' : 'RELEASES.md';
+        console.log('Fetching:', filename);
+        
         const response = await fetch(filename);
+        console.log('Response status:', response.status);
         
         if (!response.ok) {
             throw new Error(`Failed to fetch releases: ${response.status}`);
         }
         
         const markdown = await response.text();
+        console.log('Markdown length:', markdown.length);
+        
         const html = parseMarkdown(markdown);
+        console.log('HTML length:', html.length);
         
         if (releasesContent) {
             releasesContent.innerHTML = html;
+            console.log('Content injected successfully');
         }
         
         hideLoading();
+        console.log('Loading hidden');
         
     } catch (error) {
         console.error('Error loading releases:', error);
