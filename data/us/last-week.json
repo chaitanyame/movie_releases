@@ -12,12 +12,39 @@
     {
       "category_id": "limited-release",
       "category_name": "Limited Release",
-      "movies": []
-    },
-    {
-      "category_id": "platform-release",
-      "category_name": "Platform Release",
-      "movies": []
+      "movies": [
+        {
+          "title": "Ella McCay",
+          "release_date": "2025-12-12",
+          "genre": "Comedy Drama",
+          "rating": "NR",
+          "studio": "Unknown",
+          "cast": [
+            "Emma Mackey",
+            "Woody Harrelson",
+            "Kumail Nanjiani",
+            "Spike Fearn"
+          ],
+          "director": "James L. Brooks",
+          "theater_count": "500-1,000 theaters",
+          "description": "A comedy centering on a politician who becomes Rhode Island’s next governor and must balance her new job with her personal life."
+        },
+        {
+          "title": "Silent Night, Deadly Night",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "NR",
+          "studio": "Unknown",
+          "cast": [
+            "Rohan Campbell",
+            "Ruby Modine",
+            "Mark Acheson"
+          ],
+          "director": "Unknown",
+          "theater_count": "50-100 theaters",
+          "description": "A horror remake of the 1984 slasher film featuring a killer Santa Claus."
+        }
+      ]
     }
   ]
 }

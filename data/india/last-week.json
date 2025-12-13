@@ -11,30 +11,29 @@
         {
           "title": "Mahasenha",
           "release_date": "2025-12-12",
-          "genre": "Action",
+          "genre": "Action/Drama",
           "language": "Hindi",
-          "additional_languages": [
-            "Telugu"
-          ],
+          "additional_languages": [],
           "cast": [
-            "Unknown"
+            "Vimal",
+            "Srushti"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Pan-India action film releasing simultaneously in Hindi and Telugu."
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Listed as a December 12, 2025 theatrical release in Hindi; specific crew and production house details have not been confirmed in the available sources."
         },
         {
           "title": "Mere Raho",
           "release_date": "2025-12-12",
-          "genre": "Romance",
+          "genre": "Drama",
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
-            "Unknown"
+            "TBA"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Romantic drama set for theatrical release."
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Reported as releasing theatrically on December 12, 2025 in Hindi; cast and production details were not specified in the cited listings."
         },
         {
           "title": "Kis Kisko Pyaar Karoon 2",
@@ -43,11 +42,26 @@
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
-            "Kapil Sharma"
+            "Kapil Sharma",
+            "Manjot Singh"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Sequel to the 2015 comedy hit Kis Kisko Pyaar Karoon."
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Sequel to the original Kis Kisko Pyaar Karoon, reported for theatrical release on December 12, 2025 in Hindi; detailed production credits were not available in the sources."
+        },
+        {
+          "title": "Dhurandhar",
+          "release_date": "2025-12-05",
+          "genre": "Action/Drama",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Ranveer Singh",
+            "Sanjay Dutt"
+          ],
+          "director": "TBA",
+          "production": "Jio Studios - B62 Studios",
+          "description": "Star-studded Hindi theatrical release listed for December 5, 2025; reported as a major commercial film with Jio Studios/B62 involved in production."
         }
       ]
     },
@@ -56,44 +70,129 @@
       "category_name": "Regional (Telugu)",
       "movies": [
         {
-          "title": "Mahasenha",
-          "release_date": "2025-12-12",
-          "genre": "Action",
-          "language": "Telugu",
-          "additional_languages": [
-            "Hindi"
-          ],
-          "cast": [
-            "Unknown"
-          ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Pan-India action film also releasing in Hindi."
-        },
-        {
-          "title": "Rachel",
-          "release_date": "2025-12-12",
-          "genre": "Thriller",
+          "title": "Champion",
+          "release_date": "2025-12-25",
+          "genre": "Sports/Drama",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
-            "Unknown"
+            "Roshan Meka",
+            "Anaswara Rajan"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Upcoming Telugu thriller for theatrical release."
+          "director": "Pradeep Advaitham",
+          "production": "Swapna Cinema / Anandi Art Creations / Zee Studios",
+          "description": "Sports drama scheduled for theatrical release on December 25, 2025 in Telugu; promoted as a holiday release in Tollywood."
+        },
+        {
+          "title": "Shambhala",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Aadi Saikumar",
+            "Archana Iyer"
+          ],
+          "director": "Ugandhar Muni",
+          "production": "Shining Pictures",
+          "description": "Scheduled for December 25, 2025 theatrical release in Telugu; regional production listed on Telugu film calendars."
+        },
+        {
+          "title": "Eesha",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Thrigun",
+            "Hebah Patel"
+          ],
+          "director": "Srinivas Manne",
+          "production": "HVR Productions",
+          "description": "Telugu theatrical release dated December 25, 2025 listed in Telugu release compilations."
+        },
+        {
+          "title": "Vanara",
+          "release_date": "2025-12-26",
+          "genre": "Action/Adventure",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Avinash Thiruveedhula",
+            "Simran Choudhary"
+          ],
+          "director": "Avinash Thiruveedhula",
+          "production": "Silver Screen Cinemas LLP",
+          "description": "Scheduled for December 26, 2025 theatrical release in Telugu; listed on industry release schedules."
         }
       ]
     },
     {
       "category_id": "regional-tamil",
       "category_name": "Regional (Tamil)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Vrusshabha",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Kannada",
+          "additional_languages": [
+            "Tamil",
+            "Telugu",
+            "Hindi"
+          ],
+          "cast": [
+            "Mohanlal",
+            "Samarjit Lankesh",
+            "Siddique"
+          ],
+          "director": "Nanda Kishore",
+          "production": "TBA",
+          "description": "Listed as a December 25, 2025 pan-Indian holiday release (originally reported in Telugu listings) with multiple language releases including Tamil and Hindi; exact production details vary across sources."
+        }
+      ]
     },
     {
       "category_id": "regional-other",
       "category_name": "Regional (Other)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Vrusshabha",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Kannada",
+          "additional_languages": [
+            "Telugu",
+            "Tamil",
+            "Hindi"
+          ],
+          "cast": [
+            "Mohanlal",
+            "Samarjit Lankesh",
+            "Siddique"
+          ],
+          "director": "Nanda Kishore",
+          "production": "TBA",
+          "description": "Reported in some Telugu calendars as a December 25, 2025 wide release; listed here under other regional languages because the film is being promoted as a multi-language release with primary origination outside Tollywood."
+        },
+        {
+          "title": "Champion (dubbed/other regions)",
+          "release_date": "2025-12-25",
+          "genre": "Sports/Drama",
+          "language": "Telugu",
+          "additional_languages": [
+            "Tamil",
+            "Hindi"
+          ],
+          "cast": [
+            "Roshan Meka",
+            "Anaswara Rajan"
+          ],
+          "director": "Pradeep Advaitham",
+          "production": "Swapna Cinema / Anandi Art Creations / Zee Studios",
+          "description": "Telugu theatrical release on December 25, 2025 with reports of multi-language distribution for holiday markets; exact dubbed-language release confirmations vary by source."
+        }
+      ]
     }
   ]
 }

@@ -7,41 +7,213 @@
     {
       "category_id": "wide-release",
       "category_name": "Wide Release",
-      "movies": []
+      "movies": [
+        {
+          "title": "Anaconda",
+          "release_date": "2025-12-25",
+          "genre": "Comedy/Horror",
+          "rating": "R",
+          "studio": "Sony Pictures Releasing",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "Tom Gormican",
+          "theater_count": "3,000+ theaters",
+          "description": "A modern comedy-horror remake of the Anaconda franchise; studio-listed as a wide December 25, 2025 theatrical release."
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants",
+          "release_date": "2025-12-26",
+          "genre": "Animation/Family",
+          "rating": "PG",
+          "studio": "Paramount Pictures / Nickelodeon Movies",
+          "cast": [
+            "Tom Kenny",
+            "Bill Fagerbakke",
+            "Rodger Bumpass"
+          ],
+          "director": "TBA",
+          "theater_count": "3,000+ theaters",
+          "description": "New installment in the SpongeBob theatrical franchise opening in wide release over the December holiday window."
+        },
+        {
+          "title": "Champion",
+          "release_date": "2025-12-25",
+          "genre": "Drama/Sports",
+          "rating": "PG-13",
+          "studio": "TBA",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "2,000-3,000 theaters",
+          "description": "A sports drama scheduled for a wide theatrical release on December 25, 2025 (studio listings indicate wide release)."
+        },
+        {
+          "title": "45",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "TBA",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "1,500-2,500 theaters",
+          "description": "Adult drama slated for a wide Christmas Day release in U.S. theaters per listings."
+        }
+      ]
     },
     {
       "category_id": "limited-release",
       "category_name": "Limited Release",
       "movies": [
         {
-          "title": "Ella McCay",
-          "release_date": "2025-12-12",
-          "genre": "Comedy",
+          "title": "Goodbye June",
+          "release_date": "2025-12-24",
+          "genre": "Drama",
           "rating": "NR",
-          "studio": "TBA",
+          "studio": "Netflix (theatrical limited)",
           "cast": [
-            "Woody Harrelson",
-            "Ayo Edebiri",
-            "Emma Mackey",
-            "Jack Lowden"
+            "Kate Winslet",
+            "TBA",
+            "TBA"
           ],
-          "director": "James L. Brooks",
-          "theater_count": "500-1,000 theaters",
-          "description": "A comedy set in Rhode Island centering on a politician who becomes the state's next governor and must balance her new job with her personal life."
+          "director": "Kate Winslet",
+          "theater_count": "Limited (NY/LA)",
+          "description": "Drama directed by and starring Kate Winslet with a limited theatrical engagement ahead of streaming distribution."
         },
         {
-          "title": "Silent Night, Deadly Night",
-          "release_date": "2025-12-12",
+          "title": "Iron Lung",
+          "release_date": "2025-12-26",
           "genre": "Horror",
-          "rating": "NR",
-          "studio": "TBA",
+          "rating": "R",
+          "studio": "Self-released / Indie",
           "cast": [
-            "Rohan Campbell",
-            "Ruby Modine"
+            "TBA",
+            "TBA",
+            "TBA"
           ],
           "director": "TBA",
-          "theater_count": "50-100 theaters",
-          "description": "A remake of the 1984 horror cult classic about a boy traumatized by his encounter with Santa Claus who grows up to deliver deadly presents."
+          "theater_count": "Limited (venue-specific)",
+          "description": "Indie horror originating from festival playboarding for a limited theatrical run."
+        },
+        {
+          "title": "The Plague",
+          "release_date": "TBA",
+          "genre": "Drama/Thriller",
+          "rating": "NR",
+          "studio": "Independent Film Company",
+          "cast": [
+            "Joel Edgerton",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "Limited (NY/LA)",
+          "description": "Festival-title listed as a limited theatrical release with wider plans uncertain; date marked TBA where unconfirmed."
+        },
+        {
+          "title": "Magellan",
+          "release_date": "TBA",
+          "genre": "Foreign/Adventure/Drama",
+          "rating": "NR",
+          "studio": "Janus Films",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "LA/NY (Janus Films limited)",
+          "description": "Art-house foreign release scheduled for New York/Los Angeles platform openings via Janus Films; date TBA."
+        },
+        {
+          "title": "Obex",
+          "release_date": "TBA",
+          "genre": "Horror/Fantasy/Sci‑Fi",
+          "rating": "NR",
+          "studio": "Oscilloscope Laboratories",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "Limited (Oscilloscope pattern)",
+          "description": "Genre title slated for a specialty theatrical rollout from Oscilloscope; specific theatrical date unconfirmed (TBA)."
+        }
+      ]
+    },
+    {
+      "category_id": "platform-release",
+      "category_name": "Platform Release",
+      "movies": [
+        {
+          "title": "Dead Man's Wire",
+          "release_date": "2026-01-16",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Row K Entertainment",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "Gus Van Sant",
+          "theater_count": "50-200 theaters (platform to wider)",
+          "description": "Gus Van Sant drama initially opening on a platform (festival-to-theaters) with a Jan 16, 2026 wider window reported by some listings; marked as platform."
+        },
+        {
+          "title": "Jimpa",
+          "release_date": "TBA",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Kino Lorber",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "10-50 theaters (NY/LA start)",
+          "description": "Kino Lorber specialty title planned for NY/LA platform openings; theatrical dates unconfirmed (TBA)."
+        },
+        {
+          "title": "Mimics",
+          "release_date": "TBA",
+          "genre": "Horror/Comedy",
+          "rating": "NR",
+          "studio": "Panoramic Pictures",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "10-100 theaters",
+          "description": "Horror-comedy scheduled for platform rollout according to trade listings; exact dates pending."
+        },
+        {
+          "title": "Peaky Blinders: The Immortal Man",
+          "release_date": "TBA",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Netflix (theatrical limited/platform)",
+          "cast": [
+            "TBA",
+            "TBA",
+            "TBA"
+          ],
+          "director": "TBA",
+          "theater_count": "Platform/limited theaters",
+          "description": "Limited theatrical/platform screenings noted ahead of Netflix release; theatrical dates vary by market."
         }
       ]
     }

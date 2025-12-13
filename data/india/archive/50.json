@@ -11,16 +11,15 @@
         {
           "title": "Mahasenha",
           "release_date": "2025-12-12",
-          "genre": "Action/Drama",
+          "genre": "Drama",
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
-            "Vimal",
-            "Srushti"
+            "TBA"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Listed as a December theatrical release; details (director/production) were not publicly confirmed in primary listings I searched and remain TBA."
+          "description": "Listed in 2025 upcoming Hindi releases with a 12 Dec 2025 theatrical date; detailed cast/crew information is not confirmed in available sources and remains TBA."
         },
         {
           "title": "Mere Raho",
@@ -33,7 +32,7 @@
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Appears on multiple upcoming Hindi release listings with a confirmed theatrical date of 2025-12-12 but public sources I found do not list full crew/cast details."
+          "description": "Appears on aggregated upcoming Bollywood lists with a 12 Dec 2025 theatrical date; specific production details are not fully confirmed in cited sources."
         },
         {
           "title": "Kis Kisko Pyaar Karoon 2",
@@ -42,12 +41,11 @@
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
-            "Kapil Sharma",
-            "Manjot Singh"
+            "TBA"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Listed for theatrical release on 2025-12-12 in Bollywood release roundups; specific production credits in public listings searched are incomplete."
+          "description": "Listed by multiple aggregators as releasing theatrically on 12 Dec 2025; primary cast and production credits are unconfirmed in the available citations."
         }
       ]
     },
@@ -58,16 +56,17 @@
         {
           "title": "Mahasenha",
           "release_date": "2025-12-12",
-          "genre": "Action/Drama",
+          "genre": "Drama",
           "language": "Telugu",
-          "additional_languages": [],
+          "additional_languages": [
+            "Hindi"
+          ],
           "cast": [
-            "Vimal",
-            "Srushti"
+            "TBA"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Appears in Telugu upcoming lists with a theatrical date of 2025-12-12 in aggregated listings; production and director details not confirmed in sources found."
+          "description": "Listed on Telugu upcoming lists with a 12 Dec 2025 theatrical date; sources indicate cross-listing with Hindi releases but full details remain unconfirmed."
         },
         {
           "title": "Rachel",
@@ -80,28 +79,14 @@
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Listed by Telugu upcoming movie aggregators for 2025-12-12; full credits not available in the sources I reviewed."
+          "description": "Appears in Telugu upcoming release lists with a 12 Dec 2025 theatrical date; detailed credits not available in the cited sources."
         }
       ]
     },
     {
       "category_id": "regional-tamil",
       "category_name": "Regional (Tamil)",
-      "movies": [
-        {
-          "title": "Mysaa",
-          "release_date": "2025-12-01",
-          "genre": "Drama",
-          "language": "Tamil",
-          "additional_languages": [],
-          "cast": [
-            "Rashmika Mandanna"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Listed in month-based Bollywood/Tamil roundups as releasing 2025-12-01; public listings I accessed show the date but not all production details."
-        }
-      ]
+      "movies": []
     },
     {
       "category_id": "regional-other",
@@ -110,26 +95,24 @@
         {
           "title": "Champion",
           "release_date": "2025-12-25",
-          "genre": "Action/Drama",
+          "genre": "Family/Drama",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
-            "Roshann Meka",
+            "Roshan Meka",
             "Anaswara Rajan",
             "Kruthi Kanj Singh Rathod"
           ],
           "director": "Pradeep Advaitham",
-          "production": "Swapna Cinema / Anandi Art Creations / Concept / Zee Studios",
-          "description": "Confirmed Telugu theatrical release for 2025-12-25 in major Telugu release trackers and news roundups; listed here under Regional (Other) to include non-Hindi regional releases outside Tamil/Kannada/Malayalam categories."
+          "production": "Swapna Cinema, Anandi Art Creations, Concept, Zee Studios",
+          "description": "Confirmed Telugu theatrical release dated 2025-12-25 as listed by Gadgets360 and Telugu film lists."
         },
         {
           "title": "Vrusshabha",
           "release_date": "2025-12-25",
           "genre": "Drama",
-          "language": "Kannada",
-          "additional_languages": [
-            "Telugu"
-          ],
+          "language": "Telugu",
+          "additional_languages": [],
           "cast": [
             "Mohanlal",
             "Samarjit Lankesh",
@@ -137,7 +120,22 @@
           ],
           "director": "Nanda Kishore",
           "production": "TBA",
-          "description": "Listed as a December theatrical release (25 Dec 2025) in regional upcoming movie lists; sources indicate a multi-language presence (Kannada/Telugu) though some production details remain unconfirmed in the public trackers searched."
+          "description": "Listed with a theatrical date of 2025-12-25 on an upcoming Telugu movies aggregator; production details are partially reported."
+        },
+        {
+          "title": "Dhandoraa",
+          "release_date": "2025-12-25",
+          "genre": "Action/Drama",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Sivaji",
+            "Navdeep",
+            "Bindu Madhavi"
+          ],
+          "director": "Murali Kanth",
+          "production": "Loukya Entertainments",
+          "description": "Recorded on the Telugu films list with a confirmed theatrical date of 2025-12-25."
         },
         {
           "title": "Eesha",
@@ -147,11 +145,57 @@
           "additional_languages": [],
           "cast": [
             "Thrigun",
-            "Hebah Patel"
+            "Hebah Patel",
+            "Akhil Raj Uddemari"
           ],
           "director": "Srinivas Manne",
           "production": "HVR Productions",
-          "description": "Listed on Telugu film lists for theatrical release on 2025-12-25 with credited director and production in the Telugu film listings I reviewed."
+          "description": "Included in Telugu film lists for 2025 with a 2025-12-25 theatrical release date."
+        },
+        {
+          "title": "Patang",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Vamsi Pujit",
+            "Preethi Pagadala",
+            "Pranav Kaushik"
+          ],
+          "director": "Praneeth Prattipati",
+          "production": "Cinematic Elements, Rishaan Cinemas",
+          "description": "Listed among Telugu theatrical releases with a confirmed date of 2025-12-25."
+        },
+        {
+          "title": "Shambhala",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Aadi Saikumar",
+            "Archana Iyer",
+            "Swasika"
+          ],
+          "director": "Ugandhar Muni",
+          "production": "Shining Pictures",
+          "description": "Appears on Telugu 2025 release lists with theatrical date 2025-12-25."
+        },
+        {
+          "title": "Vanara",
+          "release_date": "2025-12-26",
+          "genre": "Drama/Adventure",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Avinash Thiruveedhula",
+            "Simran Choudhary",
+            "Nandu"
+          ],
+          "director": "Avinash Thiruveedhula",
+          "production": "Silver Screen Cinemas LLP",
+          "description": "Listed on the 2025 Telugu film schedule with a theatrical release date of 2025-12-26."
         }
       ]
     }
