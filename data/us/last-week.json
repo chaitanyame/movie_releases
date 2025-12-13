@@ -1,51 +1,22 @@
 {
-  "week_number": "2025-49",
-  "week_start": "2025-12-02",
-  "week_end": "2025-12-08",
+  "week_number": 49,
+  "week_start": "2025-12-01",
+  "week_end": "2025-12-07",
   "country": "us",
   "categories": [
     {
-      "id": "wide-release",
-      "name": "Wide Release",
-      "movies": [
-        {
-          "title": "Wicked",
-          "release_date": "2025-11-22",
-          "genre": "Fantasy, Musical, Romance",
-          "rating": "PG",
-          "studio": "Universal Pictures",
-          "cast": ["Cynthia Erivo", "Ariana Grande", "Jonathan Bailey"],
-          "director": "Jon M. Chu",
-          "theater_count": 3800,
-          "description": "The story of how the Wicked Witch of the West became wicked, exploring the unlikely friendship between Elphaba and Glinda."
-        },
-        {
-          "title": "Moana 2",
-          "release_date": "2025-11-27",
-          "genre": "Animation, Adventure, Comedy",
-          "rating": "PG",
-          "studio": "Walt Disney Studios",
-          "cast": ["Auli'i Cravalho", "Dwayne Johnson"],
-          "director": "David Derrick Jr.",
-          "theater_count": 4200,
-          "description": "Moana journeys to the far seas of Oceania after receiving an unexpected call from her wayfinding ancestors."
-        },
-        {
-          "title": "Gladiator II",
-          "release_date": "2025-11-22",
-          "genre": "Action, Adventure, Drama",
-          "rating": "R",
-          "studio": "Paramount Pictures",
-          "cast": ["Paul Mescal", "Denzel Washington", "Pedro Pascal"],
-          "director": "Ridley Scott",
-          "theater_count": 3600,
-          "description": "Years after witnessing the death of Maximus, Lucius is forced to enter the Colosseum after his home is conquered."
-        }
-      ]
+      "category_id": "wide-release",
+      "category_name": "Wide Release",
+      "movies": []
     },
     {
-      "id": "limited-release",
-      "name": "Limited Release",
+      "category_id": "limited-release",
+      "category_name": "Limited Release",
+      "movies": []
+    },
+    {
+      "category_id": "platform-release",
+      "category_name": "Platform Release",
       "movies": []
     }
   ]

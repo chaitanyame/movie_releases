@@ -1,51 +1,98 @@
 {
-  "week_number": "2025-49",
-  "week_start": "2025-12-02",
-  "week_end": "2025-12-08",
+  "week_number": 49,
+  "week_start": "2025-12-01",
+  "week_end": "2025-12-07",
   "country": "india",
   "categories": [
     {
-      "id": "bollywood",
-      "name": "Bollywood (Hindi)",
+      "category_id": "bollywood-hindi",
+      "category_name": "Bollywood (Hindi)",
       "movies": [
         {
-          "title": "Pushpa 2: The Rule",
-          "release_date": "2025-12-05",
-          "genre": "Action, Drama",
-          "rating": "UA",
-          "studio": "Mythri Movie Makers",
-          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
-          "director": "Sukumar",
-          "theater_count": 4500,
-          "description": "The much-awaited sequel continues Pushpa's story as he expands his empire."
+          "title": "Mahasenha",
+          "release_date": "2025-12-12",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": [
+            "Telugu"
+          ],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Pan-India action film releasing simultaneously in Hindi and Telugu."
+        },
+        {
+          "title": "Mere Raho",
+          "release_date": "2025-12-12",
+          "genre": "Romance",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Romantic drama set for theatrical release."
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Kapil Sharma"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Sequel to the 2015 comedy hit Kis Kisko Pyaar Karoon."
         }
       ]
     },
     {
-      "id": "tollywood-telugu",
-      "name": "Tollywood (Telugu)",
+      "category_id": "regional-telugu",
+      "category_name": "Regional (Telugu)",
       "movies": [
         {
-          "title": "Pushpa 2: The Rule",
-          "release_date": "2025-12-05",
-          "genre": "Action, Drama",
-          "rating": "UA",
-          "studio": "Mythri Movie Makers",
-          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
-          "director": "Sukumar",
-          "theater_count": 5200,
-          "description": "Allu Arjun returns as Pushpa in this highly anticipated Telugu action drama."
+          "title": "Mahasenha",
+          "release_date": "2025-12-12",
+          "genre": "Action",
+          "language": "Telugu",
+          "additional_languages": [
+            "Hindi"
+          ],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Pan-India action film also releasing in Hindi."
+        },
+        {
+          "title": "Rachel",
+          "release_date": "2025-12-12",
+          "genre": "Thriller",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Upcoming Telugu thriller for theatrical release."
         }
       ]
     },
     {
-      "id": "kollywood-tamil",
-      "name": "Kollywood (Tamil)",
+      "category_id": "regional-tamil",
+      "category_name": "Regional (Tamil)",
       "movies": []
     },
     {
-      "id": "mollywood-malayalam",
-      "name": "Mollywood (Malayalam)",
+      "category_id": "regional-other",
+      "category_name": "Regional (Other)",
       "movies": []
     }
   ]

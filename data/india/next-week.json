@@ -1,12 +1,99 @@
 {
-  "week_number": "2025-51",
-  "week_start": "2025-12-23",
-  "week_end": "2025-12-29",
+  "week_number": 51,
+  "week_start": "2025-12-15",
+  "week_end": "2025-12-21",
   "country": "india",
   "categories": [
-    {"id": "bollywood", "name": "Bollywood", "movies": []},
-    {"id": "tollywood", "name": "Tollywood", "movies": []},
-    {"id": "kollywood", "name": "Kollywood", "movies": []},
-    {"id": "mollywood", "name": "Mollywood", "movies": []}
+    {
+      "category_id": "bollywood-hindi",
+      "category_name": "Bollywood (Hindi)",
+      "movies": [
+        {
+          "title": "Mahasenha",
+          "release_date": "2025-12-12",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": [
+            "Telugu"
+          ],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Pan-Indian action film releasing simultaneously in Hindi and Telugu on December 12, 2025.[1][2]"
+        },
+        {
+          "title": "Mere Raho",
+          "release_date": "2025-12-12",
+          "genre": "Romance",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Upcoming Hindi romantic film scheduled for theatrical release on December 12, 2025.[1]"
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Kapil Sharma"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Sequel to the 2015 comedy film, confirmed for theatrical release on December 12, 2025.[1][3]"
+        }
+      ]
+    },
+    {
+      "category_id": "regional-telugu",
+      "category_name": "Regional (Telugu)",
+      "movies": [
+        {
+          "title": "Mahasenha",
+          "release_date": "2025-12-12",
+          "genre": "Action",
+          "language": "Telugu",
+          "additional_languages": [
+            "Hindi"
+          ],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Pan-Indian action film releasing simultaneously in Telugu and Hindi on December 12, 2025.[1][2]"
+        },
+        {
+          "title": "Rachel",
+          "release_date": "2025-12-12",
+          "genre": "Unknown",
+          "language": "Telugu",
+          "additional_languages": [],
+          "cast": [
+            "Unknown"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Telugu film listed for theatrical release on December 12, 2025.[2]"
+        }
+      ]
+    },
+    {
+      "category_id": "regional-tamil",
+      "category_name": "Regional (Tamil)",
+      "movies": []
+    },
+    {
+      "category_id": "regional-other",
+      "category_name": "Regional (Other)",
+      "movies": []
+    }
   ]
 }

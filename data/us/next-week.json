@@ -1,41 +1,49 @@
 {
-  "week_number": "2025-51",
-  "week_start": "2025-12-16",
-  "week_end": "2025-12-22",
+  "week_number": 51,
+  "week_start": "2025-12-15",
+  "week_end": "2025-12-21",
   "country": "us",
   "categories": [
     {
-      "id": "wide-release",
-      "name": "Wide Release",
-      "movies": [
-        {
-          "title": "Sonic the Hedgehog 3",
-          "release_date": "2025-12-20",
-          "genre": "Action, Adventure, Comedy",
-          "rating": "PG",
-          "studio": "Paramount Pictures",
-          "cast": ["Ben Schwartz", "Jim Carrey", "Keanu Reeves"],
-          "director": "Jeff Fowler",
-          "theater_count": 3500,
-          "description": "Sonic, Knuckles, and Tails reunite to battle Shadow, a powerful new adversary with powers unlike anything they've faced before."
-        },
-        {
-          "title": "Mufasa: The Lion King",
-          "release_date": "2025-12-20",
-          "genre": "Animation, Adventure, Drama",
-          "rating": "PG",
-          "studio": "Walt Disney Studios",
-          "cast": ["Aaron Pierre", "Kelvin Harrison Jr.", "Seth Rogen"],
-          "director": "Barry Jenkins",
-          "theater_count": 3800,
-          "description": "The origin story of Mufasa exploring his rise from orphaned cub to legendary King of the Pride Lands."
-        }
-      ]
+      "category_id": "wide-release",
+      "category_name": "Wide Release",
+      "movies": []
     },
     {
-      "id": "limited-release",
-      "name": "Limited Release",
-      "movies": []
+      "category_id": "limited-release",
+      "category_name": "Limited Release",
+      "movies": [
+        {
+          "title": "Ella McCay",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "Woody Harrelson",
+            "Ayo Edebiri",
+            "Emma Mackey",
+            "Jack Lowden"
+          ],
+          "director": "James L. Brooks",
+          "theater_count": "500-1,000 theaters",
+          "description": "A comedy set in Rhode Island centering on a politician who becomes the state's next governor and must balance her new job with her personal life."
+        },
+        {
+          "title": "Silent Night, Deadly Night",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "Rohan Campbell",
+            "Ruby Modine"
+          ],
+          "director": "TBA",
+          "theater_count": "50-100 theaters",
+          "description": "A remake of the 1984 horror cult classic about a boy traumatized by his encounter with Santa Claus who grows up to deliver deadly presents."
+        }
+      ]
     }
   ]
 }
