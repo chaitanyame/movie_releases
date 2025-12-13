@@ -4,9 +4,49 @@
   "week_end": "2025-12-08",
   "country": "india",
   "categories": [
-    {"id": "bollywood", "name": "Bollywood", "movies": []},
-    {"id": "tollywood", "name": "Tollywood", "movies": []},
-    {"id": "kollywood", "name": "Kollywood", "movies": []},
-    {"id": "mollywood", "name": "Mollywood", "movies": []}
+    {
+      "id": "bollywood",
+      "name": "Bollywood (Hindi)",
+      "movies": [
+        {
+          "title": "Pushpa 2: The Rule",
+          "release_date": "2025-12-05",
+          "genre": "Action, Drama",
+          "rating": "UA",
+          "studio": "Mythri Movie Makers",
+          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
+          "director": "Sukumar",
+          "theater_count": 4500,
+          "description": "The much-awaited sequel continues Pushpa's story as he expands his empire."
+        }
+      ]
+    },
+    {
+      "id": "tollywood-telugu",
+      "name": "Tollywood (Telugu)",
+      "movies": [
+        {
+          "title": "Pushpa 2: The Rule",
+          "release_date": "2025-12-05",
+          "genre": "Action, Drama",
+          "rating": "UA",
+          "studio": "Mythri Movie Makers",
+          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
+          "director": "Sukumar",
+          "theater_count": 5200,
+          "description": "Allu Arjun returns as Pushpa in this highly anticipated Telugu action drama."
+        }
+      ]
+    },
+    {
+      "id": "kollywood-tamil",
+      "name": "Kollywood (Tamil)",
+      "movies": []
+    },
+    {
+      "id": "mollywood-malayalam",
+      "name": "Mollywood (Malayalam)",
+      "movies": []
+    }
   ]
 }

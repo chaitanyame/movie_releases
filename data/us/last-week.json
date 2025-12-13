@@ -17,7 +17,7 @@
           "cast": ["Cynthia Erivo", "Ariana Grande", "Jonathan Bailey"],
           "director": "Jon M. Chu",
           "theater_count": 3800,
-          "description": "The story of how the Wicked Witch of the West became wicked."
+          "description": "The story of how the Wicked Witch of the West became wicked, exploring the unlikely friendship between Elphaba and Glinda."
         },
         {
           "title": "Moana 2",
@@ -28,7 +28,18 @@
           "cast": ["Auli'i Cravalho", "Dwayne Johnson"],
           "director": "David Derrick Jr.",
           "theater_count": 4200,
-          "description": "Moana journeys to the far seas of Oceania."
+          "description": "Moana journeys to the far seas of Oceania after receiving an unexpected call from her wayfinding ancestors."
+        },
+        {
+          "title": "Gladiator II",
+          "release_date": "2025-11-22",
+          "genre": "Action, Adventure, Drama",
+          "rating": "R",
+          "studio": "Paramount Pictures",
+          "cast": ["Paul Mescal", "Denzel Washington", "Pedro Pascal"],
+          "director": "Ridley Scott",
+          "theater_count": 3600,
+          "description": "Years after witnessing the death of Maximus, Lucius is forced to enter the Colosseum after his home is conquered."
         }
       ]
     },
