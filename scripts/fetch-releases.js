@@ -33,7 +33,7 @@ if (fs.existsSync(envPath)) {
 
 // Configuration
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
-const MODEL = 'sonar';
+const MODEL = 'sonar-pro'; // Use pro model for better search results
 
 // ============================================================================
 // MOVIE RELEASES CONFIGURATION - Theatrical Distribution Categories
@@ -637,10 +637,10 @@ Important:
 async function callPerplexityAPI(prompt, country) {
     const apiKey = getApiKey();
     
-    // Enhanced system message for both countries
+    // Enhanced system message for theatrical releases
     const systemMessage = country.id === 'india'
-        ? 'You are a senior entertainment data analyst and OTT tracking specialist with expertise in Indian regional cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have deep knowledge of all major and regional streaming platforms in India. Your priority is accuracy, comprehensive multi-language coverage, and distinguishing between original and dubbed releases. Always respond with valid JSON only, no markdown formatting or code blocks.'
-        : 'You are a senior entertainment data analyst and OTT tracking specialist for the United States market. You have deep knowledge of Hollywood, streaming platforms, and theatrical release windows. Your priority is accuracy, comprehensive coverage of all platforms (major and emerging), and distinguishing between direct-to-OTT originals, post-theatrical releases, and catalog additions. Always respond with valid JSON only, no markdown formatting or code blocks.';
+        ? 'You are a senior box office analyst and theatrical release tracker specializing in Indian cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have comprehensive knowledge of theatrical movie releases across all Indian film industries. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT OTT/streaming), and multi-language coverage. Always respond with valid JSON only, no markdown formatting or code blocks.'
+        : 'You are a senior box office analyst and theatrical release tracker for the United States market. You have comprehensive knowledge of Hollywood studio releases, independent films, and limited theatrical releases. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT streaming/VOD), and distinguishing between wide and limited releases. Always respond with valid JSON only, no markdown formatting or code blocks.';
     
     const response = await fetch(PERPLEXITY_API_URL, {
         method: 'POST',

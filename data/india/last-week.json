@@ -11,15 +11,30 @@
         {
           "title": "Kirik Party Remake",
           "release_date": "2025-12-01",
-          "genre": "Action Comedy",
+          "genre": "Comedy",
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
             "Kartik Aaryan"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Remake of the popular Kannada film Kirik Party, starring Kartik Aaryan in the lead.[1]"
+          "director": "",
+          "production": "",
+          "description": "Remake of the popular Kannada comedy film Kirik Party."
+        },
+        {
+          "title": "Mysaa",
+          "release_date": "2025-12-01",
+          "genre": "Drama",
+          "language": "Hindi",
+          "additional_languages": [
+            "Telugu"
+          ],
+          "cast": [
+            "Rashmika Mandanna"
+          ],
+          "director": "",
+          "production": "",
+          "description": "Pan-Indian drama starring Rashmika Mandanna, releasing simultaneously in Hindi and Telugu."
         },
         {
           "title": "The Great Indian Kitchen Bollywood Remake",
@@ -30,9 +45,9 @@
           "cast": [
             "Sanya Malhotra"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Bollywood remake of the acclaimed Malayalam film The Great Indian Kitchen, focusing on gender roles and kitchen drudgery.[1]"
+          "director": "",
+          "production": "",
+          "description": "Bollywood remake of the acclaimed Malayalam film addressing women's issues in the kitchen."
         },
         {
           "title": "Dhurandhar",
@@ -47,8 +62,8 @@
             "Akshaye Khanna"
           ],
           "director": "Aditya Dhar",
-          "production": "TBA",
-          "description": "Inspired by real-life geopolitical conflicts, Indian intelligence operations, and Pakistan's Lyari gang war; marks Ranveer Singh's first A-rated film with a 3h34m runtime.[4][7]"
+          "production": "",
+          "description": "Spy action drama inspired by real-life geopolitical conflicts, Indian intelligence operations, and the Lyari gang war in Pakistan; marks Ranveer Singh's first A-rated film with a 3-hour 34-minute runtime."
         }
       ]
     },
@@ -59,85 +74,87 @@
         {
           "title": "Mysaa",
           "release_date": "2025-12-01",
-          "genre": "TBA",
+          "genre": "Drama",
           "language": "Telugu",
-          "additional_languages": [],
+          "additional_languages": [
+            "Hindi"
+          ],
           "cast": [
             "Rashmika Mandanna"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Telugu film starring Rashmika Mandanna, listed for theatrical release on December 1.[1][5]"
+          "director": "",
+          "production": "",
+          "description": "Pan-Indian drama starring Rashmika Mandanna, releasing simultaneously in Telugu and Hindi."
         },
         {
           "title": "Gali Seenu",
           "release_date": "2025-12-01",
-          "genre": "TBA",
+          "genre": "Comedy",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
             "Posani Krishna Murali",
             "Satya Krishna"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Telugu theatrical release featuring Posani Krishna Murali and Satya Krishna.[5]"
+          "director": "",
+          "production": "",
+          "description": "Comedy film featuring Posani Krishna Murali."
         },
         {
           "title": "Yugam",
           "release_date": "2025-12-01",
-          "genre": "TBA",
+          "genre": "Drama",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
             "Nischal",
             "Sahara"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Telugu film with Nischal and Sahara in lead roles, scheduled for December 1 release.[5]"
+          "director": "",
+          "production": "",
+          "description": "Drama starring Nischal and Sahara."
         },
         {
           "title": "Choodalani Cheppalani",
           "release_date": "2025-12-02",
-          "genre": "TBA",
+          "genre": "Drama",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
             "Nandamuri Tarakaratna",
             "Madhavi Latha"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Remake starring Nandamuri Tarakaratna and Madhavi Latha, set for theatrical release.[5]"
+          "director": "",
+          "production": "",
+          "description": "Emotional drama starring Nandamuri Tarakaratna."
         },
         {
           "title": "Gaja Donga",
           "release_date": "2025-12-03",
-          "genre": "TBA",
+          "genre": "Action Comedy",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
             "Brahmanandam",
             "Chaitanya Krishna"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Comedy action film featuring veteran Brahmanandam and Chaitanya Krishna.[5]"
+          "director": "",
+          "production": "",
+          "description": "Action comedy featuring veteran comedian Brahmanandam."
         },
         {
           "title": "Nippulanti Nijam",
           "release_date": "2025-12-05",
-          "genre": "TBA",
+          "genre": "Romance",
           "language": "Telugu",
           "additional_languages": [],
           "cast": [
             "Sajith Raj",
             "Malavika"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Telugu drama starring Sajith Raj and Malavika, confirmed for December 5.[5]"
+          "director": "",
+          "production": "",
+          "description": "Romantic drama starring Sajith Raj and Malavika."
         }
       ]
     },

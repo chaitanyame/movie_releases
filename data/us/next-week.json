@@ -9,10 +9,21 @@
       "name": "Wide Release",
       "movies": [
         {
+          "title": "Crunchyroll Anime Nights Sneak Peek: December Edition",
+          "release_date": "2025-12-15",
+          "genre": "Anime, Event",
+          "rating": "NR",
+          "studio": "Sony Pictures Releasing",
+          "cast": [],
+          "director": "",
+          "theater_count": "1,000+ theaters",
+          "description": "One-night Crunchyroll Anime Nights event offering a sneak peek at upcoming anime content, playing as a special nationwide theatrical engagement."
+        },
+        {
           "title": "Avatar: Fire and Ash",
           "release_date": "2025-12-19",
-          "genre": "Action, Adventure, Fantasy",
-          "rating": "PG-13",
+          "genre": "Action, Adventure, Fantasy, Sci-Fi, Thriller",
+          "rating": "NR",
           "studio": "20th Century Studios",
           "cast": [
             "Sam Worthington",
@@ -21,38 +32,72 @@
             "Stephen Lang"
           ],
           "director": "James Cameron",
-          "theater_count": "4,000+ theaters",
-          "description": "The third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront new threats on Pandora in James Cameron's epic sci-fi saga."
+          "theater_count": "3,800+ theaters",
+          "description": "The third film in James Cameron's Avatar franchise continues the story on Pandora as Jake Sully and Neytiri face new threats amid escalating conflict between the Na'vi and human invaders."
         },
         {
           "title": "The SpongeBob Movie: Search for SquarePants",
           "release_date": "2025-12-19",
-          "genre": "Animation, Adventure, Comedy",
-          "rating": "PG",
+          "genre": "Adventure, Animation, Comedy, Family, Fantasy",
+          "rating": "NR",
           "studio": "Paramount Pictures",
           "cast": [
             "Tom Kenny",
+            "Clancy Brown",
             "Rodger Bumpass",
             "Bill Fagerbakke"
           ],
-          "director": "Derek Drymon",
-          "theater_count": "3,800+ theaters",
-          "description": "SpongeBob and friends embark on a heroic journey through Bikini Bottom and the underworld to save Gary and break a curse in this animated family adventure."
+          "director": "",
+          "theater_count": "3,000+ theaters",
+          "description": "The latest SpongeBob SquarePants theatrical adventure sends SpongeBob and his Bikini Bottom friends on a fantastical quest to find the missing SpongeBob and restore order under the sea."
         },
         {
           "title": "The Housemaid",
           "release_date": "2025-12-19",
           "genre": "Thriller",
-          "rating": "R",
-          "studio": "Warner Bros.",
+          "rating": "NR",
+          "studio": "Lionsgate",
           "cast": [
             "Sydney Sweeney",
             "Amanda Seyfried",
-            "Brandon Sklenar"
+            "Brandon Sklenar",
+            "Elizabeth Perkins"
           ],
-          "director": "Paul Feig",
-          "theater_count": "2,500+ theaters",
-          "description": "A tense psychological thriller adaptation where a housemaid uncovers dark secrets in a wealthy family's home, starring Sydney Sweeney and Amanda Seyfried."
+          "director": "",
+          "theater_count": "2,500-3,000 theaters",
+          "description": "A psychological thriller about a young woman who takes a housekeeping job with a wealthy family, only to discover dark secrets and sinister motives lurking behind the facade of their luxurious life."
+        },
+        {
+          "title": "Resurrection",
+          "release_date": "2025-12-19",
+          "genre": "Drama, Sci-Fi",
+          "rating": "NR",
+          "studio": "Janus Films",
+          "cast": [
+            "Jackson Yee",
+            "Shu Qi",
+            "Mark Chao",
+            "Gengxi Li"
+          ],
+          "director": "",
+          "theater_count": "1,000-1,500 theaters",
+          "description": "An expansive science fiction drama following intertwined characters confronting the consequences of a world-changing technological breakthrough that promises to upend life and death."
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants (International label)",
+          "release_date": "2025-12-19",
+          "genre": "Adventure, Animation, Comedy, Family, Fantasy",
+          "rating": "NR",
+          "studio": "Paramount Pictures International",
+          "cast": [
+            "Tom Kenny",
+            "Clancy Brown",
+            "Rodger Bumpass",
+            "Bill Fagerbakke"
+          ],
+          "director": "",
+          "theater_count": "3,000+ theaters",
+          "description": "Wider global rollout of the new SpongeBob theatrical feature, continuing the underwater hero's big-screen adventures for families and fans."
         }
       ]
     },
@@ -61,39 +106,79 @@
       "name": "Limited Release",
       "movies": [
         {
-          "title": "David",
-          "release_date": "2025-12-19",
+          "title": "The Voice of Hind Rajab",
+          "release_date": "2025-12-17",
           "genre": "Drama",
-          "rating": "PG",
-          "studio": "Angel Studios",
-          "cast": [
-            "Jim Caviezel"
-          ],
-          "director": "Nick Hahn",
-          "theater_count": "500-1,000 theaters",
-          "description": "A shepherd faces divine challenges and follows a heavenly light in this faith-based Christmas drama celebrating the holiday season."
-        },
-        {
-          "title": "AMC Screen Unseen: December 15",
-          "release_date": "2025-12-15",
-          "genre": "Unknown",
           "rating": "NR",
-          "studio": "AMC Theatres",
-          "cast": [],
+          "studio": "WILLA",
+          "cast": [
+            "Saja Kilani",
+            "Motaz Malhees",
+            "Clara Khoury",
+            "Amer Hlehel"
+          ],
           "director": "",
           "theater_count": "50-100 theaters",
-          "description": "AMC's mystery screening event where audiences discover the film only after purchase, a platform-style limited release."
+          "description": "A dramatic feature centered on a young girl named Hind Rajab and the human cost of conflict, told through an intimate, character-driven narrative."
         },
         {
-          "title": "The Royal Ballet: The Nutcracker",
-          "release_date": "2025-12-21",
-          "genre": "Performance",
+          "title": "Is This Thing On?",
+          "release_date": "2025-12-19",
+          "genre": "Comedy, Drama",
           "rating": "NR",
-          "studio": "Royal Ballet",
+          "studio": "Walt Disney Studios Motion Pictures",
+          "cast": [
+            "Will Arnett",
+            "Laura Dern",
+            "Andra Day",
+            "Bradley Cooper"
+          ],
+          "director": "",
+          "theater_count": "500-800 theaters",
+          "description": "A character-driven dramedy about a stand-up comic whose personal and professional lives collide as he struggles to find his voice on and off the stage."
+        },
+        {
+          "title": "Marty Supreme",
+          "release_date": "2025-12-19",
+          "genre": "Drama, Sport",
+          "rating": "NR",
+          "studio": "A24",
+          "cast": [
+            "Timothée Chalamet",
+            "Gwyneth Paltrow",
+            "Odessa A'zion",
+            "Larry 'Ratso' Sloman"
+          ],
+          "director": "",
+          "theater_count": "600-900 theaters",
+          "description": "A sports drama from A24 following a driven young athlete nicknamed \"Marty Supreme\" as he navigates fame, family, and the pressures of competition on his rise to stardom."
+        },
+        {
+          "title": "David",
+          "release_date": "2025-12-19",
+          "genre": "Adventure, Animation, Drama, Family, Musical",
+          "rating": "NR",
+          "studio": "Angel Studios",
+          "cast": [
+            "Asim Chaudhry",
+            "Brandon Engman",
+            "Mick Wingert",
+            "Ashley Boettcher"
+          ],
+          "director": "",
+          "theater_count": "800-1,000 theaters",
+          "description": "A faith-driven animated musical retelling the biblical story of David, blending adventure and inspirational themes for family audiences."
+        },
+        {
+          "title": "Mission Santa: Yoyo to the Rescue",
+          "release_date": "2025-12-19",
+          "genre": "Animation, Family",
+          "rating": "NR",
+          "studio": "Falling Forward Films",
           "cast": [],
           "director": "",
           "theater_count": "100-300 theaters",
-          "description": "Live recording of the classic Royal Ballet production of The Nutcracker, a holiday tradition screened in select theaters nationwide."
+          "description": "A family-friendly Christmas adventure in which Yoyo and friends embark on a mission to help Santa save the holiday season."
         }
       ]
     }

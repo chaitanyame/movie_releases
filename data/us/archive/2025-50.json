@@ -9,20 +9,82 @@
       "name": "Wide Release",
       "movies": [
         {
-          "title": "Wake Up Dead Man: A Knives Out Mystery",
+          "title": "Little Trouble Girls",
           "release_date": "2025-12-12",
-          "genre": "Mystery Comedy",
-          "rating": "PG-13",
-          "studio": "Netflix",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Kino Lorber",
           "cast": [
-            "Daniel Craig",
-            "Josh O'Connor",
-            "Cailee Spaeny",
-            "Kerry Washington"
+            "Jara Sofija Ostan",
+            "Mina Svajger",
+            "Sasa Tabakovic"
           ],
-          "director": "Rian Johnson",
-          "theater_count": "3,000+ theaters",
-          "description": "Sequel to Knives Out featuring detective Benoit Blanc solving another intricate murder mystery. Franchise film with high anticipation for its ensemble cast and clever whodunit plot."
+          "director": "TBA",
+          "theater_count": "1,000+ theaters",
+          "description": "A coming-of-age drama centered on young women navigating personal and social upheaval, released by specialty distributor Kino Lorber in a rare wide theatrical launch.[3]"
+        },
+        {
+          "title": "Eastern Western",
+          "release_date": "2025-12-12",
+          "genre": "Adventure, Family, Western",
+          "rating": "NR",
+          "studio": "Purdie Distribution",
+          "cast": [
+            "Stefan Bandic",
+            "Meag Belland",
+            "Dora Brtan",
+            "John Budge"
+          ],
+          "director": "TBA",
+          "theater_count": "1,000+ theaters",
+          "description": "An all-ages adventure-western blending frontier action with family drama as characters journey across rugged landscapes, released nationwide by Purdie Distribution.[3]"
+        },
+        {
+          "title": "How the Grinch Stole Christmas (2025 Re-release)",
+          "release_date": "2025-12-12",
+          "genre": "Comedy, Family, Fantasy",
+          "rating": "PG",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Jim Carrey",
+            "Taylor Momsen",
+            "Jeffrey Tambor"
+          ],
+          "director": "Ron Howard",
+          "theater_count": "2,000-3,000 theaters",
+          "description": "Seasonal wide re-release of Ron Howard’s live-action Dr. Seuss adaptation starring Jim Carrey as the Grinch, returning to cinemas as a holiday family event.[3]"
+        },
+        {
+          "title": "Scarlet",
+          "release_date": "2025-12-12",
+          "genre": "Action, Adventure, Animation, Fantasy, Sci-Fi, Romance",
+          "rating": "NR",
+          "studio": "Sony Pictures Releasing",
+          "cast": [
+            "Mana Ashida",
+            "Masaki Okada",
+            "Masachika Ichimura",
+            "Kôji Yakusho"
+          ],
+          "director": "TBA",
+          "theater_count": "2,500-3,500 theaters",
+          "description": "An animated fantasy-sci-fi epic from Sony that follows a heroine in a visually rich world blending action, romance, and speculative elements, released nationwide.[3]"
+        },
+        {
+          "title": "Silent Night, Deadly Night",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Iconic Events Releasing",
+          "cast": [
+            "Rohan Campbell",
+            "Ruby Modine",
+            "Mark Acheson",
+            "David Lawrence Brown"
+          ],
+          "director": "TBA",
+          "theater_count": "1,500-2,500 theaters",
+          "description": "A new entry in the holiday horror brand \"Silent Night, Deadly Night,\" featuring a Christmas-set slasher narrative, opening wide via Iconic Events Releasing.[3][6]"
         }
       ]
     },
@@ -31,49 +93,216 @@
       "name": "Limited Release",
       "movies": [
         {
-          "title": "Ella McCay",
-          "release_date": "2025-12-12",
-          "genre": "Comedy Drama",
-          "rating": "R",
-          "studio": "Searchlight Pictures",
+          "title": "REBBECA: Becky G",
+          "release_date": "2025-12-10",
+          "genre": "Music, Concert Film",
+          "rating": "NR",
+          "studio": "Trafalgar Releasing",
           "cast": [
-            "Emma Mackey",
-            "Woody Harrelson",
-            "Kumail Nanjiani",
-            "Spike Fearn"
+            "Becky G",
+            "Alejandra Esquivias"
           ],
-          "director": "Unknown",
-          "theater_count": "50-100 theaters",
-          "description": "Comedy-drama starring Emma Mackey in a platform release focusing on personal growth and relationships."
+          "director": "TBA",
+          "theater_count": "100-300 theaters",
+          "description": "Concert documentary event featuring Becky G, released as a limited-time music special in select theaters through Trafalgar Releasing.[3]"
         },
         {
-          "title": "Silent Night, Deadly Night",
-          "release_date": "2025-12-12",
-          "genre": "Horror",
-          "rating": "R",
-          "studio": "Unknown",
+          "title": "The Cure: The Show of a Lost World",
+          "release_date": "2025-12-11",
+          "genre": "Music, Concert Film",
+          "rating": "NR",
+          "studio": "Trafalgar Releasing",
           "cast": [
-            "Rohan Campbell",
-            "Ruby Modine",
-            "Mark Acheson"
+            "Robert Smith"
           ],
-          "director": "Unknown",
-          "theater_count": "500-1,000 theaters",
-          "description": "Reimagining of the 1984 horror cult classic, following a holiday slasher narrative with new cast in limited nationwide rollout."
+          "director": "TBA",
+          "theater_count": "200-400 theaters",
+          "description": "Concert film capturing The Cure’s \"The Show of a Lost World\" tour, playing as a one- or few-night special engagement via Trafalgar Releasing.[3]"
+        },
+        {
+          "title": "Devoted Heart",
+          "release_date": "2025-12-12",
+          "genre": "Drama, Family, Romance",
+          "rating": "PG",
+          "studio": "Atlas Distribution Company",
+          "cast": [
+            "Meghan Cooley",
+            "Lindsey McKeon",
+            "Ryan O'Quinn",
+            "Sterling Street"
+          ],
+          "director": "TBA",
+          "theater_count": "200-600 theaters",
+          "description": "A faith-tinged family romance about love, sacrifice, and devotion, released in a targeted limited rollout by Atlas Distribution Company.[3]"
+        },
+        {
+          "title": "Visions",
+          "release_date": "2025-12-12",
+          "genre": "Mystery, Thriller",
+          "rating": "NR",
+          "studio": "Dark Sky Films",
+          "cast": [
+            "Diane Kruger",
+            "Mathieu Kassovitz",
+            "Marta Nieto",
+            "Amira Casar"
+          ],
+          "director": "TBA",
+          "theater_count": "50-150 theaters",
+          "description": "A psychological mystery-thriller following a woman plagued by disturbing visions that blur reality and paranoia, released in limited arthouse engagements by Dark Sky Films.[3]"
+        },
+        {
+          "title": "Atropia",
+          "release_date": "2025-12-12",
+          "genre": "Drama, War",
+          "rating": "NR",
+          "studio": "Vertical Entertainment",
+          "cast": [
+            "Alia Shawkat",
+            "Zahra Alzubaidi",
+            "Callum Turner",
+            "Cristian Valle"
+          ],
+          "director": "TBA",
+          "theater_count": "100-300 theaters",
+          "description": "A war drama exploring the human and political fallout in a conflict zone, anchored by Alia Shawkat and released on a limited basis by Vertical Entertainment.[3]"
+        },
+        {
+          "title": "Europe's New Faces",
+          "release_date": "2025-12-12",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [],
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "A documentary focusing on emerging European political or cultural leaders and shifting identities across the continent, opening in very limited U.S. arthouse playdates.[3]"
+        },
+        {
+          "title": "Motherland",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "Miriam Silverman",
+            "Holland Taylor",
+            "Nestor Carbonell",
+            "Emily Arancio"
+          ],
+          "director": "TBA",
+          "theater_count": "25-75 theaters",
+          "description": "An intimate character drama exploring family, identity, and generational tension, led by Miriam Silverman and Holland Taylor in limited coastal runs.[3]"
+        },
+        {
+          "title": "Ella McCay",
+          "release_date": "2025-12-12",
+          "genre": "Comedy, Drama",
+          "rating": "NR",
+          "studio": "Walt Disney Studios Motion Pictures",
+          "cast": [
+            "Emma Mackey",
+            "Jamie Lee Curtis",
+            "Woody Harrelson",
+            "Jack Lowden"
+          ],
+          "director": "TBA",
+          "theater_count": "200-600 theaters",
+          "description": "A political-tinged comedy-drama about an ambitious young woman working in government, featuring Emma Mackey and a strong ensemble, opening as a limited awards-season play for Disney.[3][9]"
+        },
+        {
+          "title": "Lone Samurai",
+          "release_date": "2025-12-12",
+          "genre": "Action, Drama",
+          "rating": "NR",
+          "studio": "Well Go USA Entertainment",
+          "cast": [
+            "Shogen",
+            "Yayan Ruhian",
+            "Rama Ramadhan",
+            "Sumire Ashina"
+          ],
+          "director": "TBA",
+          "theater_count": "100-300 theaters",
+          "description": "A samurai-inspired action drama featuring intense martial-arts choreography, released by Well Go USA in a targeted genre-focused limited rollout.[3]"
+        },
+        {
+          "title": "Resurrection",
+          "release_date": "2025-12-12",
+          "genre": "Drama, Sci-Fi",
+          "rating": "NR",
+          "studio": "Janus Films",
+          "cast": [
+            "Jackson Yee",
+            "Shu Qi",
+            "Mark Chao",
+            "Gengxi Li"
+          ],
+          "director": "TBA",
+          "theater_count": "50-150 theaters",
+          "description": "An epic, 160-minute science-fiction drama imported and released by Janus Films, starting in select cities before a later wide expansion later in the month.[3]"
+        },
+        {
+          "title": "Pose",
+          "release_date": "2025-12-12",
+          "genre": "Thriller",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "James McAvoy",
+            "Kristin Zakala",
+            "Aisling Franciosi",
+            "Lucas Bravo"
+          ],
+          "director": "TBA",
+          "theater_count": "100-300 theaters",
+          "description": "A contained thriller led by James McAvoy, centering on a tense high-stakes situation where characters’ public images and identities are weaponized, opening in limited release.[3]"
+        },
+        {
+          "title": "Reedland",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Outsider Pictures",
+          "cast": [
+            "Gerrit Knobbe",
+            "Loïs Reinders",
+            "Mirthe Labree",
+            "Dirk Braad"
+          ],
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "A European art-house drama distributed by Outsider Pictures, focused on life in a rural reedland region and the relationships shaped by its landscape, playing very limited runs.[3]"
+        },
+        {
+          "title": "Thieves Highway",
+          "release_date": "2025-12-12",
+          "genre": "Action, Crime",
+          "rating": "R",
+          "studio": "TBA",
+          "cast": [
+            "Lochlyn Munro",
+            "Aaron Eckhart",
+            "Devon Sawa",
+            "Brooke Langton"
+          ],
+          "director": "TBA",
+          "theater_count": "200-400 theaters",
+          "description": "An action-crime film about criminals and law enforcement intersecting on a perilous smuggling route, headlined by Aaron Eckhart and Devon Sawa in a modest limited rollout.[3]"
         },
         {
           "title": "Christina Aguilera: Christmas in Paris",
           "release_date": "2025-12-14",
-          "genre": "Music",
+          "genre": "Music, Concert Film",
           "rating": "NR",
-          "studio": "Unknown",
+          "studio": "TBA",
           "cast": [
             "Christina Aguilera",
             "Yseult"
           ],
-          "director": "Unknown",
-          "theater_count": "10-50 theaters",
-          "description": "Concert film capturing Christina Aguilera's Christmas performance in Paris, released as a limited platform event."
+          "director": "TBA",
+          "theater_count": "100-300 theaters",
+          "description": "A holiday concert film featuring Christina Aguilera performing Christmas music in Paris, presented as a limited-event theatrical engagement.[3]"
         }
       ]
     }

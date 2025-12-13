@@ -9,33 +9,82 @@
       "name": "Wide Release",
       "movies": [
         {
-          "title": "Five Nights at Freddy’s 2",
+          "title": "Five Nights at Freddy's 2",
           "release_date": "2025-12-05",
-          "genre": "Horror",
-          "rating": "PG-13",
-          "studio": "Blumhouse Productions",
+          "genre": "Horror, Mystery, Thriller",
+          "rating": "NR",
+          "studio": "Universal Pictures",
           "cast": [
             "Josh Hutcherson",
+            "Piper Rubio",
+            "Elizabeth Lail",
             "Matthew Lillard"
           ],
-          "director": "Emma Tammi",
-          "theater_count": "3,000+ theaters",
-          "description": "Blumhouse horror sequel where creepy animatronics return to torment a new group of night guards in the haunted Freddy Fazbear's Pizza. Sequel to the 2023 hit based on the popular video game franchise."
+          "director": "TBA",
+          "theater_count": "3,500+ theaters",
+          "description": "Sequel to the 2023 horror hit, this installment returns to the haunted pizzeria where murderous animatronics once again terrorize night security staff and those who dare to uncover its dark secrets."
+        },
+        {
+          "title": "Jujutsu Kaisen: Execution",
+          "release_date": "2025-12-05",
+          "genre": "Action, Animation, Fantasy",
+          "rating": "NR",
+          "studio": "GKIDS",
+          "cast": [
+            "Jun'ya Enoki",
+            "Yuma Uchida",
+            "Shigeru Chiba",
+            "Wataru Hatano"
+          ],
+          "director": "TBA",
+          "theater_count": "1,500-2,500 theaters",
+          "description": "Feature-length anime entry in the Jujutsu Kaisen franchise, following sorcerers as they confront a powerful new curse in a high-stakes mission that tests their skills and loyalties."
         },
         {
           "title": "Kill Bill: The Whole Bloody Affair",
           "release_date": "2025-12-05",
-          "genre": "Action Crime Thriller",
-          "rating": "Unrated",
-          "studio": "Dimension Films",
+          "genre": "Action, Crime, Thriller",
+          "rating": "R",
+          "studio": "Lionsgate",
           "cast": [
             "Uma Thurman",
-            "David Carradine",
-            "Lucy Liu"
+            "Lucy Liu",
+            "Vivica A. Fox",
+            "Michael Madsen"
           ],
           "director": "Quentin Tarantino",
-          "theater_count": "1,500+ theaters",
-          "description": "Re-release of Quentin Tarantino’s martial arts revenge epic merging Kill Bill Vol. 1 and Vol. 2 into one unrated saga. Uma Thurman’s Bride unleashes her sword-swinging rampage in the definitive cut."
+          "theater_count": "2,000-3,000 theaters",
+          "description": "A combined cut of Kill Bill: Vol. 1 and Vol. 2, this re-release presents Quentin Tarantino's revenge saga about a former assassin known as The Bride who hunts down her ex-crew and their leader, Bill."
+        },
+        {
+          "title": "Merrily We Roll Along",
+          "release_date": "2025-12-05",
+          "genre": "Musical, Drama",
+          "rating": "NR",
+          "studio": "Sony Pictures Classics",
+          "cast": [
+            "Daniel Radcliffe",
+            "Jonathan Groff",
+            "Lindsay Mendez",
+            "Natalie Wachen"
+          ],
+          "director": "Richard Linklater",
+          "theater_count": "1,000-1,500 theaters",
+          "description": "Adapted from the Stephen Sondheim musical and filmed over many years, the story traces the lives and fractured friendship of three creative collaborators in reverse chronology, from disillusioned middle age back to youthful idealism."
+        },
+        {
+          "title": "100 Nights of Hero",
+          "release_date": "2025-12-05",
+          "genre": "Fantasy, Romance",
+          "rating": "NR",
+          "studio": "IFC Films",
+          "cast": [
+            "Emma Corrin",
+            "Nicholas Galitzine"
+          ],
+          "director": "TBA",
+          "theater_count": "1,000-1,500 theaters",
+          "description": "A fantasy romance in which a storyteller spins a cycle of tales over one hundred nights to protect a woman from a predatory ruler, blending feminist mythmaking with lush, storybook imagery."
         }
       ]
     },
@@ -46,29 +95,302 @@
         {
           "title": "MONSTA X: CONNECT x in CINEMAS",
           "release_date": "2025-12-03",
-          "genre": "Music",
+          "genre": "Documentary, Music",
           "rating": "NR",
-          "studio": "Not specified",
+          "studio": "Trafalgar Releasing",
           "cast": [
             "Monsta X"
           ],
-          "director": "Not specified",
-          "theater_count": "50-100 theaters",
-          "description": "Concert film featuring the K-pop group Monsta X performing live. Captures their high-energy show for fans in cinemas."
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "Concert documentary featuring K-pop group Monsta X, showcasing performances and behind-the-scenes footage from their CONNECT x tour for fans worldwide."
         },
         {
-          "title": "Christina Aguilera: Christmas in Paris",
+          "title": "Viva Verdi",
           "release_date": "2025-12-03",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "Tina Aliprandi",
+            "Claudio Giombi",
+            "Chitose Matsumoto"
+          ],
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "Documentary centered on the legacy and enduring influence of composer Giuseppe Verdi, weaving archival material and commentary from musicians and scholars."
+        },
+        {
+          "title": "Wedding Crashers 20th Anniversary",
+          "release_date": "2025-12-04",
+          "genre": "Comedy, Romance",
+          "rating": "R",
+          "studio": "Fathom Events",
+          "cast": [
+            "Owen Wilson",
+            "Vince Vaughn",
+            "Rachel McAdams",
+            "Christopher Walken"
+          ],
+          "director": "David Dobkin",
+          "theater_count": "250-500 theaters",
+          "description": "Special 20th anniversary re-release of the 2005 comedy about two divorce mediators who crash weddings for fun until one of them unexpectedly falls in love."
+        },
+        {
+          "title": "Fackham Hall",
+          "release_date": "2025-12-05",
+          "genre": "Comedy",
+          "rating": "NR",
+          "studio": "Bleecker Street",
+          "cast": [
+            "Thomasin McKenzie",
+            "Ben Radcliffe",
+            "Damian Lewis",
+            "Tom Felton"
+          ],
+          "director": "TBA",
+          "theater_count": "250-500 theaters",
+          "description": "A period comedy riffing on British upstairs-downstairs tropes, following a young servant who gets entangled in the ridiculous scandals of an eccentric aristocratic family at Fackham Hall."
+        },
+        {
+          "title": "Dhurandhar",
+          "release_date": "2025-12-05",
+          "genre": "Action, Adventure, Crime, Drama, Thriller",
+          "rating": "NR",
+          "studio": "Moviegoers Entertainment",
+          "cast": [
+            "Ranveer Singh",
+            "Sanjay Dutt",
+            "Akshaye Khanna",
+            "Madhavan"
+          ],
+          "director": "TBA",
+          "theater_count": "100-250 theaters",
+          "description": "Indian action-thriller about a formidable fixer whose criminal empire is threatened by a high-stakes conspiracy, forcing uneasy alliances and explosive showdowns."
+        },
+        {
+          "title": "Man Finds Tape",
+          "release_date": "2025-12-05",
+          "genre": "Horror, Mystery, Thriller",
+          "rating": "NR",
+          "studio": "Magnolia Pictures",
+          "cast": [
+            "John Gholson",
+            "Christine V. Hall",
+            "Nell Kessler",
+            "Mia King"
+          ],
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "A man discovers a disturbing VHS tape that appears to show real violence, drawing him into a nightmarish investigation that blurs the line between recorded horror and reality."
+        },
+        {
+          "title": "The Chronology of Water",
+          "release_date": "2025-12-05",
+          "genre": "Biography, Drama, Romance",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": [
+            "Imogen Poots",
+            "Thora Birch",
+            "Tom Sturridge",
+            "Jim Belushi"
+          ],
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "Adapted from Lidia Yuknavitch’s memoir, the film charts a woman’s turbulent coming-of-age through trauma, addiction, and art as she reconstructs her identity around swimming and storytelling."
+        },
+        {
+          "title": "La Grazia",
+          "release_date": "2025-12-05",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "MUBI",
+          "cast": [
+            "Toni Servillo",
+            "Anna Ferzetti",
+            "Orlando Cinque",
+            "Massimo Venturiello"
+          ],
+          "director": "TBA",
+          "theater_count": "25-100 theaters",
+          "description": "Italian drama about a small-town man whose life is upended by an unexpected event he interprets as a miracle, forcing the community to confront questions of faith and morality."
+        },
+        {
+          "title": "Little Trouble Girls",
+          "release_date": "2025-12-05",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Kino Lorber",
+          "cast": [
+            "Jara Sofija Ostan",
+            "Mina Svajger",
+            "Sasa Tabakovic",
+            "Natasa Burger"
+          ],
+          "director": "TBA",
+          "theater_count": "25-100 theaters",
+          "description": "Intimate European coming-of-age drama about two adolescent girls whose intense friendship is tested by family pressures and the confusing transition into adulthood."
+        },
+        {
+          "title": "Come Closer",
+          "release_date": "2025-12-05",
+          "genre": "Drama, Romance",
+          "rating": "NR",
+          "studio": "Greenwich Entertainment",
+          "cast": [
+            "Lia Elalouf",
+            "Darya Rosenn",
+            "Netta Garti",
+            "Yaakov Zada-Daniel"
+          ],
+          "director": "TBA",
+          "theater_count": "25-100 theaters",
+          "description": "A romantic drama about two people whose chance meeting gradually develops into a complicated relationship, forcing them to confront past wounds and shifting family dynamics."
+        },
+        {
+          "title": "Boil Alert",
+          "release_date": "2025-12-05",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "Indican Pictures",
+          "cast": [
+            "Jessica Matten",
+            "Autumn Peltier",
+            "Santee Smith",
+            "Layla Staats"
+          ],
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "Documentary examining water crises in Indigenous communities, following activists and residents as they fight long-term boil water advisories and advocate for environmental justice."
+        },
+        {
+          "title": "Rosemead",
+          "release_date": "2025-12-05",
+          "genre": "Crime, Drama, Thriller",
+          "rating": "NR",
+          "studio": "Vertical Entertainment",
+          "cast": [
+            "Lucy Liu",
+            "Lawrence Shou",
+            "Orion Lee",
+            "Jennifer Lim"
+          ],
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "Crime thriller set in the Asian American community of Rosemead, where a woman becomes entangled in a dangerous underworld while trying to protect her family from escalating threats."
+        },
+        {
+          "title": "Dust Bunny",
+          "release_date": "2025-12-05",
+          "genre": "Action, Drama, Horror, Thriller",
+          "rating": "NR",
+          "studio": "Roadside Attractions",
+          "cast": [
+            "Mads Mikkelsen",
+            "Sigourney Weaver",
+            "David Dastmalchian",
+            "Rebecca Henderson"
+          ],
+          "director": "Bryan Fuller",
+          "theater_count": "250-500 theaters",
+          "description": "A horror-thriller about a young girl who believes a monster under her bed killed her family and turns to a mysterious neighbor, a retired assassin, to help destroy the creature."
+        },
+        {
+          "title": "Frontier Crucible",
+          "release_date": "2025-12-05",
+          "genre": "Drama, Thriller, Western",
+          "rating": "NR",
+          "studio": "Well Go USA Entertainment",
+          "cast": [
+            "Myles Clohessy",
+            "Mary Stickley",
+            "Armie Hammer",
+            "William H. Macy"
+          ],
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "Western thriller in which settlers in a remote frontier outpost face violence, betrayal, and moral tests as lawlessness and harsh conditions close in on them."
+        },
+        {
+          "title": "Under Current",
+          "release_date": "2025-12-05",
+          "genre": "Thriller, Crime (TBA)",
+          "rating": "NR",
+          "studio": "China Lion Film Distribution",
+          "cast": [
+            "Aaron Kwok",
+            "Simon Yam",
+            "Francis Ng",
+            "Alex Fong"
+          ],
+          "director": "TBA",
+          "theater_count": "25-100 theaters",
+          "description": "Chinese-language thriller following a group of men whose intertwined pasts resurface amid a dangerous underworld scheme, forcing old loyalties and rivalries into the open."
+        },
+        {
+          "title": "Eastern Western",
+          "release_date": "2025-12-05",
+          "genre": "Adventure, Drama, Family, Western",
+          "rating": "NR",
+          "studio": "Purdie Distribution",
+          "cast": [
+            "Stefan Bandic",
+            "Meag Belland",
+            "Dora Brtan",
+            "John Budge"
+          ],
+          "director": "TBA",
+          "theater_count": "50-250 theaters",
+          "description": "Family-oriented western adventure about a young outsider who journeys across rugged landscapes and finds unexpected community and purpose on the frontier."
+        },
+        {
+          "title": "Laalo: Krishna Sada Sahaayate",
+          "release_date": "2025-12-05",
+          "genre": "Family",
+          "rating": "NR",
+          "studio": "Bakrania Media",
+          "cast": [
+            "Karan Joshi",
+            "Reeva Rachh",
+            "Shruhad Goswami",
+            "Anshu Joshi"
+          ],
+          "director": "TBA",
+          "theater_count": "25-100 theaters",
+          "description": "Faith-based family film focused on devotion to Krishna, following a young believer whose spiritual journey affects their family and community."
+        },
+        {
+          "title": "UFC 323: Dvalishvili vs. Yan 2",
+          "release_date": "2025-12-06",
+          "genre": "Sport",
+          "rating": "NR",
+          "studio": "Iconic Events Releasing",
+          "cast": [
+            "Joe Rogan",
+            "Dana White",
+            "Bruce Buffer",
+            "Jon Anik"
+          ],
+          "director": "TBA (Live event presentation)",
+          "theater_count": "250-500 theaters",
+          "description": "Special event cinema presentation of the UFC 323 fight card headlined by the rematch between Merab Dvalishvili and Petr Yan, broadcast live to theaters."
+        },
+        {
+          "title": "Andre Rieu's 2025 Christmas Concert: Merry Christmas",
+          "release_date": "2025-12-07",
           "genre": "Music",
           "rating": "NR",
-          "studio": "Not specified",
+          "studio": "TBA",
           "cast": [
-            "Christina Aguilera",
-            "Yseult"
+            "André Rieu",
+            "Gary Bennett",
+            "Serge Bosch",
+            "Emma Kok"
           ],
-          "director": "Not specified",
-          "theater_count": "100-300 theaters",
-          "description": "Concert film showcasing Christina Aguilera's Christmas performance in Paris with special guest Yseult. Holiday-themed musical event."
+          "director": "TBA",
+          "theater_count": "250-500 theaters",
+          "description": "Holiday concert film featuring violinist and conductor André Rieu performing Christmas classics with his Johann Strauss Orchestra in a festive staging."
         }
       ]
     }

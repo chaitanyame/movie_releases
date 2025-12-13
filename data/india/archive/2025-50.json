@@ -11,16 +11,13 @@
         {
           "title": "Black Rose",
           "release_date": "2025-12-08",
-          "genre": "Thriller",
+          "genre": "Drama",
           "language": "Hindi",
           "additional_languages": [],
-          "cast": [
-            "Amit Gupta",
-            "Jayshankar Tripathi"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "A thriller featuring Amit Gupta and Jayshankar Tripathi in lead roles.[1]"
+          "cast": [],
+          "director": "",
+          "production": "",
+          "description": "Hindi drama film scheduled for a theatrical release on 8 December 2025 as per advance release calendars; detailed credits are not yet widely documented, so plot and principal cast remain to be formally announced.[1]"
         },
         {
           "title": "Bull",
@@ -31,9 +28,23 @@
           "cast": [
             "Shahid Kapoor"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Action film starring Shahid Kapoor, anticipated as a high-intensity entertainer.[1]"
+          "director": "",
+          "production": "",
+          "description": "Upcoming action-oriented Hindi film led by Shahid Kapoor, dated for a theatrical opening on 8 December 2025 in national release calendars; storyline and full team details are yet to be officially circulated in trade sources.[1]"
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Kapil Sharma",
+            "Manjot Singh"
+          ],
+          "director": "",
+          "production": "",
+          "description": "Sequel to the 2015 comedy ‘Kis Kisko Pyaar Karoon’, fronted by Kapil Sharma and listed on India theatrical calendars for a 12 December 2025 cinema release; plot is expected to continue the protagonist’s chaotic romantic and family entanglements.[1][9]"
         }
       ]
     },
@@ -50,21 +61,7 @@
     {
       "id": "regional-other",
       "name": "Regional (Other)",
-      "movies": [
-        {
-          "title": "The Devil",
-          "release_date": "2025-12-11",
-          "genre": "Action Drama",
-          "language": "Kannada",
-          "additional_languages": [],
-          "cast": [
-            "Darshan"
-          ],
-          "director": "Prakash",
-          "production": "TBA",
-          "description": "Kannada action drama starring Darshan, delivering high-intensity action sequences.[6]"
-        }
-      ]
+      "movies": []
     }
   ]
 }

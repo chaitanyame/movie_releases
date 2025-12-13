@@ -9,9 +9,41 @@
       "name": "Bollywood (Hindi)",
       "movies": [
         {
-          "title": "Durlabh Prasad Ki Doosri Shaadi",
+          "title": "Super Dhamaal.com",
+          "release_date": "2025-12-15",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Govardhan Asrani",
+            "Arya Babbar",
+            "Sayali Bhagat",
+            "Mansi Dovhal"
+          ],
+          "director": "",
+          "production": "",
+          "description": "A comedy film featuring a ensemble cast in a humorous adventure."
+        },
+        {
+          "title": "Bhai Toh Bhai Hota Hai",
+          "release_date": "2025-12-15",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": [],
+          "cast": [
+            "Ananddev Mishra",
+            "Ranch Mahaan",
+            "Anchal Soni",
+            "Ahana"
+          ],
+          "director": "",
+          "production": "",
+          "description": "An action film centered around brotherhood and intense confrontations."
+        },
+        {
+          "title": "Durlabh Prasad Ki Doosri Shadi",
           "release_date": "2025-12-19",
-          "genre": "Family / Comedy-Drama",
+          "genre": "Comedy Drama",
           "language": "Hindi",
           "additional_languages": [],
           "cast": [
@@ -20,48 +52,16 @@
             "Mahima Chaudhry",
             "Pallak Lalwani"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "A family dramedy centered on the protagonist Durlabh Prasad and events around his second marriage; listed for theatrical release on 2025-12-19 (trade listings show a confirmed theatrical date)."
-        },
-        {
-          "title": "Kis Kisko Pyaar Karoon 2",
-          "release_date": "2025-12-12",
-          "genre": "Comedy",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Kapil Sharma",
-            "Manjot Singh",
-            "Ayesha Khan",
-            "Tridha Choudhury"
-          ],
-          "director": "Anukalp Goswami",
-          "production": "TBA",
-          "description": "Sequel to the comedy franchise about a man entangled with multiple marriages; widely reported as a theatrical release on 2025-12-12 (included here for context even though outside 15–21 Dec week)."
+          "director": "Siddhant Raj Singh",
+          "production": "Eksha Entertainment",
+          "description": "A fun comedy drama about Durlabh Prasad's second marriage, blending humor with family dynamics."
         }
       ]
     },
     {
       "id": "regional-telugu",
       "name": "Regional (Telugu)",
-      "movies": [
-        {
-          "title": "Maharaju Maharani",
-          "release_date": "2025-12-27",
-          "genre": "Drama",
-          "language": "Telugu",
-          "additional_languages": [],
-          "cast": [
-            "Ramranadheer",
-            "Sreeliya",
-            "Jahnavi"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Listed on industry release calendars as a Telugu theatrical drama; release falls after the week (included as a nearby Telugu theatrical reference)."
-        }
-      ]
+      "movies": []
     },
     {
       "id": "regional-tamil",
@@ -73,101 +73,20 @@
       "name": "Regional (Other)",
       "movies": [
         {
-          "title": "Super Dhamaal.com",
-          "release_date": "2025-12-15",
-          "genre": "Comedy",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Govardhan Asrani",
-            "Arya Babbar",
-            "Sayali Bhagat"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Comedy titled 'Super Dhamaal.com' appears on upcoming-release listings for 2025-12-15 as a theatrical release (industry calendars list it under India releases)."
-        },
-        {
-          "title": "Bhai Toh Bhai Hota Hai",
-          "release_date": "2025-12-15",
-          "genre": "Action",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Ananddev Mishra",
-            "Ranch Mahaan",
-            "Anchal Soni"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Action film appearing on release calendars for 2025-12-15 marked as a theatrical release in India."
-        },
-        {
-          "title": "Dhurandhar",
-          "release_date": "2025-12-05",
-          "genre": "Spy / Action Thriller",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Ranveer Singh",
-            "Akshaye Khanna",
-            "R. Madhavan",
-            "Sanjay Dutt"
-          ],
-          "director": "Aditya Dhar",
-          "production": "Jio Studios / B62 Studios",
-          "description": "High-profile spy-action film based on violent/infiltration events; reported as a theatrical release on 2025-12-05 (included here as a major December Bollywood theatrical title)."
-        },
-        {
-          "title": "Avatar: Fire and Ash",
-          "release_date": "2025-12-19",
-          "genre": "Action / Adventure / Fantasy",
-          "language": "English",
-          "additional_languages": [
-            "Hindi",
-            "Telugu",
-            "Tamil",
-            "Kannada",
-            "Malayalam"
-          ],
-          "cast": [
-            "Sam Worthington",
-            "Zoe Saldaña",
-            "Sigourney Weaver"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Major international theatrical release (studio tentatively titled/listed as 'Avatar: Fire and Ash') scheduled in Indian cinemas on 2025-12-19 across multiple Indian-dubbed versions per release trackers."
-        },
-        {
-          "title": "Dha Dha Ba (Bha Bha Ba listed variant)",
-          "release_date": "2025-12-18",
-          "genre": "Action / Comedy / Thriller",
+          "title": "Rachel",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
           "language": "Malayalam",
           "additional_languages": [],
           "cast": [
-            "Mohanlal",
-            "Sandy Master",
-            "Dileep"
+            "Baburaj",
+            "Roshan Basheer",
+            "Vineeth Thattil David",
+            "Baiju Ezhupunna"
           ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Malayalam entry appearing on aggregated release listings for 2025-12-18; marked as a theatrical release in Indian release calendars."
-        },
-        {
-          "title": "Durlabh Prasad Ki Dusri Shaadi",
-          "release_date": "2025-12-19",
-          "genre": "Family",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Sanjay Mishra",
-            "Vyom Yadav",
-            "Mahima Chaudhry"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "Listed on IMDb and trade calendars as a family film releasing theatrically on 2025-12-19 in India."
+          "director": "",
+          "production": "",
+          "description": "A Malayalam drama exploring emotional and personal narratives."
         }
       ]
     }
