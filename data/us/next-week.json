@@ -18,17 +18,6 @@
           "director": "Robert Eggers",
           "theater_count": 2800,
           "description": "A gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her."
-        },
-        {
-          "title": "A Complete Unknown",
-          "release_date": "2025-12-25",
-          "genre": "Biography, Drama, Music",
-          "rating": "R",
-          "studio": "Searchlight Pictures",
-          "cast": ["Timothée Chalamet", "Edward Norton", "Elle Fanning"],
-          "director": "James Mangold",
-          "theater_count": 2500,
-          "description": "The story of Bob Dylan's rise to fame in the early 1960s."
         }
       ]
     },

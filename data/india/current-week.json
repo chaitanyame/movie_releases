@@ -4,25 +4,9 @@
   "week_end": "2025-12-15",
   "country": "india",
   "categories": [
-    {
-      "id": "bollywood",
-      "name": "Bollywood",
-      "movies": []
-    },
-    {
-      "id": "tollywood",
-      "name": "Tollywood",
-      "movies": []
-    },
-    {
-      "id": "kollywood",
-      "name": "Kollywood",
-      "movies": []
-    },
-    {
-      "id": "mollywood",
-      "name": "Mollywood",
-      "movies": []
-    }
+    {"id": "bollywood", "name": "Bollywood", "movies": []},
+    {"id": "tollywood", "name": "Tollywood", "movies": []},
+    {"id": "kollywood", "name": "Kollywood", "movies": []},
+    {"id": "mollywood", "name": "Mollywood", "movies": []}
   ]
 }
