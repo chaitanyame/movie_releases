@@ -755,6 +755,12 @@ function saveToFile(data, filePath) {
  * @param {string} countryId - Country ID
  */
 function updateArchiveIndex(weekData, countryId) {
+    // Only update archive index if we have the required fields
+    if (!weekData.week_number) {
+        console.log('Skipping archive index update (no week_number)');
+        return;
+    }
+    
     const indexPath = path.join(__dirname, '..', `data/${countryId}/archive-index.json`);
     let index = { archives: [] };
     
@@ -766,14 +772,21 @@ function updateArchiveIndex(weekData, countryId) {
         }
     }
     
+    // Create week_id from week_number if not present
+    const weekId = weekData.week_id || weekData.week_number;
+    
+    // Create week title and range from dates if not present
+    const weekTitle = weekData.week_title || `Week ${weekData.week_number.split('-')[1]}`;
+    const weekRange = weekData.week_range || `${weekData.week_start} - ${weekData.week_end}`;
+    
     // Check if this week already exists
-    const existingIndex = index.archives.findIndex(a => a.weekId === weekData.week_id);
+    const existingIndex = index.archives.findIndex(a => a.weekId === weekId);
     
     const archiveEntry = {
-        weekId: weekData.week_id,
-        weekTitle: weekData.week_title,
-        weekRange: weekData.week_range,
-        generatedAt: weekData.generated_at
+        weekId: weekId,
+        weekTitle: weekTitle,
+        weekRange: weekRange,
+        generatedAt: weekData.generated_at || new Date().toISOString()
     };
     
     if (existingIndex >= 0) {
@@ -782,8 +795,12 @@ function updateArchiveIndex(weekData, countryId) {
         index.archives.unshift(archiveEntry);
     }
     
-    // Sort by week ID descending
-    index.archives.sort((a, b) => b.weekId.localeCompare(a.weekId));
+    // Sort by week ID descending (handle both string and undefined)
+    index.archives.sort((a, b) => {
+        const aId = a.weekId || '';
+        const bId = b.weekId || '';
+        return bId.localeCompare(aId);
+    });
     
     // Keep only last 52 weeks
     index.archives = index.archives.slice(0, 52);
