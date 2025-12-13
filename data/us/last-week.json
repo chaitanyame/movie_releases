@@ -11,43 +11,31 @@
         {
           "title": "Wicked",
           "release_date": "2025-11-22",
-          "genre": "Musical, Fantasy",
+          "genre": "Fantasy, Musical, Romance",
           "rating": "PG",
           "studio": "Universal Pictures",
-          "cast": ["Cynthia Erivo", "Ariana Grande", "Jeff Goldblum"],
+          "cast": ["Cynthia Erivo", "Ariana Grande", "Jonathan Bailey"],
           "director": "Jon M. Chu",
           "theater_count": 3800,
-          "description": "The untold story of the witches of Oz."
+          "description": "The story of how the Wicked Witch of the West became wicked."
         },
         {
-          "title": "Gladiator II",
-          "release_date": "2025-11-22",
-          "genre": "Action, Adventure, Drama",
-          "rating": "R",
-          "studio": "Paramount Pictures",
-          "cast": ["Paul Mescal", "Denzel Washington", "Pedro Pascal"],
-          "director": "Ridley Scott",
-          "theater_count": 3600,
-          "description": "Years after witnessing the death of Maximus, Lucius must enter the Colosseum."
+          "title": "Moana 2",
+          "release_date": "2025-11-27",
+          "genre": "Animation, Adventure, Comedy",
+          "rating": "PG",
+          "studio": "Walt Disney Studios",
+          "cast": ["Auli'i Cravalho", "Dwayne Johnson"],
+          "director": "David Derrick Jr.",
+          "theater_count": 4200,
+          "description": "Moana journeys to the far seas of Oceania after receiving an unexpected call from her wayfinding ancestors."
         }
       ]
     },
     {
       "id": "limited-release",
       "name": "Limited Release",
-      "movies": [
-        {
-          "title": "The Order",
-          "release_date": "2025-12-06",
-          "genre": "Crime, Thriller",
-          "rating": "R",
-          "studio": "Vertical Entertainment",
-          "cast": ["Jude Law", "Nicholas Hoult", "Tye Sheridan"],
-          "director": "Justin Kurzel",
-          "theater_count": 650,
-          "description": "An FBI agent pursues a white supremacist group."
-        }
-      ]
+      "movies": []
     }
   ]
 }

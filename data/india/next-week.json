@@ -1,27 +1,27 @@
 {
   "week_number": "2025-51",
-  "week_start": "2025-12-16",
-  "week_end": "2025-12-22",
+  "week_start": "2025-12-23",
+  "week_end": "2025-12-29",
   "country": "india",
   "categories": [
     {
       "id": "bollywood",
-      "name": "Bollywood (Hindi)",
+      "name": "Bollywood",
       "movies": []
     },
     {
-      "id": "tollywood-telugu",
-      "name": "Tollywood (Telugu)",
+      "id": "tollywood",
+      "name": "Tollywood",
       "movies": []
     },
     {
-      "id": "kollywood-tamil",
-      "name": "Kollywood (Tamil)",
+      "id": "kollywood",
+      "name": "Kollywood",
       "movies": []
     },
     {
-      "id": "mollywood-malayalam",
-      "name": "Mollywood (Malayalam)",
+      "id": "mollywood",
+      "name": "Mollywood",
       "movies": []
     }
   ]

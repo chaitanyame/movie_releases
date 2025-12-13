@@ -6,22 +6,22 @@
   "categories": [
     {
       "id": "bollywood",
-      "name": "Bollywood (Hindi)",
+      "name": "Bollywood",
       "movies": []
     },
     {
-      "id": "tollywood-telugu",
-      "name": "Tollywood (Telugu)",
+      "id": "tollywood",
+      "name": "Tollywood",
       "movies": []
     },
     {
-      "id": "kollywood-tamil",
-      "name": "Kollywood (Tamil)",
+      "id": "kollywood",
+      "name": "Kollywood",
       "movies": []
     },
     {
-      "id": "mollywood-malayalam",
-      "name": "Mollywood (Malayalam)",
+      "id": "mollywood",
+      "name": "Mollywood",
       "movies": []
     }
   ]
