@@ -1112,6 +1112,45 @@ async function applyRouteFromHash() {
 }
 
 /**
+ * Fetch live releases directly from Perplexity API
+ */
+async function fetchLiveReleases() {
+    const fetchLiveBtn = document.getElementById('fetch-live-btn');
+    if (!fetchLiveBtn) return;
+    
+    try {
+        fetchLiveBtn.disabled = true;
+        fetchLiveBtn.textContent = '⏳ Fetching from API...';
+        showLoading();
+        
+        // Call the API endpoint
+        const response = await fetch(`/api/releases/live?country=${currentCountry}`);
+        if (!response.ok) {
+            throw new Error(`API returned ${response.status}`);
+        }
+        
+        const data = await response.json();
+        
+        // Display the data
+        await renderMovieReleases(data);
+        
+        fetchLiveBtn.textContent = '✅ Fetched Successfully!';
+        setTimeout(() => {
+            fetchLiveBtn.textContent = '🔴 Fetch Live from API';
+            fetchLiveBtn.disabled = false;
+        }, 3000);
+        
+    } catch (error) {
+        console.error('Error fetching live releases:', error);
+        showError(`Failed to fetch live releases: ${error.message}`);
+        fetchLiveBtn.textContent = '❌ Failed - Retry';
+        fetchLiveBtn.disabled = false;
+    } finally {
+        hideLoading();
+    }
+}
+
+/**
  * Handle hashchange events
  */
 async function handleHashChange() {
@@ -1124,3 +1163,11 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
+// Add event listener for Fetch Live button
+document.addEventListener('DOMContentLoaded', () => {
+    const fetchLiveBtn = document.getElementById('fetch-live-btn');
+    if (fetchLiveBtn) {
+        fetchLiveBtn.addEventListener('click', fetchLiveReleases);
+    }
+});

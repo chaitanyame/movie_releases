@@ -965,23 +965,35 @@ function parseResponse(apiResponse) {
     }
     
     // Try to parse as JSON
+    let parsed;
     try {
-        return JSON.parse(content);
+        parsed = JSON.parse(content);
     } catch (e) {
         // Try to extract JSON from markdown code blocks
         const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
         if (jsonMatch) {
-            return JSON.parse(jsonMatch[1]);
+            parsed = JSON.parse(jsonMatch[1]);
+        } else {
+            // Try to find JSON object in content
+            const objectMatch = content.match(/\{[\s\S]*\}/);
+            if (objectMatch) {
+                parsed = JSON.parse(objectMatch[0]);
+            } else {
+                throw new Error('Could not parse API response as JSON');
+            }
         }
-        
-        // Try to find JSON object in content
-        const objectMatch = content.match(/\{[\s\S]*\}/);
-        if (objectMatch) {
-            return JSON.parse(objectMatch[0]);
-        }
-        
-        throw new Error('Could not parse API response as JSON');
     }
+    
+    // Normalize field names: category_id → id, category_name → name
+    if (parsed?.categories) {
+        parsed.categories = parsed.categories.map(cat => ({
+            id: cat.category_id || cat.id,
+            name: cat.category_name || cat.name,
+            movies: cat.movies || []
+        }));
+    }
+    
+    return parsed;
 }
 
 /**
