@@ -532,15 +532,33 @@ function renderActors(actors) {
 }
 
 /**
+ * Check if a movie is new (added in last 48 hours)
+ * @param {Object} release - Release data object
+ * @returns {boolean} - True if movie is new
+ */
+function isNewRelease(release) {
+    if (release.is_new === true) return true;
+    if (!release.first_seen) return false;
+    
+    const firstSeen = new Date(release.first_seen);
+    const cutoff = new Date(Date.now() - 48 * 60 * 60 * 1000); // 48 hours ago
+    return firstSeen > cutoff;
+}
+
+/**
  * Render a single release item
  * @param {Object} release - Release data object
  * @returns {string} - HTML string
  */
 function renderRelease(release) {
+    const isNew = isNewRelease(release);
+    const newBadge = isNew ? '<span class="release-new-badge">NEW</span>' : '';
+    
     return `
-        <div class="release-item">
+        <div class="release-item ${isNew ? 'release-item--new' : ''}">
             <div class="release-header">
                 <h4 class="release-title">${release.title}</h4>
+                ${newBadge}
                 ${release.language ? `<span class="release-language">${release.language}</span>` : ''}
             </div>
             <div class="release-meta">

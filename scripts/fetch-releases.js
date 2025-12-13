@@ -398,9 +398,215 @@ Return ONLY valid JSON with this exact structure:
 If a category has no releases, return empty movies array. Do not omit categories.`;
 }
 
+// ============================================================================
+// MERGE AND DELTA TRACKING UTILITIES
+// ============================================================================
+
+/**
+ * Sleep for specified milliseconds
+ * @param {number} ms - Milliseconds to sleep
+ */
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+/**
+ * Normalize movie title for comparison (lowercase, remove special chars)
+ * @param {string} title - Movie title
+ * @returns {string} Normalized title
+ */
+function normalizeTitle(title) {
+    return title.toLowerCase()
+        .replace(/[^a-z0-9\s]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+}
+
+/**
+ * Load existing week data from file
+ * @param {string} country - Country ID
+ * @param {string} weekType - Week type
+ * @returns {Object|null} Existing data or null
+ */
+function loadExistingData(country, weekType) {
+    const dataPath = path.join(__dirname, '..', 'data', country, `${weekType}.json`);
+    try {
+        if (fs.existsSync(dataPath)) {
+            const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+            console.log(`📂 Loaded existing data: ${countMovies(data)} movies`);
+            return data;
+        }
+    } catch (error) {
+        console.warn(`Warning: Could not load existing data: ${error.message}`);
+    }
+    return null;
+}
+
+/**
+ * Count total movies across all categories
+ * @param {Object} weekData - Week data object
+ * @returns {number} Total movie count
+ */
+function countMovies(weekData) {
+    if (!weekData?.categories) return 0;
+    return weekData.categories.reduce((sum, cat) => sum + (cat.movies?.length || 0), 0);
+}
+
+/**
+ * Merge new movies into existing data (append-only, dedupe by title)
+ * @param {Object} existing - Existing week data
+ * @param {Object} newData - New data from API
+ * @returns {Object} Merged data with first_seen timestamps
+ */
+function mergeMovieData(existing, newData) {
+    const now = new Date().toISOString();
+    
+    // Create a map of existing movies by normalized title for quick lookup
+    const existingMoviesMap = new Map();
+    if (existing?.categories) {
+        existing.categories.forEach(cat => {
+            cat.movies?.forEach(movie => {
+                const key = `${cat.id}:${normalizeTitle(movie.title)}`;
+                existingMoviesMap.set(key, movie);
+            });
+        });
+    }
+    
+    // Start with the new data structure
+    const merged = {
+        week_number: newData.week_number,
+        week_start: newData.week_start,
+        week_end: newData.week_end,
+        country: newData.country,
+        last_updated: now,
+        fetch_count: (existing?.fetch_count || 0) + 1,
+        categories: []
+    };
+    
+    // Preserve fetch history
+    merged.fetch_history = existing?.fetch_history || [];
+    merged.fetch_history.push({
+        timestamp: now,
+        new_movies_count: 0 // Will be updated
+    });
+    
+    // Keep only last 10 fetches in history
+    if (merged.fetch_history.length > 10) {
+        merged.fetch_history = merged.fetch_history.slice(-10);
+    }
+    
+    let totalNewMovies = 0;
+    
+    // Process each category
+    newData.categories.forEach(newCat => {
+        const mergedCat = {
+            id: newCat.id,
+            name: newCat.name,
+            movies: []
+        };
+        
+        // Get existing movies for this category
+        const existingCat = existing?.categories?.find(c => c.id === newCat.id);
+        const existingCatMovies = new Map();
+        existingCat?.movies?.forEach(m => {
+            existingCatMovies.set(normalizeTitle(m.title), m);
+        });
+        
+        // Add all existing movies first (preserve first_seen)
+        existingCatMovies.forEach((movie, normalizedTitle) => {
+            mergedCat.movies.push(movie);
+        });
+        
+        // Add new movies that don't exist yet
+        newCat.movies?.forEach(newMovie => {
+            const normalizedTitle = normalizeTitle(newMovie.title);
+            if (!existingCatMovies.has(normalizedTitle)) {
+                // This is a new movie!
+                const movieWithMeta = {
+                    ...newMovie,
+                    first_seen: now,
+                    is_new: true
+                };
+                mergedCat.movies.push(movieWithMeta);
+                totalNewMovies++;
+                console.log(`   🆕 New movie: ${newMovie.title}`);
+            }
+        });
+        
+        merged.categories.push(mergedCat);
+    });
+    
+    // Update fetch history with new movie count
+    merged.fetch_history[merged.fetch_history.length - 1].new_movies_count = totalNewMovies;
+    
+    // Update is_new flag based on age (48 hours)
+    const cutoffTime = new Date(Date.now() - 48 * 60 * 60 * 1000).toISOString();
+    merged.categories.forEach(cat => {
+        cat.movies?.forEach(movie => {
+            if (movie.first_seen) {
+                movie.is_new = movie.first_seen > cutoffTime;
+            }
+        });
+    });
+    
+    console.log(`📊 Merged: ${totalNewMovies} new movies added`);
+    
+    return merged;
+}
+
+/**
+ * Merge movies from multiple API responses (dedupe by title)
+ * @param {Array<Object>} responses - Array of parsed API responses
+ * @returns {Object} Single merged response
+ */
+function mergeMultipleResponses(responses) {
+    if (responses.length === 0) return null;
+    if (responses.length === 1) return responses[0];
+    
+    // Use first response as base
+    const merged = { ...responses[0] };
+    
+    // Create a map to track unique movies per category
+    const categoryMovies = new Map();
+    
+    responses.forEach(response => {
+        response.categories?.forEach(cat => {
+            if (!categoryMovies.has(cat.id)) {
+                categoryMovies.set(cat.id, {
+                    id: cat.id,
+                    name: cat.name,
+                    movies: new Map()
+                });
+            }
+            
+            const catData = categoryMovies.get(cat.id);
+            cat.movies?.forEach(movie => {
+                const key = normalizeTitle(movie.title);
+                if (!catData.movies.has(key)) {
+                    catData.movies.set(key, movie);
+                }
+            });
+        });
+    });
+    
+    // Convert maps back to arrays
+    merged.categories = Array.from(categoryMovies.values()).map(cat => ({
+        id: cat.id,
+        name: cat.name,
+        movies: Array.from(cat.movies.values())
+    }));
+    
+    return merged;
+}
+
 /**
  * Fetch week data for theatrical movie releases
  * Feature 18: Fetch current week theatrical releases from Perplexity API
+ * 
+ * Enhanced with:
+ * - Multiple API calls (3 attempts) to get more complete data
+ * - Merge with existing data (append-only)
+ * - Track first_seen timestamps for NEW badges
  * 
  * @param {string} country - Country ID ('us' or 'india')
  * @param {string} weekType - Week type ('current-week', 'last-week', 'next-week')
@@ -408,9 +614,11 @@ If a category has no releases, return empty movies array. Do not omit categories
  */
 async function fetchWeekData(country, weekType = 'current-week') {
     const {getCurrentWeekInfo, getPreviousWeekInfo, getNextWeekInfo} = require('./utils/date-utils');
-    const {validateWeekData} = require('./utils/validate-json');
-    const fs = require('fs').promises;
-    const path = require('path');
+    const fsPromises = require('fs').promises;
+    
+    // Configuration for multi-fetch
+    const API_CALL_ATTEMPTS = 3;       // Number of API calls to make
+    const DELAY_BETWEEN_CALLS = 5000;  // 5 seconds between calls
     
     // Get week info based on weekType
     let weekInfo;
@@ -437,53 +645,110 @@ async function fetchWeekData(country, weekType = 'current-week') {
     console.log(`Week: ${weekInfo.week_number} (${weekRange})`);
     
     try {
-        // 1. Build prompt using updatePromptForMovies
+        // 1. Load existing data (for merge)
+        const existingData = loadExistingData(country, weekType);
+        
+        // 2. Build prompt
         const prompt = updatePromptForMovies(weekRange, countryConfig);
         
-        // 2. Call Perplexity API
-        console.log('Calling Perplexity API...');
-        const apiResponse = await callPerplexityAPI(prompt, countryConfig);
+        // 3. Call Perplexity API multiple times and collect responses
+        console.log(`Calling Perplexity API (${API_CALL_ATTEMPTS} attempts for better coverage)...`);
+        const apiResponses = [];
         
-        // 3. Parse response
-        console.log('Parsing API response...');
-        const parsedData = parseResponse(apiResponse);
+        for (let attempt = 1; attempt <= API_CALL_ATTEMPTS; attempt++) {
+            try {
+                console.log(`   API call ${attempt}/${API_CALL_ATTEMPTS}...`);
+                const apiResponse = await callPerplexityAPI(prompt, countryConfig);
+                const parsedData = parseResponse(apiResponse);
+                
+                // Normalize category structure
+                if (parsedData.categories) {
+                    parsedData.categories = parsedData.categories.map(cat => ({
+                        id: cat.id || cat.category_id,
+                        name: cat.name || cat.category_name,
+                        movies: Array.isArray(cat.movies) ? cat.movies : []
+                    }));
+                }
+                
+                const movieCount = countMovies({ categories: parsedData.categories });
+                console.log(`   ✓ Attempt ${attempt}: Found ${movieCount} movies`);
+                apiResponses.push(parsedData);
+                
+                // Wait between calls (except for last one)
+                if (attempt < API_CALL_ATTEMPTS) {
+                    console.log(`   Waiting ${DELAY_BETWEEN_CALLS/1000}s before next call...`);
+                    await sleep(DELAY_BETWEEN_CALLS);
+                }
+            } catch (error) {
+                console.warn(`   ⚠ Attempt ${attempt} failed: ${error.message}`);
+            }
+        }
         
-        // 4. Ensure data structure matches schema
-        // Use week_id format "YYYY-WW" for week_number to match app.js expectations
-        const weekData = {
+        if (apiResponses.length === 0) {
+            throw new Error('All API calls failed');
+        }
+        
+        // 4. Merge all API responses together (dedupe by title)
+        console.log('Merging responses from multiple API calls...');
+        const mergedApiData = mergeMultipleResponses(apiResponses);
+        console.log(`📊 Total unique movies from API: ${countMovies({ categories: mergedApiData.categories })}`);
+        
+        // 5. Create base week data structure
+        const newWeekData = {
             week_number: weekInfo.week_id,  // Use "2025-50" format
             week_start: weekInfo.week_start,
             week_end: weekInfo.week_end,
             country: country,
-            categories: parsedData.categories || []
+            categories: mergedApiData.categories || []
         };
         
-        // 5. Basic validation (ensure required fields)
+        // 6. Merge with existing data (append-only, preserve first_seen)
+        let finalWeekData;
+        if (existingData) {
+            console.log('Merging with existing data (append-only)...');
+            finalWeekData = mergeMovieData(existingData, newWeekData);
+        } else {
+            // No existing data - mark all as new
+            const now = new Date().toISOString();
+            finalWeekData = {
+                ...newWeekData,
+                last_updated: now,
+                fetch_count: 1,
+                fetch_history: [{
+                    timestamp: now,
+                    new_movies_count: countMovies(newWeekData)
+                }]
+            };
+            
+            // Add first_seen to all movies
+            finalWeekData.categories.forEach(cat => {
+                cat.movies?.forEach(movie => {
+                    movie.first_seen = now;
+                    movie.is_new = true;
+                });
+            });
+        }
+        
+        // 7. Validate
         console.log('Validating data...');
-        if (!weekData.week_number || !weekData.categories) {
+        if (!finalWeekData.week_number || !finalWeekData.categories) {
             throw new Error('Week data missing required fields: week_number or categories');
         }
         
-        // Ensure categories have correct structure
-        weekData.categories = weekData.categories.map(cat => ({
-            id: cat.id || cat.category_id,
-            name: cat.name || cat.category_name,
-            movies: Array.isArray(cat.movies) ? cat.movies : []
-        }));
+        const totalMovies = countMovies(finalWeekData);
+        console.log(`✅ Data validated: ${totalMovies} total movies`);
         
-        console.log('✅ Data validated successfully');
-        
-        // 6. Save to data/{country}/{weekType}.json
+        // 8. Save to data/{country}/{weekType}.json
         const dataDir = path.join(__dirname, '..', 'data', country);
-        await fs.mkdir(dataDir, {recursive: true});
+        await fsPromises.mkdir(dataDir, {recursive: true});
         
         const dataFilePath = path.join(dataDir, `${weekType}.json`);
-        await fs.writeFile(dataFilePath, JSON.stringify(weekData, null, 2), 'utf8');
+        await fsPromises.writeFile(dataFilePath, JSON.stringify(finalWeekData, null, 2), 'utf8');
         
         console.log(`✅ Data saved to ${dataFilePath}`);
         
-        // 7. Return parsed and validated data
-        return weekData;
+        // 9. Return final merged data
+        return finalWeekData;
         
     } catch (error) {
         console.error(`Error fetching ${weekType} data for ${country}:`, error.message);
