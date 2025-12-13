@@ -1,0 +1,143 @@
+{
+  "week_number": "2025-51",
+  "week_start": "2025-12-15",
+  "week_end": "2025-12-21",
+  "country": "us",
+  "categories": [
+    {
+      "id": "wide-release",
+      "name": "Wide Release",
+      "movies": [
+        {
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Action,Adventure,Fantasy",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Sigourney Weaver",
+            "Stephen Lang"
+          ],
+          "director": "James Cameron",
+          "theater_count": "4000+ theaters",
+          "description": "Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants",
+          "release_date": "2025-12-19",
+          "genre": "Animation,Adventure,Comedy",
+          "rating": "PG",
+          "studio": "Paramount Pictures",
+          "cast": [
+            "Tom Kenny",
+            "Mr. Lawrence",
+            "Bill Fagerbakke"
+          ],
+          "director": "TBA",
+          "theater_count": "3500+ theaters",
+          "description": "SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        },
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Warner Bros",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar",
+            "Elizabeth Perkins"
+          ],
+          "director": "Paul Feig",
+          "theater_count": "3000+ theaters",
+          "description": "A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        }
+      ]
+    },
+    {
+      "id": "limited-release",
+      "name": "Limited Release",
+      "movies": [
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Lionsgate",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar",
+            "Elizabeth Perkins"
+          ],
+          "director": "Paul Feig",
+          "theater_count": "500-1000 theaters",
+          "description": "A housemaid uncovers dark secrets while working for a wealthy family in this adaptation of the bestselling novel.[1][2][5]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        },
+        {
+          "title": "Ella McCay",
+          "release_date": "2025-12-19",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Ayo Edebiri",
+            "Dev Patel",
+            "Saoirse Ronan"
+          ],
+          "director": "Nicole Holofcener",
+          "theater_count": "50-100 theaters",
+          "description": "Indie drama following a young woman's complex relationships and personal growth in contemporary New York.[1][2]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        },
+        {
+          "title": "David",
+          "release_date": "2025-12-19",
+          "genre": "Drama",
+          "rating": "PG",
+          "studio": "Angel Studios",
+          "cast": [
+            "Caleb Castille",
+            "Larue Dickerson"
+          ],
+          "director": "David Helling",
+          "theater_count": "100-500 theaters",
+          "description": "A shepherd faces supernatural visions during Christmas, blending faith and horror elements in this inspirational tale.[1]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": true
+        }
+      ]
+    },
+    {
+      "id": "platform-release",
+      "name": "Platform Release",
+      "movies": []
+    }
+  ],
+  "last_updated": "2025-12-13T09:05:21.720Z",
+  "fetch_count": 1,
+  "fetch_history": [
+    {
+      "timestamp": "2025-12-13T09:05:21.720Z",
+      "new_movies_count": 6
+    }
+  ]
+}

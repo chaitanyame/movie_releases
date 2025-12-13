@@ -1,0 +1,24 @@
+week_number: 2025-49
+week_start: 2025-12-01
+week_end: 2025-12-07
+country: us
+last_updated: 2025-12-13T09:04:10.309Z
+categories:
+  -
+    id: wide-release
+    name: Wide Release
+    movies:
+  -
+    id: limited-release
+    name: Limited Release
+    movies:
+      -
+        title: MONSTA X: CONNECT x in CINEMAS
+        release_date: 2025-12-03
+        genre: Music
+        cast:
+          - Monsta X
+        director: [object Object]
+        description: Concert film featuring the K-pop group Monsta X performing live in cinemas.[2]
+        first_seen: 2025-12-13T09:04:10.309Z
+        is_new: true

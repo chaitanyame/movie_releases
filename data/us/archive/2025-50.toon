@@ -2,7 +2,7 @@ week_number: 2025-50
 week_start: 2025-12-08
 week_end: 2025-12-14
 country: us
-last_updated: 2025-12-13T04:36:47.536Z
+last_updated: 2025-12-13T09:04:45.017Z
 categories:
   -
     id: wide-release
@@ -241,3 +241,31 @@ categories:
         description: New holiday slasher entry reviving the cult Silent Night, Deadly Night franchise as a small town faces a brutal Christmas killer.[3]
         first_seen: 2025-12-13T04:36:47.536Z
         is_new: true
+      -
+        title: Franz
+        release_date: 2025-12-12
+        genre: Biographical Drama
+        director: Agnieszka Holland
+        description: Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[5]
+        first_seen: 2025-12-13T09:04:45.017Z
+        is_new: true
+      -
+        title: One More Shot
+        release_date: 2025-12-12
+        genre: Dramedy
+        director: TBA
+        description: On New Year's Eve 1999, Minnie discovers Time Traveling Tequila allowing her multiple shots to change the night's course.[5]
+        first_seen: 2025-12-13T09:04:45.017Z
+        is_new: true
+      -
+        title: Merv
+        release_date: 2025-12-10
+        genre: Romantic Comedy
+        director: Jessica Swale
+        description: Recently separated couple takes shared dog on holiday trip and reconnects romantically.[5]
+        first_seen: 2025-12-13T09:04:45.017Z
+        is_new: true
+  -
+    id: platform-release
+    name: Platform Release
+    movies:

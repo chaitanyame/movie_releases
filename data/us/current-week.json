@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "us",
-  "last_updated": "2025-12-13T04:36:47.536Z",
-  "fetch_count": 3,
+  "last_updated": "2025-12-13T09:04:45.017Z",
+  "fetch_count": 4,
   "categories": [
     {
       "id": "wide-release",
@@ -358,8 +358,55 @@
           "additional_languages": [],
           "first_seen": "2025-12-13T04:36:47.536Z",
           "is_new": true
+        },
+        {
+          "title": "Franz",
+          "release_date": "2025-12-12",
+          "genre": "Biographical Drama",
+          "rating": "NR",
+          "studio": "Cohen Media Group",
+          "cast": {},
+          "director": "Agnieszka Holland",
+          "theater_count": "50-100 theaters",
+          "description": "Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[5]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:04:45.017Z",
+          "is_new": true
+        },
+        {
+          "title": "One More Shot",
+          "release_date": "2025-12-12",
+          "genre": "Dramedy",
+          "rating": "NR",
+          "studio": "Samuel Goldwyn Films",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "On New Year's Eve 1999, Minnie discovers Time Traveling Tequila allowing her multiple shots to change the night's course.[5]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:04:45.017Z",
+          "is_new": true
+        },
+        {
+          "title": "Merv",
+          "release_date": "2025-12-10",
+          "genre": "Romantic Comedy",
+          "rating": "NR",
+          "studio": "Amazon",
+          "cast": {},
+          "director": "Jessica Swale",
+          "theater_count": "10-50 theaters",
+          "description": "Recently separated couple takes shared dog on holiday trip and reconnects romantically.[5]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:04:45.017Z",
+          "is_new": true
         }
       ]
+    },
+    {
+      "id": "platform-release",
+      "name": "Platform Release",
+      "movies": []
     }
   ],
   "fetch_history": [
@@ -374,6 +421,10 @@
     {
       "timestamp": "2025-12-13T04:36:47.536Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-13T09:04:45.017Z",
+      "new_movies_count": 3
     }
   ]
 }

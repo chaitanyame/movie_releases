@@ -1,0 +1,36 @@
+week_number: 2025-49
+week_start: 2025-12-01
+week_end: 2025-12-07
+country: india
+last_updated: 2025-12-13T09:04:29.763Z
+categories:
+  -
+    id: bollywood-hindi
+    name: Bollywood (Hindi)
+    movies:
+      -
+        title: Dhurandhar
+        release_date: 2025-12-05
+        genre: Spy Action Drama
+        cast:
+          - Ranveer Singh
+          - Sanjay Dutt
+          - Arjun Rampal
+          - Akshaye Khanna
+          - Sara Arjun
+        director: Aditya Dhar
+        description: Spy action drama inspired by real-life geopolitical conflicts, Indian intelligence operations, and Lyari gang war in Pakistan. Marks Ranveer Singh's comeback and first A-rated film with 3h34m runtime.[1][3][7]
+        first_seen: 2025-12-13T09:04:29.763Z
+        is_new: true
+  -
+    id: regional-telugu
+    name: Regional (Telugu)
+    movies:
+  -
+    id: regional-tamil
+    name: Regional (Tamil)
+    movies:
+  -
+    id: regional-other
+    name: Regional (Other)
+    movies:

@@ -1,0 +1,92 @@
+week_number: 2025-51
+week_start: 2025-12-15
+week_end: 2025-12-21
+country: us
+last_updated: 2025-12-13T09:05:21.720Z
+categories:
+  -
+    id: wide-release
+    name: Wide Release
+    movies:
+      -
+        title: Avatar: Fire and Ash
+        release_date: 2025-12-19
+        genre: Action,Adventure,Fantasy
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Sigourney Weaver
+          - Stephen Lang
+        director: James Cameron
+        description: Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+      -
+        title: The SpongeBob Movie: Search for SquarePants
+        release_date: 2025-12-19
+        genre: Animation,Adventure,Comedy
+        cast:
+          - Tom Kenny
+          - Mr. Lawrence
+          - Bill Fagerbakke
+        director: TBA
+        description: SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+      -
+        title: The Housemaid
+        release_date: 2025-12-19
+        genre: Thriller
+        cast:
+          - Sydney Sweeney
+          - Amanda Seyfried
+          - Brandon Sklenar
+          - Elizabeth Perkins
+        director: Paul Feig
+        description: A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+  -
+    id: limited-release
+    name: Limited Release
+    movies:
+      -
+        title: The Housemaid
+        release_date: 2025-12-19
+        genre: Thriller
+        cast:
+          - Sydney Sweeney
+          - Amanda Seyfried
+          - Brandon Sklenar
+          - Elizabeth Perkins
+        director: Paul Feig
+        description: A housemaid uncovers dark secrets while working for a wealthy family in this adaptation of the bestselling novel.[1][2][5]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+      -
+        title: Ella McCay
+        release_date: 2025-12-19
+        genre: Drama
+        cast:
+          - Ayo Edebiri
+          - Dev Patel
+          - Saoirse Ronan
+        director: Nicole Holofcener
+        description: Indie drama following a young woman's complex relationships and personal growth in contemporary New York.[1][2]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+      -
+        title: David
+        release_date: 2025-12-19
+        genre: Drama
+        cast:
+          - Caleb Castille
+          - Larue Dickerson
+        director: David Helling
+        description: A shepherd faces supernatural visions during Christmas, blending faith and horror elements in this inspirational tale.[1]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: true
+  -
+    id: platform-release
+    name: Platform Release
+    movies:

@@ -2,7 +2,7 @@ week_number: 2025-50
 week_start: 2025-12-08
 week_end: 2025-12-14
 country: india
-last_updated: 2025-12-13T04:35:29.395Z
+last_updated: 2025-12-13T09:04:57.432Z
 categories:
   -
     id: bollywood-hindi
@@ -80,14 +80,6 @@ categories:
         first_seen: 2025-12-13T04:35:29.395Z
         is_new: true
   -
-    id: regional-telugu
-    name: Regional (Telugu)
-    movies:
-  -
-    id: regional-tamil
-    name: Regional (Tamil)
-    movies:
-  -
     id: regional-other
     name: Regional (Other)
     movies:
@@ -128,4 +120,17 @@ categories:
         director: Tisca Chopra
         description: A dark relationship drama–thriller featuring Radhika Apte and Divyenndu, listed among December 12, 2025 Indian theatrical releases before later moving to OTT.[1][5][7]
         first_seen: 2025-12-13T04:30:25.039Z
+        is_new: true
+      -
+        title: Mowgli
+        release_date: 2025-12-13
+        genre: Adventure
+        cast:
+          - Bandi Saroj Kumar
+          - Roshan Kanakala
+          - Sakshi Mhadolkar
+          - Harsha Chemudu
+        director: TBA
+        description: Telugu adventure film with Bandi Saroj Kumar in the lead.[6]
+        first_seen: 2025-12-13T09:04:57.432Z
         is_new: true
