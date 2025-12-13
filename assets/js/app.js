@@ -496,7 +496,7 @@ async function loadCurrentWeek(countryId) {
         
         // Use absolute path from repository root for GitHub Pages
         const basePath = window.location.hostname.includes('github.io') 
-            ? '/ott_news/data' 
+            ? '/movie_releases/data' 
             : 'data';
         const response = await fetch(`${basePath}/${countryId}/current-week.json`);
         
@@ -931,7 +931,7 @@ function updateActiveWeekTitle(data) {
 async function loadArchiveIndex(countryId) {
     try {
         const basePath = window.location.hostname.includes('github.io') 
-            ? '/ott_news/data' 
+            ? '/movie_releases/data' 
             : 'data';
         const response = await fetch(`${basePath}/${countryId}/archive-index.json`);
         
@@ -1009,7 +1009,7 @@ async function loadArchivedWeek(weekId) {
         hideError();
         
         const basePath = window.location.hostname.includes('github.io') 
-            ? '/ott_news/data' 
+            ? '/movie_releases/data' 
             : 'data';
         const response = await fetch(`${basePath}/${currentCountry}/archive/${weekId}.json`);
         
