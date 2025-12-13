@@ -131,7 +131,7 @@
       "passes": true,
       "steps": [
         "Update shouldArchive() to detect when next-week becomes current-week",
-        "Implement three-week rotation logic (next \u00e2\u2020\u2019 current \u00e2\u2020\u2019 last \u00e2\u2020\u2019 archive)",
+        "Implement three-week rotation logic (next â†’ current â†’ last â†’ archive)",
         "Update archiveWeek() to move files to correct locations",
         "Add transitionWeeks() function to slide window forward",
         "Handle year boundary transitions correctly",
@@ -955,10 +955,10 @@
       "name": "Create test: Hash URL navigation works",
       "description": "Write Playwright test in tests/features/url-routing.spec.ts verifying hash routing",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/url-routing.spec.ts",
-      "test_fails_before": false,
-      "test_passes_after": false,
+      "test_fails_before": true,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/url-routing.spec.ts",
         "Write test that navigates to URL with hash",
@@ -974,10 +974,10 @@
       "name": "Create test: Browser back/forward buttons work",
       "description": "Write Playwright test in tests/features/browser-navigation.spec.ts verifying history API",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/browser-navigation.spec.ts",
-      "test_fails_before": false,
-      "test_passes_after": false,
+      "test_fails_before": true,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/browser-navigation.spec.ts",
         "Write test that navigates between weeks",
@@ -994,10 +994,10 @@
       "name": "Create test: Shared URLs load correct state",
       "description": "Write Playwright test in tests/features/shareable-urls.spec.ts verifying URL sharing",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "test_file": "tests/features/shareable-urls.spec.ts",
-      "test_fails_before": false,
-      "test_passes_after": false,
+      "test_fails_before": true,
+      "test_passes_after": true,
       "steps": [
         "Create test file tests/features/shareable-urls.spec.ts",
         "Write test that captures current URL",
@@ -1013,7 +1013,7 @@
       "name": "Implement hash router initialization",
       "description": "Create initHashRouter function in assets/js/app.js to setup routing",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create initHashRouter() function",
         "Add hashchange event listener to window",
@@ -1029,7 +1029,7 @@
       "name": "Implement hash change listener",
       "description": "Create onHashChange function in assets/js/app.js to handle hash updates",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create onHashChange() function",
         "Parse new hash parameters",
@@ -1045,7 +1045,7 @@
       "name": "Implement URL state update on navigation",
       "description": "Create updateUrlHash function in assets/js/app.js to sync URL with state",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create updateUrlHash(weekType, country) function",
         "Build hash string format #weekType/country",
@@ -1061,7 +1061,7 @@
       "name": "Parse hash parameters on page load",
       "description": "Create parseHashParams function in assets/js/app.js to extract route info",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create parseHashParams() function",
         "Get hash from window.location.hash",
@@ -1078,7 +1078,7 @@
       "name": "Handle invalid hash gracefully with redirect",
       "description": "Create handleInvalidHash function in assets/js/app.js for error handling",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create handleInvalidHash() function",
         "Detect invalid weekType values",
@@ -1094,7 +1094,7 @@
       "name": "Add URL examples to UI",
       "description": "Update index.html with copy URL button for sharing",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Add 'Share' or 'Copy Link' button to UI",
         "Add click handler to copy current URL",
@@ -1110,7 +1110,7 @@
       "name": "Verify all tests pass for User Story 5",
       "description": "Run URL routing test suite and confirm all tests pass (GATE 2)",
       "priority": "low",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Run npm test tests/features/*url*",
         "Verify T058 test passes (hash routing)",
@@ -1148,7 +1148,7 @@
       "passes": false,
       "steps": [
         "Create test file tests/integration/three-week-flow.spec.ts",
-        "Test full flow: load current \u00e2\u2020\u2019 navigate last \u00e2\u2020\u2019 navigate next \u00e2\u2020\u2019 back to current",
+        "Test full flow: load current â†’ navigate last â†’ navigate next â†’ back to current",
         "Verify data consistency across navigation",
         "Test country switching during week navigation",
         "Verify localStorage persistence works",
@@ -1160,14 +1160,14 @@
     {
       "id": 70,
       "name": "Run performance audit",
-      "description": "Execute Lighthouse audit in tests/performance/lighthouse.spec.ts and verify score \u00e2\u2030\u00a5 90",
+      "description": "Execute Lighthouse audit in tests/performance/lighthouse.spec.ts and verify score â‰¥ 90",
       "priority": "medium",
       "passes": false,
       "steps": [
         "Update or create tests/performance/lighthouse.spec.ts",
         "Configure Lighthouse audit for all metrics",
         "Run audit on homepage",
-        "Verify Performance score \u00e2\u2030\u00a5 90",
+        "Verify Performance score â‰¥ 90",
         "Verify FCP < 1.0s",
         "Verify LCP < 2.5s",
         "Verify TBT < 200ms",
@@ -1188,7 +1188,7 @@
         "Test screen reader compatibility",
         "Verify ARIA labels present and correct",
         "Verify color contrast meets standards",
-        "Document accessibility score \u00e2\u2030\u00a5 90"
+        "Document accessibility score â‰¥ 90"
       ]
     },
     {
