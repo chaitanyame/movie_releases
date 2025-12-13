@@ -78,5 +78,7 @@ ehthumbs.db
 
 
 .specify/**
-.github/**
+.github/agents/**
+.github/prompts/**
+.github/instructions/**
 .vscode/**
