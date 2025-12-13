@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple TOON Test</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .movie-card { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+        .error { color: red; }
+        pre { background: #f4f4f4; padding: 10px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>TOON Format Test</h1>
+    <button onclick="testFetch()">Fetch and Parse TOON Data</button>
+    <div id="status"></div>
+    <div id="output"></div>
+    
+    <script>
+        async function testFetch() {
+            const status = document.getElementById('status');
+            const output = document.getElementById('output');
+            
+            try {
+                status.innerHTML = 'Fetching data/india/current-week.toon...';
+                const response = await fetch('data/india/current-week.toon');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const text = await response.text();
+                status.innerHTML = `✅ Fetched ${text.length} bytes`;
+                
+                // Show first 500 chars
+                output.innerHTML = '<h3>First 500 characters:</h3><pre>' + 
+                    text.substring(0, 500).replace(/</g, '&lt;') + '</pre>';
+                
+                // Try to parse
+                const lines = text.split('\n');
+                status.innerHTML += '<br>Total lines: ' + lines.length;
+                
+                // Count movies
+                const movieMarkers = lines.filter(l => l.trim() === '-' && l.match(/^      -$/));
+                status.innerHTML += '<br>Movie markers found: ' + movieMarkers.length;
+                
+            } catch (error) {
+                status.innerHTML = `<span class="error">❌ Error: ${error.message}</span>`;
+                console.error('Fetch error:', error);
+            }
+        }
+        
+        // Auto-run on load
+        window.addEventListener('load', testFetch);
+    </script>
+</body>
+</html>
