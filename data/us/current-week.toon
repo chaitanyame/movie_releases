@@ -1,0 +1,243 @@
+week_number: 2025-50
+week_start: 2025-12-08
+week_end: 2025-12-14
+country: us
+last_updated: 2025-12-13T04:36:47.536Z
+categories:
+  -
+    id: wide-release
+    name: Wide Release
+    movies:
+      -
+        title: Little Trouble Girls
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Jara Sofija Ostan
+          - Mina Svajger
+          - Sasa Tabakovic
+        director: NR
+        description: Coming-of-age drama about young women navigating friendship and identity; specialty title getting an unusually broad arthouse-focused national rollout.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Eastern Western
+        release_date: 2025-12-12
+        genre: Adventure
+        cast:
+          - Stefan Bandic
+          - Meag Belland
+          - Dora Brtan
+        director: NR
+        description: Family-friendly frontier adventure that blends Western iconography with a cross-cultural journey, positioned as a broad faith-adjacent holiday alternative.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: How the Grinch Stole Christmas (2025 Re-release)
+        release_date: 2025-12-12
+        genre: Comedy
+        cast:
+          - Jim Carrey
+          - Taylor Momsen
+          - Jeffrey Tambor
+        director: Ron Howard
+        description: Seasonal wide re-release of the 2000 live-action Dr. Seuss adaptation starring Jim Carrey as the Grinch, targeting family audiences in the pre-Christmas corridor.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: How the Grinch Stole Christmas
+        release_date: 2025-12-12
+        genre: Comedy
+        cast:
+          - Jim Carrey
+          - Taylor Momsen
+          - Jeffrey Tambor
+        director: Ron Howard
+        description: 2025 wide re-release of the 2000 Dr. Seuss holiday adaptation starring Jim Carrey as the Grinch, returning to theaters as a seasonal family event.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Scarlet
+        release_date: 2025-12-12
+        genre: Animation
+        cast:
+          - Mana Ashida
+          - Masaki Okada
+          - Masachika Ichimura
+        director: NR
+        description: Japanese animated fantasy adventure with romance and sci-fi elements, featuring a young heroine drawn into a visually ambitious, high-concept genre world; released by Sony in a broad anime-focused rollout.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Silent Night, Deadly Night
+        release_date: 2025-12-12
+        genre: Horror
+        cast:
+          - Rohan Campbell
+          - Ruby Modine
+          - Mark Acheson
+          - David Lawrence Brown
+        director: TBA
+        description: New holiday horror entry about a traumatized young man whose dark past resurfaces on Christmas Eve, sparking a new wave of yuletide terror.[3][7]
+        first_seen: 2025-12-13T04:31:45.993Z
+        is_new: true
+  -
+    id: limited-release
+    name: Limited Release
+    movies:
+      -
+        title: REBBECA: Becky G
+        release_date: 2025-12-10
+        genre: Music
+        cast:
+          - Becky G
+          - Alejandra Esquivias
+          - NR
+        director: NR
+        description: Concert documentary event built around Becky G, following her performances and behind-the-scenes moments; a one- or few-night music-special engagement.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: The Cure: The Show of a Lost World
+        release_date: 2025-12-11
+        genre: Music
+        cast:
+          - Robert Smith
+          - NR
+          - NR
+        director: NR
+        description: Event-style concert film capturing The Cure’s Show of a Lost World tour, targeting fans with a limited multi-day theatrical window.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Devoted Heart
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Meghan Cooley
+          - Lindsey McKeon
+          - Ryan O'Quinn
+        director: NR
+        description: Faith-leaning romantic drama centered on family, sacrifice, and enduring love, positioned toward churchgoing and inspirational audiences.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Visions
+        release_date: 2025-12-12
+        genre: Mystery Thriller
+        cast:
+          - Diane Kruger
+          - Mathieu Kassovitz
+          - Marta Nieto
+        director: NR
+        description: Psychological thriller about a woman haunted by disturbing premonitions, blending aviation-set suspense with domestic paranoia in a Euro-genre package.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Atropia
+        release_date: 2025-12-12
+        genre: Drama War
+        cast:
+          - Alia Shawkat
+          - Zahra Alzubaidi
+          - Callum Turner
+        director: NR
+        description: War-zone drama following intertwined lives in a conflict region, using an ensemble structure to explore trauma and moral ambiguity.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Lone Samurai
+        release_date: 2025-12-12
+        genre: Action Drama
+        cast:
+          - Shogen
+          - Yayan Ruhian
+          - Rama Ramadhan
+        director: NR
+        description: Martial-arts-driven samurai tale anchored by stylized swordplay and Eastern action choreography, aimed at genre aficionados.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Scarlet
+        release_date: 2025-12-12
+        genre: Action Adventure Animation
+        cast:
+          - Mana Ashida
+          - Masaki Okada
+          - Masachika Ichimura
+        director: NR
+        description: Japanese animated fantasy epic mixing romance, sci-fi, and adventure elements, receiving a mid-size U.S. theatrical rollout via Sony.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Christina Aguilera: Christmas in Paris
+        release_date: 2025-12-14
+        genre: Music
+        cast:
+          - Christina Aguilera
+          - Yseult
+          - NR
+        director: NR
+        description: Holiday concert special featuring Christina Aguilera performing in Paris with seasonal arrangements, released as a limited-time event for Christmas audiences.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Europe's New Faces
+        release_date: 2025-12-12
+        genre: Documentary
+        cast:
+          - NR
+          - NR
+          - NR
+        director: NR
+        description: Documentary profiling emerging European political or cultural leaders, released in a small number of U.S. specialty theaters.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Motherland
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Miriam Silverman
+          - Holland Taylor
+          - Nestor Carbonell
+        director: NR
+        description: Character-driven drama centered on complicated family dynamics when an adult child returns home, anchored by veteran performances and released in select cities.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Ella McCay
+        release_date: 2025-12-12
+        genre: Comedy Drama
+        cast:
+          - Emma Mackey
+          - Jamie Lee Curtis
+          - Woody Harrelson
+        director: NR
+        description: Political-leaning comedy-drama about a young staffer navigating statehouse power games and generational clashes; Disney is opening the film in a limited awards-qualifying run.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Resurrection
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Jackson Yee
+          - Shu Qi
+          - Mark Chao
+        director: NR
+        description: Epic, 160-minute Chinese sci-fi-inflected drama about survival and rebirth in a near-future society, receiving a curated art-house engagement from Janus ahead of a later wider rollout.[3]
+        first_seen: 2025-12-13T04:23:49.984Z
+        is_new: true
+      -
+        title: Silent Night, Deadly Night
+        release_date: 2025-12-12
+        genre: Horror
+        cast:
+          - Rohan Campbell
+          - Ruby Modine
+          - Mark Acheson
+        director: NR
+        description: New holiday slasher entry reviving the cult Silent Night, Deadly Night franchise as a small town faces a brutal Christmas killer.[3]
+        first_seen: 2025-12-13T04:36:47.536Z
+        is_new: true

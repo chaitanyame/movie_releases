@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TOON Parser Test</title>
+</head>
+<body>
+    <h1>TOON Parser Test</h1>
+    <div id="output"></div>
+    <div id="html-output"></div>
+    
+    <script src="assets/js/simple-app.js"></script>
+    <script>
+        async function test() {
+            try {
+                console.log('Fetching TOON file...');
+                const response = await fetch('data/india/current-week.toon');
+                const toonText = await response.text();
+                console.log('TOON text length:', toonText.length);
+                console.log('First 500 chars:', toonText.substring(0, 500));
+                
+                const data = parseToon(toonText);
+                console.log('Parsed data:', data);
+                
+                document.getElementById('output').innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                
+                const html = dataToHtml(data);
+                console.log('Generated HTML length:', html.length);
+                document.getElementById('html-output').innerHTML = html;
+                
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('output').innerHTML = 'Error: ' + error.message;
+            }
+        }
+        
+        test();
+    </script>
+</body>
+</html>

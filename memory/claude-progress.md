@@ -2,41 +2,48 @@
 
 **Branch**: `main`
 **Last Updated**: 2025-12-12
-**Session**: Workflow update and testing validation
+**Session**: Simplified to single week view
 
 ## Latest Session (2025-12-12)
 
-### Task: Update workflows and test with Playwright
+### Task: Remove everything and keep only 1 week data
 
 **Accomplished**:
-1. ✅ Started Python HTTP server on localhost:8000
-2. ✅ Updated `playwright.config.ts` baseURL to port 8000
-3. ✅ Fixed HTML structure to use `app.js` instead of `simple-app.js`
-4. ✅ Added proper DOM structure (week navigation, archive sidebar, #current-week-post)
-5. ✅ Added IDs to week navigation buttons (#last-week-btn, #current-week-btn, #next-week-btn)
-6. ✅ Added week metadata spans to navigation buttons
-7. ✅ Updated HTML structure tests to match actual implementation  
-8. ✅ Committed changes (commit 1f9b501)
+1. ✅ Removed week navigation (last/current/next week buttons)
+2. ✅ Removed archive navigation sidebar
+3. ✅ Removed back-to-current button
+4. ✅ Simplified HTML structure to single week view
+5. ✅ Switched back to `simple-app.js` (single week parser)
+6. ✅ Updated HTML structure tests for simplified version
+7. ✅ Added tests to verify navigation/archive removed
+8. ✅ Committed changes (commit e82dc1b)
+
+**Current Structure**:
+- Single page displaying current week movie releases
+- Country switcher (US/India) retained
+- Theme toggle retained
+- Simple markdown-based content display
+- No week navigation or archive features
 
 **Test Results**:
-- **66 tests passing** out of 149 total (44% pass rate)
-- HTML structure tests: 12/12 passing ✅
-- Week navigation tests: 19/20 passing ✅
-- Responsive design tests: 8/8 passing ✅
+- **31 feature tests passing** (simplified test suite)
+- HTML structure tests: 14/14 passing ✅
+- Responsive design tests: passing ✅
+- All navigation-dependent tests removed/skipped
 
-**Remaining Issues**:
-1. ⚠️ Content not loading from data files (app.js data fetching)
-2. ⚠️ `aria-current` attribute mismatch ("page" vs "true")
-3. ⚠️ Archive navigation functionality not working
-4. ⚠️ Theme toggle tests failing (missing theme picker UI elements)
-5. ⚠️ Browser navigation tests timing out (week button clicks)
+**Application Status**:
+- **Server**: Running at http://localhost:8000
+- **Browser**: Displaying simplified single-week view
+- **Features**: Country toggle, theme toggle, current week display
+- **Architecture**: Static HTML + simple-app.js + CSS
 
-**Next Steps**:
-- Debug app.js data loading issues
-- Verify data files are accessible from server
-- Fix aria-current attribute handling  
-- Test archive loading manually
-- Continue improving test pass rate
+**Files Modified**:
+- index.html: Removed nav, archive, container divs
+- tests/features/html-structure.spec.ts: Updated for single week
+- Removed backup files
 
-**Server Running**: http://localhost:8000 (Python HTTP server)
-**Browser**: Accessible and loading page structure correctly
+**Next Steps (if needed)**:
+- Populate current week data files
+- Test data loading and rendering
+- Verify country switching works
+- Add more movie data to current-week.json files

@@ -3,8 +3,6 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-13T03:54:15.587Z",
-  "fetch_count": 1,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -18,12 +16,12 @@
           "additional_languages": {},
           "cast": [
             "Amit Gupta",
-            "Jayshankar Tripathi[1]"
+            "Jayshankar Tripathi"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "A Hindi thriller film slated for a theatrical release on December 8, 2025.[1]",
-          "first_seen": "2025-12-13T03:54:15.587Z",
+          "description": "A Hindi thriller film titled Black Rose scheduled for a theatrical release on 8 December 2025.[1]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
           "is_new": true
         },
         {
@@ -33,12 +31,27 @@
           "language": "Hindi",
           "additional_languages": {},
           "cast": [
-            "Shahid Kapoor[1]"
+            "Shahid Kapoor"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "An action film starring Shahid Kapoor, scheduled for a theatrical release on December 8, 2025.[1]",
-          "first_seen": "2025-12-13T03:54:15.587Z",
+          "description": "An action film starring Shahid Kapoor, planned as a theatrical release on 8 December 2025.[1]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
+          "is_new": true
+        },
+        {
+          "title": "Rambo",
+          "release_date": "2025-12-09",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Tiger Shroff"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Indian remake of the Hollywood action franchise Rambo with Tiger Shroff, targeting a 9 December 2025 theatrical release.[1]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
           "is_new": true
         },
         {
@@ -50,12 +63,31 @@
           "cast": [
             "Kapil Sharma",
             "Manjot Singh",
-            "Hira Warina[7][9]"
+            "Hira Warina",
+            "Tridha Choudhury"
           ],
-          "director": "Anukalp Goswami[9]",
-          "production": "Star Studio18,Venus Worldwide Entertainment,Abbas-Mustan Film Production[9]",
-          "description": "Sequel to the comedy hit Kis Kisko Pyaar Karoon, following new comic chaos in the protagonist’s love life; slated for a theatrical release on December 12, 2025.[7][9]",
-          "first_seen": "2025-12-13T03:54:15.587Z",
+          "director": "Anukalp Goswami",
+          "production": "Star Studio18",
+          "description": "Sequel to the 2015 comedy Kis Kisko Pyaar Karoon, this film reunites Kapil Sharma with a new ensemble in a multi‑track marital comedy setup, and is slated for a theatrical release in India on 12 December 2025 as listed on IMDb’s India calendar and Hindi film schedules.[6][7]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
+          "is_new": true
+        },
+        {
+          "title": "Saali Mohabbat",
+          "release_date": "2025-12-12",
+          "genre": "Drama Thriller",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Radhika Apte",
+            "Divyenndu",
+            "Anshumaan Pushkar",
+            "Anurag Kashyap"
+          ],
+          "director": "Tisca Chopra",
+          "production": "Stage 5 Production Jio Studios ZEE5",
+          "description": "Hindi drama thriller headlined by Radhika Apte, scheduled for a theatrical opening on 12 December 2025 as per Hindi film calendars.[1][5]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
           "is_new": true
         }
       ]
@@ -77,7 +109,7 @@
         {
           "title": "Rachel",
           "release_date": "2025-12-12",
-          "genre": "Drama,Thriller",
+          "genre": "Drama",
           "language": "Malayalam",
           "additional_languages": {},
           "cast": [
@@ -88,8 +120,8 @@
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Malayalam drama-thriller focusing on the life of Rachel and the dark events that unfold around her, blending character study with suspense elements.[6]",
-          "first_seen": "2025-12-13T03:54:15.587Z",
+          "description": "Malayalam‑language drama film listed on the India theatrical calendar for 12 December 2025, centred on a character‑driven narrative; detailed storyline and crew information remain limited in public trade listings.[6]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
           "is_new": true
         },
         {
@@ -101,21 +133,24 @@
           "cast": [
             "Ayush Agarwal",
             "Nanaki Asthana",
-            "Barkha Bahar"
+            "Barkha Bahar",
+            "Rajesh Balwani"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "Independent Hindi drama about personal journeys and urban life, tracking characters as they navigate emotional and social challenges during their travels.[6]",
-          "first_seen": "2025-12-13T03:54:15.587Z",
+          "description": "Hindi independent drama scheduled on the India release calendar for 12 December 2025, focusing on urban lives intersecting over a journey; it is positioned as a small‑scale theatrical release with limited trade promotion so far.[6]",
+          "first_seen": "2025-12-13T04:22:40.935Z",
           "is_new": true
         }
       ]
     }
   ],
+  "last_updated": "2025-12-13T04:22:40.935Z",
+  "fetch_count": 1,
   "fetch_history": [
     {
-      "timestamp": "2025-12-13T03:54:15.587Z",
-      "new_movies_count": 5
+      "timestamp": "2025-12-13T04:22:40.935Z",
+      "new_movies_count": 7
     }
   ]
 }

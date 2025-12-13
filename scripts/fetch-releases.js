@@ -1024,7 +1024,67 @@ function generateWeekData(releaseData, country, date) {
 }
 
 /**
- * Save data to JSON file
+ * Convert data object to TOON format
+ * @param {Object} data - Data to convert
+ * @returns {string} TOON formatted string
+ */
+function dataToToon(data) {
+    let toon = '';
+    
+    // Helper to escape values that contain newlines or special chars
+    const escape = (val) => {
+        if (!val) return val;
+        return String(val).replace(/\n/g, ' ').replace(/\r/g, '');
+    };
+    
+    // Root level fields
+    if (data.week_number) toon += `week_number: ${escape(data.week_number)}\n`;
+    if (data.week_start) toon += `week_start: ${escape(data.week_start)}\n`;
+    if (data.week_end) toon += `week_end: ${escape(data.week_end)}\n`;
+    if (data.country) toon += `country: ${escape(data.country)}\n`;
+    if (data.last_updated) toon += `last_updated: ${escape(data.last_updated)}\n`;
+    
+    // Categories array
+    if (data.categories && Array.isArray(data.categories)) {
+        toon += `categories:\n`;
+        
+        for (const category of data.categories) {
+            toon += `  -\n`;
+            if (category.id) toon += `    id: ${escape(category.id)}\n`;
+            if (category.name) toon += `    name: ${escape(category.name)}\n`;
+            
+            // Movies array
+            if (category.movies && Array.isArray(category.movies)) {
+                toon += `    movies:\n`;
+                
+                for (const movie of category.movies) {
+                    toon += `      -\n`;
+                    if (movie.title) toon += `        title: ${escape(movie.title)}\n`;
+                    if (movie.release_date) toon += `        release_date: ${escape(movie.release_date)}\n`;
+                    if (movie.genre) toon += `        genre: ${escape(movie.genre)}\n`;
+                    
+                    // Cast array
+                    if (movie.cast && Array.isArray(movie.cast) && movie.cast.length > 0) {
+                        toon += `        cast:\n`;
+                        for (const actor of movie.cast) {
+                            toon += `          - ${escape(actor)}\n`;
+                        }
+                    }
+                    
+                    if (movie.director) toon += `        director: ${escape(movie.director)}\n`;
+                    if (movie.description) toon += `        description: ${escape(movie.description)}\n`;
+                    if (movie.first_seen) toon += `        first_seen: ${escape(movie.first_seen)}\n`;
+                    if (movie.is_new !== undefined) toon += `        is_new: ${movie.is_new}\n`;
+                }
+            }
+        }
+    }
+    
+    return toon;
+}
+
+/**
+ * Save data to file (TOON or JSON format)
  * @param {Object} data - Data to save
  * @param {string} filePath - Target file path
  */
@@ -1035,8 +1095,11 @@ function saveToFile(data, filePath) {
         fs.mkdirSync(dir, { recursive: true });
     }
     
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 2));
-    console.log(`✅ Saved to ${filePath}`);
+    // Save as TOON format (.toon extension)
+    const toonPath = fullPath.replace(/\.json$/, '.toon');
+    const toonContent = dataToToon(data);
+    fs.writeFileSync(toonPath, toonContent, 'utf8');
+    console.log(`✅ Saved to ${filePath.replace(/\.json$/, '.toon')} (TOON format)`);
 }
 
 /**

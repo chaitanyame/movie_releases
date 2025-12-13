@@ -1,0 +1,131 @@
+week_number: 2025-50
+week_start: 2025-12-08
+week_end: 2025-12-14
+country: india
+last_updated: 2025-12-13T04:35:29.395Z
+categories:
+  -
+    id: bollywood-hindi
+    name: Bollywood (Hindi)
+    movies:
+      -
+        title: Black Rose
+        release_date: 2025-12-08
+        genre: Thriller
+        cast:
+          - Amit Gupta
+          - Jayshankar Tripathi
+        director: TBA
+        description: A Hindi thriller film titled Black Rose scheduled for a theatrical release on 8 December 2025.[1]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Bull
+        release_date: 2025-12-08
+        genre: Action
+        cast:
+          - Shahid Kapoor
+        director: TBA
+        description: An action film starring Shahid Kapoor, planned as a theatrical release on 8 December 2025.[1]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Rambo
+        release_date: 2025-12-09
+        genre: Action
+        cast:
+          - Tiger Shroff
+        director: TBA
+        description: Indian remake of the Hollywood action franchise Rambo with Tiger Shroff, targeting a 9 December 2025 theatrical release.[1]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Kis Kisko Pyaar Karoon 2
+        release_date: 2025-12-12
+        genre: Comedy
+        cast:
+          - Kapil Sharma
+          - Manjot Singh
+          - Hira Warina
+          - Tridha Choudhury
+        director: Anukalp Goswami
+        description: Sequel to the 2015 comedy Kis Kisko Pyaar Karoon, this film reunites Kapil Sharma with a new ensemble in a multi‑track marital comedy setup, and is slated for a theatrical release in India on 12 December 2025 as listed on IMDb’s India calendar and Hindi film schedules.[6][7]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Saali Mohabbat
+        release_date: 2025-12-12
+        genre: Drama Thriller
+        cast:
+          - Radhika Apte
+          - Divyenndu
+          - Anshumaan Pushkar
+          - Anurag Kashyap
+        director: Tisca Chopra
+        description: Hindi drama thriller headlined by Radhika Apte, scheduled for a theatrical opening on 12 December 2025 as per Hindi film calendars.[1][5]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: The Great Shamsuddin Family
+        release_date: 2025-12-12
+        genre: Comedy,Drama
+        cast:
+          - Kritika Kamra
+          - Shreya Dhanwanthary
+          - Sheeba Chaddha
+          - Farida Jalal
+          - Purab Kohli
+        director: Anusha Rizvi
+        description: A family comedy-drama following Bani Ahmed, who races against time over 12 hours to complete an urgent application, exposing the eccentricities and conflicts of the Shamsuddin family.[5][4]
+        first_seen: 2025-12-13T04:35:29.395Z
+        is_new: true
+  -
+    id: regional-telugu
+    name: Regional (Telugu)
+    movies:
+  -
+    id: regional-tamil
+    name: Regional (Tamil)
+    movies:
+  -
+    id: regional-other
+    name: Regional (Other)
+    movies:
+      -
+        title: Rachel
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Baburaj
+          - Roshan Basheer
+          - Vineeth Thattil David
+          - Baiju Ezhupunna
+        director: TBA
+        description: Malayalam‑language drama film listed on the India theatrical calendar for 12 December 2025, centred on a character‑driven narrative; detailed storyline and crew information remain limited in public trade listings.[6]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Safar Mein Sheher
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Ayush Agarwal
+          - Nanaki Asthana
+          - Barkha Bahar
+          - Rajesh Balwani
+        director: TBA
+        description: Hindi independent drama scheduled on the India release calendar for 12 December 2025, focusing on urban lives intersecting over a journey; it is positioned as a small‑scale theatrical release with limited trade promotion so far.[6]
+        first_seen: 2025-12-13T04:22:40.935Z
+        is_new: true
+      -
+        title: Saali Mohabbat
+        release_date: 2025-12-12
+        genre: Drama,Thriller
+        cast:
+          - Radhika Apte
+          - Divyenndu
+          - Anshumaan Pushkar
+        director: Tisca Chopra
+        description: A dark relationship drama–thriller featuring Radhika Apte and Divyenndu, listed among December 12, 2025 Indian theatrical releases before later moving to OTT.[1][5][7]
+        first_seen: 2025-12-13T04:30:25.039Z
+        is_new: true

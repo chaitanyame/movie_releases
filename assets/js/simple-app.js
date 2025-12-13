@@ -1,6 +1,6 @@
 /**
  * Simple Movie Releases App
- * Displays markdown content beautifully with card-based layout
+ * Displays TOON format content beautifully with card-based layout
  */
 
 'use strict';
@@ -72,182 +72,261 @@ function getCategoryIcon(categoryName) {
 }
 
 /**
- * Parse markdown and convert to beautiful card-based HTML
- * Groups movies by language/category with detailed movie cards
+ * Parse TOON format to structured data
+ * TOON uses 2-space indentation and key: value format
+ * Array items are marked with "  -" at the appropriate indent level
  */
-function parseMarkdown(markdown) {
-    const lines = markdown.split('\n');
-    let html = '';
-    let inCategory = false;
-    let inMovie = false;
+function parseToon(toonText) {
+    const lines = toonText.split('\n');
+    const data = {
+        week_number: '',
+        week_start: '',
+        week_end: '',
+        country: '',
+        last_updated: '',
+        categories: []
+    };
+    
+    let currentCategory = null;
     let currentMovie = null;
+    let inCastArray = false;
     
-    /**
-     * Render a complete movie card with all details
-     */
-    function renderMovieCard() {
-        if (!currentMovie) return '';
+    for (let line of lines) {
+        if (!line.trim()) continue;
         
-        const m = currentMovie;
-        let cardHtml = `<article class="movie-card">`;
+        // Calculate indent level (number of leading spaces / 2)
+        const spaces = line.match(/^ */)[0].length;
+        const level = spaces / 2;
         
-        // Movie header with title
-        cardHtml += `<div class="movie-header">
-            <h3 class="movie-title">${m.title}</h3>`;
-        
-        // Genre badges
-        if (m.genre) {
-            const genres = m.genre.split(',').map(g => g.trim());
-            cardHtml += `<div class="genre-badges">`;
-            for (const genre of genres) {
-                cardHtml += `<span class="genre-badge">${genre}</span>`;
-            }
-            cardHtml += `</div>`;
-        }
-        cardHtml += `</div>`;
-        
-        // Movie body with details
-        cardHtml += `<div class="movie-body">`;
-        
-        // Release date
-        if (m.releaseDate) {
-            cardHtml += `<div class="movie-info-row">
-                <span class="info-icon">📅</span>
-                <span class="info-text">${m.releaseDate}</span>
-            </div>`;
-        }
-        
-        // Cast (actors)
-        if (m.cast) {
-            cardHtml += `<div class="movie-info-row cast-row">
-                <span class="info-icon">⭐</span>
-                <span class="info-label">Cast:</span>
-                <span class="info-text">${m.cast}</span>
-            </div>`;
-        }
-        
-        // Director
-        if (m.director) {
-            cardHtml += `<div class="movie-info-row">
-                <span class="info-icon">🎬</span>
-                <span class="info-label">Director:</span>
-                <span class="info-text">${m.director}</span>
-            </div>`;
-        }
-        
-        // Description/Plot
-        if (m.description) {
-            cardHtml += `<div class="movie-description">
-                <p>${m.description}</p>
-            </div>`;
-        }
-        
-        cardHtml += `</div></article>`;
-        return cardHtml;
-    }
-    
-    for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
         const trimmed = line.trim();
         
-        // Main title
-        if (trimmed.startsWith('# ') && !trimmed.startsWith('## ')) {
-            const title = trimmed.substring(2);
-            html += `<header class="releases-header"><h1 class="releases-title">${title}</h1></header>`;
+        // Cast array items at level 5 (10 spaces)
+        if (level === 5 && inCastArray && currentMovie && trimmed.startsWith('- ')) {
+            const castMember = trimmed.substring(2).trim();
+            if (castMember) {
+                currentMovie.cast.push(castMember);
+            }
+            continue;
         }
-        // Metadata lines (Week, Last Updated, etc.)
-        else if (trimmed.startsWith('**') && trimmed.includes(':') && !inMovie) {
-            const content = trimmed.replace(/\*\*/g, '');
-            html += `<p class="releases-meta">${content}</p>`;
-        }
-        // Horizontal rule
-        else if (trimmed === '---') {
-            if (inMovie) {
-                html += renderMovieCard();
+        
+        // Check if this is an array item marker without value
+        if (trimmed === '-') {
+            if (level === 1) {
+                // New category
+                currentCategory = {
+                    id: '',
+                    name: '',
+                    movies: []
+                };
+                data.categories.push(currentCategory);
                 currentMovie = null;
-                inMovie = false;
+                inCastArray = false;
+            } else if (level === 3 && currentCategory) {
+                // New movie
+                currentMovie = {
+                    title: '',
+                    release_date: '',
+                    genre: '',
+                    cast: [],
+                    director: '',
+                    description: '',
+                    first_seen: '',
+                    is_new: false
+                };
+                currentCategory.movies.push(currentMovie);
+                inCastArray = false;
             }
-            if (inCategory) {
-                html += '</div></section>';
-                inCategory = false;
-            }
+            continue;
         }
-        // Category/Language header
-        else if (trimmed.startsWith('## ')) {
-            if (inMovie) {
-                html += renderMovieCard();
-                currentMovie = null;
-                inMovie = false;
-            }
-            if (inCategory) {
-                html += '</div></section>';
-            }
-            
-            const categoryName = trimmed.substring(3);
-            const icon = getCategoryIcon(categoryName);
-            
-            html += `<section class="language-section">
-                <div class="language-header">
-                    <span class="language-icon">${icon}</span>
-                    <h2 class="language-title">${categoryName}</h2>
-                </div>
-                <div class="movies-grid">`;
-            inCategory = true;
+        
+        // Handle key: value pairs
+        const colonIndex = trimmed.indexOf(':');
+        if (colonIndex === -1) continue;
+        
+        const key = trimmed.substring(0, colonIndex).trim();
+        const value = trimmed.substring(colonIndex + 1).trim();
+        
+        // Root level fields (level 0)
+        if (level === 0) {
+            if (key === 'week_number') data.week_number = value;
+            else if (key === 'week_start') data.week_start = value;
+            else if (key === 'week_end') data.week_end = value;
+            else if (key === 'country') data.country = value;
+            else if (key === 'last_updated') data.last_updated = value;
         }
-        // Movie title
-        else if (trimmed.startsWith('### ')) {
-            if (inMovie) {
-                html += renderMovieCard();
-            }
-            
-            const movieTitle = trimmed.substring(4).replace(/^\d+\.\s*/, '');
-            currentMovie = { title: movieTitle };
-            inMovie = true;
+        // Category level (level 2 - after "  -")
+        else if (level === 2 && currentCategory) {
+            if (key === 'id') currentCategory.id = value;
+            else if (key === 'name') currentCategory.name = value;
+            // "movies:" is just a marker, ignore
         }
-        // Movie details
-        else if (trimmed.startsWith('- **') && currentMovie) {
-            const match = trimmed.match(/- \*\*(.*?)\*\*:\s*(.*)/);
-            if (match) {
-                const label = match[1].toLowerCase();
-                const value = match[2];
-                
-                if (label.includes('date')) {
-                    currentMovie.releaseDate = value;
-                } else if (label.includes('genre')) {
-                    currentMovie.genre = value;
-                } else if (label.includes('cast')) {
-                    currentMovie.cast = value;
-                } else if (label.includes('director')) {
-                    currentMovie.director = value;
-                } else if (label.includes('description') || label.includes('plot')) {
-                    currentMovie.description = value;
-                }
+        // Movie level (level 4 - after "      -")
+        else if (level === 4 && currentMovie) {
+            if (key === 'title') {
+                currentMovie.title = value;
+                inCastArray = false;
+            }
+            else if (key === 'release_date') {
+                currentMovie.release_date = value;
+                inCastArray = false;
+            }
+            else if (key === 'genre') {
+                currentMovie.genre = value;
+                inCastArray = false;
+            }
+            else if (key === 'director') {
+                currentMovie.director = value;
+                inCastArray = false;
+            }
+            else if (key === 'description') {
+                currentMovie.description = value;
+                inCastArray = false;
+            }
+            else if (key === 'first_seen') {
+                currentMovie.first_seen = value;
+                inCastArray = false;
+            }
+            else if (key === 'is_new') {
+                currentMovie.is_new = value === 'true';
+                inCastArray = false;
+            }
+            else if (key === 'cast') {
+                // Start of cast array - next lines at level 5 will be cast members
+                inCastArray = true;
             }
         }
     }
     
-    // Close open tags
-    if (inMovie) {
-        html += renderMovieCard();
+    return data;
+}
+
+/**
+ * Render a complete movie card with all details
+ */
+function renderMovieCard(movie) {
+    if (!movie) return '';
+    
+    const m = movie;
+    let cardHtml = `<article class="movie-card">`;
+    
+    // Movie header with title
+    cardHtml += `<div class="movie-header">
+        <h3 class="movie-title">${m.title || 'Untitled'}</h3>`;
+    
+    // Genre badges
+    if (m.genre) {
+        const genres = Array.isArray(m.genre) ? m.genre : m.genre.split(',').map(g => g.trim());
+        cardHtml += `<div class="genre-badges">`;
+        for (const genre of genres) {
+            cardHtml += `<span class="genre-badge">${genre}</span>`;
+        }
+        cardHtml += `</div>`;
     }
-    if (inCategory) {
-        html += '</div></section>';
+    cardHtml += `</div>`;
+    
+    // Movie body with details
+    cardHtml += `<div class="movie-body">`;
+    
+    // Release date
+    if (m.release_date) {
+        cardHtml += `<div class="movie-info-row">
+            <span class="info-icon">📅</span>
+            <span class="info-text">${m.release_date}</span>
+        </div>`;
+    }
+    
+    // Cast (actors)
+    if (m.cast && m.cast.length > 0) {
+        const castText = Array.isArray(m.cast) ? m.cast.join(', ') : m.cast;
+        cardHtml += `<div class="movie-info-row cast-row">
+            <span class="info-icon">⭐</span>
+            <span class="info-label">Cast:</span>
+            <span class="info-text">${castText}</span>
+        </div>`;
+    }
+    
+    // Director
+    if (m.director) {
+        cardHtml += `<div class="movie-info-row">
+            <span class="info-icon">🎬</span>
+            <span class="info-label">Director:</span>
+            <span class="info-text">${m.director}</span>
+        </div>`;
+    }
+    
+    // Description/Plot
+    if (m.description) {
+        cardHtml += `<div class="movie-description">
+            <p>${m.description}</p>
+        </div>`;
+    }
+    
+    cardHtml += `</div></article>`;
+    return cardHtml;
+}
+
+/**
+ * Convert parsed TOON data to beautiful card-based HTML
+ */
+function dataToHtml(data) {
+    let html = '';
+    
+    // Add header with week information
+    if (data.week_number) {
+        html += `<header class="releases-header">`;
+        html += `<h1 class="releases-title">This Week's Theatrical Releases</h1>`;
+        html += `<p class="releases-meta">Week: ${data.week_number}</p>`;
+        if (data.week_start && data.week_end) {
+            html += `<p class="releases-meta">${data.week_start} to ${data.week_end}</p>`;
+        }
+        html += `</header>`;
+    }
+    
+    // Process categories
+    if (data.categories && Array.isArray(data.categories)) {
+        for (const category of data.categories) {
+            if (!category.movies || category.movies.length === 0) continue;
+            
+            // Category header
+            const icon = getCategoryIcon(category.name);
+            html += `<section class="platform-section">`;
+            html += `<div class="platform-header">`;
+            html += `<span class="platform-icon">${icon}</span>`;
+            html += `<h2 class="platform-name">${category.name}</h2>`;
+            html += `<span class="movie-count">${category.movies.length} ${category.movies.length === 1 ? 'movie' : 'movies'}</span>`;
+            html += `</div>`;
+            html += `<div class="movies-grid">`;
+            
+            // Render movie cards
+            for (const movie of category.movies) {
+                html += renderMovieCard(movie);
+            }
+            
+            html += `</div></section>`;
+        }
+    }
+    
+    // If no content
+    if (html === '' || !data.categories || data.categories.every(cat => !cat.movies || cat.movies.length === 0)) {
+        html = `<div class="empty-state">
+            <p class="empty-icon">🎬</p>
+            <p class="empty-text">No releases found for this week.</p>
+        </div>`;
     }
     
     return html;
 }
 
 /**
- * Load and display releases for current country
+ * Load movie releases for the current country
  */
 async function loadReleases() {
-    console.log('loadReleases called, country:', currentCountry);
     showLoading();
     hideError();
     
     try {
-        const filename = currentCountry === 'us' ? 'RELEASES-US.md' : 'RELEASES.md';
-        console.log('Fetching:', filename);
+        const filename = `data/${currentCountry}/current-week.toon`;
+        console.log('Fetching TOON format:', filename);
         
         const response = await fetch(filename);
         console.log('Response status:', response.status);
@@ -256,11 +335,14 @@ async function loadReleases() {
             throw new Error(`Failed to fetch releases: ${response.status}`);
         }
         
-        const markdown = await response.text();
-        console.log('Markdown length:', markdown.length);
+        const toonText = await response.text();
+        console.log('TOON data loaded, length:', toonText.length);
         
-        const html = parseMarkdown(markdown);
-        console.log('HTML length:', html.length);
+        const data = parseToon(toonText);
+        console.log('Parsed TOON data:', data);
+        
+        const html = dataToHtml(data);
+        console.log('HTML generated, length:', html.length);
         
         if (releasesContent) {
             releasesContent.innerHTML = html;
@@ -268,7 +350,7 @@ async function loadReleases() {
         }
         
         hideLoading();
-        console.log('Loading hidden');
+        console.log('Loading complete');
         
     } catch (error) {
         console.error('Error loading releases:', error);
@@ -304,6 +386,8 @@ function handleCountryChange(event) {
  * Initialize the app
  */
 function init() {
+    console.log('Initializing simple-app.js v4.0 (TOON format support)');
+    
     // Add event listeners to country buttons
     countryButtons.forEach(button => {
         button.addEventListener('click', handleCountryChange);
