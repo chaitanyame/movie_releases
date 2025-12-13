@@ -131,7 +131,7 @@
       "passes": true,
       "steps": [
         "Update shouldArchive() to detect when next-week becomes current-week",
-        "Implement three-week rotation logic (next â†’ current â†’ last â†’ archive)",
+        "Implement three-week rotation logic (next \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 current \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 last \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 archive)",
         "Update archiveWeek() to move files to correct locations",
         "Add transitionWeeks() function to slide window forward",
         "Handle year boundary transitions correctly",
@@ -1126,7 +1126,7 @@
       "name": "Update GitHub Actions workflow for three-week updates",
       "description": "Modify .github/workflows/update-deploy.yml to fetch all three weeks",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Update workflow name from OTT to Movies",
         "Add step to fetch last-week data for US",
@@ -1145,29 +1145,31 @@
       "name": "Create integration tests for three-week data flow",
       "description": "Write end-to-end integration test in tests/integration/three-week-flow.spec.ts",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Create test file tests/integration/three-week-flow.spec.ts",
-        "Test full flow: load current â†’ navigate last â†’ navigate next â†’ back to current",
+        "Test full flow: load current \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 navigate last \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 navigate next \u00c3\u00a2\u00e2\u20ac\u00a0\u00e2\u20ac\u2122 back to current",
         "Verify data consistency across navigation",
         "Test country switching during week navigation",
         "Verify localStorage persistence works",
         "Test error recovery with missing data",
         "Verify week transitions maintain state",
         "Run test and confirm passes"
-      ]
+      ],
+      "test_file": "tests/integration/three-week-flow.spec.ts",
+      "test_passes_after": true
     },
     {
       "id": 70,
       "name": "Run performance audit",
-      "description": "Execute Lighthouse audit in tests/performance/lighthouse.spec.ts and verify score â‰¥ 90",
+      "description": "Execute Lighthouse audit in tests/performance/lighthouse.spec.ts and verify score \u00c3\u00a2\u00e2\u20ac\u00b0\u00c2\u00a5 90",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Update or create tests/performance/lighthouse.spec.ts",
         "Configure Lighthouse audit for all metrics",
         "Run audit on homepage",
-        "Verify Performance score â‰¥ 90",
+        "Verify Performance score \u00c3\u00a2\u00e2\u20ac\u00b0\u00c2\u00a5 90",
         "Verify FCP < 1.0s",
         "Verify LCP < 2.5s",
         "Verify TBT < 200ms",
@@ -1179,7 +1181,7 @@
       "name": "Run accessibility audit",
       "description": "Execute WCAG 2.1 AA audit in tests/features/accessibility.spec.ts",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Update or create tests/features/accessibility.spec.ts",
         "Run axe-core accessibility scan",
@@ -1188,7 +1190,7 @@
         "Test screen reader compatibility",
         "Verify ARIA labels present and correct",
         "Verify color contrast meets standards",
-        "Document accessibility score â‰¥ 90"
+        "Document accessibility score \u00c3\u00a2\u00e2\u20ac\u00b0\u00c2\u00a5 90"
       ]
     },
     {
@@ -1196,7 +1198,7 @@
       "name": "Verify progressive enhancement",
       "description": "Manual test that core content works without JavaScript",
       "priority": "medium",
-      "passes": false,
+      "passes": true,
       "steps": [
         "Disable JavaScript in browser",
         "Load homepage",
