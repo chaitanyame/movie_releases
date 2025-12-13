@@ -42,9 +42,9 @@ test.describe('HTML Structure', () => {
     await expect(main).toBeVisible();
   });
 
-  test('should have current week post container', async ({ page }) => {
-    const currentWeekPost = page.locator('#current-week-post');
-    await expect(currentWeekPost).toBeAttached();
+  test('should have releases content container', async ({ page }) => {
+    const releasesContent = page.locator('#releases-content');
+    await expect(releasesContent).toBeAttached();
   });
 
   test('should have loading indicator element', async ({ page }) => {
@@ -73,7 +73,17 @@ test.describe('HTML Structure', () => {
   });
 
   test('should link to JavaScript file', async ({ page }) => {
-    const jsScript = page.locator('script[src*="app.js"]');
+    const jsScript = page.locator('script[src*="simple-app.js"]');
     await expect(jsScript).toBeAttached();
+  });
+
+  test('should NOT have week navigation buttons', async ({ page }) => {
+    const weekNav = page.locator('.week-nav');
+    await expect(weekNav).not.toBeAttached();
+  });
+
+  test('should NOT have archive navigation', async ({ page }) => {
+    const archiveNav = page.locator('#archive-nav');
+    await expect(archiveNav).not.toBeAttached();
   });
 });

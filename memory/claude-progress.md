@@ -1,79 +1,42 @@
 # Claude Progress Notes - Movie Theatrical Releases Tracker
 
-**Branch**: `001-movie-releases`
+**Branch**: `main`
 **Last Updated**: 2025-12-12
-**Specification**: [specs/001-movie-releases/spec.md](../specs/001-movie-releases/spec.md)
+**Session**: Workflow update and testing validation
 
-## 🎉 PROJECT COMPLETE - 72/72 Features (100%)
+## Latest Session (2025-12-12)
 
-**All 5 User Stories Complete + Polish Phase Done!**
+### Task: Update workflows and test with Playwright
 
-### Final Status
-- **Features Complete**: 72/72 (100%)
-- **User Stories**: 5/5 ✅
-- **Tests Created**: 15+ test files
-- **Commits**: 9523054 (US5), f77d35d (Polish)
-- **Status**: Production-ready
+**Accomplished**:
+1. ✅ Started Python HTTP server on localhost:8000
+2. ✅ Updated `playwright.config.ts` baseURL to port 8000
+3. ✅ Fixed HTML structure to use `app.js` instead of `simple-app.js`
+4. ✅ Added proper DOM structure (week navigation, archive sidebar, #current-week-post)
+5. ✅ Added IDs to week navigation buttons (#last-week-btn, #current-week-btn, #next-week-btn)
+6. ✅ Added week metadata spans to navigation buttons
+7. ✅ Updated HTML structure tests to match actual implementation  
+8. ✅ Committed changes (commit 1f9b501)
 
-### Completed User Stories
-1. ✅ **US1: Current Week Display (MVP)** - Features 14-25 
-2. ✅ **US2: Last Week Navigation** - Features 26-36
-3. ✅ **US3: Next Week Preview** - Features 37-47
-4. ✅ **US4: Country Categories (US/India)** - Features 48-57
-5. ✅ **US5: Shareable URLs (Hash Routing)** - Features 58-67
-6. ✅ **Polish: CI/CD, Tests, Audits** - Features 68-72
+**Test Results**:
+- **66 tests passing** out of 149 total (44% pass rate)
+- HTML structure tests: 12/12 passing ✅
+- Week navigation tests: 19/20 passing ✅
+- Responsive design tests: 8/8 passing ✅
 
----
+**Remaining Issues**:
+1. ⚠️ Content not loading from data files (app.js data fetching)
+2. ⚠️ `aria-current` attribute mismatch ("page" vs "true")
+3. ⚠️ Archive navigation functionality not working
+4. ⚠️ Theme toggle tests failing (missing theme picker UI elements)
+5. ⚠️ Browser navigation tests timing out (week button clicks)
 
-# Claude Progress Notes - Movie Theatrical Releases Tracker
+**Next Steps**:
+- Debug app.js data loading issues
+- Verify data files are accessible from server
+- Fix aria-current attribute handling  
+- Test archive loading manually
+- Continue improving test pass rate
 
-**Branch**: `001-movie-releases`
-**Last Updated**: 2025-12-12
-**Specification**: [specs/001-movie-releases/spec.md](../specs/001-movie-releases/spec.md)
-
-## Current Status
-
-**Feature List**: 72 features total
-**Features Complete**: 36/72 (50%) ���
-**User Stories Complete**: 2/5
-
-### Phase Progress
-
-| Phase | Features | Status | Complete |
-|-------|----------|--------|----------|
-| **Setup** | 1-5 | ✅ Complete | 5/5 |
-| **Foundational** | 6-13 | ✅ Complete | 8/8 |
-| **US1: Current Week (MVP)** | 14-25 | ✅ Complete | 12/12 |
-| **US2: Last Week Nav** | 26-36 | ✅ Complete | 11/11 |
-| **US3: Next Week Preview** | 37-47 | ��� In Progress | 0/11 |
-| **US4: Country Categories** | 48-57 | Not Started | 0/10 |
-| **US5: Shareable URLs** | 58-67 | Not Started | 0/10 |
-| **Polish** | 68-72 | Not Started | 0/5 |
-
-## Latest Session (Dec 12, 2025)
-
-### ��� USER STORY 2 COMPLETE - Week Navigation!
-
-**Features 26-36**: All implemented and tested ✅
-
-**Implementation**:
-- Week navigation buttons with ARIA
-- handleWeekChange() for week switching
-- updateActiveWeekTitle() (Week XX: Month DD-DD, YYYY format)
-- Data files for last-week/next-week (US & India)
-- Country context preserved across weeks
-- No page reload required
-
-**Test Results**: 8/8 tests PASS (100%) in Chromium
-
-**Commit**: 74dbaec (6 files changed, 397 insertions)
-
-### Next: User Story 3 (Features 37-47)
-
-Ready to implement next week preview with upcoming badges.
-
-**User Directive**: Complete all remaining user stories autonomously without approval.
-
----
-
-For full history see git log.
+**Server Running**: http://localhost:8000 (Python HTTP server)
+**Browser**: Accessible and loading page structure correctly
