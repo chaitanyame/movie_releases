@@ -1,6 +1,6 @@
 /**
  * Simple Movie Releases App
- * Displays markdown content beautifully
+ * Displays markdown content beautifully with card-based layout
  */
 
 'use strict';
@@ -18,24 +18,17 @@ let currentCountry = 'india';
  * Show loading indicator
  */
 function showLoading() {
-    if (loadingIndicator) {
-        loadingIndicator.style.display = 'flex';
-    }
-    if (releasesContent) {
-        releasesContent.style.display = 'none';
-    }
+    if (loadingIndicator) loadingIndicator.style.display = 'flex';
+    if (releasesContent) releasesContent.style.display = 'none';
+    if (errorMessage) errorMessage.style.display = 'none';
 }
 
 /**
  * Hide loading indicator
  */
 function hideLoading() {
-    if (loadingIndicator) {
-        loadingIndicator.style.display = 'none';
-    }
-    if (releasesContent) {
-        releasesContent.style.display = 'block';
-    }
+    if (loadingIndicator) loadingIndicator.style.display = 'none';
+    if (releasesContent) releasesContent.style.display = 'block';
 }
 
 /**
@@ -43,91 +36,144 @@ function hideLoading() {
  */
 function showError(message) {
     if (errorMessage) {
-        errorMessage.textContent = message;
+        errorMessage.innerHTML = `<div class="error-content"><span class="error-icon">⚠️</span><p>${message}</p></div>`;
         errorMessage.style.display = 'block';
     }
     hideLoading();
 }
 
 /**
- * Hide error message
+ * Get icon for category
  */
-function hideError() {
-    if (errorMessage) {
-        errorMessage.style.display = 'none';
-    }
+function getCategoryIcon(categoryName) {
+    const name = categoryName.toLowerCase();
+    if (name.includes('hindi') || name.includes('bollywood')) return '🎬';
+    if (name.includes('telugu') || name.includes('tollywood')) return '🌟';
+    if (name.includes('tamil') || name.includes('kollywood')) return '🎭';
+    if (name.includes('malayalam') || name.includes('mollywood')) return '🌴';
+    if (name.includes('kannada') || name.includes('sandalwood')) return '🎪';
+    if (name.includes('marathi')) return '🏛️';
+    if (name.includes('gujarati')) return '🎯';
+    if (name.includes('bengali')) return '📽️';
+    if (name.includes('major') || name.includes('studio')) return '🎬';
+    if (name.includes('independent') || name.includes('limited')) return '🎭';
+    if (name.includes('genre')) return '🎪';
+    if (name.includes('art') || name.includes('specialty')) return '🎨';
+    return '🎥';
 }
 
 /**
- * Parse markdown into beautiful card-based HTML
+ * Get icon for detail label
+ */
+function getDetailIcon(label) {
+    const l = label.toLowerCase();
+    if (l.includes('date')) return '📅';
+    if (l.includes('genre')) return '🎭';
+    if (l.includes('cast')) return '⭐';
+    if (l.includes('director')) return '🎬';
+    if (l.includes('description')) return '📝';
+    return '•';
+}
+
+/**
+ * Parse markdown and convert to beautiful card-based HTML
  */
 function parseMarkdown(markdown) {
     const lines = markdown.split('\n');
     let html = '';
-    let currentLanguageCard = null;
-    let currentMovie = null;
-    let inMovieSection = false;
+    let inCategory = false;
+    let inMovie = false;
+    let movieDetails = [];
+    
+    function renderDetails() {
+        if (movieDetails.length === 0) return '';
+        let detailsHtml = '<div class="movie-details">';
+        for (const d of movieDetails) {
+            const icon = getDetailIcon(d.label);
+            detailsHtml += `<div class="movie-detail">
+                <span class="detail-icon">${icon}</span>
+                <span class="detail-label">${d.label}</span>
+                <span class="detail-value">${d.value}</span>
+            </div>`;
+        }
+        detailsHtml += '</div>';
+        return detailsHtml;
+    }
     
     for (let i = 0; i < lines.length; i++) {
-        const line = lines[i].trim();
+        const line = lines[i];
+        const trimmed = line.trim();
         
-        // Main title (# header)
-        if (line.startsWith('# ')) {
-            html += `<h1 class="page-title">${line.substring(2)}</h1>`;
+        // Main title
+        if (trimmed.startsWith('# ') && !trimmed.startsWith('## ')) {
+            const title = trimmed.substring(2);
+            html += `<header class="releases-header"><h1 class="releases-title">${title}</h1></header>`;
         }
-        // Language/Category headers (## header)
-        else if (line.startsWith('## ')) {
-            // Close previous language card if exists
-            if (currentLanguageCard) {
-                html += '</div></div>'; // Close movies-grid and language-card
-            }
-            
-            const categoryName = line.substring(3);
-            currentLanguageCard = true;
-            html += `
-                <div class="language-card">
-                    <h2 class="language-title">${categoryName}</h2>
-                    <div class="movies-grid">`;
-        }
-        // Movie title (### header)
-        else if (line.startsWith('### ')) {
-            // Close previous movie card if exists
-            if (currentMovie) {
-                html += '</div>'; // Close movie-card
-            }
-            
-            const movieTitle = line.substring(4);
-            currentMovie = true;
-            html += `<div class="movie-card"><h3 class="movie-title">${movieTitle}</h3>`;
-        }
-        // Movie details (bullet points)
-        else if (line.startsWith('- **')) {
-            const match = line.match(/- \*\*(.*?)\*\*:\s*(.*)/);
-            if (match) {
-                const [, label, value] = match;
-                html += `<div class="movie-detail"><span class="detail-label">${label}:</span> <span class="detail-value">${value}</span></div>`;
-            }
-        }
-        // Metadata lines (bold)
-        else if (line.startsWith('**')) {
-            html += `<p class="metadata">${line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>`;
+        // Metadata lines
+        else if (trimmed.startsWith('**') && trimmed.includes(':')) {
+            const content = trimmed.replace(/\*\*/g, '');
+            html += `<p class="releases-meta">${content}</p>`;
         }
         // Horizontal rule
-        else if (line === '---') {
-            html += '<hr class="section-divider">';
+        else if (trimmed === '---') {
+            if (inMovie) {
+                html += renderDetails() + '</article>';
+                movieDetails = [];
+                inMovie = false;
+            }
+            if (inCategory) {
+                html += '</div></section>';
+                inCategory = false;
+            }
         }
-        // Regular text
-        else if (line && !line.startsWith('#')) {
-            // Skip empty lines
+        // Category header
+        else if (trimmed.startsWith('## ')) {
+            if (inMovie) {
+                html += renderDetails() + '</article>';
+                movieDetails = [];
+                inMovie = false;
+            }
+            if (inCategory) {
+                html += '</div></section>';
+            }
+            
+            const categoryName = trimmed.substring(3);
+            const icon = getCategoryIcon(categoryName);
+            
+            html += `<section class="category-section">
+                <div class="category-header">
+                    <span class="category-icon">${icon}</span>
+                    <h2 class="category-title">${categoryName}</h2>
+                </div>
+                <div class="movies-grid">`;
+            inCategory = true;
+        }
+        // Movie title
+        else if (trimmed.startsWith('### ')) {
+            if (inMovie) {
+                html += renderDetails() + '</article>';
+                movieDetails = [];
+            }
+            
+            const movieTitle = trimmed.substring(4).replace(/^\d+\.\s*/, '');
+            html += `<article class="movie-card"><h3 class="movie-title">${movieTitle}</h3>`;
+            inMovie = true;
+        }
+        // Movie details
+        else if (trimmed.startsWith('- **')) {
+            const match = trimmed.match(/- \*\*(.*?)\*\*:\s*(.*)/);
+            if (match) {
+                movieDetails.push({ label: match[1], value: match[2] });
+            }
         }
     }
     
-    // Close any open tags
-    if (currentMovie) {
-        html += '</div>'; // Close last movie-card
+    // Close open tags
+    if (inMovie) {
+        html += renderDetails() + '</article>';
     }
-    if (currentLanguageCard) {
-        html += '</div></div>'; // Close movies-grid and language-card
+    if (inCategory) {
+        html += '</div></section>';
     }
     
     return html;
