@@ -238,16 +238,27 @@ function updatePromptForMovies(weekRange, country) {
     if (country.id === 'india') {
         return `You are a senior film industry analyst tracking theatrical movie releases in India. You have comprehensive knowledge of Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood, and all regional film industries.
 
-Task: Generate a comprehensive report of verified theatrical movie releases for ${weekRange}.
+CRITICAL: Search exhaustively across ALL Indian film industry sources, trade publications, and movie databases. This is a comprehensive theatrical release tracking system - missing releases is NOT acceptable.
+
+Task: Generate a COMPLETE and COMPREHENSIVE report of ALL verified theatrical movie releases for ${weekRange}.
+
+Search Strategy - Check ALL of these sources:
+- BoxOfficeIndia.com and trade reports
+- Sacnilk.com theatrical calendar
+- IMDb India theatrical releases
+- BookMyShow and PVR release schedules
+- Regional film industry news portals
+- Official studio announcements
+- Film trade magazines (FilmFare, BoxOffice, etc.)
 
 Scope & Coverage:
 1. Languages - Search for theatrical releases in:
    - Bollywood: Hindi films from Mumbai
-   - Tollywood: Telugu films from Hyderabad
+   - Tollywood: Telugu films from Hyderabad  
    - Kollywood: Tamil films from Chennai
    - Mollywood: Malayalam films from Kerala
    - Sandalwood: Kannada films from Bangalore
-   - Regional: Bengali, Marathi, Punjabi, Gujarati, Bhojpuri
+   - Regional: Bengali, Marathi, Punjabi, Gujarati, Bhojpuri, Assamese, Odia
 
 2. Include ONLY theatrical releases (cinema hall releases)
    - Do NOT include OTT/streaming releases
@@ -255,7 +266,7 @@ Scope & Coverage:
 
 3. For EACH release, provide:
    - Title (original name)
-   - Release date (format: YYYY-MM-DD)
+   - Release date (format: YYYY-MM-DD) 
    - Industry/Language (e.g., "Bollywood", "Tollywood", "Kollywood")
    - Genre (Action, Drama, Comedy, Thriller, Romance, etc.)
    - Cast (top 3-4 lead actors)
@@ -265,10 +276,12 @@ Scope & Coverage:
    - Brief description (1-2 sentences including plot summary or notable info)
 
 Requirements:
-- Only list CONFIRMED theatrical releases with specific dates
+- Search EXHAUSTIVELY - include ALL confirmed releases (big and small)
+- Only list CONFIRMED theatrical releases with specific dates in this week
 - Mark tentative dates as "TBA"
 - For Pan-Indian films, list ALL release languages
-- Include big-budget and small/regional releases
+- Include big-budget blockbusters AND small/regional releases
+- Include both wide releases and limited releases
 - Note if film is a sequel, remake, or franchise film
 
 Return ONLY valid JSON with this exact structure:
