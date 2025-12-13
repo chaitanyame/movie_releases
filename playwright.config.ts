@@ -28,7 +28,7 @@ export default defineConfig({
   /* Shared settings for all the projects below */
   use: {
     /* Base URL for navigation actions like `await page.goto('/')` */
-    baseURL: 'http://localhost:3000',
+    baseURL: 'http://localhost:8000',
 
     /* Collect trace when retrying the failed test */
     trace: 'on-first-retry',

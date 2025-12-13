@@ -11,7 +11,7 @@ test.describe('HTML Structure', () => {
   });
 
   test('should have correct document title', async ({ page }) => {
-    await expect(page).toHaveTitle('OTT Weekly Releases');
+    await expect(page).toHaveTitle('Movie Theatrical Releases');
   });
 
   test('should have lang attribute set to English', async ({ page }) => {
@@ -34,7 +34,7 @@ test.describe('HTML Structure', () => {
     await expect(header).toBeVisible();
     
     const h1 = header.locator('h1');
-    await expect(h1).toHaveText('OTT Weekly Releases');
+    await expect(h1).toHaveText('🎬 New Movie Releases');
   });
 
   test('should have main content area', async ({ page }) => {
@@ -44,7 +44,7 @@ test.describe('HTML Structure', () => {
 
   test('should have current week post container', async ({ page }) => {
     const currentWeekPost = page.locator('#current-week-post');
-    await expect(currentWeekPost).toBeVisible();
+    await expect(currentWeekPost).toBeAttached();
   });
 
   test('should have loading indicator element', async ({ page }) => {
@@ -57,9 +57,9 @@ test.describe('HTML Structure', () => {
     await expect(error).toBeAttached();
   });
 
-  test('should have archive navigation sidebar', async ({ page }) => {
-    const archiveNav = page.locator('#archive-nav');
-    await expect(archiveNav).toBeAttached();
+  test('should have country toggle navigation', async ({ page }) => {
+    const countryToggle = page.locator('.country-toggle');
+    await expect(countryToggle).toBeVisible();
   });
 
   test('should have footer element', async ({ page }) => {

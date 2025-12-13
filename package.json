@@ -33,6 +33,7 @@
     "static-site"
   ],
   "dependencies": {
+    "@toon-format/toon": "^2.1.0",
     "axios": "^1.13.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",

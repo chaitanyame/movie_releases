@@ -1,0 +1,66 @@
+ReferenceError: beforeEach is not defined
+
+   at build\api-integration.spec.ts:34
+
+  32 | };
+  33 |
+> 34 | beforeEach(() => {
+     | ^
+  35 |   // Reset fetch mock before each test
+  36 |   global.fetch = jest.fn();
+  37 | });
+    at Object.<anonymous> (C:\Users\chait\OneDrive\Documents\Work\movie_releases\tests\build\api-integration.spec.ts:34:1)
+
+ReferenceError: jest is not defined
+
+   at build\caching.spec.ts:10
+
+   8 |
+   9 | // Mock fs module
+> 10 | jest.mock('fs');
+     | ^
+  11 |
+  12 | const { 
+  13 |   loadCache, 
+    at Object.<anonymous> (C:\Users\chait\OneDrive\Documents\Work\movie_releases\tests\build\caching.spec.ts:10:1)
+
+ReferenceError: describe is not defined
+
+   at build\date-utils.spec.ts:14
+
+  12 | } = require('../../scripts/utils/date-utils');
+  13 |
+> 14 | describe('Date Utility Functions', () => {
+     | ^
+  15 |   
+  16 |   describe('getISOWeekNumber', () => {
+  17 |     
+    at Object.<anonymous> (C:\Users\chait\OneDrive\Documents\Work\movie_releases\tests\build\date-utils.spec.ts:14:1)
+
+ReferenceError: describe is not defined
+
+   at build\error-handling.spec.ts:13
+
+  11 | } = require('../../scripts/utils/error-handler');
+  12 |
+> 13 | describe('Error Handling and Retry Logic', () => {
+     | ^
+  14 |   
+  15 |   beforeEach(() => {
+  16 |     jest.clearAllMocks();
+    at Object.<anonymous> (C:\Users\chait\OneDrive\Documents\Work\movie_releases\tests\build\error-handling.spec.ts:13:1)
+
+ReferenceError: jest is not defined
+
+   at build\week-transition.spec.ts:14
+
+  12 |
+  13 | // Mock fs module
+> 14 | jest.mock('fs');
+     | ^
+  15 |
+  16 | // Import week-transition module after mocking
+  17 | const weekTransition = require('../../scripts/utils/week-transition');
+    at Object.<anonymous> (C:\Users\chait\OneDrive\Documents\Work\movie_releases\tests\build\week-transition.spec.ts:14:1)
+
+[1A[2K

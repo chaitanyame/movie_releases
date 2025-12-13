@@ -18,6 +18,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { parseToonResponse, getToonExampleIndia, getToonExampleUS, normalizeMovieArrays } = require('./utils/toon-parser');
 
 // Load .env file if it exists (for local development)
 const envPath = path.join(__dirname, '..', '.env');
@@ -284,49 +285,48 @@ Requirements:
 - Include both wide releases and limited releases
 - Note if film is a sequel, remake, or franchise film
 
-Return ONLY valid JSON with this exact structure:
-{
-  "week_number": "YYYY-WW",
-  "week_start": "YYYY-MM-DD",
-  "week_end": "YYYY-MM-DD",
-  "country": "india",
-  "categories": [
-    {
-      "category_id": "bollywood-hindi",
-      "category_name": "Bollywood (Hindi)",
-      "movies": [
-        {
-          "title": "Movie Title",
-          "release_date": "YYYY-MM-DD",
-          "genre": "Genre",
-          "language": "Hindi",
-          "additional_languages": ["Telugu", "Tamil"],
-          "cast": ["Actor 1", "Actor 2", "Actor 3"],
-          "director": "Director Name",
-          "production": "Production House",
-          "description": "Brief description."
-        }
-      ]
-    },
-    {
-      "category_id": "regional-telugu",
-      "category_name": "Regional (Telugu)",
-      "movies": []
-    },
-    {
-      "category_id": "regional-tamil",
-      "category_name": "Regional (Tamil)",
-      "movies": []
-    },
-    {
-      "category_id": "regional-other",
-      "category_name": "Regional (Other)",
-      "movies": []
-    }
-  ]
-}
+IMPORTANT: Return data in TOON format (Token-Oriented Object Notation), NOT JSON.
+TOON is a compact, YAML-like format that reduces tokens. Use commas for arrays.
 
-If a category has no releases, return empty movies array. Do not omit categories.`;
+Return ONLY valid TOON format with this EXACT structure (indentation matters):
+
+week_number: YYYY-WW
+week_start: YYYY-MM-DD
+week_end: YYYY-MM-DD
+country: india
+categories[4]:
+  - id: bollywood-hindi
+    name: Bollywood (Hindi)
+    movies[N]:
+      - title: Movie Title
+        release_date: 2025-01-15
+        genre: Action
+        language: Hindi
+        additional_languages[2]: Telugu,Tamil
+        cast[3]: Actor 1,Actor 2,Actor 3
+        director: Director Name
+        production: Production House
+        description: Brief description of the movie.
+  - id: regional-telugu
+    name: Regional (Telugu)
+    movies[0]:
+  - id: regional-tamil
+    name: Regional (Tamil)
+    movies[0]:
+  - id: regional-other
+    name: Regional (Other)
+    movies[0]:
+
+TOON Format Rules:
+- Use 2-space indentation for nesting
+- Arrays use [N] notation where N is the count
+- Primitive arrays use comma separation: cast[3]: Actor1,Actor2,Actor3
+- Object arrays use - prefix for each item
+- Empty arrays use [0]: with nothing after
+- No quotes around values, no JSON syntax
+
+If a category has no movies, use movies[0]: (empty array notation).`;
+
     }
 
     // Prompt for US theatrical releases
@@ -363,39 +363,41 @@ Requirements:
 - Include both blockbuster releases and arthouse/indie films
 - Note if film is a sequel, reboot, or franchise film
 
-Return ONLY valid JSON with this exact structure:
-{
-  "week_number": "YYYY-WW",
-  "week_start": "YYYY-MM-DD",
-  "week_end": "YYYY-MM-DD",
-  "country": "us",
-  "categories": [
-    {
-      "category_id": "wide-release",
-      "category_name": "Wide Release",
-      "movies": [
-        {
-          "title": "Movie Title",
-          "release_date": "YYYY-MM-DD",
-          "genre": "Genre",
-          "rating": "PG-13",
-          "studio": "Studio Name",
-          "cast": ["Actor 1", "Actor 2", "Actor 3"],
-          "director": "Director Name",
-          "theater_count": "3,500+ theaters",
-          "description": "Brief description."
-        }
-      ]
-    },
-    {
-      "category_id": "limited-release",
-      "category_name": "Limited Release",
-      "movies": []
-    }
-  ]
-}
+IMPORTANT: Return data in TOON format (Token-Oriented Object Notation), NOT JSON.
+TOON is a compact, YAML-like format that reduces tokens. Use commas for arrays.
 
-If a category has no releases, return empty movies array. Do not omit categories.`;
+Return ONLY valid TOON format with this EXACT structure (indentation matters):
+
+week_number: YYYY-WW
+week_start: YYYY-MM-DD
+week_end: YYYY-MM-DD
+country: us
+categories[2]:
+  - id: wide-release
+    name: Wide Release
+    movies[N]:
+      - title: Movie Title
+        release_date: 2025-01-15
+        genre: Action
+        rating: PG-13
+        studio: Warner Bros
+        cast[3]: Actor 1,Actor 2,Actor 3
+        director: Director Name
+        theater_count: 3500+ theaters
+        description: Brief description of the movie.
+  - id: limited-release
+    name: Limited Release
+    movies[0]:
+
+TOON Format Rules:
+- Use 2-space indentation for nesting
+- Arrays use [N] notation where N is the count
+- Primitive arrays use comma separation: cast[3]: Actor1,Actor2,Actor3
+- Object arrays use - prefix for each item
+- Empty arrays use [0]: with nothing after
+- No quotes around values, no JSON syntax
+
+If a category has no movies, use movies[0]: (empty array notation).`;
 }
 
 // ============================================================================
@@ -915,10 +917,10 @@ Important:
 async function callPerplexityAPI(prompt, country) {
     const apiKey = getApiKey();
     
-    // Enhanced system message for theatrical releases
+    // Enhanced system message for theatrical releases with TOON format
     const systemMessage = country.id === 'india'
-        ? 'You are a senior box office analyst and theatrical release tracker specializing in Indian cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have comprehensive knowledge of theatrical movie releases across all Indian film industries. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT OTT/streaming), and multi-language coverage. Always respond with valid JSON only, no markdown formatting or code blocks.'
-        : 'You are a senior box office analyst and theatrical release tracker for the United States market. You have comprehensive knowledge of Hollywood studio releases, independent films, and limited theatrical releases. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT streaming/VOD), and distinguishing between wide and limited releases. Always respond with valid JSON only, no markdown formatting or code blocks.';
+        ? 'You are a senior box office analyst and theatrical release tracker specializing in Indian cinema (Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood). You have comprehensive knowledge of theatrical movie releases across all Indian film industries. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT OTT/streaming), and multi-language coverage. Always respond in TOON format (Token-Oriented Object Notation) exactly as specified in the prompt. Use pipe (|) for array separators. No JSON, no markdown, no code blocks.'
+        : 'You are a senior box office analyst and theatrical release tracker for the United States market. You have comprehensive knowledge of Hollywood studio releases, independent films, and limited theatrical releases. Your priority is accuracy, comprehensive coverage of all theatrical releases (NOT streaming/VOD), and distinguishing between wide and limited releases. Always respond in TOON format (Token-Oriented Object Notation) exactly as specified in the prompt. Use pipe (|) for array separators. No JSON, no markdown, no code blocks.';
     
     const response = await fetch(PERPLEXITY_API_URL, {
         method: 'POST',
@@ -954,6 +956,8 @@ async function callPerplexityAPI(prompt, country) {
 
 /**
  * Parse the API response and extract release data
+ * Supports both TOON format (preferred) and JSON format (fallback)
+ * 
  * @param {Object} apiResponse - The raw API response
  * @returns {Object} Parsed release data
  */
@@ -964,25 +968,17 @@ function parseResponse(apiResponse) {
         throw new Error('No content in API response');
     }
     
-    // Try to parse as JSON
+    // Use TOON parser with JSON fallback
     let parsed;
     try {
-        parsed = JSON.parse(content);
-    } catch (e) {
-        // Try to extract JSON from markdown code blocks
-        const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
-        if (jsonMatch) {
-            parsed = JSON.parse(jsonMatch[1]);
-        } else {
-            // Try to find JSON object in content
-            const objectMatch = content.match(/\{[\s\S]*\}/);
-            if (objectMatch) {
-                parsed = JSON.parse(objectMatch[0]);
-            } else {
-                throw new Error('Could not parse API response as JSON');
-            }
-        }
+        parsed = parseToonResponse(content);
+    } catch (parseError) {
+        console.error(`   ❌ Parse error: ${parseError.message}`);
+        throw new Error(`Could not parse API response: ${parseError.message}`);
     }
+    
+    // Normalize pipe-separated arrays (cast, additional_languages) to actual arrays
+    parsed = normalizeMovieArrays(parsed);
     
     // Normalize field names: category_id → id, category_name → name
     if (parsed?.categories) {

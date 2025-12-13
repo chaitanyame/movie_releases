@@ -1,9 +1,10 @@
 require('dotenv').config();
 const axios = require('axios');
+const { parseToonResponse, normalizeMovieArrays } = require('../scripts/utils/toon-parser');
 
 async function fetchLiveReleases(country = 'india') {
     const weekRange = 'December 8-14, 2025';
-    const systemMessage = 'You are a senior film industry analyst tracking theatrical movie releases in India. Return ONLY valid JSON.';
+    const systemMessage = 'You are a senior film industry analyst tracking theatrical movie releases in India. Always respond in TOON format (Token-Oriented Object Notation) exactly as specified. Use pipe (|) for array separators. No JSON, no markdown, no code blocks.';
     
     const prompt = `You are a senior film industry analyst tracking theatrical movie releases in India. You have comprehensive knowledge of Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood, and all regional film industries.
 
@@ -29,40 +30,49 @@ Scope & Coverage:
    - Release date (format: YYYY-MM-DD) 
    - Industry/Language
    - Genre
-   - Cast (top 3-4 lead actors)
+   - Cast (top 3-4 lead actors, pipe-separated)
    - Director
    - Production house/studio
    - Brief description
 
-Return ONLY valid JSON with this structure:
-{
-  "week_number": "2025-50",
-  "week_start": "2025-12-08",
-  "week_end": "2025-12-14",
-  "country": "india",
-  "categories": [
-    {
-      "category_id": "bollywood-hindi",
-      "category_name": "Bollywood (Hindi)",
-      "movies": []
-    },
-    {
-      "category_id": "regional-telugu",
-      "category_name": "Regional (Telugu)",
-      "movies": []
-    },
-    {
-      "category_id": "regional-tamil",
-      "category_name": "Regional (Tamil)",
-      "movies": []
-    },
-    {
-      "category_id": "regional-other",
-      "category_name": "Regional (Other)",
-      "movies": []
-    }
-  ]
-}`;
+IMPORTANT: Return data in TOON format (Token-Oriented Object Notation), NOT JSON.
+TOON is a compact, YAML-like format that reduces tokens. Use commas for arrays.
+
+Return ONLY valid TOON format with this EXACT structure (indentation matters):
+
+week_number: 2025-50
+week_start: 2025-12-08
+week_end: 2025-12-14
+country: india
+categories[4]:
+  - id: bollywood-hindi
+    name: Bollywood (Hindi)
+    movies[N]:
+      - title: Movie Title
+        release_date: 2025-12-13
+        genre: Action
+        language: Hindi
+        cast[3]: Actor 1,Actor 2,Actor 3
+        director: Director Name
+        production: Production House
+        description: Brief description.
+  - id: regional-telugu
+    name: Regional (Telugu)
+    movies[0]:
+  - id: regional-tamil
+    name: Regional (Tamil)
+    movies[0]:
+  - id: regional-other
+    name: Regional (Other)
+    movies[0]:
+
+TOON Format Rules:
+- Use 2-space indentation for nesting
+- Arrays use [N] notation where N is the count
+- Primitive arrays use comma separation: cast[3]: Actor1,Actor2,Actor3
+- Object arrays use - prefix for each item
+- Empty arrays use [0]: with nothing after
+- No quotes, no JSON syntax`;
 
     try {
         const response = await axios.post(
@@ -89,7 +99,11 @@ Return ONLY valid JSON with this structure:
             }
         );
         
-        const result = JSON.parse(response.data.choices[0].message.content);
+        // Parse TOON response with JSON fallback
+        let result = parseToonResponse(response.data.choices[0].message.content);
+        
+        // Normalize pipe-separated arrays to actual arrays
+        result = normalizeMovieArrays(result);
         
         // Normalize field names
         if (result?.categories) {

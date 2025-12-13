@@ -104,19 +104,55 @@
         </nav>
     </header>
     
-    <main class="main-content" aria-busy="false">
-        <div id="loading-indicator" class="loading" style="display: none;" role="status" aria-live="polite">
-            <div class="loading-spinner" aria-hidden="true"></div>
-            <p>Loading releases...</p>
-        </div>
-        <div id="error-message" class="error" style="display: none;" role="alert"></div>
-        <article id="releases-content" class="releases-content"></article>
-    </main>
+    <!-- Week Navigation -->
+    <nav class="week-nav" aria-label="Week navigation">
+        <button id="last-week-btn" class="week-btn" data-week="last" aria-label="Go to last week">
+            <span class="week-label">Last Week</span>
+            <span class="week-dates" id="last-week-dates"></span>
+            <span class="week-meta" id="last-week-meta"></span>
+        </button>
+        <button id="current-week-btn" class="week-btn active" data-week="current" aria-label="Current week" aria-current="page">
+            <span class="week-label">Current Week</span>
+            <span class="week-dates" id="current-week-dates"></span>
+            <span class="week-meta" id="current-week-meta"></span>
+        </button>
+        <button id="next-week-btn" class="week-btn" data-week="next" aria-label="Go to next week">
+            <span class="week-label">Next Week</span>
+            <span class="week-dates" id="next-week-dates"></span>
+            <span class="week-meta" id="next-week-meta"></span>
+        </button>
+    </nav>
+    
+    <!-- Back to Current Button (hidden by default) -->
+    <button id="back-to-current" class="back-to-current-btn" style="display: none;" aria-label="Back to current week">
+        <span>← Current Week</span>
+    </button>
+    
+    <div class="container">
+        <!-- Archive Navigation Sidebar -->
+        <aside id="archive-nav" class="archive-sidebar">
+            <h2>Archive</h2>
+            <nav aria-label="Archive navigation">
+                <!-- Archive list will be populated here -->
+            </nav>
+        </aside>
+        
+        <!-- Main Content Area -->
+        <main class="main-content" aria-busy="false">
+            <div id="loading-indicator" class="loading" style="display: none;" role="status" aria-live="polite">
+                <div class="loading-spinner" aria-hidden="true"></div>
+                <p>Loading releases...</p>
+            </div>
+            <div id="error-message" class="error" style="display: none;" role="alert"></div>
+            <h2 id="active-week-title" class="active-week-title">Current Week</h2>
+            <article id="current-week-post" class="post-content"></article>
+        </main>
+    </div>
     
     <footer class="site-footer">
         <p>&copy; 2025 New Movie Releases</p>
     </footer>
     
-    <script src="assets/js/simple-app.js?v=2.1"></script>
+    <script src="assets/js/app.js?v=2.1"></script>
 </body>
 </html>

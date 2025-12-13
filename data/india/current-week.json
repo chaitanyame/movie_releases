@@ -3,13 +3,62 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-13T02:41:28.029Z",
-  "fetch_count": 0,
+  "last_updated": "2025-12-13T03:54:15.587Z",
+  "fetch_count": 1,
   "categories": [
     {
       "id": "bollywood-hindi",
       "name": "Bollywood (Hindi)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Black Rose",
+          "release_date": "2025-12-08",
+          "genre": "Thriller",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Amit Gupta",
+            "Jayshankar Tripathi[1]"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "A Hindi thriller film slated for a theatrical release on December 8, 2025.[1]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
+        },
+        {
+          "title": "Bull",
+          "release_date": "2025-12-08",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Shahid Kapoor[1]"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "An action film starring Shahid Kapoor, scheduled for a theatrical release on December 8, 2025.[1]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Kapil Sharma",
+            "Manjot Singh",
+            "Hira Warina[7][9]"
+          ],
+          "director": "Anukalp Goswami[9]",
+          "production": "Star Studio18,Venus Worldwide Entertainment,Abbas-Mustan Film Production[9]",
+          "description": "Sequel to the comedy hit Kis Kisko Pyaar Karoon, following new comic chaos in the protagonist’s love life; slated for a theatrical release on December 12, 2025.[7][9]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "regional-telugu",
@@ -24,8 +73,49 @@
     {
       "id": "regional-other",
       "name": "Regional (Other)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Rachel",
+          "release_date": "2025-12-12",
+          "genre": "Drama,Thriller",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Baburaj",
+            "Roshan Basheer",
+            "Vineeth Thattil David",
+            "Baiju Ezhupunna"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Malayalam drama-thriller focusing on the life of Rachel and the dark events that unfold around her, blending character study with suspense elements.[6]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
+        },
+        {
+          "title": "Safar Mein Sheher",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Ayush Agarwal",
+            "Nanaki Asthana",
+            "Barkha Bahar"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Independent Hindi drama about personal journeys and urban life, tracking characters as they navigate emotional and social challenges during their travels.[6]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
+        }
+      ]
     }
   ],
-  "fetch_history": []
+  "fetch_history": [
+    {
+      "timestamp": "2025-12-13T03:54:15.587Z",
+      "new_movies_count": 5
+    }
+  ]
 }

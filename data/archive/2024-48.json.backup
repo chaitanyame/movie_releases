@@ -1,0 +1,14 @@
+{
+  "weekId": "2024-48",
+  "weekTitle": "Week 48: November 25 - December 1, 2024",
+  "dateRange": {
+    "start": "2024-11-25",
+    "end": "2024-12-01"
+  },
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test Release"
+    }
+  ]
+}

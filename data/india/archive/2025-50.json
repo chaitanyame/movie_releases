@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-13T02:41:28.029Z",
-  "fetch_count": 9,
+  "last_updated": "2025-12-13T03:54:15.587Z",
+  "fetch_count": 1,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -13,95 +13,49 @@
         {
           "title": "Black Rose",
           "release_date": "2025-12-08",
-          "genre": "Unknown",
+          "genre": "Thriller",
           "language": "Hindi",
-          "additional_languages": [],
+          "additional_languages": {},
           "cast": [
             "Amit Gupta",
-            "Jayshankar Tripathi"
+            "Jayshankar Tripathi[1]"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Limited information available; listed as a theatrical release on December 8.[1]"
+          "director": "TBA",
+          "production": "TBA",
+          "description": "A Hindi thriller film slated for a theatrical release on December 8, 2025.[1]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
         },
         {
           "title": "Bull",
           "release_date": "2025-12-08",
-          "genre": "Unknown",
+          "genre": "Action",
           "language": "Hindi",
-          "additional_languages": [],
+          "additional_languages": {},
           "cast": [
-            "Shahid Kapoor"
+            "Shahid Kapoor[1]"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Action-oriented film starring Shahid Kapoor, confirmed for theatrical release.[1]"
+          "director": "TBA",
+          "production": "TBA",
+          "description": "An action film starring Shahid Kapoor, scheduled for a theatrical release on December 8, 2025.[1]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
         },
         {
           "title": "Kis Kisko Pyaar Karoon 2",
           "release_date": "2025-12-12",
           "genre": "Comedy",
           "language": "Hindi",
-          "additional_languages": [],
+          "additional_languages": {},
           "cast": [
             "Kapil Sharma",
             "Manjot Singh",
-            "Hira Warina",
-            "Tridha Choudhury"
+            "Hira Warina[7][9]"
           ],
-          "director": "Anukalp Goswami",
-          "production": "Star Studio18, Venus Worldwide Entertainment, Abbas-Mustan Film Production",
-          "description": "Sequel to the 2015 comedy, featuring Kapil Sharma in a romantic mix-up plot.[4][7]"
-        },
-        {
-          "title": "Saali Mohabbat",
-          "release_date": "2025-12-12",
-          "genre": "Drama, Thriller",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Radhika Apte",
-            "Divyenndu",
-            "Anshumaan Pushkar",
-            "Anurag Kashyap"
-          ],
-          "director": "Tisca Chopra",
-          "production": "Stage 5 Production, Jio Studios, ZEE5",
-          "description": "A dramatic thriller centered on a housewife who becomes the prime suspect in a double murder, uncovering secrets and betrayals within a close-knit circle.[2][5][7]",
-          "first_seen": "2025-12-13T02:23:32.697Z",
-          "is_new": true
-        },
-        {
-          "title": "The Great Shamsuddin Family",
-          "release_date": "2025-12-12",
-          "genre": "Comedy, Drama",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Kritika Kamra",
-            "Shreya Dhanwanthary",
-            "Sheeba Chaddha",
-            "Farida Jalal"
-          ],
-          "director": "Anusha Rizvi",
-          "production": "Star Studio18, Third World Films Production, Jio Hotstar",
-          "description": "A family comedy-drama about a writer racing against a crucial deadline while navigating the eccentricities and chaos of the Shamsuddin household, blending satire with emotional family moments.",
-          "first_seen": "2025-12-13T02:23:32.697Z",
-          "is_new": true
-        },
-        {
-          "title": "Mrs Falani",
-          "release_date": "2025-12-10",
-          "genre": "Drama",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Swara Bhaskar"
-          ],
-          "director": "TBA",
-          "production": "TBA",
-          "description": "A character-driven Hindi drama headlined by Swara Bhaskar, slated on trade calendars for a December 10, 2025 theatrical opening; further storyline and production details remain to be formally publicised.[1]",
-          "first_seen": "2025-12-13T02:24:26.952Z",
+          "director": "Anukalp Goswami[9]",
+          "production": "Star Studio18,Venus Worldwide Entertainment,Abbas-Mustan Film Production[9]",
+          "description": "Sequel to the comedy hit Kis Kisko Pyaar Karoon, following new comic chaos in the protagonist’s love life; slated for a theatrical release on December 12, 2025.[7][9]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
           "is_new": true
         }
       ]
@@ -123,68 +77,36 @@
         {
           "title": "Rachel",
           "release_date": "2025-12-12",
-          "genre": "Drama",
+          "genre": "Drama,Thriller",
           "language": "Malayalam",
-          "additional_languages": [],
+          "additional_languages": {},
           "cast": [
             "Baburaj",
             "Roshan Basheer",
-            "Vineeth Thattil David"
+            "Vineeth Thattil David",
+            "Baiju Ezhupunna"
           ],
-          "director": "Unknown",
-          "production": "Unknown",
-          "description": "Mollywood drama starring Baburaj, confirmed for theatrical release.[4]"
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Malayalam drama-thriller focusing on the life of Rachel and the dark events that unfold around her, blending character study with suspense elements.[6]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
+          "is_new": true
         },
         {
           "title": "Safar Mein Sheher",
           "release_date": "2025-12-12",
           "genre": "Drama",
           "language": "Hindi",
-          "additional_languages": [],
+          "additional_languages": {},
           "cast": [
             "Ayush Agarwal",
             "Nanaki Asthana",
-            "Barkha Bahar",
-            "Rajesh Balwani"
+            "Barkha Bahar"
           ],
           "director": "TBA",
           "production": "TBA",
-          "description": "An independent drama listed for India-wide theatrical release on December 12, 2025, following characters whose lives intersect during a journey; further official details remain limited.[8]",
-          "first_seen": "2025-12-13T02:24:26.952Z",
-          "is_new": true
-        },
-        {
-          "title": "Mowgli",
-          "release_date": "2025-12-13",
-          "genre": "Adventure",
-          "language": "Telugu",
-          "additional_languages": [],
-          "cast": [
-            "Bandi Saroj Kumar",
-            "Roshan Kanakala"
-          ],
-          "director": "",
-          "production": "",
-          "description": "Tollywood adventure film.",
-          "first_seen": "2025-12-13T02:25:40.356Z",
-          "is_new": true
-        },
-        {
-          "title": "Kis Kisko Pyaar Karoon 2",
-          "release_date": "2025-12-12",
-          "genre": "Comedy",
-          "language": "Hindi",
-          "additional_languages": [],
-          "cast": [
-            "Kapil Sharma",
-            "Manjot Singh",
-            "Hira Warina",
-            "Tridha Choudhury"
-          ],
-          "director": "Anukalp Goswami",
-          "production": "Star Studio18, Venus Worldwide Entertainment, Abbas-Mustan Film Production",
-          "description": "Comedy sequel featuring Kapil Sharma in a lead role.",
-          "first_seen": "2025-12-13T02:25:40.356Z",
+          "description": "Independent Hindi drama about personal journeys and urban life, tracking characters as they navigate emotional and social challenges during their travels.[6]",
+          "first_seen": "2025-12-13T03:54:15.587Z",
           "is_new": true
         }
       ]
@@ -192,40 +114,8 @@
   ],
   "fetch_history": [
     {
-      "timestamp": "2025-12-13T02:23:32.697Z",
-      "new_movies_count": 2
-    },
-    {
-      "timestamp": "2025-12-13T02:24:26.952Z",
-      "new_movies_count": 2
-    },
-    {
-      "timestamp": "2025-12-13T02:25:05.934Z",
-      "new_movies_count": 0
-    },
-    {
-      "timestamp": "2025-12-13T02:25:40.356Z",
-      "new_movies_count": 2
-    },
-    {
-      "timestamp": "2025-12-13T02:26:24.248Z",
-      "new_movies_count": 0
-    },
-    {
-      "timestamp": "2025-12-13T02:27:00.580Z",
-      "new_movies_count": 0
-    },
-    {
-      "timestamp": "2025-12-13T02:27:30.097Z",
-      "new_movies_count": 0
-    },
-    {
-      "timestamp": "2025-12-13T02:28:20.070Z",
-      "new_movies_count": 0
-    },
-    {
-      "timestamp": "2025-12-13T02:41:28.029Z",
-      "new_movies_count": 0
+      "timestamp": "2025-12-13T03:54:15.587Z",
+      "new_movies_count": 5
     }
   ]
 }
