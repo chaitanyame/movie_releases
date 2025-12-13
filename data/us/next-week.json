@@ -1,219 +1,99 @@
 {
-  "week_number": 51,
+  "week_number": "2025-51",
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
   "categories": [
     {
-      "category_id": "wide-release",
-      "category_name": "Wide Release",
+      "id": "wide-release",
+      "name": "Wide Release",
       "movies": [
         {
-          "title": "Anaconda",
-          "release_date": "2025-12-25",
-          "genre": "Comedy/Horror",
-          "rating": "R",
-          "studio": "Sony Pictures Releasing",
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Action, Adventure, Fantasy",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
           "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Sigourney Weaver",
+            "Stephen Lang"
           ],
-          "director": "Tom Gormican",
-          "theater_count": "3,000+ theaters",
-          "description": "A modern comedy-horror remake of the Anaconda franchise; studio-listed as a wide December 25, 2025 theatrical release."
+          "director": "James Cameron",
+          "theater_count": "4,000+ theaters",
+          "description": "The third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront new threats on Pandora in James Cameron's epic sci-fi saga."
         },
         {
           "title": "The SpongeBob Movie: Search for SquarePants",
-          "release_date": "2025-12-26",
-          "genre": "Animation/Family",
+          "release_date": "2025-12-19",
+          "genre": "Animation, Adventure, Comedy",
           "rating": "PG",
-          "studio": "Paramount Pictures / Nickelodeon Movies",
+          "studio": "Paramount Pictures",
           "cast": [
             "Tom Kenny",
-            "Bill Fagerbakke",
-            "Rodger Bumpass"
+            "Rodger Bumpass",
+            "Bill Fagerbakke"
           ],
-          "director": "TBA",
-          "theater_count": "3,000+ theaters",
-          "description": "New installment in the SpongeBob theatrical franchise opening in wide release over the December holiday window."
+          "director": "Derek Drymon",
+          "theater_count": "3,800+ theaters",
+          "description": "SpongeBob and friends embark on a heroic journey through Bikini Bottom and the underworld to save Gary and break a curse in this animated family adventure."
         },
         {
-          "title": "Champion",
-          "release_date": "2025-12-25",
-          "genre": "Drama/Sports",
-          "rating": "PG-13",
-          "studio": "TBA",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "2,000-3,000 theaters",
-          "description": "A sports drama scheduled for a wide theatrical release on December 25, 2025 (studio listings indicate wide release)."
-        },
-        {
-          "title": "45",
-          "release_date": "2025-12-25",
-          "genre": "Drama",
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
           "rating": "R",
-          "studio": "TBA",
+          "studio": "Warner Bros.",
           "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar"
           ],
-          "director": "TBA",
-          "theater_count": "1,500-2,500 theaters",
-          "description": "Adult drama slated for a wide Christmas Day release in U.S. theaters per listings."
+          "director": "Paul Feig",
+          "theater_count": "2,500+ theaters",
+          "description": "A tense psychological thriller adaptation where a housemaid uncovers dark secrets in a wealthy family's home, starring Sydney Sweeney and Amanda Seyfried."
         }
       ]
     },
     {
-      "category_id": "limited-release",
-      "category_name": "Limited Release",
+      "id": "limited-release",
+      "name": "Limited Release",
       "movies": [
         {
-          "title": "Goodbye June",
-          "release_date": "2025-12-24",
+          "title": "David",
+          "release_date": "2025-12-19",
           "genre": "Drama",
-          "rating": "NR",
-          "studio": "Netflix (theatrical limited)",
+          "rating": "PG",
+          "studio": "Angel Studios",
           "cast": [
-            "Kate Winslet",
-            "TBA",
-            "TBA"
+            "Jim Caviezel"
           ],
-          "director": "Kate Winslet",
-          "theater_count": "Limited (NY/LA)",
-          "description": "Drama directed by and starring Kate Winslet with a limited theatrical engagement ahead of streaming distribution."
+          "director": "Nick Hahn",
+          "theater_count": "500-1,000 theaters",
+          "description": "A shepherd faces divine challenges and follows a heavenly light in this faith-based Christmas drama celebrating the holiday season."
         },
         {
-          "title": "Iron Lung",
-          "release_date": "2025-12-26",
-          "genre": "Horror",
-          "rating": "R",
-          "studio": "Self-released / Indie",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "Limited (venue-specific)",
-          "description": "Indie horror originating from festival playboarding for a limited theatrical run."
+          "title": "AMC Screen Unseen: December 15",
+          "release_date": "2025-12-15",
+          "genre": "Unknown",
+          "rating": "NR",
+          "studio": "AMC Theatres",
+          "cast": [],
+          "director": "",
+          "theater_count": "50-100 theaters",
+          "description": "AMC's mystery screening event where audiences discover the film only after purchase, a platform-style limited release."
         },
         {
-          "title": "The Plague",
-          "release_date": "TBA",
-          "genre": "Drama/Thriller",
+          "title": "The Royal Ballet: The Nutcracker",
+          "release_date": "2025-12-21",
+          "genre": "Performance",
           "rating": "NR",
-          "studio": "Independent Film Company",
-          "cast": [
-            "Joel Edgerton",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "Limited (NY/LA)",
-          "description": "Festival-title listed as a limited theatrical release with wider plans uncertain; date marked TBA where unconfirmed."
-        },
-        {
-          "title": "Magellan",
-          "release_date": "TBA",
-          "genre": "Foreign/Adventure/Drama",
-          "rating": "NR",
-          "studio": "Janus Films",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "LA/NY (Janus Films limited)",
-          "description": "Art-house foreign release scheduled for New York/Los Angeles platform openings via Janus Films; date TBA."
-        },
-        {
-          "title": "Obex",
-          "release_date": "TBA",
-          "genre": "Horror/Fantasy/Sci‑Fi",
-          "rating": "NR",
-          "studio": "Oscilloscope Laboratories",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "Limited (Oscilloscope pattern)",
-          "description": "Genre title slated for a specialty theatrical rollout from Oscilloscope; specific theatrical date unconfirmed (TBA)."
-        }
-      ]
-    },
-    {
-      "category_id": "platform-release",
-      "category_name": "Platform Release",
-      "movies": [
-        {
-          "title": "Dead Man's Wire",
-          "release_date": "2026-01-16",
-          "genre": "Drama",
-          "rating": "NR",
-          "studio": "Row K Entertainment",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "Gus Van Sant",
-          "theater_count": "50-200 theaters (platform to wider)",
-          "description": "Gus Van Sant drama initially opening on a platform (festival-to-theaters) with a Jan 16, 2026 wider window reported by some listings; marked as platform."
-        },
-        {
-          "title": "Jimpa",
-          "release_date": "TBA",
-          "genre": "Drama",
-          "rating": "NR",
-          "studio": "Kino Lorber",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "10-50 theaters (NY/LA start)",
-          "description": "Kino Lorber specialty title planned for NY/LA platform openings; theatrical dates unconfirmed (TBA)."
-        },
-        {
-          "title": "Mimics",
-          "release_date": "TBA",
-          "genre": "Horror/Comedy",
-          "rating": "NR",
-          "studio": "Panoramic Pictures",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "10-100 theaters",
-          "description": "Horror-comedy scheduled for platform rollout according to trade listings; exact dates pending."
-        },
-        {
-          "title": "Peaky Blinders: The Immortal Man",
-          "release_date": "TBA",
-          "genre": "Drama",
-          "rating": "NR",
-          "studio": "Netflix (theatrical limited/platform)",
-          "cast": [
-            "TBA",
-            "TBA",
-            "TBA"
-          ],
-          "director": "TBA",
-          "theater_count": "Platform/limited theaters",
-          "description": "Limited theatrical/platform screenings noted ahead of Netflix release; theatrical dates vary by market."
+          "studio": "Royal Ballet",
+          "cast": [],
+          "director": "",
+          "theater_count": "100-300 theaters",
+          "description": "Live recording of the classic Royal Ballet production of The Nutcracker, a holiday tradition screened in select theaters nationwide."
         }
       ]
     }
