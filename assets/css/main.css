@@ -18,6 +18,14 @@
     --color-border: #334155;
     --color-border-subtle: #1e293b;
     
+    /* Aliased colors for components */
+    --primary-color: #818cf8;
+    --accent-color: #ec4899;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --card-background: rgba(30, 41, 59, 0.8);
+    --card-border: rgba(51, 65, 85, 0.6);
+    
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     --gradient-accent: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
@@ -1086,6 +1094,15 @@ body {
     --color-text-muted: #94a3b8;
     --color-border: #e2e8f0;
     --color-border-subtle: #f1f5f9;
+    
+    /* Aliased colors for components - Light theme */
+    --primary-color: #6366f1;
+    --accent-color: #ec4899;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --card-background: rgba(255, 255, 255, 0.95);
+    --card-border: rgba(226, 232, 240, 0.8);
+    
     --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
     --gradient-accent: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
     --gradient-surface: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
