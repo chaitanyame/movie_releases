@@ -34,7 +34,7 @@ if (fs.existsSync(envPath)) {
 
 // Configuration
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
-const MODEL = 'sonar-pro'; // Use pro model for better search results
+const MODEL = 'sonar'; // Use small model for cost reduction
 
 // ============================================================================
 // MOVIE RELEASES CONFIGURATION - Theatrical Distribution Categories
