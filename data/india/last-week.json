@@ -1,0 +1,28 @@
+{
+  "week_number": "2025-49",
+  "week_start": "2025-12-02",
+  "week_end": "2025-12-08",
+  "country": "india",
+  "categories": [
+    {
+      "id": "bollywood",
+      "name": "Bollywood (Hindi)",
+      "movies": []
+    },
+    {
+      "id": "tollywood-telugu",
+      "name": "Tollywood (Telugu)",
+      "movies": []
+    },
+    {
+      "id": "kollywood-tamil",
+      "name": "Kollywood (Tamil)",
+      "movies": []
+    },
+    {
+      "id": "mollywood-malayalam",
+      "name": "Mollywood (Malayalam)",
+      "movies": []
+    }
+  ]
+}

@@ -35,7 +35,79 @@ if (fs.existsSync(envPath)) {
 const PERPLEXITY_API_URL = 'https://api.perplexity.ai/chat/completions';
 const MODEL = 'sonar';
 
-// Country configurations
+// ============================================================================
+// MOVIE RELEASES CONFIGURATION - Theatrical Distribution Categories
+// ============================================================================
+
+/**
+ * US Distribution Categories
+ * Wide Release: 1000+ theaters nationwide
+ * Limited Release: <1000 theaters, major cities
+ */
+const US_CATEGORIES = [
+  {
+    category_id: 'wide-release',
+    category_name: 'Wide Release',
+    description: '1000+ theaters nationwide'
+  },
+  {
+    category_id: 'limited-release',
+    category_name: 'Limited Release',
+    description: 'Select cities, <1000 theaters'
+  }
+];
+
+/**
+ * India Distribution Categories
+ * Organized by film industry/language
+ */
+const INDIA_CATEGORIES = [
+  {
+    category_id: 'bollywood-hindi',
+    category_name: 'Bollywood (Hindi)',
+    description: 'Hindi-language films from Mumbai'
+  },
+  {
+    category_id: 'regional-telugu',
+    category_name: 'Regional (Telugu)',
+    description: 'Tollywood - Telugu cinema'
+  },
+  {
+    category_id: 'regional-tamil',
+    category_name: 'Regional (Tamil)',
+    description: 'Kollywood - Tamil cinema'
+  },
+  {
+    category_id: 'regional-other',
+    category_name: 'Regional (Other)',
+    description: 'Malayalam, Kannada, Bengali, Marathi, etc.'
+  }
+];
+
+/**
+ * Country Configuration with Theatrical Distribution
+ */
+const COUNTRY_CONFIG = {
+  us: {
+    id: 'us',
+    name: 'United States',
+    flag: '🇺🇸',
+    categories: US_CATEGORIES,
+    timezone: 'America/New_York',
+    rating_system: 'MPAA' // G, PG, PG-13, R, NC-17
+  },
+  india: {
+    id: 'india',
+    name: 'India',
+    flag: '🇮🇳',
+    categories: INDIA_CATEGORIES,
+    timezone: 'Asia/Kolkata',
+    rating_system: 'CBFC' // U, U/A, A, S
+  }
+};
+
+// Legacy COUNTRIES object for backward compatibility (OTT platforms)
+// TODO: Remove after full migration to theatrical releases
 const COUNTRIES = {
     us: {
         id: 'us',
@@ -149,6 +221,262 @@ function formatDateRange(start, end) {
     const endStr = end.toLocaleDateString('en-US', options);
     return `${startStr} - ${endStr}, ${year}`;
 }
+
+// ============================================================================
+// Prompt Generation - Theatrical Movie Releases
+// ============================================================================
+
+/**
+ * Build prompt for theatrical movie releases (not OTT/streaming)
+ * Feature 17: Perplexity API prompt for current week theatrical releases
+ * 
+ * @param {string} weekRange - Date range string (e.g., "January 13-19, 2025")
+ * @param {object} country - Country config object with id, categories, etc.
+ * @returns {string} - Formatted prompt for Perplexity API
+ */
+function updatePromptForMovies(weekRange, country) {
+    if (country.id === 'india') {
+        return `You are a senior film industry analyst tracking theatrical movie releases in India. You have comprehensive knowledge of Bollywood, Tollywood, Kollywood, Mollywood, Sandalwood, and all regional film industries.
+
+Task: Generate a comprehensive report of verified theatrical movie releases for ${weekRange}.
+
+Scope & Coverage:
+1. Languages - Search for theatrical releases in:
+   - Bollywood: Hindi films from Mumbai
+   - Tollywood: Telugu films from Hyderabad
+   - Kollywood: Tamil films from Chennai
+   - Mollywood: Malayalam films from Kerala
+   - Sandalwood: Kannada films from Bangalore
+   - Regional: Bengali, Marathi, Punjabi, Gujarati, Bhojpuri
+
+2. Include ONLY theatrical releases (cinema hall releases)
+   - Do NOT include OTT/streaming releases
+   - Do NOT include direct-to-digital releases
+
+3. For EACH release, provide:
+   - Title (original name)
+   - Release date (format: YYYY-MM-DD)
+   - Industry/Language (e.g., "Bollywood", "Tollywood", "Kollywood")
+   - Genre (Action, Drama, Comedy, Thriller, Romance, etc.)
+   - Cast (top 3-4 lead actors)
+   - Director
+   - Production house/studio
+   - Multi-language info (if releasing in multiple languages simultaneously, list all)
+   - Brief description (1-2 sentences including plot summary or notable info)
+
+Requirements:
+- Only list CONFIRMED theatrical releases with specific dates
+- Mark tentative dates as "TBA"
+- For Pan-Indian films, list ALL release languages
+- Include big-budget and small/regional releases
+- Note if film is a sequel, remake, or franchise film
+
+Return ONLY valid JSON with this exact structure:
+{
+  "week_number": "YYYY-WW",
+  "week_start": "YYYY-MM-DD",
+  "week_end": "YYYY-MM-DD",
+  "country": "india",
+  "categories": [
+    {
+      "category_id": "bollywood-hindi",
+      "category_name": "Bollywood (Hindi)",
+      "movies": [
+        {
+          "title": "Movie Title",
+          "release_date": "YYYY-MM-DD",
+          "genre": "Genre",
+          "language": "Hindi",
+          "additional_languages": ["Telugu", "Tamil"],
+          "cast": ["Actor 1", "Actor 2", "Actor 3"],
+          "director": "Director Name",
+          "production": "Production House",
+          "description": "Brief description."
+        }
+      ]
+    },
+    {
+      "category_id": "regional-telugu",
+      "category_name": "Regional (Telugu)",
+      "movies": []
+    },
+    {
+      "category_id": "regional-tamil",
+      "category_name": "Regional (Tamil)",
+      "movies": []
+    },
+    {
+      "category_id": "regional-other",
+      "category_name": "Regional (Other)",
+      "movies": []
+    }
+  ]
+}
+
+If a category has no releases, return empty movies array. Do not omit categories.`;
+    }
+
+    // Prompt for US theatrical releases
+    return `You are a senior box office analyst tracking theatrical movie releases in the United States. You have comprehensive knowledge of Hollywood studio releases, independent films, and limited releases.
+
+Task: Generate a comprehensive report of verified theatrical movie releases for **${weekRange}**.
+
+Scope & Coverage:
+1. Distribution Types:
+   - **Wide Release:** Opening in 1,000+ theaters nationwide
+   - **Limited Release:** Opening in fewer than 1,000 theaters (NY/LA platform releases, specialty releases)
+   - **Platform Release:** Opening in select cities (typically 10-50 theaters)
+
+2. Include ONLY theatrical releases (cinema releases)
+   - Do NOT include streaming/VOD releases
+   - Do NOT include direct-to-video releases
+
+3. For EACH release, provide:
+   - Title
+   - Release date (format: YYYY-MM-DD)
+   - Distribution type (Wide, Limited, or Platform)
+   - Studio/Distributor
+   - Genre (Action, Drama, Comedy, Thriller, Horror, Sci-Fi, etc.)
+   - MPAA Rating (G, PG, PG-13, R, NC-17, or NR if not rated)
+   - Cast (top 3-4 lead actors)
+   - Director
+   - Theater count estimate (e.g., "3,500+ theaters", "500-1,000 theaters", "50-100 theaters")
+   - Brief description (1-2 sentences including plot summary, franchise info, or notable details)
+
+Requirements:
+- Only list CONFIRMED theatrical releases with specific dates
+- Mark tentative dates as "TBA"
+- Distinguish between wide releases (major studio releases) and limited/platform releases
+- Include both blockbuster releases and arthouse/indie films
+- Note if film is a sequel, reboot, or franchise film
+
+Return ONLY valid JSON with this exact structure:
+{
+  "week_number": "YYYY-WW",
+  "week_start": "YYYY-MM-DD",
+  "week_end": "YYYY-MM-DD",
+  "country": "us",
+  "categories": [
+    {
+      "category_id": "wide-release",
+      "category_name": "Wide Release",
+      "movies": [
+        {
+          "title": "Movie Title",
+          "release_date": "YYYY-MM-DD",
+          "genre": "Genre",
+          "rating": "PG-13",
+          "studio": "Studio Name",
+          "cast": ["Actor 1", "Actor 2", "Actor 3"],
+          "director": "Director Name",
+          "theater_count": "3,500+ theaters",
+          "description": "Brief description."
+        }
+      ]
+    },
+    {
+      "category_id": "limited-release",
+      "category_name": "Limited Release",
+      "movies": []
+    }
+  ]
+}
+
+If a category has no releases, return empty movies array. Do not omit categories.`;
+}
+
+/**
+ * Fetch week data for theatrical movie releases
+ * Feature 18: Fetch current week theatrical releases from Perplexity API
+ * 
+ * @param {string} country - Country ID ('us' or 'india')
+ * @param {string} weekType - Week type ('current-week', 'last-week', 'next-week')
+ * @returns {Promise<object>} - Parsed and validated week data
+ */
+async function fetchWeekData(country, weekType = 'current-week') {
+    const {getCurrentWeekInfo, getPreviousWeekInfo, getNextWeekInfo} = require('./utils/date-utils');
+    const {validateWeekData} = require('./utils/validate-json');
+    const fs = require('fs').promises;
+    const path = require('path');
+    
+    // Get week info based on weekType
+    let weekInfo;
+    if (weekType === 'current-week') {
+        weekInfo = getCurrentWeekInfo();
+    } else if (weekType === 'last-week') {
+        weekInfo = getPreviousWeekInfo();
+    } else if (weekType === 'next-week') {
+        weekInfo = getNextWeekInfo();
+    } else {
+        throw new Error(`Invalid weekType: ${weekType}. Must be 'current-week', 'last-week', or 'next-week'`);
+    }
+    
+    // Get country config
+    const countryConfig = COUNTRY_CONFIG[country];
+    if (!countryConfig) {
+        throw new Error(`Invalid country: ${country}. Must be 'us' or 'india'`);
+    }
+    
+    // Format week range for prompt
+    const weekRange = `${weekInfo.week_start_str} - ${weekInfo.week_end_str}`;
+    
+    console.log(`Fetching ${weekType} theatrical releases for ${countryConfig.name}...`);
+    console.log(`Week: ${weekInfo.week_number} (${weekRange})`);
+    
+    try {
+        // 1. Build prompt using updatePromptForMovies
+        const prompt = updatePromptForMovies(weekRange, countryConfig);
+        
+        // 2. Call Perplexity API
+        console.log('Calling Perplexity API...');
+        const apiResponse = await callPerplexityAPI(prompt, countryConfig);
+        
+        // 3. Parse response
+        console.log('Parsing API response...');
+        const parsedData = parseResponse(apiResponse);
+        
+        // 4. Ensure data structure matches schema
+        const weekData = {
+            week_number: weekInfo.week_number,
+            week_start: weekInfo.week_start,
+            week_end: weekInfo.week_end,
+            country: country,
+            categories: parsedData.categories || []
+        };
+        
+        // 5. Validate against week-data-schema.json
+        console.log('Validating data against schema...');
+        const schemaPath = path.join(__dirname, '..', 'specs', '001-movie-releases', 'contracts', 'week-data-schema.json');
+        const validation = await validateWeekData(weekData, schemaPath);
+        
+        if (!validation.valid) {
+            console.error('Validation errors:', validation.errors);
+            throw new Error(`Week data validation failed: ${validation.errors.join(', ')}`);
+        }
+        
+        console.log('✅ Data validated successfully');
+        
+        // 6. Save to data/{country}/{weekType}.json
+        const dataDir = path.join(__dirname, '..', 'data', country);
+        await fs.mkdir(dataDir, {recursive: true});
+        
+        const dataFilePath = path.join(dataDir, `${weekType}.json`);
+        await fs.writeFile(dataFilePath, JSON.stringify(weekData, null, 2), 'utf8');
+        
+        console.log(`✅ Data saved to ${dataFilePath}`);
+        
+        // 7. Return parsed and validated data
+        return weekData;
+        
+    } catch (error) {
+        console.error(`Error fetching ${weekType} data for ${country}:`, error.message);
+        throw error;
+    }
+}
+
+// ============================================================================
+// Prompt Generation - OTT Releases (Legacy/Original Function)
+// ============================================================================
 
 /**
  * Build the prompt for Perplexity API
@@ -535,9 +863,12 @@ if (require.main === module) {
 // Export for testing
 module.exports = {
     COUNTRIES,
+    COUNTRY_CONFIG,
     getISOWeekNumber,
     getWeekDateRange,
     formatDateRange,
+    updatePromptForMovies, // Feature 17: Theatrical releases prompt
+    fetchWeekData, // Feature 18: Fetch week data for theatrical releases
     buildPrompt,
     callPerplexityAPI,
     parseResponse,

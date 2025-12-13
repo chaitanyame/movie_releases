@@ -159,6 +159,103 @@ function getWeekTitle(date) {
   return `Week ${weekNum}: ${dateRange}`;
 }
 
+/**
+ * Get complete week information for the previous week.
+ * 
+ * @param {Date} [date=new Date()] - Reference date (defaults to now)
+ * @returns {{week_id: string, week_start: string, week_end: string, week_range: string, week_number: number, year: number, week_title: string}} Complete week info object
+ */
+function getPreviousWeekInfo(date = new Date()) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  // Go back 7 days to get to previous week
+  d.setUTCDate(d.getUTCDate() - 7);
+  
+  const { start, end } = getWeekDateRange(d);
+  const week_id = getWeekId(d);
+  const week_number = getISOWeekNumber(d);
+  const week_range = formatDateRange(start, end);
+  const week_title = getWeekTitle(d);
+  
+  // Get the year from Thursday of the week (ISO week-year)
+  const thursday = new Date(start);
+  thursday.setUTCDate(start.getUTCDate() + 3);
+  const year = thursday.getUTCFullYear();
+  
+  return {
+    week_id,
+    week_start: formatDate(start),
+    week_end: formatDate(end),
+    week_range,
+    week_number,
+    year,
+    week_title
+  };
+}
+
+/**
+ * Get complete week information for the current week.
+ * 
+ * @param {Date} [date=new Date()] - Reference date (defaults to now)
+ * @returns {{week_id: string, week_start: string, week_end: string, week_range: string, week_number: number, year: number, week_title: string}} Complete week info object
+ */
+function getCurrentWeekInfo(date = new Date()) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  
+  const { start, end } = getWeekDateRange(d);
+  const week_id = getWeekId(d);
+  const week_number = getISOWeekNumber(d);
+  const week_range = formatDateRange(start, end);
+  const week_title = getWeekTitle(d);
+  
+  // Get the year from Thursday of the week (ISO week-year)
+  const thursday = new Date(start);
+  thursday.setUTCDate(start.getUTCDate() + 3);
+  const year = thursday.getUTCFullYear();
+  
+  return {
+    week_id,
+    week_start: formatDate(start),
+    week_end: formatDate(end),
+    week_range,
+    week_number,
+    year,
+    week_title
+  };
+}
+
+/**
+ * Get complete week information for the next week.
+ * 
+ * @param {Date} [date=new Date()] - Reference date (defaults to now)
+ * @returns {{week_id: string, week_start: string, week_end: string, week_range: string, week_number: number, year: number, week_title: string}} Complete week info object
+ */
+function getNextWeekInfo(date = new Date()) {
+  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+  // Go forward 7 days to get to next week
+  d.setUTCDate(d.getUTCDate() + 7);
+  
+  const { start, end } = getWeekDateRange(d);
+  const week_id = getWeekId(d);
+  const week_number = getISOWeekNumber(d);
+  const week_range = formatDateRange(start, end);
+  const week_title = getWeekTitle(d);
+  
+  // Get the year from Thursday of the week (ISO week-year)
+  const thursday = new Date(start);
+  thursday.setUTCDate(start.getUTCDate() + 3);
+  const year = thursday.getUTCFullYear();
+  
+  return {
+    week_id,
+    week_start: formatDate(start),
+    week_end: formatDate(end),
+    week_range,
+    week_number,
+    year,
+    week_title
+  };
+}
+
 module.exports = {
   getISOWeekNumber,
   getWeekDateRange,
@@ -166,5 +263,8 @@ module.exports = {
   formatDate,
   isNewWeek,
   getWeekId,
-  getWeekTitle
+  getWeekTitle,
+  getPreviousWeekInfo,
+  getCurrentWeekInfo,
+  getNextWeekInfo
 };

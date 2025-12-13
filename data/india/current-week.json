@@ -1,256 +1,52 @@
 {
-  "week_number": 50,
-  "year": 2025,
-  "week_id": "2025-50",
-  "week_start": "2025-12-08",
-  "week_end": "2025-12-14",
-  "week_range": "December 8-14, 2025",
-  "week_title": "Week 50: December 8-14, 2025",
-  "country": {
-    "id": "india",
-    "name": "India",
-    "flag": "🇮🇳"
-  },
-  "generated_at": "2025-12-12T09:03:51.440Z",
-  "platforms": [
+  "week_number": "2025-50",
+  "week_start": "2025-12-09",
+  "week_end": "2025-12-15",
+  "country": "india",
+  "categories": [
     {
-      "id": "netflix",
-      "name": "Netflix",
-      "releases": [
+      "id": "bollywood",
+      "name": "Bollywood (Hindi)",
+      "movies": [
         {
-          "title": "Kaantha",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Mollywood/Malayalam",
-          "genre": "Drama",
-          "language": "Malayalam",
-          "actors": [
-            "Dulquer Salmaan",
-            "Bhagyashri Borse",
-            "Rana Daggubati"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "Kaantha is a drama directed by Selvamani Selvaraj, featuring Dulquer Salmaan in the lead.[1][4]"
-        },
-        {
-          "title": "Single Papa",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Romantic Comedy",
+          "title": "Pushpa 2: The Rule",
+          "release_date": "2025-12-13",
+          "genre": "Action, Drama",
           "language": "Hindi",
-          "actors": [
-            "Kunal Kemmu",
-            "Prajakta Koli",
-            "Manoj Pahwa",
-            "Neha Dhupia"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "Single Papa is a funny and touching parenting adventure starring Kunal Kemmu.[1][4]"
-        },
-        {
-          "title": "Wake Up Dead Man: A Knives Out Mystery",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Mystery Thriller",
-          "language": "English",
-          "actors": [
-            "Daniel Craig"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Post-Theatrical",
-          "description": "The latest installment in the Knives Out mystery series.[1][3]"
-        },
-        {
-          "title": "Man vs Baby",
-          "release_date": "2025-11-11",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Comedy",
-          "language": "English",
-          "actors": [
-            "Rowan Atkinson"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Rowan Atkinson's anarchic return in a comedy series.[1]"
+          "additional_languages": ["Telugu", "Tamil", "Kannada", "Malayalam"],
+          "cast": ["Allu Arjun", "Rashmika Mandanna", "Fahadh Faasil"],
+          "director": "Sukumar",
+          "production": "Mythri Movie Makers",
+          "description": "The continuation of Pushpa's story as he rises to power in the red sandalwood smuggling syndicate."
         }
       ]
     },
     {
-      "id": "sonyliv",
-      "name": "SonyLIV",
-      "releases": [
+      "id": "tollywood-telugu",
+      "name": "Tollywood (Telugu)",
+      "movies": [
         {
-          "title": "Real Kashmir Football Club",
-          "release_date": "2025-12-09",
-          "type": "series",
-          "industry": "Bollywood/Hindi",
-          "genre": "Sports Drama",
-          "language": "Hindi",
-          "actors": [
-            "Manav Kaul",
-            "Mohd. Zeeshan Ayyub"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "An inspirational true-story sports series about turning a game into a movement in Kashmir.[1][3][4]"
-        }
-      ]
-    },
-    {
-      "id": "zee5",
-      "name": "ZEE5",
-      "releases": [
-        {
-          "title": "Saali Mohabbat",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Suspense Thriller",
-          "language": "Hindi",
-          "actors": [
-            "Radhika Apte",
-            "Divyenndu Sharma"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A gripping suspense thriller directed by Tisca Chopra, produced by Manish Malhotra.[1][3][4]"
-        },
-        {
-          "title": "Kesariya@100",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Historical Documentary",
-          "language": "Hindi",
-          "actors": [],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A historical documentary.[1]"
-        }
-      ]
-    },
-    {
-      "id": "disney-plus-hotstar",
-      "name": "Disney+ Hotstar",
-      "releases": [
-        {
-          "title": "Percy Jackson and the Olympians Season 2",
-          "release_date": "2025-12-10",
-          "type": "series",
-          "industry": "Hollywood/English",
-          "genre": "Fantasy",
-          "language": "English",
-          "actors": [],
-          "dubbing": "Hindi, Tamil, Telugu",
-          "release_type": "Direct-to-OTT",
-          "description": "Second season for fantasy aficionados.[1][3]"
-        },
-        {
-          "title": "Superman",
-          "release_date": "2025-12-11",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Action",
-          "language": "English",
-          "actors": [],
-          "dubbing": "Hindi, Tamil, Telugu, Malayalam",
-          "release_type": "Post-Theatrical",
-          "description": "Superman 2025 streaming premiere.[1][3]"
-        },
-        {
-          "title": "The Great Shamsuddin Family",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Bollywood/Hindi",
-          "genre": "Comedy Drama",
-          "language": "Hindi",
-          "actors": [
-            "Kritika Kamra",
-            "Sheeba Chaddha",
-            "Shreya Dhanwanthary"
-          ],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "A family drama about a writer tackling a deadline amid family chaos.[1][3][4]"
-        },
-        {
-          "title": "Taylor Swift: The Eras Tour – The Final Show",
-          "release_date": "2025-12-12",
-          "type": "movie",
-          "industry": "Hollywood/English",
-          "genre": "Concert Documentary",
-          "language": "English",
-          "actors": [
-            "Taylor Swift"
-          ],
-          "dubbing": "Hindi",
-          "release_type": "Direct-to-OTT",
-          "description": "Docuseries from Taylor Swift's record-breaking Eras Tour.[4]"
-        }
-      ]
-    },
-    {
-      "id": "jiocinema",
-      "name": "JioCinema",
-      "releases": []
-    },
-    {
-      "id": "aha",
-      "name": "Aha",
-      "releases": [
-        {
-          "title": "3 Roses Season 2",
-          "release_date": "2025-12-12",
-          "type": "series",
-          "industry": "Tollywood/Telugu",
-          "genre": "Comedy Drama",
+          "title": "Game Changer",
+          "release_date": "2025-12-13",
+          "genre": "Action, Political Thriller",
           "language": "Telugu",
-          "actors": [],
-          "dubbing": "TBA",
-          "release_type": "Direct-to-OTT",
-          "description": "Telugu comedy-drama where three characters relocate to Mumbai, start an ad business, but face a gangster threat.[1]"
+          "additional_languages": ["Hindi", "Tamil"],
+          "cast": ["Ram Charan", "Kiara Advani", "SJ Suryah"],
+          "director": "Shankar",
+          "production": "Sri Venkateswara Creations",
+          "description": "An honest IAS officer takes on a corrupt political system."
         }
       ]
     },
     {
-      "id": "hoichoi",
-      "name": "Hoichoi",
-      "releases": []
+      "id": "kollywood-tamil",
+      "name": "Kollywood (Tamil)",
+      "movies": []
     },
     {
-      "id": "sunnxt",
-      "name": "SunNXT",
-      "releases": []
-    },
-    {
-      "id": "manoramamax",
-      "name": "ManoramaMAX",
-      "releases": []
-    },
-    {
-      "id": "etv-win",
-      "name": "ETV Win",
-      "releases": []
-    },
-    {
-      "id": "planet-marathi",
-      "name": "Planet Marathi",
-      "releases": []
-    },
-    {
-      "id": "chaupal",
-      "name": "Chaupal",
-      "releases": []
-    },
-    {
-      "id": "prime-video",
-      "name": "Prime Video",
-      "releases": []
+      "id": "mollywood-malayalam",
+      "name": "Mollywood (Malayalam)",
+      "movies": []
     }
   ]
 }

@@ -1454,3 +1454,273 @@ body {
     color: #0891b2 !important;
     border-left: 3px solid #06b6d4 !important;
 }
+
+/* ============================================================================
+   THREE-WEEK NAVIGATION STYLES
+   ============================================================================ */
+
+/* Week Navigation Container */
+.week-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem auto 1rem;
+    padding: 0 1rem;
+    max-width: 600px;
+}
+
+/* Week Buttons */
+.week-btn {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.875rem 1rem;
+    background: var(--color-card-bg, #161b22);
+    border: 2px solid var(--color-border, #30363d);
+    border-radius: 8px;
+    color: var(--color-text-secondary, #8b949e);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.week-btn:hover {
+    background: var(--color-card-hover, #1c2128);
+    border-color: var(--color-accent, #58a6ff);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.15);
+}
+
+.week-btn:focus {
+    outline: 2px solid var(--color-accent, #58a6ff);
+    outline-offset: 2px;
+}
+
+/* Active Week Button */
+.week-btn.active {
+    background: linear-gradient(135deg, var(--color-accent, #58a6ff) 0%, #7c3aed 100%);
+    border-color: var(--color-accent, #58a6ff);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(88, 166, 255, 0.3);
+}
+
+.week-btn.active:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 166, 255, 0.4);
+}
+
+/* Week Labels */
+.week-label {
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.week-meta {
+    font-size: 0.75rem;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.week-btn.active .week-meta {
+    opacity: 0.9;
+}
+
+/* Past Week Indicator */
+.week-btn[data-week="last"]::before {
+    content: "?";
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    font-size: 0.75rem;
+}
+
+/* Future Week Indicator */
+.week-btn[data-week="next"]::after {
+    content: "?";
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    font-size: 0.75rem;
+}
+
+.week-btn {
+    position: relative;
+}
+
+/* Week Title Display */
+.week-title-display {
+    text-align: center;
+    margin: 1rem auto 1.5rem;
+    padding: 0 1rem;
+}
+
+.week-title-display h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text, #f0f6fc);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Light Theme Adjustments */
+:root[data-theme="light"] .week-btn {
+    background: #ffffff;
+    border-color: #d0d7de;
+    color: #57606a;
+}
+
+:root[data-theme="light"] .week-btn:hover {
+    background: #f6f8fa;
+    border-color: #1f6feb;
+}
+
+:root[data-theme="light"] .week-btn.active {
+    background: linear-gradient(135deg, #1f6feb 0%, #7c3aed 100%);
+    color: #ffffff;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 640px) {
+    .week-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+        max-width: 100%;
+    }
+    
+    .week-btn {
+        min-width: 100%;
+    }
+    
+    .week-btn::before,
+    .week-btn::after {
+        display: none;
+    }
+    
+    .week-title-display h2 {
+        font-size: 1.125rem;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .week-navigation {
+        max-width: 500px;
+    }
+    
+    .week-btn {
+        min-width: 140px;
+    }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .week-btn {
+        border-width: 3px;
+    }
+    
+    .week-btn.active {
+        border-color: #ffffff;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .week-btn {
+        transition: none;
+    }
+    
+    .week-btn:hover {
+        transform: none;
+    }
+}
+
+/* ============================================================================
+   Upcoming Badge Styles (Feature 44)
+   ============================================================================ */
+
+.upcoming-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+    animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+    }
+    50% {
+        opacity: 0.9;
+        box-shadow: 0 2px 12px rgba(245, 87, 108, 0.5);
+    }
+}
+
+.movie-card .upcoming-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .upcoming-badge {
+        animation: none;
+    }
+}
+
+/* Light theme adjustments */
+:root[data-theme="light"] .upcoming-badge {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+/* ============================================================================
+   Upcoming Badge Styles (Feature 44)
+   ============================================================================ */
+
+.upcoming-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(245, 87, 108, 0.3);
+}
+
+.movie-card {
+    position: relative;
+}
+
+.movie-card .upcoming-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+

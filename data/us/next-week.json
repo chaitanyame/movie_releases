@@ -1,0 +1,30 @@
+{
+  "week_number": "2025-51",
+  "week_start": "2025-12-16",
+  "week_end": "2025-12-22",
+  "country": "us",
+  "categories": [
+    {
+      "id": "wide-release",
+      "name": "Wide Release",
+      "movies": [
+        {
+          "title": "Nosferatu",
+          "release_date": "2025-12-25",
+          "genre": "Horror, Fantasy",
+          "rating": "R",
+          "studio": "Focus Features",
+          "cast": ["Bill Skarsgård", "Lily-Rose Depp", "Nicholas Hoult"],
+          "director": "Robert Eggers",
+          "theater_count": 2800,
+          "description": "A gothic tale of obsession between a haunted woman and the vampire infatuated with her."
+        }
+      ]
+    },
+    {
+      "id": "limited-release",
+      "name": "Limited Release",
+      "movies": []
+    }
+  ]
+}

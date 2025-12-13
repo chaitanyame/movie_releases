@@ -1,0 +1,90 @@
+name: Update and Deploy Movie Releases
+
+on:
+  push:
+    branches: [ main, 001-movie-releases ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run weekly on Monday at 00:00 UTC to update movie data
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    name: Update Movie Data
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Update US current week data
+      run: node scripts/fetch-releases.js us current
+      continue-on-error: true
+      
+    - name: Update US last week data
+      run: node scripts/fetch-releases.js us last-week
+      continue-on-error: true
+      
+    - name: Update US next week data
+      run: node scripts/fetch-releases.js us next-week
+      continue-on-error: true
+      
+    - name: Update India current week data
+      run: node scripts/fetch-releases.js india current
+      continue-on-error: true
+      
+    - name: Update India last week data
+      run: node scripts/fetch-releases.js india last-week
+      continue-on-error: true
+      
+    - name: Update India next week data
+      run: node scripts/fetch-releases.js india next-week
+      continue-on-error: true
+      
+    - name: Generate archive index
+      run: node scripts/generate-archive-index.js
+      
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update movie data for week $(date +%Y-%U)" && git push)
+
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: '.'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4

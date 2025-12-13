@@ -74,3 +74,11 @@ out/
 .Spotlight-V100
 .Trashes
 ehthumbs.db
+
+
+
+.specify/**
+.github/agents/**
+.github/prompts/**
+.github/instructions/**
+.vscode/**
