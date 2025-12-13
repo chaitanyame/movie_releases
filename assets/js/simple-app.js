@@ -59,37 +59,76 @@ function hideError() {
 }
 
 /**
- * Parse markdown to HTML (basic implementation)
+ * Parse markdown into beautiful card-based HTML
  */
 function parseMarkdown(markdown) {
-    let html = markdown;
+    const lines = markdown.split('\n');
+    let html = '';
+    let currentLanguageCard = null;
+    let currentMovie = null;
+    let inMovieSection = false;
     
-    // Headers
-    html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-    html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
-    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+        
+        // Main title (# header)
+        if (line.startsWith('# ')) {
+            html += `<h1 class="page-title">${line.substring(2)}</h1>`;
+        }
+        // Language/Category headers (## header)
+        else if (line.startsWith('## ')) {
+            // Close previous language card if exists
+            if (currentLanguageCard) {
+                html += '</div></div>'; // Close movies-grid and language-card
+            }
+            
+            const categoryName = line.substring(3);
+            currentLanguageCard = true;
+            html += `
+                <div class="language-card">
+                    <h2 class="language-title">${categoryName}</h2>
+                    <div class="movies-grid">`;
+        }
+        // Movie title (### header)
+        else if (line.startsWith('### ')) {
+            // Close previous movie card if exists
+            if (currentMovie) {
+                html += '</div>'; // Close movie-card
+            }
+            
+            const movieTitle = line.substring(4);
+            currentMovie = true;
+            html += `<div class="movie-card"><h3 class="movie-title">${movieTitle}</h3>`;
+        }
+        // Movie details (bullet points)
+        else if (line.startsWith('- **')) {
+            const match = line.match(/- \*\*(.*?)\*\*:\s*(.*)/);
+            if (match) {
+                const [, label, value] = match;
+                html += `<div class="movie-detail"><span class="detail-label">${label}:</span> <span class="detail-value">${value}</span></div>`;
+            }
+        }
+        // Metadata lines (bold)
+        else if (line.startsWith('**')) {
+            html += `<p class="metadata">${line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</p>`;
+        }
+        // Horizontal rule
+        else if (line === '---') {
+            html += '<hr class="section-divider">';
+        }
+        // Regular text
+        else if (line && !line.startsWith('#')) {
+            // Skip empty lines
+        }
+    }
     
-    // Bold
-    html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
-    
-    // Horizontal rule
-    html = html.replace(/^---$/gim, '<hr>');
-    
-    // Lists
-    html = html.replace(/^- (.*$)/gim, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/gis, '<ul>$1</ul>');
-    
-    // Line breaks
-    html = html.replace(/\n\n/g, '</p><p>');
-    html = '<p>' + html + '</p>';
-    
-    // Clean up empty paragraphs
-    html = html.replace(/<p><\/p>/g, '');
-    html = html.replace(/<p><h/g, '<h');
-    html = html.replace(/<\/h([1-6])><\/p>/g, '</h$1>');
-    html = html.replace(/<p><hr><\/p>/g, '<hr>');
-    html = html.replace(/<p><ul>/g, '<ul>');
-    html = html.replace(/<\/ul><\/p>/g, '</ul>');
+    // Close any open tags
+    if (currentMovie) {
+        html += '</div>'; // Close last movie-card
+    }
+    if (currentLanguageCard) {
+        html += '</div></div>'; // Close movies-grid and language-card
+    }
     
     return html;
 }
@@ -102,7 +141,9 @@ async function loadReleases() {
     hideError();
     
     try {
-        const response = await fetch('RELEASES.md');
+        const filename = currentCountry === 'us' ? 'RELEASES-US.md' : 'RELEASES.md';
+        const response = await fetch(filename);
+        
         if (!response.ok) {
             throw new Error(`Failed to fetch releases: ${response.status}`);
         }
@@ -118,7 +159,7 @@ async function loadReleases() {
         
     } catch (error) {
         console.error('Error loading releases:', error);
-        showError('Failed to load movie releases. Please try again later.');
+        showError(`Failed to load ${currentCountry === 'us' ? 'US' : 'Indian'} movie releases. Please try again later.`);
     }
 }
 
@@ -142,12 +183,8 @@ function handleCountryChange(event) {
     
     currentCountry = country;
     
-    // For now, we only have India data
-    if (country === 'us') {
-        showError('US releases coming soon!');
-    } else {
-        loadReleases();
-    }
+    // Load releases for selected country
+    loadReleases();
 }
 
 /**

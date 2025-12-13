@@ -1780,87 +1780,144 @@ body {
 }
 
 /* ============================================================================
-   Markdown Content Styling
+   Markdown Content Styling - Card-Based Layout
    ============================================================================ */
 
 #releases-content {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: var(--spacing-xl);
 }
 
-#releases-content h1 {
+/* Page Title */
+.page-title {
     font-size: clamp(2rem, 4vw, 3rem);
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
     text-align: center;
 }
 
-#releases-content h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--primary-color);
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-md);
-    padding-bottom: var(--spacing-sm);
-    border-bottom: 2px solid var(--card-border);
-}
-
-#releases-content h3 {
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    color: var(--accent-color);
-    margin-top: var(--spacing-lg);
-    margin-bottom: var(--spacing-md);
-}
-
-#releases-content p {
+/* Metadata (Week info, dates, etc.) */
+.metadata {
+    text-align: center;
     color: var(--text-secondary);
-    line-height: 1.8;
+    font-size: 0.95rem;
     margin-bottom: var(--spacing-md);
 }
 
-#releases-content ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
-    gap: var(--spacing-lg);
-    list-style: none;
-    padding: 0;
-    margin: var(--spacing-lg) 0;
+.section-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, var(--card-border) 50%, transparent 100%);
+    margin: var(--spacing-xl) 0;
 }
 
-#releases-content li {
+/* Language Category Card */
+.language-card {
     background: var(--card-background);
     border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: var(--spacing-lg);
+    border-radius: 20px;
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
-#releases-content li:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+.language-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
     border-color: var(--primary-color);
 }
 
-#releases-content li strong {
-    display: block;
-    font-size: 1.25rem;
-    color: var(--text-primary);
-    margin-bottom: var(--spacing-sm);
+/* Language Title */
+.language-title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--primary-color);
+    margin: 0 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 3px solid var(--primary-color);
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-#releases-content hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, var(--card-border) 50%, transparent 100%);
-    margin: var(--spacing-xl) 0;
+/* Movies Grid */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+/* Movie Card */
+.movie-card {
+    background: rgba(var(--card-background-rgb, 255, 255, 255), 0.5);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: var(--spacing-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    border-color: var(--primary-color);
+}
+
+.movie-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Movie Title */
+.movie-title {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    margin: 0 0 var(--spacing-md);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Movie Details */
+.movie-detail {
+    display: flex;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.detail-label {
+    color: var(--primary-color);
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.detail-value {
+    color: var(--text-secondary);
+}
+
+/* Special styling for genre and cast */
+.movie-card .movie-detail:has(.detail-label:contains("Genre")),
+.movie-card .movie-detail:has(.detail-label:contains("Cast")) {
+    flex-wrap: wrap;
 }
 
 /* Mobile responsiveness */
@@ -1869,9 +1926,32 @@ body {
         padding: var(--spacing-md);
     }
     
-    #releases-content ul {
+    .language-card {
+        padding: var(--spacing-md);
+        border-radius: 16px;
+    }
+    
+    .movies-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-md);
+    }
+    
+    .movie-card {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Tablet responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    }
+}
+
+/* Large screen optimization */
+@media (min-width: 1400px) {
+    .movies-grid {
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 350px), 1fr));
     }
 }
 
