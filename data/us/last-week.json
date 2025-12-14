@@ -3,6 +3,8 @@
   "week_start": "2025-12-01",
   "week_end": "2025-12-07",
   "country": "us",
+  "last_updated": "2025-12-14T09:04:05.707Z",
+  "fetch_count": 2,
   "categories": [
     {
       "id": "wide-release",
@@ -32,12 +34,14 @@
       ]
     }
   ],
-  "last_updated": "2025-12-13T09:04:10.309Z",
-  "fetch_count": 1,
   "fetch_history": [
     {
       "timestamp": "2025-12-13T09:04:10.309Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-14T09:04:05.707Z",
+      "new_movies_count": 0
     }
   ]
 }

@@ -3,6 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
+  "last_updated": "2025-12-14T09:05:55.998Z",
+  "fetch_count": 2,
   "categories": [
     {
       "id": "wide-release",
@@ -123,21 +125,37 @@
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
           "is_new": true
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants",
+          "release_date": "2025-12-19",
+          "genre": "Animation,Comedy,Family",
+          "rating": "PG",
+          "studio": "Paramount Pictures",
+          "cast": [
+            "Tom Kenny",
+            "Carolyn Lawrence",
+            "Mr. Lawrence",
+            "Rodger Bumpass"
+          ],
+          "director": "Derek Drymon",
+          "theater_count": "3000+ theaters",
+          "description": "Fourth SpongeBob feature film sends the gang on a heroic quest through Bikini Bottom and beyond to save SpongeBob and unlock a curse; sequel to Saving Bikini Bottom.[1]",
+          "additional_languages": [],
+          "first_seen": "2025-12-14T09:05:55.998Z",
+          "is_new": true
         }
       ]
-    },
-    {
-      "id": "platform-release",
-      "name": "Platform Release",
-      "movies": []
     }
   ],
-  "last_updated": "2025-12-13T09:05:21.720Z",
-  "fetch_count": 1,
   "fetch_history": [
     {
       "timestamp": "2025-12-13T09:05:21.720Z",
       "new_movies_count": 6
+    },
+    {
+      "timestamp": "2025-12-14T09:05:55.998Z",
+      "new_movies_count": 1
     }
   ]
 }

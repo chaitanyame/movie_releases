@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-13T09:04:57.432Z",
-  "fetch_count": 4,
+  "last_updated": "2025-12-14T09:05:26.652Z",
+  "fetch_count": 5,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -114,6 +114,16 @@
       ]
     },
     {
+      "id": "regional-telugu",
+      "name": "Regional (Telugu)",
+      "movies": []
+    },
+    {
+      "id": "regional-tamil",
+      "name": "Regional (Tamil)",
+      "movies": []
+    },
+    {
       "id": "regional-other",
       "name": "Regional (Other)",
       "movies": [
@@ -207,6 +217,10 @@
     {
       "timestamp": "2025-12-13T09:04:57.432Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-14T09:05:26.652Z",
+      "new_movies_count": 0
     }
   ]
 }

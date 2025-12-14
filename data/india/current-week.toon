@@ -2,7 +2,7 @@ week_number: 2025-50
 week_start: 2025-12-08
 week_end: 2025-12-14
 country: india
-last_updated: 2025-12-13T09:04:57.432Z
+last_updated: 2025-12-14T09:05:26.652Z
 categories:
   -
     id: bollywood-hindi
@@ -79,6 +79,14 @@ categories:
         description: A family comedy-drama following Bani Ahmed, who races against time over 12 hours to complete an urgent application, exposing the eccentricities and conflicts of the Shamsuddin family.[5][4]
         first_seen: 2025-12-13T04:35:29.395Z
         is_new: true
+  -
+    id: regional-telugu
+    name: Regional (Telugu)
+    movies:
+  -
+    id: regional-tamil
+    name: Regional (Tamil)
+    movies:
   -
     id: regional-other
     name: Regional (Other)
