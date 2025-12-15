@@ -1,8 +1,8 @@
-week_number: 2025-49
-week_start: 2025-12-01
-week_end: 2025-12-07
+week_number: 2025-50
+week_start: 2025-12-08
+week_end: 2025-12-14
 country: us
-last_updated: 2025-12-14T09:04:05.707Z
+last_updated: 2025-12-15T09:08:19.090Z
 categories:
   -
     id: wide-release
@@ -21,4 +21,58 @@ categories:
         director: [object Object]
         description: Concert film featuring the K-pop group Monsta X performing live in cinemas.[2]
         first_seen: 2025-12-13T09:04:10.309Z
+        is_new: false
+      -
+        title: Atropia
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Hailey Gates
+        director: Hailey Gates
+        description: Drama about an aspiring actress working on a U.S. military base that simulates an Iraqi war zone.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
+        is_new: true
+      -
+        title: Ella McCay
+        release_date: 2025-12-12
+        genre: Dramedy
+        director: TBA
+        description: Dramedy following key character developments in a modern American story.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
+        is_new: true
+      -
+        title: Franz
+        release_date: 2025-12-12
+        genre: Biographical Drama
+        director: Agnieszka Holland
+        description: Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
+        is_new: true
+      -
+        title: The Mysterious Gaze of the Flamingo
+        release_date: 2025-12-12
+        genre: Drama
+        director: TBA
+        description: In 1982 a small Chilean mining town faces an unknown disease; gay men accused of transmission; young Lidia seeks truth.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
+        is_new: true
+      -
+        title: One More Shot
+        release_date: 2025-12-12
+        genre: Dramedy
+        director: TBA
+        description: New Year’s Eve 1999; Minnie finds Time Traveling Tequila allowing multiple shots to alter the millennium night.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
+        is_new: true
+      -
+        title: Goodbye June
+        release_date: 2025-12-12
+        genre: Drama
+        cast:
+          - Helen Mirren
+          - Timothy Spall
+          - Johnny Flynn
+        director: Kate Winslet
+        description: Fractured siblings come together under sudden trying circumstances; qualifies as theatrical prior to streaming.[3]
+        first_seen: 2025-12-15T09:08:19.090Z
         is_new: true

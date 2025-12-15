@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-49",
-  "week_start": "2025-12-01",
-  "week_end": "2025-12-07",
+  "week_number": "2025-50",
+  "week_start": "2025-12-08",
+  "week_end": "2025-12-14",
   "country": "us",
-  "last_updated": "2025-12-14T09:04:05.707Z",
-  "fetch_count": 2,
+  "last_updated": "2025-12-15T09:08:19.090Z",
+  "fetch_count": 3,
   "categories": [
     {
       "id": "wide-release",
@@ -29,6 +29,96 @@
           "description": "Concert film featuring the K-pop group Monsta X performing live in cinemas.[2]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:04:10.309Z",
+          "is_new": false
+        },
+        {
+          "title": "Atropia",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Vertical",
+          "cast": [
+            "Hailey Gates"
+          ],
+          "director": "Hailey Gates",
+          "theater_count": "50-100 theaters",
+          "description": "Drama about an aspiring actress working on a U.S. military base that simulates an Iraqi war zone.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
+          "is_new": true
+        },
+        {
+          "title": "Ella McCay",
+          "release_date": "2025-12-12",
+          "genre": "Dramedy",
+          "rating": "NR",
+          "studio": "20th Century Studios",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "500-1000 theaters",
+          "description": "Dramedy following key character developments in a modern American story.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
+          "is_new": true
+        },
+        {
+          "title": "Franz",
+          "release_date": "2025-12-12",
+          "genre": "Biographical Drama",
+          "rating": "NR",
+          "studio": "Cohen Media Group",
+          "cast": {},
+          "director": "Agnieszka Holland",
+          "theater_count": "10-50 theaters",
+          "description": "Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
+          "is_new": true
+        },
+        {
+          "title": "The Mysterious Gaze of the Flamingo",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Altered Innocence",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "10-50 theaters",
+          "description": "In 1982 a small Chilean mining town faces an unknown disease; gay men accused of transmission; young Lidia seeks truth.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
+          "is_new": true
+        },
+        {
+          "title": "One More Shot",
+          "release_date": "2025-12-12",
+          "genre": "Dramedy",
+          "rating": "NR",
+          "studio": "Samuel Goldwyn Films",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "50-100 theaters",
+          "description": "New Year’s Eve 1999; Minnie finds Time Traveling Tequila allowing multiple shots to alter the millennium night.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
+          "is_new": true
+        },
+        {
+          "title": "Goodbye June",
+          "release_date": "2025-12-12",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Netflix",
+          "cast": [
+            "Helen Mirren",
+            "Timothy Spall",
+            "Johnny Flynn"
+          ],
+          "director": "Kate Winslet",
+          "theater_count": "50-100 theaters",
+          "description": "Fractured siblings come together under sudden trying circumstances; qualifies as theatrical prior to streaming.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:08:19.090Z",
           "is_new": true
         }
       ]
@@ -42,6 +132,10 @@
     {
       "timestamp": "2025-12-14T09:04:05.707Z",
       "new_movies_count": 0
+    },
+    {
+      "timestamp": "2025-12-15T09:08:19.090Z",
+      "new_movies_count": 6
     }
   ]
 }

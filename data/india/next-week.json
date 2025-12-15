@@ -1,8 +1,10 @@
 {
-  "week_number": "2025-51",
-  "week_start": "2025-12-15",
-  "week_end": "2025-12-21",
+  "week_number": "2025-52",
+  "week_start": "2025-12-22",
+  "week_end": "2025-12-28",
   "country": "india",
+  "last_updated": "2025-12-15T09:12:42.477Z",
+  "fetch_count": 2,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -43,6 +45,22 @@
           "description": "Action film centered on brotherhood and high-stakes conflicts.[7]",
           "first_seen": "2025-12-14T09:06:27.394Z",
           "is_new": true
+        },
+        {
+          "title": "Zindagi Ke Rang",
+          "release_date": "2025-12-22",
+          "genre": "Romance / Family Drama",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Sara Ali Khan",
+            "Kartik Aaryan"
+          ],
+          "director": "Imtiaz Ali",
+          "production": "Unknown",
+          "description": "A heartwarming family drama about love, relationships, and life's beautiful moments.[3]",
+          "first_seen": "2025-12-15T09:12:42.477Z",
+          "is_new": true
         }
       ]
     },
@@ -77,16 +95,36 @@
           "description": "Multi-genre film blending action, comedy, and thriller elements starring Mohanlal.[7]",
           "first_seen": "2025-12-14T09:06:27.394Z",
           "is_new": true
+        },
+        {
+          "title": "Maharaju Maharani",
+          "release_date": "2025-12-27",
+          "genre": "Drama",
+          "language": "Telugu",
+          "additional_languages": {},
+          "cast": [
+            "Ramranadheer",
+            "Sreeliya",
+            "Jahnavi",
+            "Kali Ashok Sr."
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Drama film featuring regional leads in a narrative centered on family and relationships.[5]",
+          "first_seen": "2025-12-15T09:12:42.477Z",
+          "is_new": true
         }
       ]
     }
   ],
-  "last_updated": "2025-12-14T09:06:27.394Z",
-  "fetch_count": 1,
   "fetch_history": [
     {
       "timestamp": "2025-12-14T09:06:27.394Z",
       "new_movies_count": 3
+    },
+    {
+      "timestamp": "2025-12-15T09:12:42.477Z",
+      "new_movies_count": 2
     }
   ]
 }

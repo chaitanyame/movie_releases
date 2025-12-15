@@ -1,8 +1,8 @@
-week_number: 2025-51
-week_start: 2025-12-15
-week_end: 2025-12-21
+week_number: 2025-52
+week_start: 2025-12-22
+week_end: 2025-12-28
 country: us
-last_updated: 2025-12-14T09:05:55.998Z
+last_updated: 2025-12-15T09:11:41.941Z
 categories:
   -
     id: wide-release
@@ -20,7 +20,7 @@ categories:
         director: James Cameron
         description: Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]
         first_seen: 2025-12-13T09:05:21.720Z
-        is_new: true
+        is_new: false
       -
         title: The SpongeBob Movie: Search for SquarePants
         release_date: 2025-12-19
@@ -32,7 +32,7 @@ categories:
         director: TBA
         description: SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]
         first_seen: 2025-12-13T09:05:21.720Z
-        is_new: true
+        is_new: false
       -
         title: The Housemaid
         release_date: 2025-12-19
@@ -45,6 +45,55 @@ categories:
         director: Paul Feig
         description: A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]
         first_seen: 2025-12-13T09:05:21.720Z
+        is_new: false
+      -
+        title: Five Nights at Freddy's 2
+        release_date: 2025-12-05
+        genre: Horror
+        cast:
+          - Brady Noon
+          - Kara Hayward
+          - Emma Tammy
+        director: Emma Tammy
+        description: Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Anaconda
+        release_date: 2025-12-25
+        genre: Action,Adventure,Comedy
+        cast:
+          - Jack Black
+          - Paul Rudd
+          - Thandiwe Newton
+          - Steve Zahn
+        director: Tom Gormakin
+        description: Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Song Sung Blue
+        release_date: 2025-12-25
+        genre: Biography,Drama
+        cast:
+          - Hugh Jackman
+          - Kate Hudson
+          - Ella Anderson
+        director: James Mangold
+        description: Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Marty Supreme
+        release_date: 2025-12-25
+        genre: Drama,Fantasy
+        cast:
+          - Timothée Chalamet
+          - Gwyneth Paltrow
+          - Odessa A'zion
+        director: Josh Safdie
+        description: Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.
+        first_seen: 2025-12-15T09:11:41.941Z
         is_new: true
   -
     id: limited-release
@@ -62,7 +111,7 @@ categories:
         director: Paul Feig
         description: A housemaid uncovers dark secrets while working for a wealthy family in this adaptation of the bestselling novel.[1][2][5]
         first_seen: 2025-12-13T09:05:21.720Z
-        is_new: true
+        is_new: false
       -
         title: Ella McCay
         release_date: 2025-12-19
@@ -74,7 +123,7 @@ categories:
         director: Nicole Holofcener
         description: Indie drama following a young woman's complex relationships and personal growth in contemporary New York.[1][2]
         first_seen: 2025-12-13T09:05:21.720Z
-        is_new: true
+        is_new: false
       -
         title: David
         release_date: 2025-12-19
@@ -85,7 +134,7 @@ categories:
         director: David Helling
         description: A shepherd faces supernatural visions during Christmas, blending faith and horror elements in this inspirational tale.[1]
         first_seen: 2025-12-13T09:05:21.720Z
-        is_new: true
+        is_new: false
       -
         title: The SpongeBob Movie: Search for SquarePants
         release_date: 2025-12-19
@@ -98,4 +147,52 @@ categories:
         director: Derek Drymon
         description: Fourth SpongeBob feature film sends the gang on a heroic quest through Bikini Bottom and beyond to save SpongeBob and unlock a curse; sequel to Saving Bikini Bottom.[1]
         first_seen: 2025-12-14T09:05:55.998Z
+        is_new: true
+      -
+        title: Father Mother Sister Brother
+        release_date: 2025-12-24
+        genre: Drama
+        cast:
+          - Tom Waits
+          - Adam Driver
+          - Mayim Bialik
+        director: Jim Jarmusch
+        description: Jarmusch ensemble drama about estranged siblings reuniting for an uneasy holiday gathering; expected NY/LA platform release.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Goodbye June
+        release_date: 2025-12-24
+        genre: Drama
+        cast:
+          - Helen Mirren
+          - Timothy Spall
+          - Johnny Flynn
+        director: Kate Winslet
+        description: Family drama following fractured siblings forced together after a crisis; festival buzz and limited holiday-week playdates.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Dust Bunny
+        release_date: 2025-12-12
+        genre: Animation,Family
+        cast:
+          - (voice cast unconfirmed)
+          - 
+          - 
+        director: (director unconfirmed),
+        description: Animated indie family film receiving a limited theatrical run in December; platform expansion possible depending on early performance.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: true
+      -
+        title: Silent Night, Deadly Night (new)
+        release_date: 2025-12-01
+        genre: Horror
+        cast:
+          - (leads unconfirmed)
+          - 
+          - 
+        director: (director unconfirmed),
+        description: Reimagining/revival of the controversial holiday slasher property in a limited theatrical engagement around December; some credits unconfirmed.
+        first_seen: 2025-12-15T09:11:41.941Z
         is_new: true

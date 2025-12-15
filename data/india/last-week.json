@@ -1,8 +1,10 @@
 {
-  "week_number": "2025-49",
-  "week_start": "2025-12-01",
-  "week_end": "2025-12-07",
+  "week_number": "2025-50",
+  "week_start": "2025-12-08",
+  "week_end": "2025-12-14",
   "country": "india",
+  "last_updated": "2025-12-15T09:09:08.023Z",
+  "fetch_count": 2,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -25,6 +27,58 @@
           "production": "Jio Studios - B62 Studios",
           "description": "Spy action drama inspired by real-life geopolitical conflicts, Indian intelligence operations, and Lyari gang war in Pakistan. Marks Ranveer Singh's comeback and first A-rated film with 3h34m runtime.[1][3][7]",
           "first_seen": "2025-12-13T09:04:29.763Z",
+          "is_new": false
+        },
+        {
+          "title": "Black Rose",
+          "release_date": "2025-12-08",
+          "genre": "Thriller",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Amit Gupta",
+            "Jayshankar Tripathi",
+            "Chahat Arora"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Reported Hindi theatrical release on Dec 8, 2025; listed in December Bollywood release roundups as a thriller scheduled that week (date confirmed by multiple industry listings). [1]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Bull",
+          "release_date": "2025-12-08",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Shahid Kapoor",
+            "Supporting Actor 1",
+            "Supporting Actor 2"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Shahid Kapoor starrer reported for theatrical release on Dec 8, 2025 in Bollywood release calendars and trade listings for early December 2025.[1]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Kapil Sharma",
+            "Manjot Singh",
+            "Ayesha Khan",
+            "Parul Gulati"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Sequel to Kis Kisko Pyaar Karoon; trade coverage lists a Dec 12, 2025 theatrical release for Kapil Sharma's comedy sequel.[2]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
           "is_new": true
         }
       ]
@@ -42,15 +96,105 @@
     {
       "id": "regional-other",
       "name": "Regional (Other)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Rachel",
+          "release_date": "2025-12-12",
+          "genre": "Revenge Thriller",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Honey Rose",
+            "Radhika Radhakrishnan",
+            "Babu Raj",
+            "Roshan Basheer"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Malayalam theatrical release on Dec 12, 2025; described in regional press as a gritty revenge drama centred on a butcher’s daughter seeking justice, confirmed in week roundups of Malayalam theatrical releases.[3]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Ambalamukkile Visheshangal",
+          "release_date": "2025-12-12",
+          "genre": "Family Drama,Comedy",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Gokul Suresh",
+            "Lal",
+            "Ganapathi",
+            "Shaheen Siddique"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Malayalam family-comedy released in theatres Dec 12, 2025 after multiple delays; reported in regional entertainment coverage as a theatrical release that week.[3]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Summer in Bethlehem (Re-release)",
+          "release_date": "2025-12-12",
+          "genre": "Family Drama,Romance",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Manju Warrier",
+            "Suresh Gopi",
+            "Jayaram"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "1998 classic re-released in theatres Dec 12, 2025 for special theatrical run, listed in Malayalam release guides for the week.[3]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Feminichi Fathima",
+          "release_date": "2025-12-12",
+          "genre": "Social Drama",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Shamla Hamza",
+            "Supporting Actor 1",
+            "Supporting Actor 2"
+          ],
+          "director": "TBA",
+          "production": "Manorama Max",
+          "description": "Noted in Malayalam week coverage as a streaming title on Manorama Max (listed under week roundups); marked here as TBA for theatrical — regional sources list it as streaming-first rather than theatrical release this week, so theatrical status is unconfirmed and thus marked TBA in description.[3]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Feminichi Fathima (theatrical status TBA)",
+          "release_date": "2025-12-12",
+          "genre": "Social Drama",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": [
+            "Shamla Hamza",
+            "Supporting Actor 1",
+            "Supporting Actor 2"
+          ],
+          "director": "TBA",
+          "production": "Manorama Max",
+          "description": "Regional reporting lists Feminichi Fathima as a Manorama Max release on Dec 12, 2025 and does not clearly confirm a theatrical release; included here with theatrical status flagged as TBA per source ambiguity.[3]",
+          "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        }
+      ]
     }
   ],
-  "last_updated": "2025-12-13T09:04:29.763Z",
-  "fetch_count": 1,
   "fetch_history": [
     {
       "timestamp": "2025-12-13T09:04:29.763Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-15T09:09:08.023Z",
+      "new_movies_count": 8
     }
   ]
 }

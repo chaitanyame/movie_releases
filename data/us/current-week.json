@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-50",
-  "week_start": "2025-12-08",
-  "week_end": "2025-12-14",
+  "week_number": "2025-51",
+  "week_start": "2025-12-15",
+  "week_end": "2025-12-21",
   "country": "us",
-  "last_updated": "2025-12-13T09:04:45.017Z",
-  "fetch_count": 4,
+  "last_updated": "2025-12-15T09:09:53.685Z",
+  "fetch_count": 5,
   "categories": [
     {
       "id": "wide-release",
@@ -26,7 +26,7 @@
           "description": "Coming-of-age drama about young women navigating friendship and identity; specialty title getting an unusually broad arthouse-focused national rollout.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Eastern Western",
@@ -44,7 +44,7 @@
           "description": "Family-friendly frontier adventure that blends Western iconography with a cross-cultural journey, positioned as a broad faith-adjacent holiday alternative.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "How the Grinch Stole Christmas (2025 Re-release)",
@@ -62,7 +62,7 @@
           "description": "Seasonal wide re-release of the 2000 live-action Dr. Seuss adaptation starring Jim Carrey as the Grinch, targeting family audiences in the pre-Christmas corridor.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "How the Grinch Stole Christmas",
@@ -80,7 +80,7 @@
           "description": "2025 wide re-release of the 2000 Dr. Seuss holiday adaptation starring Jim Carrey as the Grinch, returning to theaters as a seasonal family event.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Scarlet",
@@ -98,7 +98,7 @@
           "description": "Japanese animated fantasy adventure with romance and sci-fi elements, featuring a young heroine drawn into a visually ambitious, high-concept genre world; released by Sony in a broad anime-focused rollout.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night",
@@ -117,6 +117,43 @@
           "description": "New holiday horror entry about a traumatized young man whose dark past resurfaces on Christmas Eve, sparking a new wave of yuletide terror.[3][7]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:31:45.993Z",
+          "is_new": false
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Action,Adventure,Fantasy",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Stephen Lang",
+            "Sigourney Weaver"
+          ],
+          "director": "James Cameron",
+          "theater_count": "3500+ theaters",
+          "description": "Fourth film in the Avatar franchise continuing the saga of Jake Sully and the Na'vi with large-scale effects and returning principal cast; major holiday blockbuster opening nationwide.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Lionsgate (Cinemas)",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar"
+          ],
+          "director": "Director Name TBA",
+          "theater_count": "1000-2,500 theaters",
+          "description": "Psychological thriller about a struggling woman hired by an elite couple that unravels into class-tension and danger; given a wide theatrical cinemas release by Lionsgate this week[2][5].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
           "is_new": true
         }
       ]
@@ -141,7 +178,7 @@
           "description": "Concert documentary event built around Becky G, following her performances and behind-the-scenes moments; a one- or few-night music-special engagement.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Cure: The Show of a Lost World",
@@ -159,7 +196,7 @@
           "description": "Event-style concert film capturing The Cure’s Show of a Lost World tour, targeting fans with a limited multi-day theatrical window.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Devoted Heart",
@@ -177,7 +214,7 @@
           "description": "Faith-leaning romantic drama centered on family, sacrifice, and enduring love, positioned toward churchgoing and inspirational audiences.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Visions",
@@ -195,7 +232,7 @@
           "description": "Psychological thriller about a woman haunted by disturbing premonitions, blending aviation-set suspense with domestic paranoia in a Euro-genre package.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Atropia",
@@ -213,7 +250,7 @@
           "description": "War-zone drama following intertwined lives in a conflict region, using an ensemble structure to explore trauma and moral ambiguity.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Lone Samurai",
@@ -231,7 +268,7 @@
           "description": "Martial-arts-driven samurai tale anchored by stylized swordplay and Eastern action choreography, aimed at genre aficionados.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Scarlet",
@@ -249,7 +286,7 @@
           "description": "Japanese animated fantasy epic mixing romance, sci-fi, and adventure elements, receiving a mid-size U.S. theatrical rollout via Sony.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Christina Aguilera: Christmas in Paris",
@@ -267,7 +304,7 @@
           "description": "Holiday concert special featuring Christina Aguilera performing in Paris with seasonal arrangements, released as a limited-time event for Christmas audiences.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Europe's New Faces",
@@ -285,7 +322,7 @@
           "description": "Documentary profiling emerging European political or cultural leaders, released in a small number of U.S. specialty theaters.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Motherland",
@@ -303,7 +340,7 @@
           "description": "Character-driven drama centered on complicated family dynamics when an adult child returns home, anchored by veteran performances and released in select cities.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Ella McCay",
@@ -321,7 +358,7 @@
           "description": "Political-leaning comedy-drama about a young staffer navigating statehouse power games and generational clashes; Disney is opening the film in a limited awards-qualifying run.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Resurrection",
@@ -339,7 +376,7 @@
           "description": "Epic, 160-minute Chinese sci-fi-inflected drama about survival and rebirth in a near-future society, receiving a curated art-house engagement from Janus ahead of a later wider rollout.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:23:49.984Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night",
@@ -357,7 +394,7 @@
           "description": "New holiday slasher entry reviving the cult Silent Night, Deadly Night franchise as a small town faces a brutal Christmas killer.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-13T04:36:47.536Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Franz",
@@ -371,7 +408,7 @@
           "description": "Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[5]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:04:45.017Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "One More Shot",
@@ -385,7 +422,7 @@
           "description": "On New Year's Eve 1999, Minnie discovers Time Traveling Tequila allowing her multiple shots to change the night's course.[5]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:04:45.017Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Merv",
@@ -399,14 +436,114 @@
           "description": "Recently separated couple takes shared dog on holiday trip and reconnects romantically.[5]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:04:45.017Z",
+          "is_new": false
+        },
+        {
+          "title": "The Milky Way",
+          "release_date": "2025-12-16",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Greenwich Entertainment",
+          "cast": [
+            "Lead Actor TBA",
+            "Lead Actress TBA",
+            "Supporting Actor TBA"
+          ],
+          "director": "Maya Kenig",
+          "theater_count": "10-50 theaters",
+          "description": "Israeli drama about a single mother who works in a human dairy expressing breast milk for wealthy mothers; opening in specialty/arthouse theaters[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "The Voice of Hind Rajab",
+          "release_date": "2025-12-17",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "WILLA (Cinemas)",
+          "cast": [
+            "Hind Rajab"
+          ],
+          "director": "Kaouther Ben Hania",
+          "theater_count": "5-20 theaters",
+          "description": "Documentary following emergency responders attempting to save a trapped child under fire in Gaza; opening in limited documentary circuits[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "Cover-Up",
+          "release_date": "2025-12-19",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "Netflix (Theatrical/Cinemas release)",
+          "cast": [
+            "Seymour Hersh",
+            "Interview Subjects TBA"
+          ],
+          "director": "Mark Obenhaus,Laura Poitras",
+          "theater_count": "10-50 theaters",
+          "description": "Investigative documentary co-directed by Laura Poitras profiling journalist Seymour Hersh and his reporting; receiving a limited theatrical run alongside festival play[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "No More Time",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Vertical Entertainment",
+          "cast": [
+            "Lead Actor TBA",
+            "Lead Actress TBA",
+            "Supporting Actor TBA"
+          ],
+          "director": "Dalila Droege",
+          "theater_count": "25-75 theaters",
+          "description": "Thriller about a couple seeking refuge in a remote mountain town amid a mysterious viral disease; opening in limited specialty release by Vertical[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "Timestamp",
+          "release_date": "2025-12-19",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "Kimstim Films",
+          "cast": [
+            "Students",
+            "Teachers",
+            "Director (on-screen)"
+          ],
+          "director": "Kateryna Gornostai",
+          "theater_count": "5-20 theaters",
+          "description": "Ukrainian documentary about school life continuing during wartime, receiving a limited arthouse release in the U.S.[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "The Milky Way — Additional Playdates (NY/LA)",
+          "release_date": "2025-12-15",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Greenwich Entertainment",
+          "cast": [
+            "Lead Actor TBA",
+            "Lead Actress TBA",
+            "Supporting Actor TBA"
+          ],
+          "director": "Maya Kenig",
+          "theater_count": "2-4 theaters",
+          "description": "Early platform playdates in New York and Los Angeles ahead of the wider limited rollout[2].",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:09:53.685Z",
           "is_new": true
         }
       ]
-    },
-    {
-      "id": "platform-release",
-      "name": "Platform Release",
-      "movies": []
     }
   ],
   "fetch_history": [
@@ -425,6 +562,10 @@
     {
       "timestamp": "2025-12-13T09:04:45.017Z",
       "new_movies_count": 3
+    },
+    {
+      "timestamp": "2025-12-15T09:09:53.685Z",
+      "new_movies_count": 8
     }
   ]
 }

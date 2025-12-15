@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-51",
-  "week_start": "2025-12-15",
-  "week_end": "2025-12-21",
+  "week_number": "2025-52",
+  "week_start": "2025-12-22",
+  "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2025-12-14T09:05:55.998Z",
-  "fetch_count": 2,
+  "last_updated": "2025-12-15T09:11:41.941Z",
+  "fetch_count": 3,
   "categories": [
     {
       "id": "wide-release",
@@ -27,7 +27,7 @@
           "description": "Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The SpongeBob Movie: Search for SquarePants",
@@ -45,7 +45,7 @@
           "description": "SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Housemaid",
@@ -64,6 +64,79 @@
           "description": "A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": false
+        },
+        {
+          "title": "Five Nights at Freddy's 2",
+          "release_date": "2025-12-05",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Brady Noon",
+            "Kara Hayward",
+            "Emma Tammy"
+          ],
+          "director": "Emma Tammy",
+          "theater_count": "3000+ theaters",
+          "description": "Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Anaconda",
+          "release_date": "2025-12-25",
+          "genre": "Action,Adventure,Comedy",
+          "rating": "PG-13",
+          "studio": "Sony Pictures",
+          "cast": [
+            "Jack Black",
+            "Paul Rudd",
+            "Thandiwe Newton",
+            "Steve Zahn"
+          ],
+          "director": "Tom Gormakin",
+          "theater_count": "3000+ theaters",
+          "description": "Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Song Sung Blue",
+          "release_date": "2025-12-25",
+          "genre": "Biography,Drama",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Hugh Jackman",
+            "Kate Hudson",
+            "Ella Anderson"
+          ],
+          "director": "James Mangold",
+          "theater_count": "2500+ theaters",
+          "description": "Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Marty Supreme",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Fantasy",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Timothée Chalamet",
+            "Gwyneth Paltrow",
+            "Odessa A'zion"
+          ],
+          "director": "Josh Safdie",
+          "theater_count": "1200-2000 theaters",
+          "description": "Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
           "is_new": true
         }
       ]
@@ -89,7 +162,7 @@
           "description": "A housemaid uncovers dark secrets while working for a wealthy family in this adaptation of the bestselling novel.[1][2][5]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Ella McCay",
@@ -107,7 +180,7 @@
           "description": "Indie drama following a young woman's complex relationships and personal growth in contemporary New York.[1][2]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "David",
@@ -124,7 +197,7 @@
           "description": "A shepherd faces supernatural visions during Christmas, blending faith and horror elements in this inspirational tale.[1]",
           "additional_languages": [],
           "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The SpongeBob Movie: Search for SquarePants",
@@ -144,6 +217,78 @@
           "additional_languages": [],
           "first_seen": "2025-12-14T09:05:55.998Z",
           "is_new": true
+        },
+        {
+          "title": "Father Mother Sister Brother",
+          "release_date": "2025-12-24",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "Kino Lorber",
+          "cast": [
+            "Tom Waits",
+            "Adam Driver",
+            "Mayim Bialik"
+          ],
+          "director": "Jim Jarmusch",
+          "theater_count": "5-25 theaters",
+          "description": "Jarmusch ensemble drama about estranged siblings reuniting for an uneasy holiday gathering; expected NY/LA platform release.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Goodbye June",
+          "release_date": "2025-12-24",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "IFC Films",
+          "cast": [
+            "Helen Mirren",
+            "Timothy Spall",
+            "Johnny Flynn"
+          ],
+          "director": "Kate Winslet",
+          "theater_count": "10-50 theaters",
+          "description": "Family drama following fractured siblings forced together after a crisis; festival buzz and limited holiday-week playdates.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Dust Bunny",
+          "release_date": "2025-12-12",
+          "genre": "Animation,Family",
+          "rating": "PG",
+          "studio": "GKIDS",
+          "cast": [
+            "(voice cast unconfirmed)",
+            "",
+            ""
+          ],
+          "director": "(director unconfirmed),",
+          "theater_count": "20-75 theaters",
+          "description": "Animated indie family film receiving a limited theatrical run in December; platform expansion possible depending on early performance.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (new)",
+          "release_date": "2025-12-01",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Saban Films",
+          "cast": [
+            "(leads unconfirmed)",
+            "",
+            ""
+          ],
+          "director": "(director unconfirmed),",
+          "theater_count": "10-50 theaters",
+          "description": "Reimagining/revival of the controversial holiday slasher property in a limited theatrical engagement around December; some credits unconfirmed.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": true
         }
       ]
     }
@@ -156,6 +301,10 @@
     {
       "timestamp": "2025-12-14T09:05:55.998Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-15T09:11:41.941Z",
+      "new_movies_count": 8
     }
   ]
 }
