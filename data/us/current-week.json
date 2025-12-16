@@ -3,8 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
-  "last_updated": "2025-12-15T09:09:53.685Z",
-  "fetch_count": 5,
+  "last_updated": "2025-12-16T09:07:57.412Z",
+  "fetch_count": 6,
   "categories": [
     {
       "id": "wide-release",
@@ -154,6 +154,44 @@
           "description": "Psychological thriller about a struggling woman hired by an elite couple that unravels into class-tension and danger; given a wide theatrical cinemas release by Lionsgate this week[2][5].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
+          "is_new": true
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants",
+          "release_date": "2025-12-19",
+          "genre": "Animation,Comedy,Adventure",
+          "rating": "PG",
+          "studio": "Paramount Pictures / Nickelodeon Movies",
+          "cast": [
+            "Tom Kenny",
+            "Clancy Brown",
+            "Mr. Lawrence",
+            "Regina Hall"
+          ],
+          "director": "Derek Drymon",
+          "theater_count": "3000+ theaters",
+          "description": "Animated franchise entry following SpongeBob on a new undersea adventure to rescue/seek SquarePants; family-oriented wide release in holiday window.[3][4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-16T09:07:57.412Z",
+          "is_new": true
+        },
+        {
+          "title": "Is This Thing On?",
+          "release_date": "2025-12-19",
+          "genre": "Comedy,Drama",
+          "rating": "PG-13",
+          "studio": "Paramount Pictures",
+          "cast": [
+            "Will Arnett",
+            "Laura Dern",
+            "Andra Day",
+            "Amy Sedaris"
+          ],
+          "director": "Bradley Cooper",
+          "theater_count": "1500-2,500 theaters",
+          "description": "Adult comedic-drama about a long-married couple navigating separation and rediscovery; star-driven studio release opening the holiday week.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-16T09:07:57.412Z",
           "is_new": true
         }
       ]
@@ -542,6 +580,24 @@
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
           "is_new": true
+        },
+        {
+          "title": "The Milky Way (alternate listing)",
+          "release_date": "2025-12-16",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Greenwich Entertainment",
+          "cast": [
+            "(see above)",
+            "Tala (lead)",
+            "Maya Kenig"
+          ],
+          "director": "Maya Kenig",
+          "theater_count": "5-50 theaters",
+          "description": "(Duplicate/alternate reporting included to reflect multiple trade listings noting a Dec 16 specialty opening).",
+          "additional_languages": [],
+          "first_seen": "2025-12-16T09:07:57.412Z",
+          "is_new": true
         }
       ]
     }
@@ -566,6 +622,10 @@
     {
       "timestamp": "2025-12-15T09:09:53.685Z",
       "new_movies_count": 8
+    },
+    {
+      "timestamp": "2025-12-16T09:07:57.412Z",
+      "new_movies_count": 3
     }
   ]
 }

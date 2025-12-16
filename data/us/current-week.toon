@@ -2,7 +2,7 @@ week_number: 2025-51
 week_start: 2025-12-15
 week_end: 2025-12-21
 country: us
-last_updated: 2025-12-15T09:09:53.685Z
+last_updated: 2025-12-16T09:07:57.412Z
 categories:
   -
     id: wide-release
@@ -105,6 +105,32 @@ categories:
         director: Director Name TBA
         description: Psychological thriller about a struggling woman hired by an elite couple that unravels into class-tension and danger; given a wide theatrical cinemas release by Lionsgate this week[2][5].
         first_seen: 2025-12-15T09:09:53.685Z
+        is_new: true
+      -
+        title: The SpongeBob Movie: Search for SquarePants
+        release_date: 2025-12-19
+        genre: Animation,Comedy,Adventure
+        cast:
+          - Tom Kenny
+          - Clancy Brown
+          - Mr. Lawrence
+          - Regina Hall
+        director: Derek Drymon
+        description: Animated franchise entry following SpongeBob on a new undersea adventure to rescue/seek SquarePants; family-oriented wide release in holiday window.[3][4]
+        first_seen: 2025-12-16T09:07:57.412Z
+        is_new: true
+      -
+        title: Is This Thing On?
+        release_date: 2025-12-19
+        genre: Comedy,Drama
+        cast:
+          - Will Arnett
+          - Laura Dern
+          - Andra Day
+          - Amy Sedaris
+        director: Bradley Cooper
+        description: Adult comedic-drama about a long-married couple navigating separation and rediscovery; star-driven studio release opening the holiday week.[3]
+        first_seen: 2025-12-16T09:07:57.412Z
         is_new: true
   -
     id: limited-release
@@ -358,4 +384,16 @@ categories:
         director: Maya Kenig
         description: Early platform playdates in New York and Los Angeles ahead of the wider limited rollout[2].
         first_seen: 2025-12-15T09:09:53.685Z
+        is_new: true
+      -
+        title: The Milky Way (alternate listing)
+        release_date: 2025-12-16
+        genre: Drama
+        cast:
+          - (see above)
+          - Tala (lead)
+          - Maya Kenig
+        director: Maya Kenig
+        description: (Duplicate/alternate reporting included to reflect multiple trade listings noting a Dec 16 specialty opening).
+        first_seen: 2025-12-16T09:07:57.412Z
         is_new: true

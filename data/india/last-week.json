@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-15T09:09:08.023Z",
-  "fetch_count": 2,
+  "last_updated": "2025-12-16T09:07:14.017Z",
+  "fetch_count": 3,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -79,6 +79,21 @@
           "production": "TBA",
           "description": "Sequel to Kis Kisko Pyaar Karoon; trade coverage lists a Dec 12, 2025 theatrical release for Kapil Sharma's comedy sequel.[2]",
           "first_seen": "2025-12-15T09:09:08.023Z",
+          "is_new": true
+        },
+        {
+          "title": "Rambo",
+          "release_date": "2025-12-09",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Tiger Shroff"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Action film led by Tiger Shroff, theatrical release on December 9[1].",
+          "first_seen": "2025-12-16T09:07:14.017Z",
           "is_new": true
         }
       ]
@@ -195,6 +210,10 @@
     {
       "timestamp": "2025-12-15T09:09:08.023Z",
       "new_movies_count": 8
+    },
+    {
+      "timestamp": "2025-12-16T09:07:14.017Z",
+      "new_movies_count": 1
     }
   ]
 }

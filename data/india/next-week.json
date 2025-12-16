@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "india",
-  "last_updated": "2025-12-15T09:12:42.477Z",
-  "fetch_count": 2,
+  "last_updated": "2025-12-16T09:10:30.610Z",
+  "fetch_count": 3,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -26,7 +26,7 @@
           "production": "TBA",
           "description": "Comedy film featuring ensemble cast in a chaotic adventure setup.[7]",
           "first_seen": "2025-12-14T09:06:27.394Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Bhai Toh Bhai Hota Hai",
@@ -44,7 +44,7 @@
           "production": "TBA",
           "description": "Action film centered on brotherhood and high-stakes conflicts.[7]",
           "first_seen": "2025-12-14T09:06:27.394Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Zindagi Ke Rang",
@@ -94,7 +94,7 @@
           "production": "TBA",
           "description": "Multi-genre film blending action, comedy, and thriller elements starring Mohanlal.[7]",
           "first_seen": "2025-12-14T09:06:27.394Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Maharaju Maharani",
@@ -125,6 +125,10 @@
     {
       "timestamp": "2025-12-15T09:12:42.477Z",
       "new_movies_count": 2
+    },
+    {
+      "timestamp": "2025-12-16T09:10:30.610Z",
+      "new_movies_count": 0
     }
   ]
 }

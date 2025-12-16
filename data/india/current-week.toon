@@ -2,7 +2,7 @@ week_number: 2025-51
 week_start: 2025-12-15
 week_end: 2025-12-21
 country: india
-last_updated: 2025-12-15T09:10:36.327Z
+last_updated: 2025-12-16T09:08:31.627Z
 categories:
   -
     id: bollywood-hindi
@@ -105,14 +105,98 @@ categories:
         description: Action film centered on brotherhood themes with new faces leading the narrative.[5]
         first_seen: 2025-12-15T09:10:36.327Z
         is_new: true
+      -
+        title: Dhurandhar
+        release_date: 2025-12-05
+        genre: Action,War,Drama
+        cast:
+          - Ranveer Singh
+          - Akshaye Khanna
+          - Sanjay Dutt
+        director: Aditya Dhar
+        description: Based on true events, a high‑intensity military drama about covert operations and infiltration behind enemy lines; major wide theatrical release and big‑budget production.[2]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
+      -
+        title: Kis Kis Ko Pyaar Karoon 2
+        release_date: 2025-12-12
+        genre: Comedy
+        cast:
+          - Kapil Sharma
+          - Manjot Singh
+          - Ayesha Khan
+        director: Anukalp Goswami
+        description: Sequel to the original comedy, follows a man juggling multiple marriages and romantic entanglements; theatre release confirmed for December.[2]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
+      -
+        title: Durlabh Prasad Ki Dusri Shaadi
+        release_date: 2025-12-19
+        genre: Family,Drama,Comedy
+        cast:
+          - Sanjay Mishra
+          - Vyom Yadav
+          - Mahima Chaudhry
+        director: Unspecified
+        description: Family comedy-drama centering on a man's second marriage and ensuing family dynamics; listed on theatrical calendars for 2025-12-19.[3][4]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
+      -
+        title: Tu Meri Main Tera Main Tera Tu Meri
+        release_date: 2025-12-25
+        genre: Romance,Comedy
+        cast:
+          - Kartik Aaryan
+          - Unspecified
+          - Unspecified
+        director: Unspecified
+        description: Romantic comedy scheduled for a Christmas theatrical release (listed in upcoming Hindi release trackers; release date widely reported as 2025-12-25). [5]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
   -
     id: regional-telugu
     name: Regional (Telugu)
     movies:
+      -
+        title: Yaar
+        release_date: 2025-12-27
+        genre: Horror
+        cast:
+          - Sonia Agarwal
+          - Raai Laxmi
+          - Aman Tanwar
+        director: Unspecified
+        description: Regional horror titled Yaar listed on release calendars for late December; theatrical listing on international calendar indicates theatrical release around December end (marked here for tracking; date outside week range so listed for completeness). [3]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
+      -
+        title: Maharaju Maharani
+        release_date: 2025-12-27
+        genre: Drama
+        cast:
+          - Ramranadheer
+          - Sreeliya
+          - Jahnavi
+        director: Unspecified
+        description: Local drama with regional cast noted on IMDb's India calendar for a December theatrical release (outside target week). [3]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
   -
     id: regional-tamil
     name: Regional (Tamil)
     movies:
+      -
+        title: Avatar: Fire and Ash
+        release_date: 2025-12-19
+        genre: Action,Adventure,Fantasy
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Stephen Lang
+        director: Unspecified (Hollywood franchise)
+        description: Global theatrical release of franchise film listed for 2025-12-19 in India (regional language dubbed prints expected; theatrical release confirmed).[3][4]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
   -
     id: regional-other
     name: Regional (Other)
@@ -180,4 +264,28 @@ categories:
         director: Unknown
         description: Multi-genre film starring Mohanlal and Dileep in a high-energy mix of action, comedy, and thriller elements from Mollywood.[5]
         first_seen: 2025-12-15T09:10:36.327Z
+        is_new: true
+      -
+        title: Durlabh Prasad Ki Dusri Shaadi (Hindi)
+        release_date: 2025-12-19
+        genre: Family,Drama,Comedy
+        cast:
+          - Sanjay Mishra
+          - Vyom Yadav
+          - Mahima Chaudhry
+        director: Unspecified
+        description: Repeat entry under regional-other to reflect non‑Bollywood trade listings that include this theatrical release on 2025-12-19 (listed by release trackers). [3][4]
+        first_seen: 2025-12-16T09:08:31.627Z
+        is_new: true
+      -
+        title: Avatar: Fire and Ash (English)
+        release_date: 2025-12-19
+        genre: Action,Adventure,Fantasy
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Stephen Lang
+        director: Unspecified
+        description: International blockbuster releasing in Indian theatres on 2025-12-19 with dubbed versions in regional languages; theatrical release widely reported.[3][4]
+        first_seen: 2025-12-16T09:08:31.627Z
         is_new: true
