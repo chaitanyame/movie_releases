@@ -3,8 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
-  "last_updated": "2025-12-16T09:07:57.412Z",
-  "fetch_count": 6,
+  "last_updated": "2025-12-17T09:08:59.717Z",
+  "fetch_count": 7,
   "categories": [
     {
       "id": "wide-release",
@@ -192,6 +192,24 @@
           "description": "Adult comedic-drama about a long-married couple navigating separation and rediscovery; star-driven studio release opening the holiday week.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:07:57.412Z",
+          "is_new": true
+        },
+        {
+          "title": "Jujutsu Kaisen: Execution",
+          "release_date": "2025-12-19",
+          "genre": "Animation,Action,Fantasy",
+          "rating": "PG-13",
+          "studio": "Crunchyroll/Toho/United Artists Releasing",
+          "cast": [
+            "(voice)Junya Enoki",
+            "Yuichi Nakamura",
+            "Asami Seto"
+          ],
+          "director": "Tatsuya Yoshihara",
+          "theater_count": "2000-3000 theaters",
+          "description": "Feature film continuation of the Jujutsu Kaisen anime franchise, opening wide in the U.S. during the holiday week.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:08:59.717Z",
           "is_new": true
         }
       ]
@@ -598,6 +616,60 @@
           "additional_languages": [],
           "first_seen": "2025-12-16T09:07:57.412Z",
           "is_new": true
+        },
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-17",
+          "genre": "Thriller,Drama",
+          "rating": "R",
+          "studio": "Lionsgate (Cinemas)",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar"
+          ],
+          "director": "Hannah Espia",
+          "theater_count": "50-150 theaters",
+          "description": "Thriller about a struggling woman who becomes housemaid for an affluent couple; specialty release from Lionsgate into theaters.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:08:59.717Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (2025)",
+          "release_date": "2025-12-15",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "(independent)",
+          "cast": [
+            "",
+            "",
+            ""
+          ],
+          "director": "(director)",
+          "theater_count": "10-50 theaters",
+          "description": "New horror entry tied to the Silent Night, Deadly Night concept opening in limited/genre-focused cinemas.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:08:59.717Z",
+          "is_new": true
+        },
+        {
+          "title": "Dust Bunny",
+          "release_date": "2025-12-15",
+          "genre": "Horror,Comedy",
+          "rating": "R",
+          "studio": "(independent)",
+          "cast": [
+            "",
+            "",
+            ""
+          ],
+          "director": "(director)",
+          "theater_count": "5-30 theaters",
+          "description": "Indie horror-comedy receiving limited theatrical release during the December slate.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:08:59.717Z",
+          "is_new": true
         }
       ]
     }
@@ -626,6 +698,10 @@
     {
       "timestamp": "2025-12-16T09:07:57.412Z",
       "new_movies_count": 3
+    },
+    {
+      "timestamp": "2025-12-17T09:08:59.717Z",
+      "new_movies_count": 4
     }
   ]
 }

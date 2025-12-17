@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2025-12-16T09:09:29.282Z",
-  "fetch_count": 4,
+  "last_updated": "2025-12-17T09:10:16.848Z",
+  "fetch_count": 5,
   "categories": [
     {
       "id": "wide-release",
@@ -396,6 +396,60 @@
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
           "is_new": true
+        },
+        {
+          "title": "Hamnet",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Period",
+          "rating": "NR",
+          "studio": "Specialty distributor",
+          "cast": [
+            "Supporting Cast TBD",
+            "Supporting Cast TBD",
+            "Supporting Cast TBD"
+          ],
+          "director": "TBD",
+          "theater_count": "20-70 theaters",
+          "description": "Period drama scheduled for limited holiday theatrical openings (platform play in select cities).[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:10:16.848Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night",
+          "release_date": "2025-12-19",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Specialty horror distributor",
+          "cast": [
+            "TBD",
+            "TBD",
+            "TBD"
+          ],
+          "director": "TBD",
+          "theater_count": "10-50 theaters",
+          "description": "Limited theatrical revival/sequel entry timed around the holiday week for horror fans and specialty venues.[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:10:16.848Z",
+          "is_new": true
+        },
+        {
+          "title": "Wake Up Dead Man: A Knives Out Mystery",
+          "release_date": "2025-12-19",
+          "genre": "Mystery,Comedy",
+          "rating": "PG-13",
+          "studio": "Lionsgate (platform)",
+          "cast": [
+            "Daniel Craig",
+            "Supporting Cast TBD",
+            "Supporting Cast TBD"
+          ],
+          "director": "Rian Johnson",
+          "theater_count": "50-150 theaters",
+          "description": "New entry/standalone in the Knives Out universe opening platform-style in select cities during the holiday period.[2]",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:10:16.848Z",
+          "is_new": true
         }
       ]
     }
@@ -416,6 +470,10 @@
     {
       "timestamp": "2025-12-16T09:09:29.282Z",
       "new_movies_count": 6
+    },
+    {
+      "timestamp": "2025-12-17T09:10:16.848Z",
+      "new_movies_count": 3
     }
   ]
 }

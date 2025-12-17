@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "india",
-  "last_updated": "2025-12-16T09:10:30.610Z",
-  "fetch_count": 3,
+  "last_updated": "2025-12-17T09:10:57.723Z",
+  "fetch_count": 4,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -128,6 +128,10 @@
     },
     {
       "timestamp": "2025-12-16T09:10:30.610Z",
+      "new_movies_count": 0
+    },
+    {
+      "timestamp": "2025-12-17T09:10:57.723Z",
       "new_movies_count": 0
     }
   ]

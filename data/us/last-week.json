@@ -3,13 +3,104 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "us",
-  "last_updated": "2025-12-15T09:08:19.090Z",
-  "fetch_count": 3,
+  "last_updated": "2025-12-17T09:07:26.275Z",
+  "fetch_count": 4,
   "categories": [
     {
       "id": "wide-release",
       "name": "Wide Release",
-      "movies": []
+      "movies": [
+        {
+          "title": "Five Nights at Freddy's 2",
+          "release_date": "2025-12-05",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Piper Rockelle",
+            "Josh Hutcherson",
+            "Joseph Quinn"
+          ],
+          "director": "Emma Tammi",
+          "theater_count": "3000+ theaters",
+          "description": "Sequel in the Five Nights at Freddy's horror franchise following new jumpscare-driven events at a revamped animatronic attraction; wide nationwide rollout expected.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Anaconda",
+          "release_date": "2025-12-12",
+          "genre": "Action, Adventure",
+          "rating": "PG-13",
+          "studio": "Columbia Pictures / Sony Pictures",
+          "cast": [
+            "Jack Black",
+            "Steve Zahn",
+            "Paul Rudd"
+          ],
+          "director": "Jon Turteltaub",
+          "theater_count": "2500+ theaters",
+          "description": "New action-adventure film centered on an expedition encountering a monstrous anaconda; positioned as a broad holiday action title from a major studio.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Zootopia 2",
+          "release_date": "2025-12-12",
+          "genre": "Animation, Family",
+          "rating": "PG",
+          "studio": "Walt Disney Pictures",
+          "cast": [
+            "Ginnifer Goodwin",
+            "Jason Bateman",
+            "Idris Elba"
+          ],
+          "director": "Byron Howard",
+          "theater_count": "3500+ theaters",
+          "description": "Sequel to Disney's Zootopia following Judy Hopps and Nick Wilde on a new mystery-adventure in the metropolitan animal world; major holiday family release.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (2025)",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Lionsgate",
+          "cast": [
+            "Jamie Campbell Bower",
+            "Anya Taylor-Joy",
+            "Keegan-Michael Key"
+          ],
+          "director": "David Bruckner",
+          "theater_count": "2000+ theaters",
+          "description": "Holiday-themed slasher reboot/reimagining of the Silent Night, Deadly Night property updated for modern horror audiences.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Sci-Fi/Action",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldana",
+            "Stephen Lang"
+          ],
+          "director": "James Cameron",
+          "theater_count": "4000+ theaters",
+          "description": "Third major installment of the Avatar franchise continuing the saga on Pandora with large-scale action and visual effects.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "limited-release",
@@ -120,6 +211,96 @@
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
           "is_new": true
+        },
+        {
+          "title": "Hamnet",
+          "release_date": "2025-12-12",
+          "genre": "Drama, Historical",
+          "rating": "R",
+          "studio": "Searchlight Pictures",
+          "cast": [
+            "Jessie Buckley",
+            "Paul Mescal",
+            "Olivia Colman"
+          ],
+          "director": "Sam Mendes",
+          "theater_count": "10-50 theaters",
+          "description": "Literary period drama adaptation focusing on Shakespeare's family and the impact of the plague; opening in select cities as a specialty release.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Lionsgate",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Pedro Pascal"
+          ],
+          "director": "Park Chan-wook",
+          "theater_count": "50-150 theaters",
+          "description": "Thriller adaptation of a best-selling novel about a high-society household with dark secrets; limited specialty rollout (date noted as 2025-12-19 but promoted in specialty circuits).",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Father, Mother, Sister, Brother",
+          "release_date": "2025-12-24",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "MUBI",
+          "cast": [
+            "Tom Waits",
+            "Adam Driver",
+            "Mayim Bialik"
+          ],
+          "director": "Jim Jarmusch",
+          "theater_count": "10-25 theaters",
+          "description": "Jim Jarmusch ensemble drama about estranged siblings reuniting; limited art-house engagement.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (reboot)",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Neon",
+          "cast": [
+            "Emma Roberts",
+            "Zachary Levi",
+            "Olivia Cooke"
+          ],
+          "director": "David Bruckner",
+          "theater_count": "50-150 theaters",
+          "description": "Reimagining of the holiday slasher property opening in select cities with genre-targeted engagements.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
+        },
+        {
+          "title": "Song Sung Blue",
+          "release_date": "2025-12-12",
+          "genre": "Musical, Drama",
+          "rating": "PG-13",
+          "studio": "Universal Pictures (specialty division)",
+          "cast": [
+            "Hugh Jackman",
+            "Kate Hudson",
+            "Anya Taylor-Joy"
+          ],
+          "director": "Damien Chazelle",
+          "theater_count": "100-300 theaters",
+          "description": "Original musical drama featuring a washed-up singer's comeback arc; platform-to-wide potential depending on early response.",
+          "additional_languages": [],
+          "first_seen": "2025-12-17T09:07:26.275Z",
+          "is_new": true
         }
       ]
     }
@@ -136,6 +317,10 @@
     {
       "timestamp": "2025-12-15T09:08:19.090Z",
       "new_movies_count": 6
+    },
+    {
+      "timestamp": "2025-12-17T09:07:26.275Z",
+      "new_movies_count": 10
     }
   ]
 }

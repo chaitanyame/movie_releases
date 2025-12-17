@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-16T09:07:14.017Z",
-  "fetch_count": 3,
+  "last_updated": "2025-12-17T09:08:04.271Z",
+  "fetch_count": 4,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -198,6 +198,37 @@
           "description": "Regional reporting lists Feminichi Fathima as a Manorama Max release on Dec 12, 2025 and does not clearly confirm a theatrical release; included here with theatrical status flagged as TBA per source ambiguity.[3]",
           "first_seen": "2025-12-15T09:09:08.023Z",
           "is_new": true
+        },
+        {
+          "title": "Ambalamukkile Visheshangal (duplicate-note)",
+          "release_date": "TBA",
+          "genre": "Family Drama/Comedy",
+          "language": "Malayalam",
+          "additional_languages": {},
+          "cast": {},
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Some regional sources reported prior delays and tentative slots; included as TBA where specific theatre confirmations remained inconsistent in listings[3].",
+          "first_seen": "2025-12-17T09:08:04.271Z",
+          "is_new": true
+        },
+        {
+          "title": "Kis Kisko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Kapil Sharma",
+            "Manjot Singh",
+            "Ayesha Khan",
+            "Parul Gulati"
+          ],
+          "director": "Unknown",
+          "production": "Unknown",
+          "description": "Widely reported sequel scheduled for Dec 12, 2025 in trade write-ups as a theatrical Hindi comedy sequel featuring Kapil Sharma[2].",
+          "first_seen": "2025-12-17T09:08:04.271Z",
+          "is_new": true
         }
       ]
     }
@@ -214,6 +245,10 @@
     {
       "timestamp": "2025-12-16T09:07:14.017Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-17T09:08:04.271Z",
+      "new_movies_count": 2
     }
   ]
 }
