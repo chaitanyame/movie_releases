@@ -2,7 +2,7 @@ week_number: 2025-51
 week_start: 2025-12-15
 week_end: 2025-12-21
 country: us
-last_updated: 2025-12-17T09:08:59.717Z
+last_updated: 2025-12-18T09:07:52.475Z
 categories:
   -
     id: wide-release
@@ -93,7 +93,7 @@ categories:
         director: James Cameron
         description: Fourth film in the Avatar franchise continuing the saga of Jake Sully and the Na'vi with large-scale effects and returning principal cast; major holiday blockbuster opening nationwide.
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: The Housemaid
         release_date: 2025-12-19
@@ -105,7 +105,7 @@ categories:
         director: Director Name TBA
         description: Psychological thriller about a struggling woman hired by an elite couple that unravels into class-tension and danger; given a wide theatrical cinemas release by Lionsgate this week[2][5].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: The SpongeBob Movie: Search for SquarePants
         release_date: 2025-12-19
@@ -339,7 +339,7 @@ categories:
         director: Maya Kenig
         description: Israeli drama about a single mother who works in a human dairy expressing breast milk for wealthy mothers; opening in specialty/arthouse theaters[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: The Voice of Hind Rajab
         release_date: 2025-12-17
@@ -349,7 +349,7 @@ categories:
         director: Kaouther Ben Hania
         description: Documentary following emergency responders attempting to save a trapped child under fire in Gaza; opening in limited documentary circuits[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: Cover-Up
         release_date: 2025-12-19
@@ -360,7 +360,7 @@ categories:
         director: Mark Obenhaus,Laura Poitras
         description: Investigative documentary co-directed by Laura Poitras profiling journalist Seymour Hersh and his reporting; receiving a limited theatrical run alongside festival play[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: No More Time
         release_date: 2025-12-19
@@ -372,7 +372,7 @@ categories:
         director: Dalila Droege
         description: Thriller about a couple seeking refuge in a remote mountain town amid a mysterious viral disease; opening in limited specialty release by Vertical[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: Timestamp
         release_date: 2025-12-19
@@ -384,7 +384,7 @@ categories:
         director: Kateryna Gornostai
         description: Ukrainian documentary about school life continuing during wartime, receiving a limited arthouse release in the U.S.[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: The Milky Way — Additional Playdates (NY/LA)
         release_date: 2025-12-15
@@ -396,7 +396,7 @@ categories:
         director: Maya Kenig
         description: Early platform playdates in New York and Los Angeles ahead of the wider limited rollout[2].
         first_seen: 2025-12-15T09:09:53.685Z
-        is_new: true
+        is_new: false
       -
         title: The Milky Way (alternate listing)
         release_date: 2025-12-16
@@ -444,4 +444,17 @@ categories:
         director: (director)
         description: Indie horror-comedy receiving limited theatrical release during the December slate.
         first_seen: 2025-12-17T09:08:59.717Z
+        is_new: true
+      -
+        title: Is This Thing On?
+        release_date: 2025-12-19
+        genre: Comedy,Drama
+        cast:
+          - Will Arnett
+          - Laura Dern
+          - Cooper Hoffman
+          - Andra Day
+        director: Bradley Cooper
+        description: A divorcing couple navigates single life, uncovers secrets, and rediscovers their relationship through new adventures.[1]
+        first_seen: 2025-12-18T09:07:52.475Z
         is_new: true

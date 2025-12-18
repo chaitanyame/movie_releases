@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2025-12-17T09:10:16.848Z",
-  "fetch_count": 5,
+  "last_updated": "2025-12-18T09:09:57.044Z",
+  "fetch_count": 6,
   "categories": [
     {
       "id": "wide-release",
@@ -82,7 +82,7 @@
           "description": "Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Anaconda",
@@ -101,7 +101,7 @@
           "description": "Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Song Sung Blue",
@@ -119,7 +119,7 @@
           "description": "Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Marty Supreme",
@@ -137,6 +137,41 @@
           "description": "Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": false
+        },
+        {
+          "title": "Way of the Warrior Kid",
+          "release_date": "2025-12-25",
+          "genre": "Action,Drama,Family",
+          "rating": "PG-13",
+          "studio": "Lionsgate",
+          "cast": [
+            "Chris Pratt",
+            "Linda Cardellini",
+            "Jude Hill"
+          ],
+          "director": "McG",
+          "theater_count": "2500+ theaters",
+          "description": "Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Cover-Up",
+          "release_date": "2025-12-26",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Roadside Attractions",
+          "cast": [
+            "Michael Biehn",
+            "Stephen Lang"
+          ],
+          "director": "Tom Paton",
+          "theater_count": "2000+ theaters",
+          "description": "Thriller involving a conspiracy cover-up with action elements.[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
           "is_new": true
         }
       ]
@@ -234,7 +269,7 @@
           "description": "Jarmusch ensemble drama about estranged siblings reuniting for an uneasy holiday gathering; expected NY/LA platform release.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Goodbye June",
@@ -252,7 +287,7 @@
           "description": "Family drama following fractured siblings forced together after a crisis; festival buzz and limited holiday-week playdates.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dust Bunny",
@@ -270,7 +305,7 @@
           "description": "Animated indie family film receiving a limited theatrical run in December; platform expansion possible depending on early performance.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night (new)",
@@ -288,7 +323,7 @@
           "description": "Reimagining/revival of the controversial holiday slasher property in a limited theatrical engagement around December; some credits unconfirmed.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Marty Supreme",
@@ -306,7 +341,7 @@
           "description": "A young man pursues greatness in table tennis against all odds in this biographical drama.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Song Sung Blue",
@@ -325,7 +360,7 @@
           "description": "Biographical drama about the friendship between Neil Diamond and Burt Bacharach told through music and personal struggles.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Way of the Warrior Kid",
@@ -343,7 +378,7 @@
           "description": "Bullied kid trains with Navy SEAL uncle to build confidence and skills over summer based on Jocko Willink's book.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Planet Gliese",
@@ -359,7 +394,7 @@
           "description": "Sci-fi epic exploring quantum entanglement and black holes using proprietary tech for mind-bending realities.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Lone Samurai",
@@ -377,7 +412,7 @@
           "description": "Art-house samurai-themed drama in limited play in select cities during the holiday week.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dust Bunny (additional playdates)",
@@ -395,7 +430,7 @@
           "description": "Continued limited engagements/expansions in select cities during Dec 22-28 week.",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:09:29.282Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Hamnet",
@@ -450,8 +485,137 @@
           "additional_languages": [],
           "first_seen": "2025-12-17T09:10:16.848Z",
           "is_new": true
+        },
+        {
+          "title": "#RUNSEOKJIN_EP.TOUR THE MOVIE",
+          "release_date": "2025-12-27",
+          "genre": "Music,Documentary",
+          "rating": "NR",
+          "studio": "HYBE",
+          "cast": [
+            "Jin"
+          ],
+          "director": "Unknown",
+          "theater_count": "100-300 theaters",
+          "description": "Concert film capturing BTS Jin's EP tour performances.[4][7]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (2025)",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Saban Films",
+          "cast": [
+            "Lead Actor A",
+            "Lead Actor B",
+            "Lead Actor C"
+          ],
+          "director": "Director Name",
+          "theater_count": "20-100 theaters",
+          "description": "Horror entry timed for the season with limited theatrical engagements.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "The Black Phone 2",
+          "release_date": "2025-10-17",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Ethan Hawke",
+            "Mason Thames",
+            "Madeleine McGraw"
+          ],
+          "director": "Scott Derrickson",
+          "theater_count": "150-800 theaters",
+          "description": "Sequel to The Black Phone; still playing in limited/expanded engagements in some markets during December.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Champion",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Sports",
+          "rating": "PG-13",
+          "studio": "Distributor Name",
+          "cast": [
+            "Lead Actor A",
+            "Lead Actor B",
+            "Lead Actor C"
+          ],
+          "director": "Director Name",
+          "theater_count": "25-75 theaters",
+          "description": "Independent sports drama opening in select cities over the holiday week.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Ikkis",
+          "release_date": "2025-12-25",
+          "genre": "Foreign,Drama",
+          "rating": "NR",
+          "studio": "International Distributor",
+          "cast": [
+            "Lead Actor A",
+            "Lead Actor B",
+            "Lead Actor C"
+          ],
+          "director": "Director Name",
+          "theater_count": "5-20 theaters",
+          "description": "International festival title receiving a limited U.S. theatrical release during the holiday window.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Song Sung Blue (NY/LA limited launch)",
+          "release_date": "2025-12-25",
+          "genre": "Biography,Drama,Music",
+          "rating": "PG-13",
+          "studio": "Searchlight Pictures/Disney",
+          "cast": [
+            "Hugh Jackman",
+            "Kate Hudson",
+            "Ella Anderson"
+          ],
+          "director": "Todd Haynes",
+          "theater_count": "10-50 theaters",
+          "description": "In addition to its wider roll, certain markets (NY/LA) may see earlier limited platform engagements for awards play.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Marty Supreme (NY/LA platform)",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Comedy",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Timothée Chalamet",
+            "Gwyneth Paltrow",
+            "Odessa A'zion"
+          ],
+          "director": "Josh Safdie",
+          "theater_count": "10-50 theaters",
+          "description": "Platform launch in key cities ahead of broader expansion; auteur-driven holiday release.",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
         }
       ]
+    },
+    {
+      "id": "platform-release",
+      "name": "Platform Release",
+      "movies": []
     }
   ],
   "fetch_history": [
@@ -474,6 +638,10 @@
     {
       "timestamp": "2025-12-17T09:10:16.848Z",
       "new_movies_count": 3
+    },
+    {
+      "timestamp": "2025-12-18T09:09:57.044Z",
+      "new_movies_count": 9
     }
   ]
 }

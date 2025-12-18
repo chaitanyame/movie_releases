@@ -2,7 +2,7 @@ week_number: 2025-52
 week_start: 2025-12-22
 week_end: 2025-12-28
 country: us
-last_updated: 2025-12-17T09:10:16.848Z
+last_updated: 2025-12-18T09:09:57.044Z
 categories:
   -
     id: wide-release
@@ -57,7 +57,7 @@ categories:
         director: Emma Tammy
         description: Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Anaconda
         release_date: 2025-12-25
@@ -70,7 +70,7 @@ categories:
         director: Tom Gormakin
         description: Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Song Sung Blue
         release_date: 2025-12-25
@@ -82,7 +82,7 @@ categories:
         director: James Mangold
         description: Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Marty Supreme
         release_date: 2025-12-25
@@ -94,6 +94,29 @@ categories:
         director: Josh Safdie
         description: Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.
         first_seen: 2025-12-15T09:11:41.941Z
+        is_new: false
+      -
+        title: Way of the Warrior Kid
+        release_date: 2025-12-25
+        genre: Action,Drama,Family
+        cast:
+          - Chris Pratt
+          - Linda Cardellini
+          - Jude Hill
+        director: McG
+        description: Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Cover-Up
+        release_date: 2025-12-26
+        genre: Thriller
+        cast:
+          - Michael Biehn
+          - Stephen Lang
+        director: Tom Paton
+        description: Thriller involving a conspiracy cover-up with action elements.[4]
+        first_seen: 2025-12-18T09:09:57.044Z
         is_new: true
   -
     id: limited-release
@@ -159,7 +182,7 @@ categories:
         director: Jim Jarmusch
         description: Jarmusch ensemble drama about estranged siblings reuniting for an uneasy holiday gathering; expected NY/LA platform release.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Goodbye June
         release_date: 2025-12-24
@@ -171,7 +194,7 @@ categories:
         director: Kate Winslet
         description: Family drama following fractured siblings forced together after a crisis; festival buzz and limited holiday-week playdates.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Dust Bunny
         release_date: 2025-12-12
@@ -183,7 +206,7 @@ categories:
         director: (director unconfirmed),
         description: Animated indie family film receiving a limited theatrical run in December; platform expansion possible depending on early performance.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Silent Night, Deadly Night (new)
         release_date: 2025-12-01
@@ -195,7 +218,7 @@ categories:
         director: (director unconfirmed),
         description: Reimagining/revival of the controversial holiday slasher property in a limited theatrical engagement around December; some credits unconfirmed.
         first_seen: 2025-12-15T09:11:41.941Z
-        is_new: true
+        is_new: false
       -
         title: Marty Supreme
         release_date: 2025-12-25
@@ -207,7 +230,7 @@ categories:
         director: Josh Safdie
         description: A young man pursues greatness in table tennis against all odds in this biographical drama.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Song Sung Blue
         release_date: 2025-12-25
@@ -220,7 +243,7 @@ categories:
         director: Todd Phillips
         description: Biographical drama about the friendship between Neil Diamond and Burt Bacharach told through music and personal struggles.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Way of the Warrior Kid
         release_date: 2025-12-25
@@ -232,7 +255,7 @@ categories:
         director: McG
         description: Bullied kid trains with Navy SEAL uncle to build confidence and skills over summer based on Jocko Willink's book.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Planet Gliese
         release_date: 2025-12-25
@@ -242,7 +265,7 @@ categories:
         director: Basil B Moore
         description: Sci-fi epic exploring quantum entanglement and black holes using proprietary tech for mind-bending realities.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Lone Samurai
         release_date: 2025-12-12
@@ -254,7 +277,7 @@ categories:
         director: To Be Confirmed
         description: Art-house samurai-themed drama in limited play in select cities during the holiday week.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Dust Bunny (additional playdates)
         release_date: 2025-12-22
@@ -266,7 +289,7 @@ categories:
         director: To Be Confirmed
         description: Continued limited engagements/expansions in select cities during Dec 22-28 week.
         first_seen: 2025-12-16T09:09:29.282Z
-        is_new: true
+        is_new: false
       -
         title: Hamnet
         release_date: 2025-12-25
@@ -303,3 +326,89 @@ categories:
         description: New entry/standalone in the Knives Out universe opening platform-style in select cities during the holiday period.[2]
         first_seen: 2025-12-17T09:10:16.848Z
         is_new: true
+      -
+        title: #RUNSEOKJIN_EP.TOUR THE MOVIE
+        release_date: 2025-12-27
+        genre: Music,Documentary
+        cast:
+          - Jin
+        director: Unknown
+        description: Concert film capturing BTS Jin's EP tour performances.[4][7]
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Silent Night, Deadly Night (2025)
+        release_date: 2025-12-12
+        genre: Horror
+        cast:
+          - Lead Actor A
+          - Lead Actor B
+          - Lead Actor C
+        director: Director Name
+        description: Horror entry timed for the season with limited theatrical engagements.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: The Black Phone 2
+        release_date: 2025-10-17
+        genre: Horror
+        cast:
+          - Ethan Hawke
+          - Mason Thames
+          - Madeleine McGraw
+        director: Scott Derrickson
+        description: Sequel to The Black Phone; still playing in limited/expanded engagements in some markets during December.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Champion
+        release_date: 2025-12-25
+        genre: Drama,Sports
+        cast:
+          - Lead Actor A
+          - Lead Actor B
+          - Lead Actor C
+        director: Director Name
+        description: Independent sports drama opening in select cities over the holiday week.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Ikkis
+        release_date: 2025-12-25
+        genre: Foreign,Drama
+        cast:
+          - Lead Actor A
+          - Lead Actor B
+          - Lead Actor C
+        director: Director Name
+        description: International festival title receiving a limited U.S. theatrical release during the holiday window.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Song Sung Blue (NY/LA limited launch)
+        release_date: 2025-12-25
+        genre: Biography,Drama,Music
+        cast:
+          - Hugh Jackman
+          - Kate Hudson
+          - Ella Anderson
+        director: Todd Haynes
+        description: In addition to its wider roll, certain markets (NY/LA) may see earlier limited platform engagements for awards play.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+      -
+        title: Marty Supreme (NY/LA platform)
+        release_date: 2025-12-25
+        genre: Drama,Comedy
+        cast:
+          - Timothée Chalamet
+          - Gwyneth Paltrow
+          - Odessa A'zion
+        director: Josh Safdie
+        description: Platform launch in key cities ahead of broader expansion; auteur-driven holiday release.
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: true
+  -
+    id: platform-release
+    name: Platform Release
+    movies:

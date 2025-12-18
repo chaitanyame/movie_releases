@@ -3,8 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
-  "last_updated": "2025-12-17T09:08:59.717Z",
-  "fetch_count": 7,
+  "last_updated": "2025-12-18T09:07:52.475Z",
+  "fetch_count": 8,
   "categories": [
     {
       "id": "wide-release",
@@ -136,7 +136,7 @@
           "description": "Fourth film in the Avatar franchise continuing the saga of Jake Sully and the Na'vi with large-scale effects and returning principal cast; major holiday blockbuster opening nationwide.",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Housemaid",
@@ -154,7 +154,7 @@
           "description": "Psychological thriller about a struggling woman hired by an elite couple that unravels into class-tension and danger; given a wide theatrical cinemas release by Lionsgate this week[2][5].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The SpongeBob Movie: Search for SquarePants",
@@ -510,7 +510,7 @@
           "description": "Israeli drama about a single mother who works in a human dairy expressing breast milk for wealthy mothers; opening in specialty/arthouse theaters[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Voice of Hind Rajab",
@@ -526,7 +526,7 @@
           "description": "Documentary following emergency responders attempting to save a trapped child under fire in Gaza; opening in limited documentary circuits[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Cover-Up",
@@ -543,7 +543,7 @@
           "description": "Investigative documentary co-directed by Laura Poitras profiling journalist Seymour Hersh and his reporting; receiving a limited theatrical run alongside festival play[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "No More Time",
@@ -561,7 +561,7 @@
           "description": "Thriller about a couple seeking refuge in a remote mountain town amid a mysterious viral disease; opening in limited specialty release by Vertical[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Timestamp",
@@ -579,7 +579,7 @@
           "description": "Ukrainian documentary about school life continuing during wartime, receiving a limited arthouse release in the U.S.[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Milky Way — Additional Playdates (NY/LA)",
@@ -597,7 +597,7 @@
           "description": "Early platform playdates in New York and Los Angeles ahead of the wider limited rollout[2].",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:09:53.685Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Milky Way (alternate listing)",
@@ -670,6 +670,25 @@
           "additional_languages": [],
           "first_seen": "2025-12-17T09:08:59.717Z",
           "is_new": true
+        },
+        {
+          "title": "Is This Thing On?",
+          "release_date": "2025-12-19",
+          "genre": "Comedy,Drama",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Will Arnett",
+            "Laura Dern",
+            "Cooper Hoffman",
+            "Andra Day"
+          ],
+          "director": "Bradley Cooper",
+          "theater_count": "500-1000 theaters",
+          "description": "A divorcing couple navigates single life, uncovers secrets, and rediscovers their relationship through new adventures.[1]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:07:52.475Z",
+          "is_new": true
         }
       ]
     }
@@ -702,6 +721,10 @@
     {
       "timestamp": "2025-12-17T09:08:59.717Z",
       "new_movies_count": 4
+    },
+    {
+      "timestamp": "2025-12-18T09:07:52.475Z",
+      "new_movies_count": 1
     }
   ]
 }

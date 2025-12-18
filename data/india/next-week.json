@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "india",
-  "last_updated": "2025-12-17T09:10:57.723Z",
-  "fetch_count": 4,
+  "last_updated": "2025-12-18T09:11:51.753Z",
+  "fetch_count": 5,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -60,7 +60,7 @@
           "production": "Unknown",
           "description": "A heartwarming family drama about love, relationships, and life's beautiful moments.[3]",
           "first_seen": "2025-12-15T09:12:42.477Z",
-          "is_new": true
+          "is_new": false
         }
       ]
     },
@@ -112,7 +112,7 @@
           "production": "Unknown",
           "description": "Drama film featuring regional leads in a narrative centered on family and relationships.[5]",
           "first_seen": "2025-12-15T09:12:42.477Z",
-          "is_new": true
+          "is_new": false
         }
       ]
     }
@@ -132,6 +132,10 @@
     },
     {
       "timestamp": "2025-12-17T09:10:57.723Z",
+      "new_movies_count": 0
+    },
+    {
+      "timestamp": "2025-12-18T09:11:51.753Z",
       "new_movies_count": 0
     }
   ]

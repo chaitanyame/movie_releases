@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "us",
-  "last_updated": "2025-12-17T09:07:26.275Z",
-  "fetch_count": 4,
+  "last_updated": "2025-12-18T09:07:08.093Z",
+  "fetch_count": 5,
   "categories": [
     {
       "id": "wide-release",
@@ -136,7 +136,7 @@
           "description": "Drama about an aspiring actress working on a U.S. military base that simulates an Iraqi war zone.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Ella McCay",
@@ -150,7 +150,7 @@
           "description": "Dramedy following key character developments in a modern American story.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Franz",
@@ -164,7 +164,7 @@
           "description": "Biographical drama narrating the life of Czech writer Franz Kafka from birth to death.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Mysterious Gaze of the Flamingo",
@@ -178,7 +178,7 @@
           "description": "In 1982 a small Chilean mining town faces an unknown disease; gay men accused of transmission; young Lidia seeks truth.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "One More Shot",
@@ -192,7 +192,7 @@
           "description": "New Year’s Eve 1999; Minnie finds Time Traveling Tequila allowing multiple shots to alter the millennium night.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Goodbye June",
@@ -210,7 +210,7 @@
           "description": "Fractured siblings come together under sudden trying circumstances; qualifies as theatrical prior to streaming.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-15T09:08:19.090Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Hamnet",
@@ -301,8 +301,32 @@
           "additional_languages": [],
           "first_seen": "2025-12-17T09:07:26.275Z",
           "is_new": true
+        },
+        {
+          "title": "Christina Aguilera: Christmas in Paris",
+          "release_date": "2025-12-14",
+          "genre": "Music",
+          "rating": "NR",
+          "studio": {},
+          "cast": [
+            "Christina Aguilera",
+            "Sheila E.",
+            "Etienne Moana",
+            "Yseult"
+          ],
+          "director": {},
+          "theater_count": "50-100 theaters",
+          "description": "Music performance film featuring Christina Aguilera in a holiday concert special in Paris.[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:07:08.093Z",
+          "is_new": true
         }
       ]
+    },
+    {
+      "id": "platform-release",
+      "name": "Platform Release",
+      "movies": []
     }
   ],
   "fetch_history": [
@@ -321,6 +345,10 @@
     {
       "timestamp": "2025-12-17T09:07:26.275Z",
       "new_movies_count": 10
+    },
+    {
+      "timestamp": "2025-12-18T09:07:08.093Z",
+      "new_movies_count": 1
     }
   ]
 }
