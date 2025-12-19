@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2025-12-18T09:09:57.044Z",
-  "fetch_count": 6,
+  "last_updated": "2025-12-19T09:09:35.163Z",
+  "fetch_count": 7,
   "categories": [
     {
       "id": "wide-release",
@@ -609,13 +609,80 @@
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
           "is_new": true
+        },
+        {
+          "title": "The Testament of Ann Lee",
+          "release_date": "2025-12-24",
+          "genre": "Documentary",
+          "rating": "NR",
+          "studio": "Magnolia Pictures",
+          "cast": [
+            "Subject A",
+            "Interviewee B",
+            "Interviewee C"
+          ],
+          "director": "Documentary Filmmaker",
+          "theater_count": "3-10 theaters",
+          "description": "Limited documentary run in specialty houses during the week of Christmas.",
+          "additional_languages": [],
+          "first_seen": "2025-12-19T09:09:35.163Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Night, Deadly Night (remake)",
+          "release_date": "2025-12-12",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "(indie)",
+          "cast": [
+            "(lead)",
+            "(support)",
+            "(support)"
+          ],
+          "director": "(credited)",
+          "theater_count": "20-100 theaters",
+          "description": "Holiday-themed horror title receiving a limited theatrical run in December.[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-19T09:09:35.163Z",
+          "is_new": true
+        },
+        {
+          "title": "The Housemaid (festival/NY-LA expansion)",
+          "release_date": "2025-12-24",
+          "genre": "Thriller,Drama",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar"
+          ],
+          "director": "(credited)",
+          "theater_count": "20-75 theaters",
+          "description": "Notable festival title expanding to additional major-city venues around Christmas.[6]",
+          "additional_languages": [],
+          "first_seen": "2025-12-19T09:09:35.163Z",
+          "is_new": true
+        },
+        {
+          "title": "David (expansion)",
+          "release_date": "2025-12-24",
+          "genre": "Drama",
+          "rating": "R",
+          "studio": "Neon",
+          "cast": [
+            "(lead)",
+            "(support)",
+            "(support)"
+          ],
+          "director": "(credited)",
+          "theater_count": "10-50 theaters",
+          "description": "Limited indie drama expanding slightly in NY/LA for the holiday week.[2][7]",
+          "additional_languages": [],
+          "first_seen": "2025-12-19T09:09:35.163Z",
+          "is_new": true
         }
       ]
-    },
-    {
-      "id": "platform-release",
-      "name": "Platform Release",
-      "movies": []
     }
   ],
   "fetch_history": [
@@ -642,6 +709,10 @@
     {
       "timestamp": "2025-12-18T09:09:57.044Z",
       "new_movies_count": 9
+    },
+    {
+      "timestamp": "2025-12-19T09:09:35.163Z",
+      "new_movies_count": 4
     }
   ]
 }

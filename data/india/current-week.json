@@ -3,8 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "india",
-  "last_updated": "2025-12-18T09:08:39.269Z",
-  "fetch_count": 8,
+  "last_updated": "2025-12-19T09:08:02.792Z",
+  "fetch_count": 9,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -216,6 +216,41 @@
           "description": "Romantic comedy scheduled for a Christmas theatrical release (listed in upcoming Hindi release trackers; release date widely reported as 2025-12-25). [5]",
           "first_seen": "2025-12-16T09:08:31.627Z",
           "is_new": false
+        },
+        {
+          "title": "Durlabh Prasad Ki Dusri Shadi",
+          "release_date": "2025-12-19",
+          "genre": "Family",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Sanjay Mishra",
+            "Vyom Yadav",
+            "Mahima Chaudhry",
+            "Pallak Lalwani"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Family drama about Durlabh Prasad's second marriage.[5][10]",
+          "first_seen": "2025-12-19T09:08:02.792Z",
+          "is_new": true
+        },
+        {
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Action,Adventure,Fantasy",
+          "language": "English",
+          "additional_languages": {},
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Sigourney Weaver"
+          ],
+          "director": "Not listed in India calendar entry",
+          "production": "International studio release (listed on IMDb India theatrical calendar)",
+          "description": "International studio tentpole opening in Indian theatres on 2025-12-19 as listed in IMDb's India upcoming releases calendar; included here because it shows a confirmed theatrical release date for India during the week.[5]",
+          "first_seen": "2025-12-19T09:08:02.792Z",
+          "is_new": true
         }
       ]
     },
@@ -452,6 +487,24 @@
           "description": "Family-oriented regional film with comedic elements from Telugu cinema.[6]",
           "first_seen": "2025-12-18T09:08:39.269Z",
           "is_new": true
+        },
+        {
+          "title": "Surya Power of Love",
+          "release_date": "2025-12-19",
+          "genre": "Romance",
+          "language": "Kannada",
+          "additional_languages": {},
+          "cast": [
+            "Prashanth Surya",
+            "Harshitha MK",
+            "Shruthi Krishna",
+            "P. Ravi Shankar"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Romantic tale centered on Surya's power of love.[5]",
+          "first_seen": "2025-12-19T09:08:02.792Z",
+          "is_new": true
         }
       ]
     }
@@ -488,6 +541,10 @@
     {
       "timestamp": "2025-12-18T09:08:39.269Z",
       "new_movies_count": 2
+    },
+    {
+      "timestamp": "2025-12-19T09:08:02.792Z",
+      "new_movies_count": 3
     }
   ]
 }

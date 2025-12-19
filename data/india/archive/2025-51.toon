@@ -2,7 +2,7 @@ week_number: 2025-51
 week_start: 2025-12-15
 week_end: 2025-12-21
 country: india
-last_updated: 2025-12-18T09:08:39.269Z
+last_updated: 2025-12-19T09:08:02.792Z
 categories:
   -
     id: bollywood-hindi
@@ -153,6 +153,31 @@ categories:
         description: Romantic comedy scheduled for a Christmas theatrical release (listed in upcoming Hindi release trackers; release date widely reported as 2025-12-25). [5]
         first_seen: 2025-12-16T09:08:31.627Z
         is_new: false
+      -
+        title: Durlabh Prasad Ki Dusri Shadi
+        release_date: 2025-12-19
+        genre: Family
+        cast:
+          - Sanjay Mishra
+          - Vyom Yadav
+          - Mahima Chaudhry
+          - Pallak Lalwani
+        director: TBA
+        description: Family drama about Durlabh Prasad's second marriage.[5][10]
+        first_seen: 2025-12-19T09:08:02.792Z
+        is_new: true
+      -
+        title: Avatar: Fire and Ash
+        release_date: 2025-12-19
+        genre: Action,Adventure,Fantasy
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Sigourney Weaver
+        director: Not listed in India calendar entry
+        description: International studio tentpole opening in Indian theatres on 2025-12-19 as listed in IMDb's India upcoming releases calendar; included here because it shows a confirmed theatrical release date for India during the week.[5]
+        first_seen: 2025-12-19T09:08:02.792Z
+        is_new: true
   -
     id: regional-telugu
     name: Regional (Telugu)
@@ -314,4 +339,17 @@ categories:
         director: Unknown
         description: Family-oriented regional film with comedic elements from Telugu cinema.[6]
         first_seen: 2025-12-18T09:08:39.269Z
+        is_new: true
+      -
+        title: Surya Power of Love
+        release_date: 2025-12-19
+        genre: Romance
+        cast:
+          - Prashanth Surya
+          - Harshitha MK
+          - Shruthi Krishna
+          - P. Ravi Shankar
+        director: TBA
+        description: Romantic tale centered on Surya's power of love.[5]
+        first_seen: 2025-12-19T09:08:02.792Z
         is_new: true

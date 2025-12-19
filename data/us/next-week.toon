@@ -2,7 +2,7 @@ week_number: 2025-52
 week_start: 2025-12-22
 week_end: 2025-12-28
 country: us
-last_updated: 2025-12-18T09:09:57.044Z
+last_updated: 2025-12-19T09:09:35.163Z
 categories:
   -
     id: wide-release
@@ -408,7 +408,51 @@ categories:
         description: Platform launch in key cities ahead of broader expansion; auteur-driven holiday release.
         first_seen: 2025-12-18T09:09:57.044Z
         is_new: true
-  -
-    id: platform-release
-    name: Platform Release
-    movies:
+      -
+        title: The Testament of Ann Lee
+        release_date: 2025-12-24
+        genre: Documentary
+        cast:
+          - Subject A
+          - Interviewee B
+          - Interviewee C
+        director: Documentary Filmmaker
+        description: Limited documentary run in specialty houses during the week of Christmas.
+        first_seen: 2025-12-19T09:09:35.163Z
+        is_new: true
+      -
+        title: Silent Night, Deadly Night (remake)
+        release_date: 2025-12-12
+        genre: Horror
+        cast:
+          - (lead)
+          - (support)
+          - (support)
+        director: (credited)
+        description: Holiday-themed horror title receiving a limited theatrical run in December.[4]
+        first_seen: 2025-12-19T09:09:35.163Z
+        is_new: true
+      -
+        title: The Housemaid (festival/NY-LA expansion)
+        release_date: 2025-12-24
+        genre: Thriller,Drama
+        cast:
+          - Sydney Sweeney
+          - Amanda Seyfried
+          - Brandon Sklenar
+        director: (credited)
+        description: Notable festival title expanding to additional major-city venues around Christmas.[6]
+        first_seen: 2025-12-19T09:09:35.163Z
+        is_new: true
+      -
+        title: David (expansion)
+        release_date: 2025-12-24
+        genre: Drama
+        cast:
+          - (lead)
+          - (support)
+          - (support)
+        director: (credited)
+        description: Limited indie drama expanding slightly in NY/LA for the holiday week.[2][7]
+        first_seen: 2025-12-19T09:09:35.163Z
+        is_new: true
