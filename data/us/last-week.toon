@@ -2,7 +2,7 @@ week_number: 2025-50
 week_start: 2025-12-08
 week_end: 2025-12-14
 country: us
-last_updated: 2025-12-18T09:07:08.093Z
+last_updated: 2025-12-20T09:04:48.341Z
 categories:
   -
     id: wide-release
@@ -19,7 +19,7 @@ categories:
         director: Emma Tammi
         description: Sequel in the Five Nights at Freddy's horror franchise following new jumpscare-driven events at a revamped animatronic attraction; wide nationwide rollout expected.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Anaconda
         release_date: 2025-12-12
@@ -31,7 +31,7 @@ categories:
         director: Jon Turteltaub
         description: New action-adventure film centered on an expedition encountering a monstrous anaconda; positioned as a broad holiday action title from a major studio.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Zootopia 2
         release_date: 2025-12-12
@@ -43,7 +43,7 @@ categories:
         director: Byron Howard
         description: Sequel to Disney's Zootopia following Judy Hopps and Nick Wilde on a new mystery-adventure in the metropolitan animal world; major holiday family release.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Silent Night, Deadly Night (2025)
         release_date: 2025-12-12
@@ -55,7 +55,7 @@ categories:
         director: David Bruckner
         description: Holiday-themed slasher reboot/reimagining of the Silent Night, Deadly Night property updated for modern horror audiences.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Avatar: Fire and Ash
         release_date: 2025-12-19
@@ -67,6 +67,30 @@ categories:
         director: James Cameron
         description: Third major installment of the Avatar franchise continuing the saga on Pandora with large-scale action and visual effects.
         first_seen: 2025-12-17T09:07:26.275Z
+        is_new: false
+      -
+        title: Silent Night, Deadly Night
+        release_date: 2025-12-12
+        genre: Horror
+        cast:
+          - (lead cast varies by production)
+          - TBA
+          - TBA
+        director: TBA
+        description: New entry/reimagining in the Silent Night, Deadly Night lineage released in mid-December as a wide/expansive horror release; details on final cast/director confirmed by distributors and theatrical bookings.[8][11]
+        first_seen: 2025-12-20T09:04:48.341Z
+        is_new: true
+      -
+        title: Scarlet
+        release_date: 2025-12-12
+        genre: Action/Adventure/Animation/Fantasy/Sci-Fi
+        cast:
+          - Mana Ashida
+          - Masaki Okada
+          - Masachika Ichimura
+        director: TBA
+        description: Animated/action-epic title from Sony opening in mid-December with international theatrical bookings listed on domestic release schedules.[6]
+        first_seen: 2025-12-20T09:04:48.341Z
         is_new: true
   -
     id: limited-release
@@ -147,7 +171,7 @@ categories:
         director: Sam Mendes
         description: Literary period drama adaptation focusing on Shakespeare's family and the impact of the plague; opening in select cities as a specialty release.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: The Housemaid
         release_date: 2025-12-19
@@ -159,7 +183,7 @@ categories:
         director: Park Chan-wook
         description: Thriller adaptation of a best-selling novel about a high-society household with dark secrets; limited specialty rollout (date noted as 2025-12-19 but promoted in specialty circuits).
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Father, Mother, Sister, Brother
         release_date: 2025-12-24
@@ -171,7 +195,7 @@ categories:
         director: Jim Jarmusch
         description: Jim Jarmusch ensemble drama about estranged siblings reuniting; limited art-house engagement.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Silent Night, Deadly Night (reboot)
         release_date: 2025-12-12
@@ -183,7 +207,7 @@ categories:
         director: David Bruckner
         description: Reimagining of the holiday slasher property opening in select cities with genre-targeted engagements.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Song Sung Blue
         release_date: 2025-12-12
@@ -195,7 +219,7 @@ categories:
         director: Damien Chazelle
         description: Original musical drama featuring a washed-up singer's comeback arc; platform-to-wide potential depending on early response.
         first_seen: 2025-12-17T09:07:26.275Z
-        is_new: true
+        is_new: false
       -
         title: Christina Aguilera: Christmas in Paris
         release_date: 2025-12-14
@@ -209,7 +233,51 @@ categories:
         description: Music performance film featuring Christina Aguilera in a holiday concert special in Paris.[4]
         first_seen: 2025-12-18T09:07:08.093Z
         is_new: true
-  -
-    id: platform-release
-    name: Platform Release
-    movies:
+      -
+        title: Wake Up Dead Man: A Knives Out Mystery
+        release_date: 2025-12-12
+        genre: Mystery/Comedy
+        cast:
+          - (series cast announced by studio)
+          - TBA
+          - TBA
+        director: Rian Johnson
+        description: Theatrical platform release of the Rian Johnson Knives Out sequel intended for awards play and box office in select markets before streaming window.[1][4]
+        first_seen: 2025-12-20T09:04:48.341Z
+        is_new: true
+      -
+        title: The Testament of Ann Lee
+        release_date: 2025-12-12
+        genre: Biography/Drama/Musical
+        cast:
+          - Amanda Seyfried
+          - Lewis Pullman
+          - Thomasin McKenzie
+        director: TBA
+        description: Biographical musical drama opening in limited release through Searchlight for awards-season positioning and specialty theatrical runs.[6]
+        first_seen: 2025-12-20T09:04:48.341Z
+        is_new: true
+      -
+        title: Visions
+        release_date: 2025-12-05
+        genre: Mystery/Thriller
+        cast:
+          - Diane Kruger
+          - Mathieu Kassovitz
+          - Marta Nieto
+        director: TBA
+        description: European-flavored mystery thriller playing in limited U.S. theaters and specialty venues as listed on domestic release schedules.[6]
+        first_seen: 2025-12-20T09:04:48.341Z
+        is_new: true
+      -
+        title: The Voice of Hind Rajab
+        release_date: 2025-12-17
+        genre: Drama
+        cast:
+          - Saja Kilani
+          - Motaz Malhees
+          - Clara Khoury
+        director: TBA
+        description: Middle Eastern drama opening in very limited theatrical engagements following festival exposure; included here because of listed domestic release date on schedules.[6]
+        first_seen: 2025-12-20T09:04:48.341Z
+        is_new: true

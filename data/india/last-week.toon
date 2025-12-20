@@ -2,7 +2,7 @@ week_number: 2025-50
 week_start: 2025-12-08
 week_end: 2025-12-14
 country: india
-last_updated: 2025-12-19T09:06:52.565Z
+last_updated: 2025-12-20T09:05:29.466Z
 categories:
   -
     id: bollywood-hindi
@@ -69,6 +69,19 @@ categories:
         description: Action film led by Tiger Shroff, theatrical release on December 9[1].
         first_seen: 2025-12-16T09:07:14.017Z
         is_new: false
+      -
+        title: Kis Kis Ko Pyaar Karoon 2
+        release_date: 2025-12-12
+        genre: Comedy
+        cast:
+          - Kapil Sharma
+          - Manjot Singh
+          - Ayesha Khan
+          - Parul Gulati
+        director: TBA
+        description: Sequel to the 2015 comedy; follows a man juggling multiple marriages amid police chaos and romance. Sequel film.[5]
+        first_seen: 2025-12-20T09:05:29.466Z
+        is_new: true
   -
     id: regional-telugu
     name: Regional (Telugu)
@@ -150,7 +163,7 @@ categories:
         director: Unknown
         description: Some regional sources reported prior delays and tentative slots; included as TBA where specific theatre confirmations remained inconsistent in listings[3].
         first_seen: 2025-12-17T09:08:04.271Z
-        is_new: true
+        is_new: false
       -
         title: Kis Kisko Pyaar Karoon 2
         release_date: 2025-12-12
@@ -163,7 +176,7 @@ categories:
         director: Unknown
         description: Widely reported sequel scheduled for Dec 12, 2025 in trade write-ups as a theatrical Hindi comedy sequel featuring Kapil Sharma[2].
         first_seen: 2025-12-17T09:08:04.271Z
-        is_new: true
+        is_new: false
       -
         title: Ambalamukkile Visheshangal (duplicate regional listing note)
         release_date: TBA
@@ -191,4 +204,29 @@ categories:
         director: (TBA)
         description: Regional roundups list additional small-scale Malayalam theatrical releases in the week (titles and exact dates were variably reported or released regionally with limited national trade confirmation)[3].
         first_seen: 2025-12-19T09:06:52.565Z
+        is_new: true
+      -
+        title: Mrs Falani
+        release_date: 2025-12-10
+        genre: Comedy/Drama
+        cast:
+          - Swara Bhaskar
+          - Supporting Cast
+          - Supporting Cast
+        director: (TBA)
+        description: Listed in December roundups with a theatrical date of 2025-12-10; family-comedy drama headlined by Swara Bhaskar, awaiting full trade confirmation of distribution.[1]
+        first_seen: 2025-12-20T09:05:29.466Z
+        is_new: true
+      -
+        title: Dhurandhar
+        release_date: 2025-12-05
+        genre: Action
+        cast:
+          - Ranveer Singh
+          - Sanjay Dutt
+          - R Madhavan
+          - Akshaye Khanna
+        director: Aditya Dhar
+        description: High-profile military-action drama released 2025-12-05 per trade coverage; included here because close to this week and referenced in December release lists and film-trade reporting.[5]
+        first_seen: 2025-12-20T09:05:29.466Z
         is_new: true

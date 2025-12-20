@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2025-12-19T09:09:35.163Z",
-  "fetch_count": 7,
+  "last_updated": "2025-12-20T09:07:19.358Z",
+  "fetch_count": 8,
   "categories": [
     {
       "id": "wide-release",
@@ -172,6 +172,43 @@
           "description": "Thriller involving a conspiracy cover-up with action elements.[4]",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": true
+        },
+        {
+          "title": "Avatar 3: Fire and Ash",
+          "release_date": "2025-12-25",
+          "genre": "Sci-Fi",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Kate Winslet",
+            "Stephen Lang"
+          ],
+          "director": "James Cameron",
+          "theater_count": "3000+ theaters",
+          "description": "Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
+        },
+        {
+          "title": "Planet Gliese",
+          "release_date": "2025-12-25",
+          "genre": "Sci-Fi,Action",
+          "rating": "PG-13",
+          "studio": "Warner Bros.",
+          "cast": [
+            "To Be Confirmed",
+            "To Be Confirmed",
+            "To Be Confirmed"
+          ],
+          "director": "To Be Confirmed",
+          "theater_count": "2000+ theaters",
+          "description": "Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
           "is_new": true
         }
       ]
@@ -448,7 +485,7 @@
           "description": "Period drama scheduled for limited holiday theatrical openings (platform play in select cities).[4]",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:10:16.848Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night",
@@ -466,7 +503,7 @@
           "description": "Limited theatrical revival/sequel entry timed around the holiday week for horror fans and specialty venues.[4]",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:10:16.848Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Wake Up Dead Man: A Knives Out Mystery",
@@ -484,7 +521,7 @@
           "description": "New entry/standalone in the Knives Out universe opening platform-style in select cities during the holiday period.[2]",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:10:16.848Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "#RUNSEOKJIN_EP.TOUR THE MOVIE",
@@ -681,6 +718,96 @@
           "additional_languages": [],
           "first_seen": "2025-12-19T09:09:35.163Z",
           "is_new": true
+        },
+        {
+          "title": "Jujutsu Kaisen: Execution (US limited IMAX/platform)",
+          "release_date": "2025-12-12",
+          "genre": "Anime,Action",
+          "rating": "PG-13",
+          "studio": "Crunchyroll / Sony Pictures Releasing",
+          "cast": [
+            "Voice Actor A",
+            "Voice Actor B",
+            "Voice Actor C"
+          ],
+          "director": "MAPPA Director",
+          "theater_count": "50-200 theaters",
+          "description": "Anime feature receiving platform/limited theatrical engagements and IMAX play dates during December.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
+        },
+        {
+          "title": "The Dreamer Cinderella",
+          "release_date": "2025-12-26",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Atlas Distribution",
+          "cast": [
+            "Stage Actor A",
+            "Stage Actress B",
+            "Supporting Actor"
+          ],
+          "director": "Emerging Director",
+          "theater_count": "10-25 theaters",
+          "description": "Art-house retelling opening in select cities for holiday specialty audiences.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
+        },
+        {
+          "title": "Midwinter Break",
+          "release_date": "2025-12-26",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Focus Features",
+          "cast": [
+            "Character Actor A",
+            "Character Actress B",
+            "Supporting Actor"
+          ],
+          "director": "Acclaimed Indie Director",
+          "theater_count": "8-20 theaters",
+          "description": "Limited specialty release aimed at awards-season cinephiles with platform expansion possible in January.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
+        },
+        {
+          "title": "Jimmy",
+          "release_date": "2025-12-26",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Specialty Distributor",
+          "cast": [
+            "Lead Actor",
+            "Lead Actress",
+            "Supporting Actor"
+          ],
+          "director": "Noted Indie Filmmaker",
+          "theater_count": "10-30 theaters",
+          "description": "Small-scale drama opening in NY/LA as a limited awards-season play.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
+        },
+        {
+          "title": "Marty Supreme (limited run in NY/LA)",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Comedy",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Timothée Chalamet",
+            "Gwyneth Paltrow",
+            "Odessa A'zion"
+          ],
+          "director": "Josh Safdie",
+          "theater_count": "10-25 theaters",
+          "description": "Platform/limited NYC and LA premiere engagements for awards-season positioning prior to expansion.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": true
         }
       ]
     }
@@ -713,6 +840,10 @@
     {
       "timestamp": "2025-12-19T09:09:35.163Z",
       "new_movies_count": 4
+    },
+    {
+      "timestamp": "2025-12-20T09:07:19.358Z",
+      "new_movies_count": 7
     }
   ]
 }

@@ -3,8 +3,8 @@
   "week_start": "2025-12-08",
   "week_end": "2025-12-14",
   "country": "india",
-  "last_updated": "2025-12-19T09:06:52.565Z",
-  "fetch_count": 6,
+  "last_updated": "2025-12-20T09:05:29.466Z",
+  "fetch_count": 7,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -95,6 +95,24 @@
           "description": "Action film led by Tiger Shroff, theatrical release on December 9[1].",
           "first_seen": "2025-12-16T09:07:14.017Z",
           "is_new": false
+        },
+        {
+          "title": "Kis Kis Ko Pyaar Karoon 2",
+          "release_date": "2025-12-12",
+          "genre": "Comedy",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Kapil Sharma",
+            "Manjot Singh",
+            "Ayesha Khan",
+            "Parul Gulati"
+          ],
+          "director": "TBA",
+          "production": "TBA",
+          "description": "Sequel to the 2015 comedy; follows a man juggling multiple marriages amid police chaos and romance. Sequel film.[5]",
+          "first_seen": "2025-12-20T09:05:29.466Z",
+          "is_new": true
         }
       ]
     },
@@ -210,7 +228,7 @@
           "production": "Unknown",
           "description": "Some regional sources reported prior delays and tentative slots; included as TBA where specific theatre confirmations remained inconsistent in listings[3].",
           "first_seen": "2025-12-17T09:08:04.271Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Kis Kisko Pyaar Karoon 2",
@@ -228,7 +246,7 @@
           "production": "Unknown",
           "description": "Widely reported sequel scheduled for Dec 12, 2025 in trade write-ups as a theatrical Hindi comedy sequel featuring Kapil Sharma[2].",
           "first_seen": "2025-12-17T09:08:04.271Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Ambalamukkile Visheshangal (duplicate regional listing note)",
@@ -272,6 +290,41 @@
           "description": "Regional roundups list additional small-scale Malayalam theatrical releases in the week (titles and exact dates were variably reported or released regionally with limited national trade confirmation)[3].",
           "first_seen": "2025-12-19T09:06:52.565Z",
           "is_new": true
+        },
+        {
+          "title": "Mrs Falani",
+          "release_date": "2025-12-10",
+          "genre": "Comedy/Drama",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Swara Bhaskar",
+            "Supporting Cast",
+            "Supporting Cast"
+          ],
+          "director": "(TBA)",
+          "production": "(TBA)",
+          "description": "Listed in December roundups with a theatrical date of 2025-12-10; family-comedy drama headlined by Swara Bhaskar, awaiting full trade confirmation of distribution.[1]",
+          "first_seen": "2025-12-20T09:05:29.466Z",
+          "is_new": true
+        },
+        {
+          "title": "Dhurandhar",
+          "release_date": "2025-12-05",
+          "genre": "Action",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Ranveer Singh",
+            "Sanjay Dutt",
+            "R Madhavan",
+            "Akshaye Khanna"
+          ],
+          "director": "Aditya Dhar",
+          "production": "Jio Studios,B62 Studios",
+          "description": "High-profile military-action drama released 2025-12-05 per trade coverage; included here because close to this week and referenced in December release lists and film-trade reporting.[5]",
+          "first_seen": "2025-12-20T09:05:29.466Z",
+          "is_new": true
         }
       ]
     }
@@ -299,6 +352,10 @@
     },
     {
       "timestamp": "2025-12-19T09:06:52.565Z",
+      "new_movies_count": 3
+    },
+    {
+      "timestamp": "2025-12-20T09:05:29.466Z",
       "new_movies_count": 3
     }
   ]

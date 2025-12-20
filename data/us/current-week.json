@@ -3,8 +3,8 @@
   "week_start": "2025-12-15",
   "week_end": "2025-12-21",
   "country": "us",
-  "last_updated": "2025-12-18T09:07:52.475Z",
-  "fetch_count": 8,
+  "last_updated": "2025-12-20T09:06:03.740Z",
+  "fetch_count": 9,
   "categories": [
     {
       "id": "wide-release",
@@ -173,7 +173,7 @@
           "description": "Animated franchise entry following SpongeBob on a new undersea adventure to rescue/seek SquarePants; family-oriented wide release in holiday window.[3][4]",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:07:57.412Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Is This Thing On?",
@@ -192,7 +192,7 @@
           "description": "Adult comedic-drama about a long-married couple navigating separation and rediscovery; star-driven studio release opening the holiday week.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:07:57.412Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Jujutsu Kaisen: Execution",
@@ -210,6 +210,25 @@
           "description": "Feature film continuation of the Jujutsu Kaisen anime franchise, opening wide in the U.S. during the holiday week.",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:08:59.717Z",
+          "is_new": false
+        },
+        {
+          "title": "Resurrection",
+          "release_date": "2025-12-19",
+          "genre": "Drama Sci-Fi",
+          "rating": "NR",
+          "studio": "Janus Films",
+          "cast": [
+            "Jackson Yee",
+            "Shu Qi",
+            "Mark Chao",
+            "Gengxi Li"
+          ],
+          "director": "Unknown",
+          "theater_count": "1000+ theaters",
+          "description": "Epic drama exploring resurrection themes in a sci-fi context.[5]",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:06:03.740Z",
           "is_new": true
         }
       ]
@@ -615,7 +634,7 @@
           "description": "(Duplicate/alternate reporting included to reflect multiple trade listings noting a Dec 16 specialty opening).",
           "additional_languages": [],
           "first_seen": "2025-12-16T09:07:57.412Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Housemaid",
@@ -633,7 +652,7 @@
           "description": "Thriller about a struggling woman who becomes housemaid for an affluent couple; specialty release from Lionsgate into theaters.",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:08:59.717Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night (2025)",
@@ -651,7 +670,7 @@
           "description": "New horror entry tied to the Silent Night, Deadly Night concept opening in limited/genre-focused cinemas.",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:08:59.717Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dust Bunny",
@@ -669,7 +688,7 @@
           "description": "Indie horror-comedy receiving limited theatrical release during the December slate.",
           "additional_languages": [],
           "first_seen": "2025-12-17T09:08:59.717Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Is This Thing On?",
@@ -724,6 +743,10 @@
     },
     {
       "timestamp": "2025-12-18T09:07:52.475Z",
+      "new_movies_count": 1
+    },
+    {
+      "timestamp": "2025-12-20T09:06:03.740Z",
       "new_movies_count": 1
     }
   ]
