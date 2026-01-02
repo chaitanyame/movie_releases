@@ -1,8 +1,8 @@
-week_number: 2025-50
-week_start: 2025-12-08
-week_end: 2025-12-14
+week_number: 2025-52
+week_start: 2025-12-22
+week_end: 2025-12-28
 country: us
-last_updated: 2025-12-20T09:04:48.341Z
+last_updated: 2026-01-02T09:05:56.585Z
 categories:
   -
     id: wide-release
@@ -79,7 +79,7 @@ categories:
         director: TBA
         description: New entry/reimagining in the Silent Night, Deadly Night lineage released in mid-December as a wide/expansive horror release; details on final cast/director confirmed by distributors and theatrical bookings.[8][11]
         first_seen: 2025-12-20T09:04:48.341Z
-        is_new: true
+        is_new: false
       -
         title: Scarlet
         release_date: 2025-12-12
@@ -91,6 +91,32 @@ categories:
         director: TBA
         description: Animated/action-epic title from Sony opening in mid-December with international theatrical bookings listed on domestic release schedules.[6]
         first_seen: 2025-12-20T09:04:48.341Z
+        is_new: false
+      -
+        title: Wake Up Dead Man: A Knives Out Mystery
+        release_date: 2025-12-22
+        genre: Mystery, Thriller, Comedy
+        cast:
+          - Daniel Craig
+          - Edward Norton
+          - Kathryn Hahn
+          - Jeremy Renner
+        director: Rian Johnson
+        description: The third installment in the Knives Out franchise, continuing the mystery-thriller saga with detective Benoit Blanc investigating a new complex case with an ensemble cast.
+        first_seen: 2026-01-02T09:05:56.585Z
+        is_new: true
+      -
+        title: Song Sung Blue
+        release_date: 2025-12-25
+        genre: Biography, Drama, Music
+        cast:
+          - Hugh Jackman
+          - Kate Hudson
+          - Ella Anderson
+          - Hudson Hensley
+        director: James L. Brooks
+        description: A biographical drama directed by Academy Award-winning James L. Brooks, chronicling the life and career of musician Neil Diamond with an emphasis on his personal and artistic journey.
+        first_seen: 2026-01-02T09:05:56.585Z
         is_new: true
   -
     id: limited-release
@@ -232,7 +258,7 @@ categories:
         director: [object Object]
         description: Music performance film featuring Christina Aguilera in a holiday concert special in Paris.[4]
         first_seen: 2025-12-18T09:07:08.093Z
-        is_new: true
+        is_new: false
       -
         title: Wake Up Dead Man: A Knives Out Mystery
         release_date: 2025-12-12
@@ -244,7 +270,7 @@ categories:
         director: Rian Johnson
         description: Theatrical platform release of the Rian Johnson Knives Out sequel intended for awards play and box office in select markets before streaming window.[1][4]
         first_seen: 2025-12-20T09:04:48.341Z
-        is_new: true
+        is_new: false
       -
         title: The Testament of Ann Lee
         release_date: 2025-12-12
@@ -256,7 +282,7 @@ categories:
         director: TBA
         description: Biographical musical drama opening in limited release through Searchlight for awards-season positioning and specialty theatrical runs.[6]
         first_seen: 2025-12-20T09:04:48.341Z
-        is_new: true
+        is_new: false
       -
         title: Visions
         release_date: 2025-12-05
@@ -268,7 +294,7 @@ categories:
         director: TBA
         description: European-flavored mystery thriller playing in limited U.S. theaters and specialty venues as listed on domestic release schedules.[6]
         first_seen: 2025-12-20T09:04:48.341Z
-        is_new: true
+        is_new: false
       -
         title: The Voice of Hind Rajab
         release_date: 2025-12-17
@@ -280,4 +306,40 @@ categories:
         director: TBA
         description: Middle Eastern drama opening in very limited theatrical engagements following festival exposure; included here because of listed domestic release date on schedules.[6]
         first_seen: 2025-12-20T09:04:48.341Z
+        is_new: false
+      -
+        title: Silent Night, Deadly Night
+        release_date: 2025-12-22
+        genre: Horror, Thriller
+        cast:
+          - TBA
+          - TBA
+          - TBA
+        director: TBA
+        description: Horror remake of the 1984 cult classic film, set during the Christmas holiday season with slasher elements.
+        first_seen: 2026-01-02T09:05:56.585Z
+        is_new: true
+      -
+        title: Scarlet
+        release_date: 2025-12-22
+        genre: TBA
+        cast:
+          - TBA
+          - TBA
+          - TBA
+        director: TBA
+        description: Limited theatrical release during the December 22-28 window.
+        first_seen: 2026-01-02T09:05:56.585Z
+        is_new: true
+      -
+        title: Resurrection
+        release_date: 2025-12-22
+        genre: TBA
+        cast:
+          - TBA
+          - TBA
+          - TBA
+        director: TBA
+        description: Limited theatrical release during the December 22-28 window.
+        first_seen: 2026-01-02T09:05:56.585Z
         is_new: true

@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-50",
-  "week_start": "2025-12-08",
-  "week_end": "2025-12-14",
+  "week_number": "2025-52",
+  "week_start": "2025-12-22",
+  "week_end": "2025-12-28",
   "country": "india",
-  "last_updated": "2025-12-20T09:05:29.466Z",
-  "fetch_count": 7,
+  "last_updated": "2026-01-02T09:06:19.018Z",
+  "fetch_count": 8,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -112,6 +112,22 @@
           "production": "TBA",
           "description": "Sequel to the 2015 comedy; follows a man juggling multiple marriages amid police chaos and romance. Sequel film.[5]",
           "first_seen": "2025-12-20T09:05:29.466Z",
+          "is_new": false
+        },
+        {
+          "title": "Zindagi Ke Rang",
+          "release_date": "2025-12-22",
+          "genre": "Romance, Family Drama",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Sara Ali Khan",
+            "Kartik Aaryan"
+          ],
+          "director": "Imtiaz Ali",
+          "production": "Not specified",
+          "description": "Heartwarming family drama about love, relationships, and life's beautiful moments.[2]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
           "is_new": true
         }
       ]
@@ -119,12 +135,68 @@
     {
       "id": "regional-telugu",
       "name": "Regional (Telugu)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Shambhala",
+          "release_date": "2025-12-25",
+          "genre": "Supernatural, Horror, Action, Thriller",
+          "language": "Telugu",
+          "additional_languages": {},
+          "cast": [
+            "Aadi Saikumar",
+            "Archana Iyer",
+            "Swasika Vijay",
+            "Ravi Varma"
+          ],
+          "director": "Ugandhar Muni",
+          "production": "Not specified",
+          "description": "Supernatural horror action thriller with intense thrills and supernatural elements.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "regional-tamil",
       "name": "Regional (Tamil)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Champion",
+          "release_date": "2025-12-25",
+          "genre": "Action, Thriller",
+          "language": "Tamil",
+          "additional_languages": {},
+          "cast": [
+            "Arun Vijay",
+            "Siddhi Idnani",
+            "Tanya Ravichandran",
+            "Yogi Samy"
+          ],
+          "director": "Kris Thirukumaran",
+          "production": "Not specified",
+          "description": "Gangster thriller with Arun Vijay in dual roles, featuring power struggles, revenge, and action in Goa.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        },
+        {
+          "title": "Thalaikoothal",
+          "release_date": "2025-12-25",
+          "genre": "Crime, Drama",
+          "language": "Tamil",
+          "additional_languages": {},
+          "cast": [
+            "Vikram Prabhu",
+            "LK Akshay Kumar",
+            "Anishma Anilkumar",
+            "Ananda"
+          ],
+          "director": "Suresh Rajakumari",
+          "production": "Not specified",
+          "description": "Crime drama exploring intense narratives with a strong ensemble cast.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "regional-other",
@@ -259,7 +331,7 @@
           "production": "TBA",
           "description": "Duplicate mentions in local coverage; included above with confirmed Dec 12 theatrical date[3].",
           "first_seen": "2025-12-19T09:06:52.565Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "3 Days 4 Nights In Bihar",
@@ -276,7 +348,7 @@
           "production": "TBA",
           "description": "Listed in month calendars as early December release (Dec 3) and therefore outside the target week, included here for completeness of month listings but not a Dec 8–14 release[1].",
           "first_seen": "2025-12-19T09:06:52.565Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "(Other small/regional Malayalam titles)",
@@ -289,7 +361,7 @@
           "production": "(TBA)",
           "description": "Regional roundups list additional small-scale Malayalam theatrical releases in the week (titles and exact dates were variably reported or released regionally with limited national trade confirmation)[3].",
           "first_seen": "2025-12-19T09:06:52.565Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Mrs Falani",
@@ -306,7 +378,7 @@
           "production": "(TBA)",
           "description": "Listed in December roundups with a theatrical date of 2025-12-10; family-comedy drama headlined by Swara Bhaskar, awaiting full trade confirmation of distribution.[1]",
           "first_seen": "2025-12-20T09:05:29.466Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Dhurandhar",
@@ -324,6 +396,78 @@
           "production": "Jio Studios,B62 Studios",
           "description": "High-profile military-action drama released 2025-12-05 per trade coverage; included here because close to this week and referenced in December release lists and film-trade reporting.[5]",
           "first_seen": "2025-12-20T09:05:29.466Z",
+          "is_new": false
+        },
+        {
+          "title": "Vrusshabha",
+          "release_date": "2025-12-25",
+          "genre": "Fantasy, Action, Drama",
+          "language": "Malayalam, Telugu",
+          "additional_languages": {},
+          "cast": [
+            "Mohanlal",
+            "Samarjit Lankesh",
+            "Nayan Sarika",
+            "Ragini Dwivedi"
+          ],
+          "director": "Nanda Kishore",
+          "production": "Not specified",
+          "description": "Pan-language fantasy action drama starring Mohanlal in a grand mythological setup.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        },
+        {
+          "title": "BK1",
+          "release_date": "2025-12-25",
+          "genre": "Action, Thriller",
+          "language": "Kannada",
+          "additional_languages": {},
+          "cast": [
+            "Kichcha Sudeep",
+            "Naveen Chandra",
+            "Deepshika",
+            "Guru Somasundaram"
+          ],
+          "director": "Vijay Kartikeyaa",
+          "production": "Not specified",
+          "description": "High-octane action thriller led by Kichcha Sudeep with intense confrontations.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        },
+        {
+          "title": "Tu Meri Main Tera, Main Tera Tu Meri",
+          "release_date": "2025-12-25",
+          "genre": "Romantic Comedy",
+          "language": "Hindi",
+          "additional_languages": {},
+          "cast": [
+            "Kartik Aaryan",
+            "Ananya Panday",
+            "Neena Gupta",
+            "Jackie Shroff"
+          ],
+          "director": "Sameer Vidwans",
+          "production": "Not specified",
+          "description": "Quirky romantic comedy with breezy holiday vibes and colorful chaos, teaming Kartik Aaryan and Ananya Panday.[5][6]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
+          "is_new": true
+        },
+        {
+          "title": "Ekadharma",
+          "release_date": "2025-12-25",
+          "genre": "Action, Thriller",
+          "language": "Kannada",
+          "additional_languages": {},
+          "cast": [
+            "Kiccha Sudeep",
+            "Naveen Chandra",
+            "Deepshika",
+            "Guru Somasundaram"
+          ],
+          "director": "Vijay Kartikeyaa",
+          "production": "Not specified",
+          "description": "Action thriller featuring Kiccha Sudeep in intense power conflicts.[5]",
+          "first_seen": "2026-01-02T09:06:19.018Z",
           "is_new": true
         }
       ]
@@ -357,6 +501,10 @@
     {
       "timestamp": "2025-12-20T09:05:29.466Z",
       "new_movies_count": 3
+    },
+    {
+      "timestamp": "2026-01-02T09:06:19.018Z",
+      "new_movies_count": 8
     }
   ]
 }

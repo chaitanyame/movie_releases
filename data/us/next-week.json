@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-52",
-  "week_start": "2025-12-22",
-  "week_end": "2025-12-28",
+  "week_number": "2026-02",
+  "week_start": "2026-01-05",
+  "week_end": "2026-01-11",
   "country": "us",
-  "last_updated": "2025-12-20T09:07:19.358Z",
-  "fetch_count": 8,
+  "last_updated": "2026-01-02T09:07:23.825Z",
+  "fetch_count": 9,
   "categories": [
     {
       "id": "wide-release",
@@ -155,7 +155,7 @@
           "description": "Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Cover-Up",
@@ -172,7 +172,7 @@
           "description": "Thriller involving a conspiracy cover-up with action elements.[4]",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Avatar 3: Fire and Ash",
@@ -191,7 +191,7 @@
           "description": "Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Planet Gliese",
@@ -209,6 +209,38 @@
           "description": "Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": false
+        },
+        {
+          "title": "Greenland 2: Migration",
+          "release_date": "2026-01-09",
+          "genre": "Action",
+          "rating": "PG-13",
+          "studio": "Lionsgate",
+          "cast": [
+            "Gerard Butler",
+            "Morena Baccarin",
+            "Roman Griffith Davis"
+          ],
+          "director": "Ric Roman Waugh",
+          "theater_count": "3000+ theaters",
+          "description": "Sequel to Greenland follows the Garrity family on a perilous migration amid a new cosmic catastrophe. Franchise continuation with high-stakes disaster action.[1][3][5]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        },
+        {
+          "title": "Primate",
+          "release_date": "2026-01-09",
+          "genre": "Horror",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": "TBA",
+          "director": "TBA",
+          "theater_count": "1000+ theaters",
+          "description": "Nasty efficient horror surprise shaping up as one of January's buzzworthy releases.[1]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
           "is_new": true
         }
       ]
@@ -537,7 +569,7 @@
           "description": "Concert film capturing BTS Jin's EP tour performances.[4][7]",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night (2025)",
@@ -555,7 +587,7 @@
           "description": "Horror entry timed for the season with limited theatrical engagements.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Black Phone 2",
@@ -573,7 +605,7 @@
           "description": "Sequel to The Black Phone; still playing in limited/expanded engagements in some markets during December.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Champion",
@@ -591,7 +623,7 @@
           "description": "Independent sports drama opening in select cities over the holiday week.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Ikkis",
@@ -609,7 +641,7 @@
           "description": "International festival title receiving a limited U.S. theatrical release during the holiday window.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Song Sung Blue (NY/LA limited launch)",
@@ -627,7 +659,7 @@
           "description": "In addition to its wider roll, certain markets (NY/LA) may see earlier limited platform engagements for awards play.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Marty Supreme (NY/LA platform)",
@@ -645,7 +677,7 @@
           "description": "Platform launch in key cities ahead of broader expansion; auteur-driven holiday release.",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Testament of Ann Lee",
@@ -663,7 +695,7 @@
           "description": "Limited documentary run in specialty houses during the week of Christmas.",
           "additional_languages": [],
           "first_seen": "2025-12-19T09:09:35.163Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Silent Night, Deadly Night (remake)",
@@ -681,7 +713,7 @@
           "description": "Holiday-themed horror title receiving a limited theatrical run in December.[4]",
           "additional_languages": [],
           "first_seen": "2025-12-19T09:09:35.163Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Housemaid (festival/NY-LA expansion)",
@@ -699,7 +731,7 @@
           "description": "Notable festival title expanding to additional major-city venues around Christmas.[6]",
           "additional_languages": [],
           "first_seen": "2025-12-19T09:09:35.163Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "David (expansion)",
@@ -717,7 +749,7 @@
           "description": "Limited indie drama expanding slightly in NY/LA for the holiday week.[2][7]",
           "additional_languages": [],
           "first_seen": "2025-12-19T09:09:35.163Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Jujutsu Kaisen: Execution (US limited IMAX/platform)",
@@ -735,7 +767,7 @@
           "description": "Anime feature receiving platform/limited theatrical engagements and IMAX play dates during December.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "The Dreamer Cinderella",
@@ -753,7 +785,7 @@
           "description": "Art-house retelling opening in select cities for holiday specialty audiences.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Midwinter Break",
@@ -771,7 +803,7 @@
           "description": "Limited specialty release aimed at awards-season cinephiles with platform expansion possible in January.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Jimmy",
@@ -789,7 +821,7 @@
           "description": "Small-scale drama opening in NY/LA as a limited awards-season play.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Marty Supreme (limited run in NY/LA)",
@@ -807,6 +839,71 @@
           "description": "Platform/limited NYC and LA premiere engagements for awards-season positioning prior to expansion.",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": false
+        },
+        {
+          "title": "Primate",
+          "release_date": "2026-01-09",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "TBA",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "50-100 theaters",
+          "description": "Nasty efficient horror surprise generating early buzz as a gritty January thriller.[1]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        },
+        {
+          "title": "Dead Man's Wire",
+          "release_date": "2026-01-09",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "TBA",
+          "cast": {},
+          "director": "TBA",
+          "theater_count": "100-500 theaters",
+          "description": "Tense thriller poised for strong limited platform engagement in early January.[1]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        },
+        {
+          "title": "Greenland 2: Migration",
+          "release_date": "2026-01-09",
+          "genre": "Action Thriller",
+          "rating": "PG-13",
+          "studio": "Lionsgate",
+          "cast": [
+            "Gerard Butler",
+            "Morena Baccarin",
+            "Roman Griffith Davis"
+          ],
+          "director": "Ric Roman Waugh",
+          "theater_count": "2500+ theaters",
+          "description": "Sequel to Greenland follows the family navigating new migration threats in a disaster scenario.[3][5]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        },
+        {
+          "title": "People We Meet on Vacation",
+          "release_date": "2026-01-09",
+          "genre": "Romance Comedy",
+          "rating": "PG-13",
+          "studio": "Netflix",
+          "cast": [
+            "Emily Bader",
+            "Tom Blyth",
+            "Sarah Catherine Hook",
+            "Jameela Jamil"
+          ],
+          "director": "Brett Haley",
+          "theater_count": "50-100 theaters",
+          "description": "Adaptation of Emily Henry novel about best friends reuniting on vacation and questioning their relationship.[4][5]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
           "is_new": true
         }
       ]
@@ -844,6 +941,10 @@
     {
       "timestamp": "2025-12-20T09:07:19.358Z",
       "new_movies_count": 7
+    },
+    {
+      "timestamp": "2026-01-02T09:07:23.825Z",
+      "new_movies_count": 6
     }
   ]
 }

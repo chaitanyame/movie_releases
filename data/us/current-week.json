@@ -1,10 +1,10 @@
 {
-  "week_number": "2025-51",
-  "week_start": "2025-12-15",
-  "week_end": "2025-12-21",
+  "week_number": "2026-01",
+  "week_start": "2025-12-29",
+  "week_end": "2026-01-04",
   "country": "us",
-  "last_updated": "2025-12-20T09:06:03.740Z",
-  "fetch_count": 9,
+  "last_updated": "2026-01-02T09:06:43.438Z",
+  "fetch_count": 10,
   "categories": [
     {
       "id": "wide-release",
@@ -229,6 +229,23 @@
           "description": "Epic drama exploring resurrection themes in a sci-fi context.[5]",
           "additional_languages": [],
           "first_seen": "2025-12-20T09:06:03.740Z",
+          "is_new": false
+        },
+        {
+          "title": "The Dutchman",
+          "release_date": "2026-01-02",
+          "genre": "Thriller",
+          "rating": "NR",
+          "studio": "Independent",
+          "cast": [
+            "André Holland",
+            "Kate Mara"
+          ],
+          "director": "Unknown",
+          "theater_count": "1000+ theaters",
+          "description": "A businessman's routine subway commute spirals into a dangerous psychological and sexual power game with a mysterious stranger, escalating into obsession and violence.[3]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:06:43.438Z",
           "is_new": true
         }
       ]
@@ -707,6 +724,71 @@
           "description": "A divorcing couple navigates single life, uncovers secrets, and rediscovers their relationship through new adventures.[1]",
           "additional_languages": [],
           "first_seen": "2025-12-18T09:07:52.475Z",
+          "is_new": false
+        },
+        {
+          "title": "Stranger Things Season 5 Finale - Chapter Eight: The Rightside Up",
+          "release_date": "2025-12-31",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "Netflix",
+          "cast": {},
+          "director": "Unknown",
+          "theater_count": "Select theaters",
+          "description": "The final episode of Stranger Things Season 5 receives a limited theatrical release on New Year's Eve.[3]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:06:43.438Z",
+          "is_new": true
+        },
+        {
+          "title": "Cronos 4K Restoration",
+          "release_date": "2025-12-31",
+          "genre": "Horror",
+          "rating": "NR",
+          "studio": "Janus Films",
+          "cast": {},
+          "director": "Guillermo del Toro",
+          "theater_count": "50-500 theaters",
+          "description": "A 1994 horror-thriller classic receives a restored 4K theatrical re-release by specialty distributor Janus Films.[3][4]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:06:43.438Z",
+          "is_new": true
+        },
+        {
+          "title": "Stranger Things 5 Finale: Chapter Eight: The Rightside Up",
+          "release_date": "2025-12-31",
+          "genre": "Sci-Fi Horror",
+          "rating": "TV-MA",
+          "studio": "Netflix",
+          "cast": [
+            "Millie Bobby Brown",
+            "Finn Wolfhard",
+            "Noah Schnapp"
+          ],
+          "director": "TBD",
+          "theater_count": "50-100 theaters",
+          "description": "Limited theatrical release of the Stranger Things Season 5 finale episode, closing out the series with high-stakes supernatural action.[3]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:06:43.438Z",
+          "is_new": true
+        },
+        {
+          "title": "Lupin the IIIrd the Movie: The Immortal Bloodline",
+          "release_date": "2026-01-04",
+          "genre": "Action Adventure Animation Crime",
+          "rating": "NR",
+          "studio": "TBD",
+          "cast": [
+            "Kan'ichi Kurita",
+            "Richard Epcar",
+            "Takaya Hashi",
+            "Akio Otsuka"
+          ],
+          "director": "TBD",
+          "theater_count": "100-300 theaters",
+          "description": "Anime feature following the master thief Lupin III in a new adventure involving an immortal bloodline mystery.[8]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:06:43.438Z",
           "is_new": true
         }
       ]
@@ -748,6 +830,10 @@
     {
       "timestamp": "2025-12-20T09:06:03.740Z",
       "new_movies_count": 1
+    },
+    {
+      "timestamp": "2026-01-02T09:06:43.438Z",
+      "new_movies_count": 5
     }
   ]
 }
