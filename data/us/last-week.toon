@@ -2,7 +2,7 @@ week_number: 2025-52
 week_start: 2025-12-22
 week_end: 2025-12-28
 country: us
-last_updated: 2026-01-02T09:05:56.585Z
+last_updated: 2026-01-03T09:04:16.709Z
 categories:
   -
     id: wide-release
@@ -342,4 +342,27 @@ categories:
         director: TBA
         description: Limited theatrical release during the December 22-28 window.
         first_seen: 2026-01-02T09:05:56.585Z
+        is_new: true
+      -
+        title: The Plague
+        release_date: 2025-12-24
+        genre: Drama,Thriller
+        cast:
+          - Everett Blunck
+          - Joel Edgerton
+          - Kayo Martin
+          - Lucas Adler
+        director: TBA
+        description: Dramatic thriller examining survival and human behavior during crisis circumstances.
+        first_seen: 2026-01-03T09:04:16.709Z
+        is_new: true
+      -
+        title: Silent Friend
+        release_date: 2025-12-25
+        genre: Drama
+        cast:
+          - TBA
+        director: Ildikó Enyedi
+        description: International co-production set in a medieval German botanical garden exploring human connection across three distinct time periods and characters.
+        first_seen: 2026-01-03T09:04:16.709Z
         is_new: true

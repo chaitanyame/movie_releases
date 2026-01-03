@@ -3,8 +3,8 @@
   "week_start": "2025-12-29",
   "week_end": "2026-01-04",
   "country": "india",
-  "last_updated": "2026-01-02T09:07:02.916Z",
-  "fetch_count": 11,
+  "last_updated": "2026-01-03T09:05:16.169Z",
+  "fetch_count": 12,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -600,10 +600,6 @@
   ],
   "fetch_history": [
     {
-      "timestamp": "2025-12-13T04:30:25.039Z",
-      "new_movies_count": 1
-    },
-    {
       "timestamp": "2025-12-13T04:35:29.395Z",
       "new_movies_count": 1
     },
@@ -638,6 +634,10 @@
     {
       "timestamp": "2026-01-02T09:07:02.916Z",
       "new_movies_count": 5
+    },
+    {
+      "timestamp": "2026-01-03T09:05:16.169Z",
+      "new_movies_count": 0
     }
   ]
 }

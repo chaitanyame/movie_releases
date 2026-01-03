@@ -2,7 +2,7 @@ week_number: 2025-52
 week_start: 2025-12-22
 week_end: 2025-12-28
 country: india
-last_updated: 2026-01-02T09:06:19.018Z
+last_updated: 2026-01-03T09:04:46.291Z
 categories:
   -
     id: bollywood-hindi
@@ -93,6 +93,19 @@ categories:
         description: Heartwarming family drama about love, relationships, and life's beautiful moments.[2]
         first_seen: 2026-01-02T09:06:19.018Z
         is_new: true
+      -
+        title: Tu Meri Main Tera Main Tera Tu Meri
+        release_date: 2025-12-25
+        genre: Romantic Comedy
+        cast:
+          - Kartik Aaryan
+          - Ananya Panday
+          - Neena Gupta
+          - Jackie Shroff
+        director: Sameer Vidwans
+        description: A quirky and colorful romantic comedy featuring Kartik Aaryan and Ananya Panday reuniting after Satyaprem Ki Katha, designed as a breezy holiday-season crowd-pleaser with emphasis on romance and comedy.[5][6]
+        first_seen: 2026-01-03T09:04:46.291Z
+        is_new: true
   -
     id: regional-telugu
     name: Regional (Telugu)
@@ -109,6 +122,19 @@ categories:
         director: Ugandhar Muni
         description: Supernatural horror action thriller with intense thrills and supernatural elements.[5]
         first_seen: 2026-01-02T09:06:19.018Z
+        is_new: true
+      -
+        title: Vrusshabha
+        release_date: 2025-12-25
+        genre: Fantasy Action Drama
+        cast:
+          - Mohanlal
+          - Samarjit Lankesh
+          - Nayan Sarika
+          - Ragini Dwivedi
+        director: Nanda Kishore
+        description: A fantasy action drama featuring Mohanlal in a dual-language release, combining spectacular visual elements with theatrical spectacle.[5]
+        first_seen: 2026-01-03T09:04:46.291Z
         is_new: true
   -
     id: regional-tamil
@@ -139,6 +165,32 @@ categories:
         director: Suresh Rajakumari
         description: Crime drama exploring intense narratives with a strong ensemble cast.[5]
         first_seen: 2026-01-02T09:06:19.018Z
+        is_new: true
+      -
+        title: Retta Thala
+        release_date: 2025-12-25
+        genre: Action Thriller
+        cast:
+          - Arun Vijay
+          - Siddhi Idnani
+          - Tanya Ravichandran
+          - Yogi Samy
+        director: Kris Thirukumaran
+        description: A face-changing thriller featuring Arun Vijay in dual roles as gangsters battling for power and revenge, with action sequences and conflicts set seemingly in Goa.[5]
+        first_seen: 2026-01-03T09:04:46.291Z
+        is_new: true
+      -
+        title: Vikram Prabhu Film
+        release_date: 2025-12-25
+        genre: Crime Drama
+        cast:
+          - Vikram Prabhu
+          - LK Akshay Kumar
+          - Anishma Anilkumar
+          - Ananda
+        director: Suresh Rajakumari
+        description: A crime drama exploring criminal underworld narratives with ensemble cast performances.[5]
+        first_seen: 2026-01-03T09:04:46.291Z
         is_new: true
   -
     id: regional-other
@@ -331,4 +383,30 @@ categories:
         director: Vijay Kartikeyaa
         description: Action thriller featuring Kiccha Sudeep in intense power conflicts.[5]
         first_seen: 2026-01-02T09:06:19.018Z
+        is_new: true
+      -
+        title: Kantara Chapter 1
+        release_date: 2025-12-25
+        genre: Action Thriller
+        cast:
+          - Kichcha Sudeep
+          - Naveen Chandra
+          - Deepshika
+          - Guru Somasundaram
+        director: Vijay Kartikeyaa
+        description: An action thriller in Kannada featuring supernatural and spiritual elements with high-octane sequences.[5]
+        first_seen: 2026-01-03T09:04:46.291Z
+        is_new: true
+      -
+        title: Champion
+        release_date: 2025-12-25
+        genre: Period Sports
+        cast:
+          - Roshann Meka
+          - Anaswara Rajan
+          - Hyper Aadi
+          - Santhosh Prathap
+        director: Pradeep Advaitham
+        description: A period sports drama depicting historical athletic achievement and competition.[5]
+        first_seen: 2026-01-03T09:04:46.291Z
         is_new: true

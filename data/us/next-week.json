@@ -3,248 +3,9 @@
   "week_start": "2026-01-05",
   "week_end": "2026-01-11",
   "country": "us",
-  "last_updated": "2026-01-02T09:07:23.825Z",
-  "fetch_count": 9,
+  "last_updated": "2026-01-03T09:05:29.855Z",
+  "fetch_count": 10,
   "categories": [
-    {
-      "id": "wide-release",
-      "name": "Wide Release",
-      "movies": [
-        {
-          "title": "Avatar: Fire and Ash",
-          "release_date": "2025-12-19",
-          "genre": "Action,Adventure,Fantasy",
-          "rating": "PG-13",
-          "studio": "20th Century Studios",
-          "cast": [
-            "Sam Worthington",
-            "Zoe Saldaña",
-            "Sigourney Weaver",
-            "Stephen Lang"
-          ],
-          "director": "James Cameron",
-          "theater_count": "4000+ theaters",
-          "description": "Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]",
-          "additional_languages": [],
-          "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": false
-        },
-        {
-          "title": "The SpongeBob Movie: Search for SquarePants",
-          "release_date": "2025-12-19",
-          "genre": "Animation,Adventure,Comedy",
-          "rating": "PG",
-          "studio": "Paramount Pictures",
-          "cast": [
-            "Tom Kenny",
-            "Mr. Lawrence",
-            "Bill Fagerbakke"
-          ],
-          "director": "TBA",
-          "theater_count": "3500+ theaters",
-          "description": "SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]",
-          "additional_languages": [],
-          "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": false
-        },
-        {
-          "title": "The Housemaid",
-          "release_date": "2025-12-19",
-          "genre": "Thriller",
-          "rating": "R",
-          "studio": "Warner Bros",
-          "cast": [
-            "Sydney Sweeney",
-            "Amanda Seyfried",
-            "Brandon Sklenar",
-            "Elizabeth Perkins"
-          ],
-          "director": "Paul Feig",
-          "theater_count": "3000+ theaters",
-          "description": "A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]",
-          "additional_languages": [],
-          "first_seen": "2025-12-13T09:05:21.720Z",
-          "is_new": false
-        },
-        {
-          "title": "Five Nights at Freddy's 2",
-          "release_date": "2025-12-05",
-          "genre": "Horror",
-          "rating": "R",
-          "studio": "Universal Pictures",
-          "cast": [
-            "Brady Noon",
-            "Kara Hayward",
-            "Emma Tammy"
-          ],
-          "director": "Emma Tammy",
-          "theater_count": "3000+ theaters",
-          "description": "Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.",
-          "additional_languages": [],
-          "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": false
-        },
-        {
-          "title": "Anaconda",
-          "release_date": "2025-12-25",
-          "genre": "Action,Adventure,Comedy",
-          "rating": "PG-13",
-          "studio": "Sony Pictures",
-          "cast": [
-            "Jack Black",
-            "Paul Rudd",
-            "Thandiwe Newton",
-            "Steve Zahn"
-          ],
-          "director": "Tom Gormakin",
-          "theater_count": "3000+ theaters",
-          "description": "Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.",
-          "additional_languages": [],
-          "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": false
-        },
-        {
-          "title": "Song Sung Blue",
-          "release_date": "2025-12-25",
-          "genre": "Biography,Drama",
-          "rating": "R",
-          "studio": "Universal Pictures",
-          "cast": [
-            "Hugh Jackman",
-            "Kate Hudson",
-            "Ella Anderson"
-          ],
-          "director": "James Mangold",
-          "theater_count": "2500+ theaters",
-          "description": "Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.",
-          "additional_languages": [],
-          "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": false
-        },
-        {
-          "title": "Marty Supreme",
-          "release_date": "2025-12-25",
-          "genre": "Drama,Fantasy",
-          "rating": "R",
-          "studio": "A24",
-          "cast": [
-            "Timothée Chalamet",
-            "Gwyneth Paltrow",
-            "Odessa A'zion"
-          ],
-          "director": "Josh Safdie",
-          "theater_count": "1200-2000 theaters",
-          "description": "Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.",
-          "additional_languages": [],
-          "first_seen": "2025-12-15T09:11:41.941Z",
-          "is_new": false
-        },
-        {
-          "title": "Way of the Warrior Kid",
-          "release_date": "2025-12-25",
-          "genre": "Action,Drama,Family",
-          "rating": "PG-13",
-          "studio": "Lionsgate",
-          "cast": [
-            "Chris Pratt",
-            "Linda Cardellini",
-            "Jude Hill"
-          ],
-          "director": "McG",
-          "theater_count": "2500+ theaters",
-          "description": "Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]",
-          "additional_languages": [],
-          "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": false
-        },
-        {
-          "title": "Cover-Up",
-          "release_date": "2025-12-26",
-          "genre": "Thriller",
-          "rating": "R",
-          "studio": "Roadside Attractions",
-          "cast": [
-            "Michael Biehn",
-            "Stephen Lang"
-          ],
-          "director": "Tom Paton",
-          "theater_count": "2000+ theaters",
-          "description": "Thriller involving a conspiracy cover-up with action elements.[4]",
-          "additional_languages": [],
-          "first_seen": "2025-12-18T09:09:57.044Z",
-          "is_new": false
-        },
-        {
-          "title": "Avatar 3: Fire and Ash",
-          "release_date": "2025-12-25",
-          "genre": "Sci-Fi",
-          "rating": "PG-13",
-          "studio": "20th Century Studios",
-          "cast": [
-            "Sam Worthington",
-            "Zoe Saldaña",
-            "Kate Winslet",
-            "Stephen Lang"
-          ],
-          "director": "James Cameron",
-          "theater_count": "3000+ theaters",
-          "description": "Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.",
-          "additional_languages": [],
-          "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": false
-        },
-        {
-          "title": "Planet Gliese",
-          "release_date": "2025-12-25",
-          "genre": "Sci-Fi,Action",
-          "rating": "PG-13",
-          "studio": "Warner Bros.",
-          "cast": [
-            "To Be Confirmed",
-            "To Be Confirmed",
-            "To Be Confirmed"
-          ],
-          "director": "To Be Confirmed",
-          "theater_count": "2000+ theaters",
-          "description": "Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.",
-          "additional_languages": [],
-          "first_seen": "2025-12-20T09:07:19.358Z",
-          "is_new": false
-        },
-        {
-          "title": "Greenland 2: Migration",
-          "release_date": "2026-01-09",
-          "genre": "Action",
-          "rating": "PG-13",
-          "studio": "Lionsgate",
-          "cast": [
-            "Gerard Butler",
-            "Morena Baccarin",
-            "Roman Griffith Davis"
-          ],
-          "director": "Ric Roman Waugh",
-          "theater_count": "3000+ theaters",
-          "description": "Sequel to Greenland follows the Garrity family on a perilous migration amid a new cosmic catastrophe. Franchise continuation with high-stakes disaster action.[1][3][5]",
-          "additional_languages": [],
-          "first_seen": "2026-01-02T09:07:23.825Z",
-          "is_new": true
-        },
-        {
-          "title": "Primate",
-          "release_date": "2026-01-09",
-          "genre": "Horror",
-          "rating": "NR",
-          "studio": "TBA",
-          "cast": "TBA",
-          "director": "TBA",
-          "theater_count": "1000+ theaters",
-          "description": "Nasty efficient horror surprise shaping up as one of January's buzzworthy releases.[1]",
-          "additional_languages": [],
-          "first_seen": "2026-01-02T09:07:23.825Z",
-          "is_new": true
-        }
-      ]
-    },
     {
       "id": "limited-release",
       "name": "Limited Release",
@@ -907,6 +668,245 @@
           "is_new": true
         }
       ]
+    },
+    {
+      "id": "wide-release",
+      "name": "Wide Release",
+      "movies": [
+        {
+          "title": "Avatar: Fire and Ash",
+          "release_date": "2025-12-19",
+          "genre": "Action,Adventure,Fantasy",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Sigourney Weaver",
+            "Stephen Lang"
+          ],
+          "director": "James Cameron",
+          "theater_count": "4000+ theaters",
+          "description": "Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": false
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants",
+          "release_date": "2025-12-19",
+          "genre": "Animation,Adventure,Comedy",
+          "rating": "PG",
+          "studio": "Paramount Pictures",
+          "cast": [
+            "Tom Kenny",
+            "Mr. Lawrence",
+            "Bill Fagerbakke"
+          ],
+          "director": "TBA",
+          "theater_count": "3500+ theaters",
+          "description": "SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": false
+        },
+        {
+          "title": "The Housemaid",
+          "release_date": "2025-12-19",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Warner Bros",
+          "cast": [
+            "Sydney Sweeney",
+            "Amanda Seyfried",
+            "Brandon Sklenar",
+            "Elizabeth Perkins"
+          ],
+          "director": "Paul Feig",
+          "theater_count": "3000+ theaters",
+          "description": "A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-13T09:05:21.720Z",
+          "is_new": false
+        },
+        {
+          "title": "Five Nights at Freddy's 2",
+          "release_date": "2025-12-05",
+          "genre": "Horror",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Brady Noon",
+            "Kara Hayward",
+            "Emma Tammy"
+          ],
+          "director": "Emma Tammy",
+          "theater_count": "3000+ theaters",
+          "description": "Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": false
+        },
+        {
+          "title": "Anaconda",
+          "release_date": "2025-12-25",
+          "genre": "Action,Adventure,Comedy",
+          "rating": "PG-13",
+          "studio": "Sony Pictures",
+          "cast": [
+            "Jack Black",
+            "Paul Rudd",
+            "Thandiwe Newton",
+            "Steve Zahn"
+          ],
+          "director": "Tom Gormakin",
+          "theater_count": "3000+ theaters",
+          "description": "Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": false
+        },
+        {
+          "title": "Song Sung Blue",
+          "release_date": "2025-12-25",
+          "genre": "Biography,Drama",
+          "rating": "R",
+          "studio": "Universal Pictures",
+          "cast": [
+            "Hugh Jackman",
+            "Kate Hudson",
+            "Ella Anderson"
+          ],
+          "director": "James Mangold",
+          "theater_count": "2500+ theaters",
+          "description": "Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": false
+        },
+        {
+          "title": "Marty Supreme",
+          "release_date": "2025-12-25",
+          "genre": "Drama,Fantasy",
+          "rating": "R",
+          "studio": "A24",
+          "cast": [
+            "Timothée Chalamet",
+            "Gwyneth Paltrow",
+            "Odessa A'zion"
+          ],
+          "director": "Josh Safdie",
+          "theater_count": "1200-2000 theaters",
+          "description": "Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.",
+          "additional_languages": [],
+          "first_seen": "2025-12-15T09:11:41.941Z",
+          "is_new": false
+        },
+        {
+          "title": "Way of the Warrior Kid",
+          "release_date": "2025-12-25",
+          "genre": "Action,Drama,Family",
+          "rating": "PG-13",
+          "studio": "Lionsgate",
+          "cast": [
+            "Chris Pratt",
+            "Linda Cardellini",
+            "Jude Hill"
+          ],
+          "director": "McG",
+          "theater_count": "2500+ theaters",
+          "description": "Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": false
+        },
+        {
+          "title": "Cover-Up",
+          "release_date": "2025-12-26",
+          "genre": "Thriller",
+          "rating": "R",
+          "studio": "Roadside Attractions",
+          "cast": [
+            "Michael Biehn",
+            "Stephen Lang"
+          ],
+          "director": "Tom Paton",
+          "theater_count": "2000+ theaters",
+          "description": "Thriller involving a conspiracy cover-up with action elements.[4]",
+          "additional_languages": [],
+          "first_seen": "2025-12-18T09:09:57.044Z",
+          "is_new": false
+        },
+        {
+          "title": "Avatar 3: Fire and Ash",
+          "release_date": "2025-12-25",
+          "genre": "Sci-Fi",
+          "rating": "PG-13",
+          "studio": "20th Century Studios",
+          "cast": [
+            "Sam Worthington",
+            "Zoe Saldaña",
+            "Kate Winslet",
+            "Stephen Lang"
+          ],
+          "director": "James Cameron",
+          "theater_count": "3000+ theaters",
+          "description": "Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": false
+        },
+        {
+          "title": "Planet Gliese",
+          "release_date": "2025-12-25",
+          "genre": "Sci-Fi,Action",
+          "rating": "PG-13",
+          "studio": "Warner Bros.",
+          "cast": [
+            "To Be Confirmed",
+            "To Be Confirmed",
+            "To Be Confirmed"
+          ],
+          "director": "To Be Confirmed",
+          "theater_count": "2000+ theaters",
+          "description": "Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.",
+          "additional_languages": [],
+          "first_seen": "2025-12-20T09:07:19.358Z",
+          "is_new": false
+        },
+        {
+          "title": "Greenland 2: Migration",
+          "release_date": "2026-01-09",
+          "genre": "Action",
+          "rating": "PG-13",
+          "studio": "Lionsgate",
+          "cast": [
+            "Gerard Butler",
+            "Morena Baccarin",
+            "Roman Griffith Davis"
+          ],
+          "director": "Ric Roman Waugh",
+          "theater_count": "3000+ theaters",
+          "description": "Sequel to Greenland follows the Garrity family on a perilous migration amid a new cosmic catastrophe. Franchise continuation with high-stakes disaster action.[1][3][5]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        },
+        {
+          "title": "Primate",
+          "release_date": "2026-01-09",
+          "genre": "Horror",
+          "rating": "NR",
+          "studio": "TBA",
+          "cast": "TBA",
+          "director": "TBA",
+          "theater_count": "1000+ theaters",
+          "description": "Nasty efficient horror surprise shaping up as one of January's buzzworthy releases.[1]",
+          "additional_languages": [],
+          "first_seen": "2026-01-02T09:07:23.825Z",
+          "is_new": true
+        }
+      ]
     }
   ],
   "fetch_history": [
@@ -945,6 +945,10 @@
     {
       "timestamp": "2026-01-02T09:07:23.825Z",
       "new_movies_count": 6
+    },
+    {
+      "timestamp": "2026-01-03T09:05:29.855Z",
+      "new_movies_count": 0
     }
   ]
 }

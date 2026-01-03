@@ -3,8 +3,8 @@
   "week_start": "2025-12-22",
   "week_end": "2025-12-28",
   "country": "us",
-  "last_updated": "2026-01-02T09:05:56.585Z",
-  "fetch_count": 7,
+  "last_updated": "2026-01-03T09:04:16.709Z",
+  "fetch_count": 8,
   "categories": [
     {
       "id": "wide-release",
@@ -520,6 +520,41 @@
           "additional_languages": [],
           "first_seen": "2026-01-02T09:05:56.585Z",
           "is_new": true
+        },
+        {
+          "title": "The Plague",
+          "release_date": "2025-12-24",
+          "genre": "Drama,Thriller",
+          "rating": "NR",
+          "studio": "IFC Films",
+          "cast": [
+            "Everett Blunck",
+            "Joel Edgerton",
+            "Kayo Martin",
+            "Lucas Adler"
+          ],
+          "director": "TBA",
+          "theater_count": "50-500 theaters",
+          "description": "Dramatic thriller examining survival and human behavior during crisis circumstances.",
+          "additional_languages": [],
+          "first_seen": "2026-01-03T09:04:16.709Z",
+          "is_new": true
+        },
+        {
+          "title": "Silent Friend",
+          "release_date": "2025-12-25",
+          "genre": "Drama",
+          "rating": "NR",
+          "studio": "1-2 Special Cinemas",
+          "cast": [
+            "TBA"
+          ],
+          "director": "Ildikó Enyedi",
+          "theater_count": "Platform release",
+          "description": "International co-production set in a medieval German botanical garden exploring human connection across three distinct time periods and characters.",
+          "additional_languages": [],
+          "first_seen": "2026-01-03T09:04:16.709Z",
+          "is_new": true
         }
       ]
     }
@@ -552,6 +587,10 @@
     {
       "timestamp": "2026-01-02T09:05:56.585Z",
       "new_movies_count": 5
+    },
+    {
+      "timestamp": "2026-01-03T09:04:16.709Z",
+      "new_movies_count": 2
     }
   ]
 }

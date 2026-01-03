@@ -2,167 +2,8 @@ week_number: 2026-02
 week_start: 2026-01-05
 week_end: 2026-01-11
 country: us
-last_updated: 2026-01-02T09:07:23.825Z
+last_updated: 2026-01-03T09:05:29.855Z
 categories:
-  -
-    id: wide-release
-    name: Wide Release
-    movies:
-      -
-        title: Avatar: Fire and Ash
-        release_date: 2025-12-19
-        genre: Action,Adventure,Fantasy
-        cast:
-          - Sam Worthington
-          - Zoe Saldaña
-          - Sigourney Weaver
-          - Stephen Lang
-        director: James Cameron
-        description: Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]
-        first_seen: 2025-12-13T09:05:21.720Z
-        is_new: false
-      -
-        title: The SpongeBob Movie: Search for SquarePants
-        release_date: 2025-12-19
-        genre: Animation,Adventure,Comedy
-        cast:
-          - Tom Kenny
-          - Mr. Lawrence
-          - Bill Fagerbakke
-        director: TBA
-        description: SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]
-        first_seen: 2025-12-13T09:05:21.720Z
-        is_new: false
-      -
-        title: The Housemaid
-        release_date: 2025-12-19
-        genre: Thriller
-        cast:
-          - Sydney Sweeney
-          - Amanda Seyfried
-          - Brandon Sklenar
-          - Elizabeth Perkins
-        director: Paul Feig
-        description: A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]
-        first_seen: 2025-12-13T09:05:21.720Z
-        is_new: false
-      -
-        title: Five Nights at Freddy's 2
-        release_date: 2025-12-05
-        genre: Horror
-        cast:
-          - Brady Noon
-          - Kara Hayward
-          - Emma Tammy
-        director: Emma Tammy
-        description: Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.
-        first_seen: 2025-12-15T09:11:41.941Z
-        is_new: false
-      -
-        title: Anaconda
-        release_date: 2025-12-25
-        genre: Action,Adventure,Comedy
-        cast:
-          - Jack Black
-          - Paul Rudd
-          - Thandiwe Newton
-          - Steve Zahn
-        director: Tom Gormakin
-        description: Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.
-        first_seen: 2025-12-15T09:11:41.941Z
-        is_new: false
-      -
-        title: Song Sung Blue
-        release_date: 2025-12-25
-        genre: Biography,Drama
-        cast:
-          - Hugh Jackman
-          - Kate Hudson
-          - Ella Anderson
-        director: James Mangold
-        description: Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.
-        first_seen: 2025-12-15T09:11:41.941Z
-        is_new: false
-      -
-        title: Marty Supreme
-        release_date: 2025-12-25
-        genre: Drama,Fantasy
-        cast:
-          - Timothée Chalamet
-          - Gwyneth Paltrow
-          - Odessa A'zion
-        director: Josh Safdie
-        description: Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.
-        first_seen: 2025-12-15T09:11:41.941Z
-        is_new: false
-      -
-        title: Way of the Warrior Kid
-        release_date: 2025-12-25
-        genre: Action,Drama,Family
-        cast:
-          - Chris Pratt
-          - Linda Cardellini
-          - Jude Hill
-        director: McG
-        description: Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]
-        first_seen: 2025-12-18T09:09:57.044Z
-        is_new: false
-      -
-        title: Cover-Up
-        release_date: 2025-12-26
-        genre: Thriller
-        cast:
-          - Michael Biehn
-          - Stephen Lang
-        director: Tom Paton
-        description: Thriller involving a conspiracy cover-up with action elements.[4]
-        first_seen: 2025-12-18T09:09:57.044Z
-        is_new: false
-      -
-        title: Avatar 3: Fire and Ash
-        release_date: 2025-12-25
-        genre: Sci-Fi
-        cast:
-          - Sam Worthington
-          - Zoe Saldaña
-          - Kate Winslet
-          - Stephen Lang
-        director: James Cameron
-        description: Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.
-        first_seen: 2025-12-20T09:07:19.358Z
-        is_new: false
-      -
-        title: Planet Gliese
-        release_date: 2025-12-25
-        genre: Sci-Fi,Action
-        cast:
-          - To Be Confirmed
-          - To Be Confirmed
-          - To Be Confirmed
-        director: To Be Confirmed
-        description: Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.
-        first_seen: 2025-12-20T09:07:19.358Z
-        is_new: false
-      -
-        title: Greenland 2: Migration
-        release_date: 2026-01-09
-        genre: Action
-        cast:
-          - Gerard Butler
-          - Morena Baccarin
-          - Roman Griffith Davis
-        director: Ric Roman Waugh
-        description: Sequel to Greenland follows the Garrity family on a perilous migration amid a new cosmic catastrophe. Franchise continuation with high-stakes disaster action.[1][3][5]
-        first_seen: 2026-01-02T09:07:23.825Z
-        is_new: true
-      -
-        title: Primate
-        release_date: 2026-01-09
-        genre: Horror
-        director: TBA
-        description: Nasty efficient horror surprise shaping up as one of January's buzzworthy releases.[1]
-        first_seen: 2026-01-02T09:07:23.825Z
-        is_new: true
   -
     id: limited-release
     name: Limited Release
@@ -600,5 +441,164 @@ categories:
           - Jameela Jamil
         director: Brett Haley
         description: Adaptation of Emily Henry novel about best friends reuniting on vacation and questioning their relationship.[4][5]
+        first_seen: 2026-01-02T09:07:23.825Z
+        is_new: true
+  -
+    id: wide-release
+    name: Wide Release
+    movies:
+      -
+        title: Avatar: Fire and Ash
+        release_date: 2025-12-19
+        genre: Action,Adventure,Fantasy
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Sigourney Weaver
+          - Stephen Lang
+        director: James Cameron
+        description: Third installment in the Avatar franchise follows Jake Sully and Neytiri as they confront a new terrifying threat to their family and planet Pandora.[1][4]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: false
+      -
+        title: The SpongeBob Movie: Search for SquarePants
+        release_date: 2025-12-19
+        genre: Animation,Adventure,Comedy
+        cast:
+          - Tom Kenny
+          - Mr. Lawrence
+          - Bill Fagerbakke
+        director: TBA
+        description: SpongeBob and friends embark on a heroic journey through the underworld of Bikini Bottom to save Gary and break a curse in this fourth franchise film, available in 3D.[1]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: false
+      -
+        title: The Housemaid
+        release_date: 2025-12-19
+        genre: Thriller
+        cast:
+          - Sydney Sweeney
+          - Amanda Seyfried
+          - Brandon Sklenar
+          - Elizabeth Perkins
+        director: Paul Feig
+        description: A desperate young woman takes a job as a housemaid for a wealthy family, uncovering dark secrets that lead to a tense psychological battle.[1][4]
+        first_seen: 2025-12-13T09:05:21.720Z
+        is_new: false
+      -
+        title: Five Nights at Freddy's 2
+        release_date: 2025-12-05
+        genre: Horror
+        cast:
+          - Brady Noon
+          - Kara Hayward
+          - Emma Tammy
+        director: Emma Tammy
+        description: Sequel to the 2023 Five Nights at Freddy's adaptation, continuing the animatronic horror mythology with a new timeline and expanded scares for holiday audiences.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: false
+      -
+        title: Anaconda
+        release_date: 2025-12-25
+        genre: Action,Adventure,Comedy
+        cast:
+          - Jack Black
+          - Paul Rudd
+          - Thandiwe Newton
+          - Steve Zahn
+        director: Tom Gormakin
+        description: Reboot of the 1997 creature franchise reimagined with comedic elements and star-driven ensemble; released on Christmas Day as a wide holiday tentpole.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: false
+      -
+        title: Song Sung Blue
+        release_date: 2025-12-25
+        genre: Biography,Drama
+        cast:
+          - Hugh Jackman
+          - Kate Hudson
+          - Ella Anderson
+        director: James Mangold
+        description: Biographical drama about a legendary singer-songwriter navigating personal and career trials; positioned as an awards-season wide release on Christmas Day.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: false
+      -
+        title: Marty Supreme
+        release_date: 2025-12-25
+        genre: Drama,Fantasy
+        cast:
+          - Timothée Chalamet
+          - Gwyneth Paltrow
+          - Odessa A'zion
+        director: Josh Safdie
+        description: Original auteur-driven feature from the Safdie brothers' circle blending surreal fantasy and gritty drama; released wide during the Christmas frame.
+        first_seen: 2025-12-15T09:11:41.941Z
+        is_new: false
+      -
+        title: Way of the Warrior Kid
+        release_date: 2025-12-25
+        genre: Action,Drama,Family
+        cast:
+          - Chris Pratt
+          - Linda Cardellini
+          - Jude Hill
+        director: McG
+        description: Bullied kid learns warrior skills from Navy SEAL uncle over summer in this family action drama.[3]
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: false
+      -
+        title: Cover-Up
+        release_date: 2025-12-26
+        genre: Thriller
+        cast:
+          - Michael Biehn
+          - Stephen Lang
+        director: Tom Paton
+        description: Thriller involving a conspiracy cover-up with action elements.[4]
+        first_seen: 2025-12-18T09:09:57.044Z
+        is_new: false
+      -
+        title: Avatar 3: Fire and Ash
+        release_date: 2025-12-25
+        genre: Sci-Fi
+        cast:
+          - Sam Worthington
+          - Zoe Saldaña
+          - Kate Winslet
+          - Stephen Lang
+        director: James Cameron
+        description: Third main installment of the Avatar franchise continuing the conflict between humans and Na'vi with new environments and visual effects spectacle.
+        first_seen: 2025-12-20T09:07:19.358Z
+        is_new: false
+      -
+        title: Planet Gliese
+        release_date: 2025-12-25
+        genre: Sci-Fi,Action
+        cast:
+          - To Be Confirmed
+          - To Be Confirmed
+          - To Be Confirmed
+        director: To Be Confirmed
+        description: Large-scale science-fiction adventure scheduled for a holiday wide release; details and final cast confirmations released by studio.
+        first_seen: 2025-12-20T09:07:19.358Z
+        is_new: false
+      -
+        title: Greenland 2: Migration
+        release_date: 2026-01-09
+        genre: Action
+        cast:
+          - Gerard Butler
+          - Morena Baccarin
+          - Roman Griffith Davis
+        director: Ric Roman Waugh
+        description: Sequel to Greenland follows the Garrity family on a perilous migration amid a new cosmic catastrophe. Franchise continuation with high-stakes disaster action.[1][3][5]
+        first_seen: 2026-01-02T09:07:23.825Z
+        is_new: true
+      -
+        title: Primate
+        release_date: 2026-01-09
+        genre: Horror
+        director: TBA
+        description: Nasty efficient horror surprise shaping up as one of January's buzzworthy releases.[1]
         first_seen: 2026-01-02T09:07:23.825Z
         is_new: true

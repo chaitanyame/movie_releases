@@ -3,8 +3,8 @@
   "week_start": "2026-01-05",
   "week_end": "2026-01-11",
   "country": "india",
-  "last_updated": "2026-01-02T09:07:40.581Z",
-  "fetch_count": 6,
+  "last_updated": "2026-01-03T09:05:48.896Z",
+  "fetch_count": 7,
   "categories": [
     {
       "id": "bollywood-hindi",
@@ -67,12 +67,70 @@
     {
       "id": "regional-telugu",
       "name": "Regional (Telugu)",
-      "movies": []
+      "movies": [
+        {
+          "title": "The Raja Saab",
+          "release_date": "2026-01-09",
+          "genre": "Action,Comedy,Fantasy",
+          "language": "Telugu",
+          "additional_languages": {},
+          "cast": [
+            "Prabhas",
+            "Malavika Mohanan",
+            "Niddhi Agerwal",
+            "Riddhi Kumar"
+          ],
+          "director": "Maruthi",
+          "production": "People Media Factory",
+          "description": "Horror comedy fantasy film featuring Prabhas as a man encountering supernatural events in his ancestral property.[6][7]",
+          "first_seen": "2026-01-03T09:05:48.896Z",
+          "is_new": true
+        },
+        {
+          "title": "Jana Nayagan",
+          "release_date": "2026-01-09",
+          "genre": "Action,Thriller",
+          "language": "Telugu",
+          "additional_languages": {},
+          "cast": [
+            "Joseph Vijay",
+            "Pooja Hegde",
+            "Bobby Deol",
+            "Gautham Vasudev Menon"
+          ],
+          "director": "H. Vinoth",
+          "production": "KVN Productions",
+          "description": "Telugu version of Tamil action thriller starring Vijay in a high-stakes political and action narrative.[3][7]",
+          "first_seen": "2026-01-03T09:05:48.896Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "regional-tamil",
       "name": "Regional (Tamil)",
-      "movies": []
+      "movies": [
+        {
+          "title": "Jana Nayagan",
+          "release_date": "2026-01-09",
+          "genre": "Action,Thriller",
+          "language": "Tamil",
+          "additional_languages": [
+            "Telugu"
+          ],
+          "cast": [
+            "Joseph Vijay",
+            "Pooja Hegde",
+            "Bobby Deol",
+            "Gautham Vasudev Menon"
+          ],
+          "director": "H. Vinoth",
+          "production": "KVN Productions",
+          "description": "Tamil original action thriller centered on heroism and intense confrontations during Republic Day period.[7]",
+          "first_seen": "2026-01-03T09:05:48.896Z",
+          "is_new": true
+        }
+      ]
     },
     {
       "id": "regional-other",
@@ -141,6 +199,10 @@
     {
       "timestamp": "2026-01-02T09:07:40.581Z",
       "new_movies_count": 0
+    },
+    {
+      "timestamp": "2026-01-03T09:05:48.896Z",
+      "new_movies_count": 3
     }
   ]
 }

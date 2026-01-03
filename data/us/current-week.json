@@ -3,8 +3,8 @@
   "week_start": "2025-12-29",
   "week_end": "2026-01-04",
   "country": "us",
-  "last_updated": "2026-01-02T09:06:43.438Z",
-  "fetch_count": 10,
+  "last_updated": "2026-01-03T09:05:02.189Z",
+  "fetch_count": 11,
   "categories": [
     {
       "id": "wide-release",
@@ -796,10 +796,6 @@
   ],
   "fetch_history": [
     {
-      "timestamp": "2025-12-13T04:23:49.984Z",
-      "new_movies_count": 17
-    },
-    {
       "timestamp": "2025-12-13T04:31:45.993Z",
       "new_movies_count": 1
     },
@@ -834,6 +830,10 @@
     {
       "timestamp": "2026-01-02T09:06:43.438Z",
       "new_movies_count": 5
+    },
+    {
+      "timestamp": "2026-01-03T09:05:02.189Z",
+      "new_movies_count": 0
     }
   ]
 }
